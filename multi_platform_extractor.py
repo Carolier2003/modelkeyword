@@ -221,11 +221,15 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
         return asyncio.run(self.extract_keywords_concurrent(model_info))
     
     async def extract_batch_keywords(self, model_infos: List[ModelInfo]) -> List[KeywordResult]:
-        """批量提取关键词（分片并发版本）"""
-        results = []
-        total = len(model_infos)
+        """批量提取关键词（work-stealing版本）"""
+        return await self._work_stealing_main(model_infos)
+    
+    async def _work_stealing_main(self, model_infos: List[ModelInfo]) -> List[KeywordResult]:
+        """任务池 + work-stealing 主逻辑"""
+        import time
+        start_time = time.time()
         
-        print(f"🚀 开始分片并发批量提取 {total} 个模型的关键词...")
+        total = len(model_infos)
         
         # 获取可用的平台
         available_platforms = [pid for pid, config in self.platforms.items() if config["enabled"]]
@@ -233,52 +237,97 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
         
         if platform_count == 0:
             print("❌ 没有可用的平台")
-            return results
+            return []
         
-        print(f"📊 分片策略: {total} 个模型，{platform_count} 个平台")
-        print(f"📋 可用平台: {', '.join([self.platforms[pid]['name'] for pid in available_platforms])}")
+        print(f"🚀 任务池启动，模型 {total} 个，平台 {platform_count} 个")
         
-        # 计算每个平台负责的模型数量
-        models_per_platform = total // platform_count
-        remainder = total % platform_count
+        # 创建任务队列 (ModelInfo, retry_count)
+        queue = asyncio.Queue()
+        for model_info in model_infos:
+            await queue.put((model_info, 0))
         
-        print(f"📈 分片分配: 每个平台负责 {models_per_platform} 个模型，剩余 {remainder} 个模型")
+        # 共享结果列表和锁
+        results = []
+        lock = asyncio.Lock()
         
-        # 创建分片任务
-        tasks = []
-        start_index = 0
+        # 创建worker任务
+        workers = []
+        for platform_id in available_platforms:
+            worker = asyncio.create_task(
+                self._worker(platform_id, queue, results, lock, platform_count)
+            )
+            workers.append(worker)
         
-        for i, platform_id in enumerate(available_platforms):
-            # 计算当前平台负责的模型数量
-            current_count = models_per_platform + (1 if i < remainder else 0)
-            end_index = start_index + current_count
-            
-            # 获取当前平台负责的模型
-            platform_models = model_infos[start_index:end_index]
-            
-            if platform_models:
-                platform_name = self.platforms[platform_id]["name"]
-                print(f"📦 {platform_name} 负责模型 {start_index+1}-{end_index} (共{len(platform_models)}个)")
-                
-                # 创建分片任务
-                task = self.extract_keywords_shard(platform_id, platform_models, start_index)
-                tasks.append(task)
-            
-            start_index = end_index
+        # 等待所有任务完成
+        await queue.join()
         
-        # 并发执行所有分片任务
-        print(f"⚡ 开始分片并发处理...")
-        shard_results = await asyncio.gather(*tasks, return_exceptions=True)
+        # 取消所有worker
+        for worker in workers:
+            worker.cancel()
         
-        # 聚合结果
-        for i, result in enumerate(shard_results):
-            if isinstance(result, Exception):
-                print(f"❌ 分片 {i+1} 执行异常: {result}")
-            elif result:
-                results.extend(result)
+        # 等待worker清理完成
+        await asyncio.gather(*workers, return_exceptions=True)
         
-        print(f"🚀 分片并发批量提取完成，成功处理 {len(results)} 个模型")
+        # 计算耗时
+        end_time = time.time()
+        total_time = end_time - start_time
+        avg_time = total_time / len(results) if results else 0
+        
+        print(f"🚀 任务池处理完成，成功处理 {len(results)} 个模型")
+        print(f"⏱️  总耗时: {total_time:.2f}秒，平均耗时: {avg_time:.2f}秒/模型")
         return results
+    
+    async def _worker(self, platform_id: str, queue: asyncio.Queue, results: List[KeywordResult], 
+                     lock: asyncio.Lock, max_retries: int):
+        """单个平台的worker协程"""
+        platform_name = self.platforms[platform_id]["name"]
+        success_count = 0
+        
+        while True:
+            try:
+                # 从队列获取任务
+                model_info, retry_count = queue.get_nowait()
+                
+                # 尝试处理模型
+                result = await self.extract_keywords_single_platform(model_info, platform_id)
+                
+                if result:
+                    # 成功处理
+                    platform_id_result, keywords = result
+                    keyword_result = KeywordResult(
+                        model_url=model_info.url,
+                        keywords=keywords
+                    )
+                    
+                    # 线程安全地添加结果
+                    async with lock:
+                        results.append(keyword_result)
+                    
+                    success_count += 1
+                    queue.task_done()
+                else:
+                    # 处理失败，检查是否需要重试
+                    if retry_count < max_retries - 1:
+                        # 重新放回队列，增加重试次数
+                        await queue.put((model_info, retry_count + 1))
+                        queue.task_done()
+                    else:
+                        # 所有平台都试过了，丢弃
+                        print(f"⚠️  {model_info.project_name} 所有平台均失败，已丢弃")
+                        queue.task_done()
+                        
+            except asyncio.QueueEmpty:
+                # 队列为空，worker退出
+                break
+            except Exception as e:
+                # 单个任务异常，不影响其他任务
+                print(f"❌ {platform_name} 处理异常: {e}")
+                try:
+                    queue.task_done()
+                except ValueError:
+                    pass  # 如果task_done()被调用多次，忽略错误
+        
+        print(f"✅ {platform_name} 成功处理 {success_count} 个")
     
     async def extract_keywords_shard(self, platform_id: str, model_infos: List[ModelInfo], start_index: int) -> List[KeywordResult]:
         """单个平台处理分片"""
