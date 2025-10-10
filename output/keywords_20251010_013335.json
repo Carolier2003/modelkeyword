@@ -1,0 +1,212 @@
+[
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/internlm/Intern-S1-FP8",
+    "keywords": [
+      {
+        "keyword": "InternLM大模型",
+        "dimension": "热门模型品牌",
+        "reason": "开源多模态推理旗舰，科研与工业界搜索热度高，直接引流GitCode仓库"
+      },
+      {
+        "keyword": "235B-MoE架构",
+        "dimension": "性能规格",
+        "reason": "超大规模MoE参数配置，开发者对比模型规模时必搜关键词"
+      },
+      {
+        "keyword": "多模态推理",
+        "dimension": "核心技术架构",
+        "reason": "视觉+文本联合推理技术热点，论文和项目复现搜索量持续增长"
+      },
+      {
+        "keyword": "科学计算",
+        "dimension": "专业领域",
+        "reason": "化学、蛋白质、地震等科研场景刚需，垂直用户精准搜索"
+      },
+      {
+        "keyword": "FP8量化",
+        "dimension": "核心技术架构",
+        "reason": "前沿低精度推理优化技术，性能与显存优化人群高频搜索"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "官方示例基于Transformers，开发者复制代码时直接搜索该词"
+      },
+      {
+        "keyword": "化学结构解析",
+        "dimension": "专业领域",
+        "reason": "具体科学任务关键词，化学/制药领域研发人员精准检索"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/nunchaku-tech/nunchaku-flux.1-krea-dev",
+    "keywords": [
+      {
+        "keyword": "FLUX.1大模型",
+        "dimension": "热门模型品牌",
+        "reason": "Black Forest Labs 明星文生图大模型，开发者高频搜索，引流价值极高"
+      },
+      {
+        "keyword": "SVDQuant",
+        "dimension": "核心技术架构",
+        "reason": "ICLR2025 4-bit 扩散模型量化新算法，技术热点，搜索需求旺盛"
+      },
+      {
+        "keyword": "文本生成图像",
+        "dimension": "应用场景",
+        "reason": "AIGC 核心应用，设计师与开发者都会主动搜索的刚需功能"
+      },
+      {
+        "keyword": "Diffusers",
+        "dimension": "部署与集成",
+        "reason": "HuggingFace 官方扩散模型库，开发者部署首选，搜索量持续高位"
+      },
+      {
+        "keyword": "ComfyUI",
+        "dimension": "部署与集成",
+        "reason": "社区最火的文生图可视化工作流工具，教程与模型需求巨大"
+      },
+      {
+        "keyword": "INT4量化",
+        "dimension": "性能规格",
+        "reason": "极致压缩关键词，移动端与低显存玩家必搜，性能优化热点"
+      },
+      {
+        "keyword": "NVFP4",
+        "dimension": "性能规格",
+        "reason": "NVIDIA Blackwell 新原生4位浮点格式，硬件玩家与前沿开发者高度关注"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/zai-org/GLM-4.5V",
+    "keywords": [
+      {
+        "keyword": "GLM大模型",
+        "dimension": "热门模型品牌",
+        "reason": "GLM系列是智谱AI推出的知名开源大模型品牌，在CSDN和开发者社区中搜索热度高，用户常主动搜索以了解其多模态能力与最新进展，引流价值显著"
+      },
+      {
+        "keyword": "多模态推理",
+        "dimension": "核心技术架构",
+        "reason": "项目强调模型在图像、视频、文档等多模态内容上的推理能力，'多模态推理'是当前AI领域的技术热点，开发者和研究人员高频搜索该术语以寻找先进解决方案"
+      },
+      {
+        "keyword": "GUI智能体",
+        "dimension": "应用场景",
+        "reason": "项目明确支持GUI任务如屏幕内容读取、图标识别和桌面操作辅助，'GUI智能体'是具体且高价值的应用场景，吸引希望构建自动化桌面助手的开发者点击了解"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "README指出模型在Hugging Face Transformers中有完整实现，Transformers是开发者部署和调用模型的核心工具，搜索量极大，具有强引流效果"
+      },
+      {
+        "keyword": "106B参数",
+        "dimension": "性能规格",
+        "reason": "项目明确说明GLM-4.5V基于1060亿参数（即106B参数）的GLM-4.5-Air构建，该参数规模是技术选型关键指标，用户常搜索具体参数规格以评估模型能力"
+      },
+      {
+        "keyword": "长文档解析",
+        "dimension": "应用场景",
+        "reason": "项目强调对复杂图表与长文档（如研究报告）的解析能力，'长文档解析'是企业级和科研用户的刚需场景，搜索意图明确，实用性强"
+      },
+      {
+        "keyword": "思维链",
+        "dimension": "核心技术架构",
+        "reason": "项目明确提到集成Chain-of-Thought（思维链）推理机制以提升准确性与可解释性，该技术是当前大模型推理优化的主流方法，开发者关注度高"
+      },
+      {
+        "keyword": "视频理解",
+        "dimension": "专业领域",
+        "reason": "项目支持长视频分割与事件识别，'视频理解'是计算机视觉与多模态AI的重要垂直方向，相关应用（如监控、内容审核）需求旺盛，专业用户搜索频繁"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/mirrors/sentence-transformers/all-MiniLM-L6-v2",
+    "keywords": [
+      {
+        "keyword": "MiniLLMs大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目列表中出现 MiniLLMs，属于开源大模型品牌，搜索热度高，可直接引流到 GitCode 项目页面"
+      },
+      {
+        "keyword": "Transformer",
+        "dimension": "核心技术架构",
+        "reason": "模型名称包含 sentence‑transformers，核心技术为 Transformer，开发者常搜索该架构，具备强引流效果"
+      },
+      {
+        "keyword": "微信开发",
+        "dimension": "应用场景",
+        "reason": "页面中提到 WxJava 支持微信开发，开发者搜索微信相关 SDK 时会点击，提升项目曝光"
+      },
+      {
+        "keyword": "Java-SDK",
+        "dimension": "部署与集成",
+        "reason": "多个项目提供 Java SDK，开发者在集成时会搜索对应关键词，能够引导到项目代码库"
+      },
+      {
+        "keyword": "轻量ORM",
+        "dimension": "性能规格",
+        "reason": "Go轻量ORM 被标记为轻量级、易上手，性能优势是搜索重点，能吸引 ORM 使用者点击"
+      },
+      {
+        "keyword": "算法",
+        "dimension": "专业领域",
+        "reason": "页面中出现 Hello 算法、算法教程等，算法是技术学习的热点，搜索量大，具备引流价值"
+      },
+      {
+        "keyword": "数据结构",
+        "dimension": "专业领域",
+        "reason": "涉及数据结构与算法教程，开发者常搜索数据结构相关内容，可带来精准流量"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/tencent/HunyuanVideo-Foley",
+    "keywords": [
+      {
+        "keyword": "腾讯大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目来自腾讯，腾讯大模型是知名技术品牌，用户搜索热度高，对腾讯相关AI项目感兴趣的开发者会主动搜索"
+      },
+      {
+        "keyword": "ComfyUI",
+        "dimension": "部署与集成",
+        "reason": "在项目信息中多次出现ComfyUI相关内容，是开发者常用的工具，搜索需求大，能吸引使用该工具的开发者点击了解"
+      },
+      {
+        "keyword": "多模态",
+        "dimension": "核心技术架构",
+        "reason": "当前AI领域的热门技术架构，很多开发者关注多模态相关技术，搜索需求较高"
+      },
+      {
+        "keyword": "视频音效生成",
+        "dimension": "应用场景",
+        "reason": "从项目名称HunyuanVideo - Foley推测与视频音效相关，这是视频制作中开发者关心的具体应用场景，有明确搜索需求"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "主流AI框架，开发者在进行AI项目开发时经常会用到，搜索使用频率高"
+      },
+      {
+        "keyword": "音频处理",
+        "dimension": "专业领域",
+        "reason": "结合项目名称推测与视频音效有关，音频处理是专业领域，相关开发者有搜索需求"
+      },
+      {
+        "keyword": "视频处理",
+        "dimension": "专业领域",
+        "reason": "项目与视频相关，视频处理是专业应用场景，从事视频开发等工作的开发者搜索需求强烈"
+      },
+      {
+        "keyword": "Foley",
+        "dimension": "应用场景",
+        "reason": "项目名称中包含Foley，在音效制作领域是一个专业术语，相关开发者会搜索该关键词了解项目"
+      }
+    ]
+  }
+]

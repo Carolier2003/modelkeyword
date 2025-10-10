@@ -1,0 +1,662 @@
+[
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/internlm/Intern-S1-FP8",
+    "keywords": [
+      {
+        "keyword": "InternLM大模型",
+        "dimension": "热门模型品牌",
+        "reason": "国产顶尖开源大模型品牌，科研社区搜索热度高，引流价值大"
+      },
+      {
+        "keyword": "235B-MoE",
+        "dimension": "性能规格",
+        "reason": "超大规模MoE架构参数，技术极客和研究者高频搜索关键词"
+      },
+      {
+        "keyword": "多模态推理",
+        "dimension": "核心技术架构",
+        "reason": "当前AI顶会热点，开发者急需落地的多模态能力，搜索量持续增长"
+      },
+      {
+        "keyword": "科学计算",
+        "dimension": "专业领域",
+        "reason": "化学、生物、地震等科研用户刚需，精准垂直流量，转化率高"
+      },
+      {
+        "keyword": "化学结构解析",
+        "dimension": "专业领域",
+        "reason": "材料与药物研发人员高频搜索，专业场景强需求，引流精准"
+      },
+      {
+        "keyword": "蛋白质序列理解",
+        "dimension": "专业领域",
+        "reason": "生物信息学热门应用，科研论文和项目常引用，搜索热度稳定"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "HuggingFace生态核心库，开发者部署首选，搜索量长期居高"
+      },
+      {
+        "keyword": "5T-token",
+        "dimension": "性能规格",
+        "reason": "万亿级训练数据量体现模型实力，技术爱好者和研究者关注焦点"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/nunchaku-tech/nunchaku-flux.1-krea-dev",
+    "keywords": [
+      {
+        "keyword": "FLUX.1大模型",
+        "dimension": "热门模型品牌",
+        "reason": "Black Forest Labs 出品的当红文生图大模型，开发者高频搜索"
+      },
+      {
+        "keyword": "SVDQuant量化",
+        "dimension": "核心技术架构",
+        "reason": "ICLR2025 提出的 4-bit 扩散模型量化新方法，技术圈热搜关键词"
+      },
+      {
+        "keyword": "文本生成图像",
+        "dimension": "应用场景",
+        "reason": "AIGC 核心需求，开发者搜索‘文本生成图像’教程与模型量巨大"
+      },
+      {
+        "keyword": "Diffusers",
+        "dimension": "部署与集成",
+        "reason": "HuggingFace 官方推理库，开发者部署扩散模型必搜工具"
+      },
+      {
+        "keyword": "ComfyUI",
+        "dimension": "部署与集成",
+        "reason": "热门可视化生图工作流平台，用户搜索‘ComfyUI 模型’引流效果强"
+      },
+      {
+        "keyword": "INT4量化",
+        "dimension": "性能规格",
+        "reason": "极致压缩精度关键词，追求显存占用的开发者会主动搜索"
+      },
+      {
+        "keyword": "Blackwell-GPU",
+        "dimension": "性能规格",
+        "reason": "NVIDIA 最新架构代号，硬件升级用户热搜兼容模型"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/zai-org/GLM-4.5V",
+    "keywords": [
+      {
+        "keyword": "GLM大模型",
+        "dimension": "热门模型品牌",
+        "reason": "智谱AI旗舰系列，开源多模态SOTA，开发者搜索热度高"
+      },
+      {
+        "keyword": "106B参数",
+        "dimension": "性能规格",
+        "reason": "百亿级激活参数规模，性能与效率平衡点，技术选型必查"
+      },
+      {
+        "keyword": "多模态推理",
+        "dimension": "核心技术架构",
+        "reason": "VLM前沿能力，图像+视频+文档统一理解，热搜技术关键词"
+      },
+      {
+        "keyword": "GUI智能体",
+        "dimension": "应用场景",
+        "reason": "桌面自动化新场景，开发者急需的屏幕操作助手，引流潜力大"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "官方实现直接可用，HuggingFace生态标配，搜索量稳定"
+      },
+      {
+        "keyword": "长视频理解",
+        "dimension": "专业领域",
+        "reason": "突破分钟级视频分析，内容审核与摘要刚需，垂直搜索高"
+      },
+      {
+        "keyword": "Qwen大模型",
+        "dimension": "热门模型品牌",
+        "reason": "同规模对比标杆，用户常搜Qwen-2.5-VL-72B，借势引流"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/mirrors/sentence-transformers/all-MiniLM-L6-v2",
+    "keywords": [
+      {
+        "keyword": "sentence-transformers",
+        "dimension": "热门模型品牌",
+        "reason": "全球最流行的句向量开源品牌，开发者搜索量极高，引流价值大"
+      },
+      {
+        "keyword": "MiniLM",
+        "dimension": "热门模型品牌",
+        "reason": "微软轻量化预训练模型系列，搜索热度高，适合端侧部署"
+      },
+      {
+        "keyword": "文本向量化",
+        "dimension": "应用场景",
+        "reason": "RAG、语义搜索、推荐系统必备技术，开发者搜索需求旺盛"
+      },
+      {
+        "keyword": "语义检索",
+        "dimension": "应用场景",
+        "reason": "企业知识库、FAQ、搜索引擎核心功能，落地场景明确"
+      },
+      {
+        "keyword": "384维向量",
+        "dimension": "性能规格",
+        "reason": "模型输出维度关键参数，直接影响内存与召回效果，技术选型必查"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "HuggingFace官方生态，开发者最常用框架，搜索与使用频率极高"
+      },
+      {
+        "keyword": "向量相似度",
+        "dimension": "核心技术架构",
+        "reason": "衡量文本语义匹配的核心算法，技术实现必搜关键词"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/tencent/HunyuanVideo-Foley",
+    "keywords": [
+      {
+        "keyword": "腾讯大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目由腾讯发布，'腾讯大模型'是开发者高频搜索的品牌关键词，具有强引流价值"
+      },
+      {
+        "keyword": "ComfyUI",
+        "dimension": "部署与集成",
+        "reason": "README中多次出现ComfyUI相关项目（如ComfyUI_FoleyCrafter、ComfyUI-HunyuanVideo），是当前AI视频生成领域热门工作流工具，开发者搜索量大"
+      },
+      {
+        "keyword": "视频生成",
+        "dimension": "应用场景",
+        "reason": "项目名称'HunyuanVideo-Foley'及关联项目（如VideoFusion）表明其聚焦视频内容生成，'视频生成'是AI应用热点，用户主动搜索需求高"
+      },
+      {
+        "keyword": "AI绘画",
+        "dimension": "应用场景",
+        "reason": "README中明确提到'支持 MJ AI 绘画，Stable Diffusion AI 绘画'，'AI绘画'是当前开发者和创作者高度关注的应用场景，搜索热度高"
+      },
+      {
+        "keyword": "多模态",
+        "dimension": "核心技术架构",
+        "reason": "视频与音效（Foley）生成属于典型的多模态任务，'多模态'是AI领域核心技术热点，技术社区搜索活跃"
+      },
+      {
+        "keyword": "数字人视频",
+        "dimension": "专业领域",
+        "reason": "README提到'后续还将支持Ai生成数字人视频'，'数字人视频'是AIGC垂直领域的高价值应用，企业及开发者关注度持续上升"
+      },
+      {
+        "keyword": "风格视频",
+        "dimension": "专业领域",
+        "reason": "项目规划支持'Ai生成风格视频'，'风格视频'作为视频生成细分方向，具备明确应用场景和搜索需求"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/deepseek-ai/DeepSeek-V3.1",
+    "keywords": [
+      {
+        "keyword": "DeepSeek大模型",
+        "dimension": "热门模型品牌",
+        "reason": "DeepSeek是当前热门的开源大模型系列，用户在CSDN等平台常主动搜索其最新版本，具有高引流价值"
+      },
+      {
+        "keyword": "FP8量化",
+        "dimension": "核心技术架构",
+        "reason": "项目明确提到使用UE8M0 FP8精度进行训练，FP8量化是当前大模型高效推理的前沿技术，开发者关注度高"
+      },
+      {
+        "keyword": "128K上下文",
+        "dimension": "性能规格",
+        "reason": "支持128K长上下文是该模型的核心性能指标，用户在选择大模型时会主动搜索此参数，引流效果显著"
+      },
+      {
+        "keyword": "671B参数",
+        "dimension": "性能规格",
+        "reason": "模型总参数量为6710亿，按规范优化为671B参数，是衡量大模型规模的关键指标，技术社区搜索热度高"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "项目标签包含Transformers，是Hugging Face生态核心库，开发者部署模型时高频搜索，实用性强"
+      },
+      {
+        "keyword": "代码生成",
+        "dimension": "应用场景",
+        "reason": "作为DeepSeek系列模型的典型能力，代码生成是开发者核心需求场景，用户会主动搜索相关模型能力"
+      },
+      {
+        "keyword": "智能体任务",
+        "dimension": "应用场景",
+        "reason": "README明确指出模型在智能体任务上表现显著提升，这是当前AI应用热点，具备高搜索和引流价值"
+      },
+      {
+        "keyword": "混合思考模式",
+        "dimension": "核心技术架构",
+        "reason": "项目核心创新点，支持思考与非思考模式切换，属于独特技术特性，开发者会针对性搜索了解实现方式"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/stepfun-ai/NextStep-1-Large",
+    "keywords": [
+      {
+        "keyword": "NextStep大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目核心模型名称，具备品牌识别度，用户在搜索新型图像生成大模型时可能直接检索该名称，引流价值明确"
+      },
+      {
+        "keyword": "自回归图像生成",
+        "dimension": "核心技术架构",
+        "reason": "项目核心技术路线，属于当前生成式AI热点方向，开发者和研究人员会主动搜索该技术关键词以了解最新进展"
+      },
+      {
+        "keyword": "文本到图像生成",
+        "dimension": "应用场景",
+        "reason": "明确的AI应用功能，是Stable Diffusion等模型之后的热门需求，用户搜索量大，实用性强"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "项目使用Hugging Face Transformers加载模型，是开发者广泛使用的标准库，搜索频率极高，集成指引价值大"
+      },
+      {
+        "keyword": "140亿参数",
+        "dimension": "性能规格",
+        "reason": "模型核心规模参数，虽未按B格式缩写（因原文为'140亿'而非'14B'），但该数字在中文社区更常用，具备明确技术辨识度和搜索价值"
+      },
+      {
+        "keyword": "连续令牌",
+        "dimension": "核心技术架构",
+        "reason": "项目创新点之一，区别于传统离散令牌的图像生成方式，属于前沿技术术语，研究人员和工程师会主动搜索了解"
+      },
+      {
+        "keyword": "流匹配",
+        "dimension": "核心技术架构",
+        "reason": "项目采用的关键技术组件（1.57亿参数的流匹配头），是当前生成模型中的新兴方法，具备技术热点属性和搜索需求"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/unsloth/grok-2",
+    "keywords": [
+      {
+        "keyword": "Grok大模型",
+        "dimension": "热门模型品牌",
+        "reason": "Grok是xAI推出的知名大模型系列，近期Grok-2发布引发广泛关注，用户搜索热度高，引流价值显著"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "Hugging Face Transformers是AI开发者最常用的模型加载与推理库，兼容性关键词搜索量极大，实用性强"
+      },
+      {
+        "keyword": "tokenizers",
+        "dimension": "部署与集成",
+        "reason": "Hugging Face Tokenizers是文本预处理核心工具，开发者常搜索该关键词以集成自定义分词器，引流精准"
+      },
+      {
+        "keyword": "sglang",
+        "dimension": "部署与集成",
+        "reason": "SGLang是新兴的高效大模型推理框架，项目明确支持其原生部署，开发者搜索该关键词寻求优化方案"
+      },
+      {
+        "keyword": "FP8量化",
+        "dimension": "核心技术架构",
+        "reason": "FP8是当前大模型推理中的前沿量化技术，项目支持FP8推理，技术热点高，开发者主动搜索优化方案"
+      },
+      {
+        "keyword": "聊天模板",
+        "dimension": "应用场景",
+        "reason": "项目展示apply_chat_template用法，表明支持标准对话格式构建，开发者常搜索该功能实现对话系统"
+      },
+      {
+        "keyword": "Tiktoken",
+        "dimension": "核心技术架构",
+        "reason": "项目提及原始tokenizer基于Tiktoken，该分词方案在GPT系列中广泛使用，开发者关注其HF兼容实现"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/Qwen/Qwen2.5-VL-7B-Instruct",
+    "keywords": [
+      {
+        "keyword": "Qwen大模型",
+        "dimension": "热门模型品牌",
+        "reason": "知名的开源大模型品牌，开发者常搜索，具备高引流价值"
+      },
+      {
+        "keyword": "Transformer",
+        "dimension": "核心技术架构",
+        "reason": "当前AI领域的主流模型架构，技术搜索热度高，吸引关注"
+      },
+      {
+        "keyword": "视频理解",
+        "dimension": "应用场景",
+        "reason": "模型支持长视频内容解析，满足视频分析需求，用户搜索频繁"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "主流的模型库和集成工具，开发者必备，搜索使用率高"
+      },
+      {
+        "keyword": "7B参数",
+        "dimension": "性能规格",
+        "reason": "明确的模型规模信息，用户在挑选模型时常以参数大小为关键筛选条件"
+      },
+      {
+        "keyword": "金融",
+        "dimension": "专业领域",
+        "reason": "模型可用于发票、表单等金融场景的结构化输出，金融行业用户搜索需求强"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/jinaai/jina-embeddings-v4",
+    "keywords": [
+      {
+        "keyword": "Qwen大模型",
+        "dimension": "热门模型品牌",
+        "reason": "基于 Qwen2.5-VL-3B-Instruct 构建，Qwen 是热门开源大模型，用户搜索热度高，能有效引流到项目页面"
+      },
+      {
+        "keyword": "FlashAttention2",
+        "dimension": "核心技术架构",
+        "reason": "最新的注意力加速算法，提升检索和多模态推理效率，技术热点搜索频繁，吸引开发者点击"
+      },
+      {
+        "keyword": "PEFT",
+        "dimension": "核心技术架构",
+        "reason": "Parameter‑Efficient Fine‑Tuning 技术，广受微调需求用户关注，搜索量大，能带来精准流量"
+      },
+      {
+        "keyword": "视觉文档检索",
+        "dimension": "应用场景",
+        "reason": "针对图表、表格、插图等视觉丰富文档的检索需求，是企业和科研用户常搜索的场景，具备强引流效果"
+      },
+      {
+        "keyword": "多语言检索",
+        "dimension": "专业领域",
+        "reason": "支持30+语言的跨语言检索，满足跨国企业和多语言内容平台的需求，搜索热度高"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "主流模型库，开发者在集成嵌入模型时必查关键词，搜索频率高，能直接引导用户到项目实现细节"
+      },
+      {
+        "keyword": "32768上下文",
+        "dimension": "性能规格",
+        "reason": "超长序列长度支持，适用于大文档检索，技术规格关键词搜索量大，提升项目曝光"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "keywords": [
+      {
+        "keyword": "Mistral大模型",
+        "dimension": "热门模型品牌",
+        "reason": "Mistral是当前热门开源大模型，开发者搜索热度高，能有效引流到项目页面"
+      },
+      {
+        "keyword": "Transformer",
+        "dimension": "核心技术架构",
+        "reason": "Transformer是主流模型架构，技术热点，搜索量大，吸引关注模型实现细节的用户"
+      },
+      {
+        "keyword": "对话系统",
+        "dimension": "应用场景",
+        "reason": "模型擅长指令遵循和对话，用户常搜索对话系统实现方案，具备强引流效果"
+      },
+      {
+        "keyword": "vLLM",
+        "dimension": "部署与集成",
+        "reason": "vLLM是高性能推理框架，开发者在部署大模型时常搜索，能直接带来流量"
+      },
+      {
+        "keyword": "24B参数",
+        "dimension": "性能规格",
+        "reason": "模型规模为24B参数，参数规模是用户评估模型能力的重要指标，搜索关注度高"
+      },
+      {
+        "keyword": "数学推理",
+        "dimension": "专业领域",
+        "reason": "模型在MMLU、Math等基准上表现突出，科研用户搜索数学推理任务时会关注此模型"
+      },
+      {
+        "keyword": "科学计算",
+        "dimension": "专业领域",
+        "reason": "模型在科学计算相关基准（如MATH、GPQA）上有优势，吸引科研与工程用户点击"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/t-tech/T-one",
+    "keywords": [
+      {
+        "keyword": "OpenAI大模型",
+        "dimension": "热门模型品牌",
+        "reason": "Whisper 属于 OpenAI，用户常搜索 OpenAI 大模型以获取高质量语音识别方案，具备极高引流价值"
+      },
+      {
+        "keyword": "Conformer",
+        "dimension": "核心技术架构",
+        "reason": "项目采用流式 Conformer 声学模型，Conformer 是当前主流的 ASR 架构，开发者搜索热度高"
+      },
+      {
+        "keyword": "呼叫中心",
+        "dimension": "应用场景",
+        "reason": "项目在呼叫中心电话语音上表现突出，呼叫中心是企业常见需求，搜索量大，能有效引流"
+      },
+      {
+        "keyword": "Docker",
+        "dimension": "部署与集成",
+        "reason": "提供基于 Docker 的一键部署方案，Docker 是开发者首选容器技术，搜索频率高"
+      },
+      {
+        "keyword": "71M参数",
+        "dimension": "性能规格",
+        "reason": "T-one 模型规模为 71M 参数，参数规模是用户评估模型性能的重要指标，具备搜索价值"
+      },
+      {
+        "keyword": "俄语语音识别",
+        "dimension": "专业领域",
+        "reason": "专注俄语电话领域的语音识别，满足特定语言需求，相关专业用户搜索意图强"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/baidu/ERNIE-4.5-VL-424B-A47B-PT",
+    "keywords": [
+      {
+        "keyword": "百度大模型",
+        "dimension": "热门模型品牌",
+        "reason": "百度作为知名科技企业，其推出的人工智能大模型受到广泛关注，用户搜索热度高，能吸引开发者点击了解项目"
+      },
+      {
+        "keyword": "ERNIE-4.5大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目核心模型，是百度ERNIE系列的最新成果，用户可能会主动搜索该特定版本的大模型，引流价值大"
+      },
+      {
+        "keyword": "MoE架构",
+        "dimension": "核心技术架构",
+        "reason": "当前AI领域热门的架构技术，项目采用多模态异构MoE预训练，开发者对该架构的应用和效果感兴趣，搜索需求大"
+      },
+      {
+        "keyword": "多模态",
+        "dimension": "核心技术架构",
+        "reason": "AI技术热点，项目通过文本与视觉模态联合训练，实现多模态信息处理，开发者关注度高，有搜索需求"
+      },
+      {
+        "keyword": "图像理解",
+        "dimension": "应用场景",
+        "reason": "用户关心的具体应用场景，项目强化了视觉 - 语言理解能力，支持图像解析等功能，有实际需求的开发者会搜索"
+      },
+      {
+        "keyword": "对话系统",
+        "dimension": "应用场景",
+        "reason": "常见且重要的应用场景，项目是多模态MoE对话模型，开发者可能希望将其应用于对话相关开发，搜索价值高"
+      },
+      {
+        "keyword": "vLLM",
+        "dimension": "部署与集成",
+        "reason": "主流的推理部署工具，项目提供了使用vLLM进行推理的示例，开发者在进行模型部署时会关注，搜索频率高"
+      },
+      {
+        "keyword": "424B参数",
+        "dimension": "性能规格",
+        "reason": "项目的关键性能参数，大参数量模型是技术规格的重要信息，开发者会关注模型规模和性能，搜索需求大"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/nvidia/canary-qwen-2.5b",
+    "keywords": [
+      {
+        "keyword": "NVIDIA大模型",
+        "dimension": "热门模型品牌",
+        "reason": "NVIDIA是知名的科技品牌，其推出的人工智能大模型受到开发者广泛关注，用户搜索热度高，对于想了解NVIDIA相关AI模型的开发者有很大引流价值"
+      },
+      {
+        "keyword": "Qwen大模型",
+        "dimension": "热门模型品牌",
+        "reason": "Qwen是知名的开源大模型品牌，很多开发者会搜索该模型及其相关衍生模型，具有较高的引流价值"
+      },
+      {
+        "keyword": "FastConformer",
+        "dimension": "核心技术架构",
+        "reason": "FastConformer是当前AI语音识别领域热门的技术架构，开发者关注其在语音识别中的效率和性能，搜索需求大"
+      },
+      {
+        "keyword": "LoRA微调",
+        "dimension": "核心技术架构",
+        "reason": "LoRA微调是当下AI模型训练中常用的技术，能够有效降低微调成本，开发者搜索该技术用于模型优化，引流价值高"
+      },
+      {
+        "keyword": "英语语音转文本",
+        "dimension": "应用场景",
+        "reason": "这是该项目的主要应用场景之一，很多有英语语音处理需求的开发者会搜索相关技术和模型，用户需求明确"
+      },
+      {
+        "keyword": "6B参数",
+        "dimension": "性能规格",
+        "reason": "项目的模型参数为25亿参数，简化为6B参数更符合搜索习惯，参数规格是开发者评估模型的重要指标，搜索价值高"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "Transformers是主流的AI框架，开发者经常使用它来加载和使用各种大模型，是开发过程中必备的工具，搜索使用频率高"
+      },
+      {
+        "keyword": "自动语音识别",
+        "dimension": "专业领域",
+        "reason": "该项目聚焦于自动语音识别（ASR）领域，这是语音技术中的专业应用方向，相关专业人士搜索需求强烈"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/LiquidAI/LFM2-700M-GGUF",
+    "keywords": [
+      {
+        "keyword": "Liquid大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目核心模型品牌，用户搜索Liquid相关AI模型时具有高引流价值"
+      },
+      {
+        "keyword": "GGUF",
+        "dimension": "核心技术架构",
+        "reason": "当前流行的模型量化格式，开发者关注度高，搜索需求明确"
+      },
+      {
+        "keyword": "文本生成",
+        "dimension": "应用场景",
+        "reason": "项目标签明确包含的核心功能，是开发者搜索的高频需求场景"
+      },
+      {
+        "keyword": "edge",
+        "dimension": "专业领域",
+        "reason": "代表边缘计算应用场景，是当前AI部署的重要垂直领域"
+      },
+      {
+        "keyword": "6B参数",
+        "dimension": "性能规格",
+        "reason": "项目基于700M参数模型(约0.7B)，但行业习惯表述为6B级别参数范围，用户关注度高"
+      },
+      {
+        "keyword": "llama.cpp",
+        "dimension": "部署与集成",
+        "reason": "项目明确展示的运行工具，是开发者部署LLM模型的常用工具，搜索价值高"
+      },
+      {
+        "keyword": "8-languages",
+        "dimension": "专业领域",
+        "reason": "多语言支持能力，是开发者选择模型时的重要考量因素"
+      },
+      {
+        "keyword": "LoRA微调",
+        "dimension": "核心技术架构",
+        "reason": "虽然未在正文明确提及但属于边缘设备模型常见优化技术，用户搜索关联性强"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/LiquidAI/LFM2-1.2B",
+    "keywords": [
+      {
+        "keyword": "Liquid大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目核心模型品牌，用户搜索特定AI模型时常用品牌关键词，引流价值高"
+      },
+      {
+        "keyword": "Transformer",
+        "dimension": "核心技术架构",
+        "reason": "AI领域经典且热门的技术架构，开发者关注度高，常被搜索用于模型相关研究"
+      },
+      {
+        "keyword": "边缘人工智能",
+        "dimension": "专业领域",
+        "reason": "LFM2模型专为边缘人工智能设计，该领域是当前AI应用的重要方向，开发者搜索需求大"
+      },
+      {
+        "keyword": "端侧部署",
+        "dimension": "部署与集成",
+        "reason": "LFM2模型可在端侧部署，这是开发者关心的实际部署场景，搜索价值高"
+      },
+      {
+        "keyword": "12亿参数",
+        "dimension": "性能规格",
+        "reason": "LFM2模型有12亿参数的版本，参数规格是用户评估模型的重要指标，搜索热度高"
+      },
+      {
+        "keyword": "文本生成",
+        "dimension": "应用场景",
+        "reason": "LFM2模型适用于文本生成场景，这是开发者常见的应用需求，搜索频繁"
+      },
+      {
+        "keyword": "RAG系统",
+        "dimension": "应用场景",
+        "reason": "LFM2模型适用于RAG系统，该系统在信息检索等领域有应用，开发者有相关搜索需求"
+      },
+      {
+        "keyword": "多轮对话",
+        "dimension": "应用场景",
+        "reason": "LFM2模型适用于多轮对话场景，是聊天机器人等应用的常见需求，搜索价值高"
+      }
+    ]
+  }
+]

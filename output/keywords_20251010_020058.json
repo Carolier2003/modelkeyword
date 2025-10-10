@@ -1,0 +1,82 @@
+[
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/internlm/Intern-S1-FP8",
+    "keywords": [
+      {
+        "keyword": "InternLM大模型",
+        "dimension": "热门模型品牌",
+        "reason": "开源多模态推理旗舰品牌，科研与工业界搜索热度持续攀升"
+      },
+      {
+        "keyword": "235B-MoE架构",
+        "dimension": "核心技术架构",
+        "reason": "超大规模混合专家架构，AI性能优化焦点，开发者高频检索"
+      },
+      {
+        "keyword": "科学计算",
+        "dimension": "专业领域",
+        "reason": "化学、蛋白质、地震等科研场景刚需，垂直用户搜索量稳定"
+      },
+      {
+        "keyword": "FP8量化",
+        "dimension": "核心技术架构",
+        "reason": "前沿低精度推理方案，模型部署降本增效热搜技术"
+      },
+      {
+        "keyword": "6B参数",
+        "dimension": "性能规格",
+        "reason": "视觉编码器核心指标，开发者选型必查参数，引流精准"
+      },
+      {
+        "keyword": "Transformers",
+        "dimension": "部署与集成",
+        "reason": "官方示例框架，开发者复制即用，搜索与引用量极高"
+      },
+      {
+        "keyword": "多模态推理",
+        "dimension": "核心技术架构",
+        "reason": "图文混合推理能力，当前AI赛道热门关键词，流量入口大"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/nunchaku-tech/nunchaku-flux.1-krea-dev",
+    "keywords": [
+      {
+        "keyword": "FLUX.1大模型",
+        "dimension": "热门模型品牌",
+        "reason": "FLUX.1是当前热门的文本到图像生成模型，用户搜索热度高，具有强引流价值"
+      },
+      {
+        "keyword": "SVDQuant",
+        "dimension": "核心技术架构",
+        "reason": "SVDQuant是项目采用的4-bit扩散模型量化核心技术，属于AI模型压缩前沿技术，开发者关注度高"
+      },
+      {
+        "keyword": "文本到图像",
+        "dimension": "应用场景",
+        "reason": "核心AI生成任务之一，用户搜索需求明确且高频，直接对应项目功能"
+      },
+      {
+        "keyword": "Diffusers",
+        "dimension": "部署与集成",
+        "reason": "Hugging Face主流扩散模型推理库，开发者广泛使用，集成文档明确提及，搜索量大"
+      },
+      {
+        "keyword": "ComfyUI",
+        "dimension": "部署与集成",
+        "reason": "热门可视化AI工作流工具，项目提供专用配置文件，用户常搜索ComfyUI兼容模型"
+      },
+      {
+        "keyword": "INT4量化",
+        "dimension": "核心技术架构",
+        "reason": "低比特量化技术热点，项目提供INT4版本模型，开发者对高效推理方案有强烈搜索需求"
+      },
+      {
+        "keyword": "NVFP4",
+        "dimension": "核心技术架构",
+        "reason": "针对NVIDIA Blackwell架构（50系GPU）的专用量化格式，技术新颖且硬件相关性强，具备高搜索价值"
+      }
+    ]
+  }
+]
