@@ -1,0 +1,82 @@
+[
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/internlm/Intern-S1-FP8",
+    "keywords": [
+      {
+        "keyword": "InternLM大模型",
+        "dimension": "热门模型品牌",
+        "reason": "官方品牌+大模型后缀，CSDN搜索量高"
+      },
+      {
+        "keyword": "235B-MoE架构",
+        "dimension": "核心技术架构",
+        "reason": "超大参数+MoE热点，技术圈热搜"
+      },
+      {
+        "keyword": "FP8量化",
+        "dimension": "核心技术架构",
+        "reason": "低精度训练推理新趋势，性能优化必搜"
+      },
+      {
+        "keyword": "科学计算大模型",
+        "dimension": "专业领域",
+        "reason": "化学、生物、地震等科研场景刚需关键词"
+      },
+      {
+        "keyword": "多模态推理",
+        "dimension": "核心技术架构",
+        "reason": "图文混合推理技术风口，开发者高度关注"
+      },
+      {
+        "keyword": "Ollama部署",
+        "dimension": "部署集成",
+        "reason": "本地一键运行热门方案，教程搜索量大"
+      },
+      {
+        "keyword": "5T-token预训练",
+        "dimension": "性能规格",
+        "reason": "超大规模数据量吸睛，彰显模型实力"
+      }
+    ]
+  },
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/nunchaku-tech/nunchaku-flux.1-krea-dev",
+    "keywords": [
+      {
+        "keyword": "FLUX.1大模型",
+        "dimension": "热门模型品牌",
+        "reason": "项目核心基础模型，具备高关注度和社区热度"
+      },
+      {
+        "keyword": "SVDQuant量化",
+        "dimension": "核心技术架构",
+        "reason": "采用前沿的4-bit扩散模型量化技术，论文发表于ICLR2025，技术辨识度高"
+      },
+      {
+        "keyword": "文本生成图像",
+        "dimension": "应用场景",
+        "reason": "模型核心功能，契合AIGC热门应用方向，搜索需求旺盛"
+      },
+      {
+        "keyword": "ComfyUI集成",
+        "dimension": "部署集成",
+        "reason": "提供官方ComfyUI工作流支持，吸引大量本地AI绘画用户"
+      },
+      {
+        "keyword": "Diffusers兼容",
+        "dimension": "部署集成",
+        "reason": "支持Hugging Face Diffusers生态，便于开发者快速部署和调用"
+      },
+      {
+        "keyword": "INT4量化模型",
+        "dimension": "性能规格",
+        "reason": "强调4-bit低精度高效推理，满足轻量化部署需求，关键词搜索量高"
+      },
+      {
+        "keyword": "NVIDIA大模型",
+        "dimension": "热门模型品牌",
+        "reason": "模型针对NVIDIA GPU（含Blackwell架构）优化，关联硬件生态引流"
+      }
+    ]
+  }
+]

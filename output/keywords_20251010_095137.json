@@ -1,0 +1,37 @@
+[
+  {
+    "model_url": "https://gitcode.com/hf_mirrors/internlm/Intern-S1-FP8",
+    "keywords": [
+      {
+        "keyword": "InternLM大模型",
+        "dimension": "热门模型品牌",
+        "reason": "开源旗舰多模态模型，社区与科研圈热度高"
+      },
+      {
+        "keyword": "MoE架构",
+        "dimension": "核心技术架构",
+        "reason": "235B MoE设计代表前沿稀疏化技术，吸引算法研究者"
+      },
+      {
+        "keyword": "FP8量化",
+        "dimension": "核心技术架构",
+        "reason": "FP8精度推理降低显存与延迟，工程部署必搜关键词"
+      },
+      {
+        "keyword": "科学计算",
+        "dimension": "专业领域",
+        "reason": "2.5T科学token训练，化学、生物、地震等科研用户精准检索"
+      },
+      {
+        "keyword": "5T-token预训练",
+        "dimension": "性能规格",
+        "reason": "超大规模数据量体现模型实力，吸引技术极客与投资人关注"
+      },
+      {
+        "keyword": "Ollama部署",
+        "dimension": "部署集成",
+        "reason": "本地一键运行需求旺盛，带动教程与工具类流量"
+      }
+    ]
+  }
+]
