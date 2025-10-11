@@ -22,6 +22,7 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
     
     def __init__(self):
         """初始化多个AI客户端"""
+        super().__init__()  # 调用基类初始化
         self.platforms = self._init_platforms()
         
     def _init_platforms(self) -> Dict[str, Dict]:
@@ -100,6 +101,54 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
                 "enabled": True
             }
         
+        # 硅基流动 (如果配置了)
+        if os.getenv("SILICONFLOW_API_KEY"):
+            platforms["siliconflow"] = {
+                "client": AsyncOpenAI(
+                    api_key=os.getenv("SILICONFLOW_API_KEY"),
+                    base_url=os.getenv("SILICONFLOW_BASE_URL", "https://api.siliconflow.cn/v1"),
+                ),
+                "model": os.getenv("SILICONFLOW_MODEL", "Qwen/Qwen3-Next-80B-A3B-Instruct"),
+                "name": "硅基流动",
+                "enabled": True
+            }
+        
+        # 火山引擎 (如果配置了)
+        if os.getenv("VOLCENGINE_API_KEY"):
+            platforms["volcengine"] = {
+                "client": AsyncOpenAI(
+                    api_key=os.getenv("VOLCENGINE_API_KEY"),
+                    base_url=os.getenv("VOLCENGINE_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3"),
+                ),
+                "model": os.getenv("VOLCENGINE_MODEL", "doubao-1-5-pro-32k-250115"),
+                "name": "火山引擎",
+                "enabled": True
+            }
+        
+        # 百度千帆 (如果配置了)
+        if os.getenv("QIANFAN_API_KEY"):
+            platforms["qianfan"] = {
+                "client": AsyncOpenAI(
+                    api_key=os.getenv("QIANFAN_API_KEY"),
+                    base_url=os.getenv("QIANFAN_BASE_URL", "https://qianfan.baidubce.com"),
+                ),
+                "model": os.getenv("QIANFAN_MODEL", "ernie-4.5-turbo-128k"),
+                "name": "百度千帆",
+                "enabled": True
+            }
+        
+        # 讯飞星火 (如果配置了)
+        if os.getenv("SPARK_API_KEY"):
+            platforms["spark"] = {
+                "client": AsyncOpenAI(
+                    api_key=os.getenv("SPARK_API_KEY"),
+                    base_url=os.getenv("SPARK_BASE_URL", "https://spark-api-open.xf-yun.com/v2"),
+                ),
+                "model": os.getenv("SPARK_MODEL", "x1"),
+                "name": "讯飞星火",
+                "enabled": True
+            }
+        
         print(f"🚀 初始化完成，支持 {len(platforms)} 个平台:")
         for platform_id, config in platforms.items():
             print(f"   - {config['name']} ({platform_id}): {config['model']}")
@@ -110,6 +159,9 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
     
     async def extract_keywords_single_platform(self, model_info: ModelInfo, platform_id: str) -> Optional[Tuple[str, List[Dict[str, str]]]]:
         """使用单个平台提取关键词"""
+        import time
+        start_time = time.time()
+        
         if platform_id not in self.platforms or not self.platforms[platform_id]["enabled"]:
             return None
         
@@ -118,15 +170,28 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
         model = platform["model"]
         platform_name = platform["name"]
         
+        # 提取模型名称用于显示
+        model_name = model_info.url.split('/')[-2:] if '/' in model_info.url else [model_info.url]
+        model_name = '/'.join(model_name)
+        
         try:
-            print(f"🔄 使用 {platform_name} 提取关键词...")
+            print(f"🔄 使用 {platform_name} 处理 {model_name}...")
             
             prompt = self.build_prompt(model_info)
             
-            # 为腾讯混元添加特殊参数
+            # 为腾讯混元和百度千帆添加特殊参数
             extra_params = {}
             if platform_id == "hunyuan":
                 extra_params["extra_body"] = {"enable_enhancement": True}
+            elif platform_id == "qianfan":
+                extra_params["extra_body"] = {
+                    "penalty_score": 1,
+                    "stop": [],
+                    "web_search": {
+                        "enable": False,
+                        "enable_trace": False
+                    }
+                }
             
             completion = await client.chat.completions.create(
                 model=model,
@@ -155,15 +220,33 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
             
             keywords = self._parse_keywords_response(response_content)
             
+            end_time = time.time()
+            processing_time = end_time - start_time
+            
             if keywords:
-                print(f"✅ {platform_name} 成功提取 {len(keywords)} 个关键词")
+                print(f"✅ {platform_name} 成功处理 {model_name} ({processing_time:.2f}s) - 提取 {len(keywords)} 个关键词")
                 return platform_id, keywords
             else:
-                print(f"❌ {platform_name} 未能提取到有效关键词")
+                print(f"❌ {platform_name} 处理 {model_name} ({processing_time:.2f}s) - 未能提取到有效关键词")
                 return None
                 
         except Exception as e:
-            print(f"❌ {platform_name} 提取失败: {e}")
+            end_time = time.time()
+            processing_time = end_time - start_time
+            error_msg = str(e)
+            print(f"❌ {platform_name} 处理 {model_name} ({processing_time:.2f}s) - 提取失败: {e}")
+            
+            # 检查是否是API限制错误（429/503）
+            if "429" in error_msg or "503" in error_msg or "rate_limit" in error_msg.lower() or "too busy" in error_msg.lower():
+                # 计算延迟时间：基础延迟 + 随机延迟
+                import random
+                base_delay = 1  # 减少基础延迟到1秒
+                random_delay = random.uniform(0.5, 1.5)  # 减少随机延迟
+                total_delay = base_delay + random_delay
+                
+                print(f"⏳ {platform_name} 遇到API限制，等待 {total_delay:.1f} 秒后重试...")
+                await asyncio.sleep(total_delay)
+            
             return None
     
     async def extract_keywords_concurrent(self, model_info: ModelInfo) -> Optional[KeywordResult]:
@@ -250,20 +333,30 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
         results = []
         lock = asyncio.Lock()
         
+        # 进度跟踪
+        progress_lock = asyncio.Lock()
+        completed_count = [0]  # 使用列表以便在不同协程间共享
+        
         # 创建worker任务
         workers = []
         for platform_id in available_platforms:
             worker = asyncio.create_task(
-                self._worker(platform_id, queue, results, lock, platform_count)
+                self._worker(platform_id, queue, results, lock, platform_count, progress_lock, completed_count, total)
             )
             workers.append(worker)
+        
+        # 启动进度监控任务
+        progress_task = asyncio.create_task(
+            self._progress_monitor(progress_lock, completed_count, total, start_time)
+        )
         
         # 等待所有任务完成
         await queue.join()
         
-        # 取消所有worker
+        # 取消所有worker和进度监控
         for worker in workers:
             worker.cancel()
+        progress_task.cancel()
         
         # 等待worker清理完成
         await asyncio.gather(*workers, return_exceptions=True)
@@ -273,26 +366,73 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
         total_time = end_time - start_time
         avg_time = total_time / len(results) if results else 0
         
-        print(f"🚀 任务池处理完成，成功处理 {len(results)} 个模型")
+        print(f"\n🚀 任务池处理完成，成功处理 {len(results)} 个模型")
         print(f"⏱️  总耗时: {total_time:.2f}秒，平均耗时: {avg_time:.2f}秒/模型")
         return results
     
+    async def _progress_monitor(self, progress_lock: asyncio.Lock, completed_count: int, total: int, start_time: float):
+        """进度监控任务"""
+        import time
+        
+        while True:
+            try:
+                await asyncio.sleep(2)  # 每2秒更新一次进度
+                
+                async with progress_lock:
+                    current_completed = completed_count[0]
+                
+                if current_completed >= total:
+                    break
+                
+                # 计算进度
+                progress_percent = (current_completed / total) * 100
+                elapsed_time = time.time() - start_time
+                
+                # 计算预估剩余时间
+                if current_completed > 0:
+                    avg_time_per_model = elapsed_time / current_completed
+                    remaining_models = total - current_completed
+                    estimated_remaining = avg_time_per_model * remaining_models
+                else:
+                    estimated_remaining = 0
+                
+                # 创建进度条
+                bar_length = 30
+                filled_length = int(bar_length * current_completed // total)
+                bar = '█' * filled_length + '░' * (bar_length - filled_length)
+                
+                # 显示进度
+                print(f"\r📊 进度: [{bar}] {current_completed}/{total} ({progress_percent:.1f}%) | 已用时: {elapsed_time:.1f}s | 预计剩余: {estimated_remaining:.1f}s", end='', flush=True)
+                
+            except asyncio.CancelledError:
+                break
+            except Exception:
+                break
+    
     async def _worker(self, platform_id: str, queue: asyncio.Queue, results: List[KeywordResult], 
-                     lock: asyncio.Lock, max_retries: int):
+                     lock: asyncio.Lock, max_retries: int, progress_lock: asyncio.Lock, completed_count: int, total: int):
         """单个平台的worker协程"""
         platform_name = self.platforms[platform_id]["name"]
         success_count = 0
+        consecutive_failures = 0  # 连续失败计数
         
         while True:
             try:
                 # 从队列获取任务
                 model_info, retry_count = queue.get_nowait()
                 
+                # 如果连续失败次数过多，增加延迟
+                if consecutive_failures > 2:
+                    delay = min(consecutive_failures * 0.5, 3.0)  # 最多延迟3秒
+                    print(f"⏳ {platform_name} 连续失败 {consecutive_failures} 次，延迟 {delay:.1f} 秒...")
+                    await asyncio.sleep(delay)
+                
                 # 尝试处理模型
                 result = await self.extract_keywords_single_platform(model_info, platform_id)
                 
                 if result:
-                    # 成功处理
+                    # 成功处理，重置连续失败计数
+                    consecutive_failures = 0
                     platform_id_result, keywords = result
                     keyword_result = KeywordResult(
                         model_url=model_info.url,
@@ -302,25 +442,40 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
                     # 线程安全地添加结果
                     async with lock:
                         results.append(keyword_result)
+                        # ✨ 实时更新排除队列
+                        self.update_exclusion_queue(keywords)
+                    
+                    # 更新进度计数
+                    async with progress_lock:
+                        completed_count[0] += 1
                     
                     success_count += 1
                     queue.task_done()
                 else:
-                    # 处理失败，检查是否需要重试
+                    # 处理失败，增加连续失败计数
+                    consecutive_failures += 1
+                    
+                    # 检查是否需要重试
                     if retry_count < max_retries - 1:
                         # 重新放回队列，增加重试次数
                         await queue.put((model_info, retry_count + 1))
                         queue.task_done()
                     else:
                         # 所有平台都试过了，丢弃
-                        print(f"⚠️  {model_info.project_name} 所有平台均失败，已丢弃")
+                        print(f"\n⚠️  {model_info.project_name} 所有平台均失败，已丢弃")
+                        
+                        # 更新进度计数（即使失败也算完成）
+                        async with progress_lock:
+                            completed_count[0] += 1
+                        
                         queue.task_done()
                         
             except asyncio.QueueEmpty:
                 # 队列为空，worker退出
                 break
             except Exception as e:
-                # 单个任务异常，不影响其他任务
+                # 单个任务异常，增加连续失败计数
+                consecutive_failures += 1
                 print(f"❌ {platform_name} 处理异常: {e}")
                 try:
                     queue.task_done()

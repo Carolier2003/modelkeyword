@@ -19,6 +19,7 @@ class KeywordExtractor(BaseKeywordExtractor):
     
     def __init__(self):
         """初始化AI客户端"""
+        super().__init__()  # 调用基类初始化
         self.client = OpenAI(
             api_key=os.getenv("MOONSHOT_API_KEY"), 
             base_url=os.getenv("MOONSHOT_BASE_URL", "https://api.moonshot.cn/v1"),
@@ -168,6 +169,8 @@ class KeywordExtractor(BaseKeywordExtractor):
             result = self.extract_keywords(model_info)
             if result:
                 results.append(result)
+                # ✨ 实时更新排除队列
+                self.update_exclusion_queue(result.keywords)
             
             # 智能延迟：根据处理速度动态调整
             import time

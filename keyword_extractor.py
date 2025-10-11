@@ -240,7 +240,7 @@ class ModelKeywordExtractor:
         Returns:
             去重后的结果
         """
-        print(f"\n🔄 步骤3: 关键词去重")
+        print(f"\n🔄 步骤3: 保存关键词（去重将在报告生成时进行）")
         
         # 执行去重
         dedup_results = self.extractor.deduplicate_keywords(keyword_results)
@@ -259,26 +259,65 @@ class ModelKeywordExtractor:
         
         return dedup_results
     
+    def _csv_deduplicate_keywords(self, keyword_results: List[KeywordResult]) -> List[KeywordResult]:
+        """
+        执行CSV级别的去重，与generate_csv_output中的逻辑一致
+        
+        Args:
+            keyword_results: 关键词结果列表
+            
+        Returns:
+            去重后的结果列表
+        """
+        # 用于去重的已使用关键词集合（保留先生成的）
+        used_keywords = set()
+        dedup_results = []
+        
+        for result in keyword_results:
+            filtered_keywords = []
+            
+            for kw in result.keywords:
+                keyword = kw['keyword']
+                
+                # 去重：保留先生成的关键词
+                if keyword not in used_keywords:
+                    used_keywords.add(keyword)
+                    filtered_keywords.append(kw)
+            
+            if filtered_keywords:
+                # 创建新的结果对象，包含去重后的关键词
+                dedup_result = KeywordResult(
+                    model_url=result.model_url,
+                    keywords=filtered_keywords
+                )
+                dedup_results.append(dedup_result)
+        
+        return dedup_results
+    
     def generate_report(self, original_results: List[KeywordResult], final_results: List[KeywordResult], output_file: str, total_attempted: int = None):
         """
         生成分析报告
         
         Args:
-            keyword_results: 关键词结果
+            original_results: 原始关键词结果（未去重）
+            final_results: 最终关键词结果（与original_results相同，因为去重在CSV阶段进行）
             output_file: 报告文件路径
         """
         print(f"\n📋 步骤4: 生成分析报告")
         
+        # 先进行CSV去重，获取真实的去重后数据
+        csv_dedup_results = self._csv_deduplicate_keywords(final_results)
+        
         # 统计分析
         total_models = len(final_results)
-        total_keywords = sum(len(r.keywords) for r in final_results)
+        total_keywords = sum(len(r.keywords) for r in csv_dedup_results)  # 使用CSV去重后的数据
         original_keywords = sum(len(r.keywords) for r in original_results)
         
-        # 按维度统计（最终结果）
+        # 按维度统计（使用CSV去重后的结果）
         dimension_stats = {}
         final_keywords = []
         
-        for result in final_results:
+        for result in csv_dedup_results:
             for kw in result.keywords:
                 dimension = kw['dimension']
                 dimension_stats[dimension] = dimension_stats.get(dimension, 0) + 1
@@ -368,8 +407,8 @@ class ModelKeywordExtractor:
 
 """
         
-        # 添加每个模型的详细结果（最终结果）
-        for result in final_results:
+        # 添加每个模型的详细结果（使用CSV去重后的结果）
+        for result in csv_dedup_results:
             model_name = result.model_url.split('/')[-2:] if '/' in result.model_url else [result.model_url]
             model_name = '/'.join(model_name)
             

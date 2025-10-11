@@ -13,6 +13,31 @@ from models import ModelInfo, KeywordResult
 class BaseKeywordExtractor(ABC):
     """基础关键词提取器抽象类"""
     
+    def __init__(self):
+        """初始化排除队列相关属性"""
+        self.keyword_frequency = {}  # 关键词频率统计
+        self.excluded_keywords = []  # 排除队列
+    
+    def update_exclusion_queue(self, keywords: List[Dict[str, str]]):
+        """更新排除队列 - 每处理一个模型后调用"""
+        # 统计频率
+        for kw_dict in keywords:
+            keyword = kw_dict.get('keyword', '')
+            self.keyword_frequency[keyword] = self.keyword_frequency.get(keyword, 0) + 1
+        
+        # 筛选高频词（出现≥10次）
+        high_freq_keywords = [
+            kw for kw, count in self.keyword_frequency.items() 
+            if count >= 10
+        ]
+        
+        # 按频率排序，取Top 50
+        high_freq_keywords.sort(
+            key=lambda k: self.keyword_frequency[k], 
+            reverse=True
+        )
+        self.excluded_keywords = high_freq_keywords[:50]
+    
     def build_prompt(self, model_info: ModelInfo) -> str:
         """
         根据需求文档构建Prompt
@@ -66,6 +91,19 @@ README内容（前800字符）：
 }}
 
 要求：4-8个关键词，每个包含keyword、dimension、reason字段。"""
+
+        # 添加排除队列（如果有的话）
+        exclusion_text = ""
+        if self.excluded_keywords:
+            exclusion_text = f"""
+
+## 🚫 强制排除关键词（高频词）
+以下关键词已被大量使用，**严禁再次提取**：
+{', '.join(self.excluded_keywords[:50])}
+
+你必须提取该模型**独特的、有区分度的**关键词，避开上述所有高频词。
+"""
+            prompt += exclusion_text
 
         return prompt
     
@@ -337,61 +375,21 @@ README内容（前800字符）：
     
     def deduplicate_keywords(self, keyword_results: List[KeywordResult]) -> List[KeywordResult]:
         """
-        对所有提取的关键词进行去重
+        不进行去重，直接返回原始结果
+        去重将在CSV生成阶段统一处理
         
         Args:
             keyword_results: 关键词提取结果列表
             
         Returns:
-            去重后的结果列表
+            原始结果列表（无去重）
         """
-        print("开始进行关键词去重...")
-        
-        # 统计所有关键词的出现频率
-        keyword_count = {}
-        for result in keyword_results:
-            for kw in result.keywords:
-                keyword = kw['keyword']
-                keyword_count[keyword] = keyword_count.get(keyword, 0) + 1
-        
-        # 对于出现次数过多的通用关键词，只保留最优的几个
-        # 放宽阈值：只有出现超过30%的关键词才算高频
-        common_threshold = max(5, len(keyword_results) // 3)  # 出现频率阈值
-        
-        deduplicated_results = []
-        global_keywords = set()
-        
-        for result in keyword_results:
-            filtered_keywords = []
-            
-            for kw in result.keywords:
-                keyword = kw['keyword']
-                
-                # 如果是高频词且已经有其他模型使用，跳过
-                if keyword_count[keyword] >= common_threshold and keyword in global_keywords:
-                    continue
-                
-                # 检查是否与已有关键词过于相似
-                if not self._is_similar_keyword_exists(keyword, global_keywords):
-                    filtered_keywords.append(kw)
-                    global_keywords.add(keyword)
-            
-            # 确保每个模型至少保留2个关键词
-            if not filtered_keywords and len(result.keywords) >= 2:
-                # 如果所有关键词都被过滤，强制保留前2个最重要的
-                filtered_keywords = result.keywords[:2]
-                print(f"警告：模型所有关键词都是高频词，强制保留前2个")
-            
-            if filtered_keywords:
-                result.keywords = filtered_keywords
-                deduplicated_results.append(result)
-        
-        print(f"去重完成，保留 {len(deduplicated_results)} 个模型的关键词")
-        return deduplicated_results
+        print("跳过关键词去重，将在CSV生成时统一去重")
+        return keyword_results
     
     def _is_similar_keyword_exists(self, keyword: str, existing_keywords: set) -> bool:
         """
-        检查是否存在相似的关键词
+        检查是否存在相似的关键词（宽松版：只检查完全重复）
         
         Args:
             keyword: 待检查的关键词
@@ -405,14 +403,10 @@ README内容（前800字符）：
         for existing in existing_keywords:
             existing_lower = existing.lower()
             
-            # 完全相同
+            # 只检查完全相同的情况，不再检查包含关系
+            # 这样可以保留更多有意义的关键词变体
             if keyword_lower == existing_lower:
                 return True
-            
-            # 包含关系（较短的词包含在较长的词中）
-            if len(keyword_lower) >= 3 and len(existing_lower) >= 3:
-                if keyword_lower in existing_lower or existing_lower in keyword_lower:
-                    return True
         
         return False
     
