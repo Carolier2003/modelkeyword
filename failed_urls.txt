@@ -1,0 +1,15 @@
+https://gitcode.com/hf_mirrors/AI-ModelScope/OminiControl
+https://gitcode.com/hf_mirrors/ByteDance-Seed/BM-Model
+https://gitcode.com/hf_mirrors/ByteDance-Seed/M3-Agent-Control
+https://gitcode.com/hf_mirrors/ByteDance-Seed/M3-Agent-Memorization
+https://gitcode.com/hf_mirrors/ByteDance-Seed/academic-ds-9B
+https://gitcode.com/hf_mirrors/Comfy-Org/HiDream-I1_ComfyUI
+https://gitcode.com/hf_mirrors/Genereux-akotenou/genomics-tf-prediction
+https://gitcode.com/hf_mirrors/JacobLinCool/MP-SENet-DNS
+https://gitcode.com/hf_mirrors/dbmdz/bert-large-cased-finetuned-conll03-english
+https://gitcode.com/hf_mirrors/deepseek-ai/DeepSeek-V3.2-Exp-Base
+https://gitcode.com/hf_mirrors/lysandre/tiny-tapas-random-sqa
+https://gitcode.com/hf_mirrors/monologg/koelectra-small-v2-distilled-korquad-384
+https://gitcode.com/hf_mirrors/openai/jukebox-1b-lyrics
+https://gitcode.com/hf_mirrors/openai/jukebox-5b-lyrics
+https://gitcode.com/hf_mirrors/unslothai/1

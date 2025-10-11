@@ -17,7 +17,7 @@ from hf_scraper import scrape_hf_model_sync
 class CSVModelReader:
     """CSV模型数据读取器"""
     
-    def __init__(self, csv_file: str = "huggingface模型数据_202509241526.csv", delay: float = 0.1, token: Optional[str] = None):
+    def __init__(self, csv_file: str = "模型提示词.csv", delay: float = 0.1, token: Optional[str] = None):
         """
         初始化CSV读取器
         
@@ -124,40 +124,61 @@ class CSVModelReader:
         Returns:
             包含详细信息的ModelInfo对象
         """
-        try:
-            print(f"正在使用爬虫获取模型详细信息: {model_info.project_name}")
-            
-            # 使用爬虫获取详细信息
-            scraped_data = scrape_hf_model_sync(model_info.url, self.token)
-            
-            if scraped_data and scraped_data.get("name") != "Error":
-                # 更新模型信息
-                model_info.readme = scraped_data.get("readme", "")
+        max_retries = 3
+        retry_delay = 2
+        
+        for attempt in range(max_retries):
+            try:
+                if attempt > 0:
+                    print(f"正在使用爬虫获取模型详细信息: {model_info.project_name} (重试 {attempt}/{max_retries-1})")
+                    time.sleep(retry_delay * attempt)  # 递增延迟
+                else:
+                    print(f"正在使用爬虫获取模型详细信息: {model_info.project_name}")
                 
-                # 解析标签JSON字符串
-                tags_json = scraped_data.get("tags", "[]")
-                try:
-                    tags = json.loads(tags_json)
-                    model_info.tags = tags
-                except json.JSONDecodeError:
-                    print(f"⚠️ 标签JSON解析失败: {tags_json}")
+                # 使用爬虫获取详细信息
+                scraped_data = scrape_hf_model_sync(model_info.url, self.token)
+                
+                if scraped_data and scraped_data.get("name") != "Error":
+                    # 更新模型信息
+                    model_info.readme = scraped_data.get("readme", "")
+                    
+                    # 解析标签JSON字符串
+                    tags_json = scraped_data.get("tags", "[]")
+                    try:
+                        tags = json.loads(tags_json)
+                        model_info.tags = tags
+                    except json.JSONDecodeError:
+                        print(f"⚠️ 标签JSON解析失败: {tags_json}")
+                        model_info.tags = []
+                    
+                    print(f"✅ 成功获取模型信息: README长度={len(model_info.readme)}, 标签数={len(model_info.tags)}")
+                    return model_info
+                else:
+                    error_msg = scraped_data.get("readme", "未知错误") if scraped_data else "无响应"
+                    print(f"❌ 爬虫获取失败: {model_info.url} - {error_msg}")
+                    
+                    if attempt < max_retries - 1:
+                        print(f"⏳ {retry_delay * (attempt + 1)}秒后重试...")
+                        continue
+                    else:
+                        # 最后一次尝试失败，保持原有的空值
+                        model_info.readme = ""
+                        model_info.tags = []
+                        return model_info
+                
+            except Exception as e:
+                print(f"❌ 爬虫获取模型详细信息失败 {model_info.url}: {e}")
+                
+                if attempt < max_retries - 1:
+                    print(f"⏳ {retry_delay * (attempt + 1)}秒后重试...")
+                    continue
+                else:
+                    # 最后一次尝试失败，保持原有的空值
+                    model_info.readme = ""
                     model_info.tags = []
-                
-                print(f"✅ 成功获取模型信息: README长度={len(model_info.readme)}, 标签数={len(model_info.tags)}")
-            else:
-                print(f"❌ 爬虫获取失败: {model_info.url}")
-                # 保持原有的空值
-                model_info.readme = ""
-                model_info.tags = []
-            
-            return model_info
-            
-        except Exception as e:
-            print(f"❌ 爬虫获取模型详细信息失败 {model_info.url}: {e}")
-            # 保持原有的空值
-            model_info.readme = ""
-            model_info.tags = []
-            return model_info
+                    return model_info
+        
+        return model_info
 
     def get_model_detail_from_web(self, model_info: ModelInfo) -> ModelInfo:
         """

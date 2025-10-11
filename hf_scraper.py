@@ -35,8 +35,8 @@ async def scrape_hf_model(url: str, token: Optional[str] = None) -> Dict[str, st
         page = await context.new_page()
         
         try:
-            # 加载页面
-            await page.goto(url, wait_until="networkidle")
+            # 加载页面，使用更宽松的等待条件
+            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
             
             # 设置认证token（如果提供）
             if token:
@@ -47,12 +47,71 @@ async def scrape_hf_model(url: str, token: Optional[str] = None) -> Dict[str, st
                 """)
                 
                 # 刷新页面以应用token
-                await page.reload(wait_until="networkidle")
+                await page.reload(wait_until="domcontentloaded", timeout=30000)
                 await page.wait_for_timeout(3000)
             
-            # 获取页面内容
+            # 等待页面完全加载
+            await page.wait_for_timeout(5000)
+            
+            # 尝试直接获取README内容
+            try:
+                readme_md = await page.evaluate("""
+                    () => {
+                        // 尝试多个选择器
+                        const selectors = [
+                            'div.dp-editor-md-preview-container',
+                            'div.gitCode-MdRender-container',
+                            'div[class*=\"readme\"]',
+                            'div[class*=\"markdown\"]',
+                            '.repo-file-markdown-content'
+                        ];
+                        
+                        for (const selector of selectors) {
+                            const element = document.querySelector(selector);
+                            if (element) {
+                                const text = element.innerText || element.textContent || '';
+                                if (text.length > 100) {  // 确保有足够的内容
+                                    return text;
+                                }
+                            }
+                        }
+                        return '';
+                    }
+                """)
+                # print(f"🔍 直接获取README，长度: {len(readme_md)}")
+            except Exception as e:
+                print(f"❌ 直接获取README失败: {e}")
+                readme_md = ""
+            
+            # 获取页面内容用于解析其他信息
             content = await page.content()
             soup = BeautifulSoup(content, "html.parser")
+            
+            # 如果直接获取失败，使用BeautifulSoup作为备用
+            if len(readme_md) == 0:
+                # 尝试多种文本提取方法
+                readme_div = soup.find("div", class_=re.compile(r"dp-editor-md-preview-container"))
+                if readme_div:
+                    readme_md = readme_div.get_text(strip=False)
+                    if len(readme_md) == 0:
+                        # 如果get_text为空，尝试获取所有文本节点
+                        readme_md = ""
+                        for text_node in readme_div.find_all(text=True):
+                            readme_md += text_node
+                    # print(f"🔍 BeautifulSoup找到README，长度: {len(readme_md)}")
+                else:
+                    # 备用选择器：使用更精确的选择器
+                    readme_div = soup.find("div", class_=re.compile(r"gitCode-MdRender-container"))
+                    if readme_div:
+                        readme_md = readme_div.get_text(strip=False)
+                        if len(readme_md) == 0:
+                            readme_md = ""
+                            for text_node in readme_div.find_all(text=True):
+                                readme_md += text_node
+                        # print(f"🔍 备用选择器找到README，长度: {len(readme_md)}")
+                    else:
+                        readme_md = ""
+                        # print("❌ 未找到README div")
 
             # 1. 模型名称 ----------------------------------------------------------
             # 面包屑最后一节 <a><span class="linkTx font-bold ...">GLM-4.6</span></a>
@@ -87,11 +146,27 @@ async def scrape_hf_model(url: str, token: Optional[str] = None) -> Dict[str, st
             # GitCode 把 README 塞在一个 <div class="dp-editor-md-preview-container ...">
             readme_div = soup.find("div", class_=re.compile(r"dp-editor-md-preview-container"))
             if readme_div:
+                # 尝试多种文本提取方法
                 readme_md = readme_div.get_text(strip=False)
+                if len(readme_md) == 0:
+                    # 如果get_text为空，尝试获取所有文本节点
+                    readme_md = ""
+                    for text_node in readme_div.find_all(text=True):
+                        readme_md += text_node
+                print(f"🔍 找到README div，长度: {len(readme_md)}")
             else:
-                # 备用选择器
-                readme_div = soup.find("div", class_=re.compile(r"readme|markdown|content"))
-                readme_md = readme_div.get_text(strip=False) if readme_div else ""
+                # 备用选择器：使用更精确的选择器
+                readme_div = soup.find("div", class_=re.compile(r"gitCode-MdRender-container"))
+                if readme_div:
+                    readme_md = readme_div.get_text(strip=False)
+                    if len(readme_md) == 0:
+                        readme_md = ""
+                        for text_node in readme_div.find_all(text=True):
+                            readme_md += text_node
+                    print(f"🔍 备用选择器找到README，长度: {len(readme_md)}")
+                else:
+                    readme_md = ""
+                    print("❌ 未找到README div")
             
             # 返回结果
             result = {
