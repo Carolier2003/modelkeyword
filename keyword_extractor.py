@@ -75,13 +75,18 @@ class ModelKeywordExtractor:
         """
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
+        # 为本次运行创建专属文件夹
+        run_output_dir = os.path.join(self.output_dir, f"run_{timestamp}")
+        os.makedirs(run_output_dir, exist_ok=True)
+        print(f"📁 本次输出目录: {run_output_dir}")
+        
         print("=" * 60)
         print("模型关键词提取系统")
         print("=" * 60)
         
         try:
             # 步骤1: 获取模型信息
-            models_file = os.path.join(self.output_dir, f"models_{timestamp}.json")
+            models_file = os.path.join(run_output_dir, f"models_{timestamp}.json")
             models = self.crawl_or_load_models(max_models, force_crawl, models_file, use_csv)
             
             if not models:
@@ -89,7 +94,7 @@ class ModelKeywordExtractor:
                 return
             
             # 步骤2: 提取关键词
-            keywords_file = os.path.join(self.output_dir, f"keywords_{timestamp}.json")
+            keywords_file = os.path.join(run_output_dir, f"keywords_{timestamp}.json")
             keyword_results = self.extract_keywords(models, keywords_file)
             
             if not keyword_results:
@@ -97,11 +102,11 @@ class ModelKeywordExtractor:
                 return
             
             # 步骤3: 去重处理
-            dedup_file = os.path.join(self.output_dir, f"keywords_dedup_{timestamp}.json")
+            dedup_file = os.path.join(run_output_dir, f"keywords_dedup_{timestamp}.json")
             final_results = self.deduplicate_keywords(keyword_results, dedup_file)
             
             # 步骤4: 生成报告
-            report_file = os.path.join(self.output_dir, f"report_{timestamp}.md")
+            report_file = os.path.join(run_output_dir, f"report_{timestamp}.md")
             self.generate_report(keyword_results, final_results, report_file, total_attempted=len(models))
             
             print(f"\n✅ 提取完成！")
@@ -412,8 +417,11 @@ class ModelKeywordExtractor:
             model_name = result.model_url.split('/')[-2:] if '/' in result.model_url else [result.model_url]
             model_name = '/'.join(model_name)
             
+            # 将URL中的gitcode.com替换为ai.gitcode.com
+            ai_url = result.model_url.replace('gitcode.com', 'ai.gitcode.com')
+            
             report_content += f"\n### {model_name}\n\n"
-            report_content += f"**URL**: {result.model_url}\n\n"
+            report_content += f"**URL**: {ai_url}\n\n"
             report_content += "**关键词列表**:\n\n"
             
             for kw in result.keywords:
@@ -447,8 +455,8 @@ class ModelKeywordExtractor:
         
         print(f"\n📊 生成CSV输出文件...")
         
-        # 用于去重的已使用关键词集合（保留先生成的）
-        used_keywords = set()
+        # 用于去重的已使用关键词集合（保留先生成的，不区分大小写）
+        used_keywords_lower = set()  # 存储小写版本用于比较
         csv_data = []
         
         for result in keyword_results:
@@ -463,12 +471,15 @@ class ModelKeywordExtractor:
             # 处理每个关键词（按生成顺序，去重保留先生成的）
             for kw in result.keywords:
                 keyword = kw['keyword']
+                keyword_lower = keyword.lower()  # 转换为小写用于比较
                 
-                # 去重：保留先生成的关键词
-                if keyword not in used_keywords:
-                    used_keywords.add(keyword)
+                # 去重：不区分大小写，保留先生成的关键词
+                if keyword_lower not in used_keywords_lower:
+                    used_keywords_lower.add(keyword_lower)
+                    # 将URL中的gitcode.com替换为ai.gitcode.com
+                    ai_url = result.model_url.replace('gitcode.com', 'ai.gitcode.com')
                     csv_data.append({
-                        '项目链接': result.model_url,
+                        '项目链接': ai_url,
                         '项目名称': project_name,
                         '高亮词': keyword
                     })

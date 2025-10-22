@@ -179,7 +179,7 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
             
             prompt = self.build_prompt(model_info)
             
-            # 为腾讯混元和百度千帆添加特殊参数
+            # 为腾讯混元、百度千帆、火山引擎、阿里百炼添加特殊参数
             extra_params = {}
             if platform_id == "hunyuan":
                 extra_params["extra_body"] = {"enable_enhancement": True}
@@ -191,6 +191,16 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
                         "enable": False,
                         "enable_trace": False
                     }
+                }
+            elif platform_id == "volcengine":
+                extra_params["extra_body"] = {
+                    "thinking": {
+                        "type": "disabled"  # 禁用深度思考能力，加快响应速度
+                    }
+                }
+            elif platform_id == "dashscope":
+                extra_params["extra_body"] = {
+                    "enable_thinking": False  # 关闭思考功能，加快响应速度
                 }
             
             completion = await client.chat.completions.create(

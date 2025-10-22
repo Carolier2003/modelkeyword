@@ -19,25 +19,25 @@ from typing import List, Dict, Set
 from tqdm import tqdm
 
 from models import ModelInfo
-from csv_reader import CSVModelReader
+from csv_reader import CSVModelReader, DEFAULT_CSV_FILE
 from hf_scraper import scrape_hf_model_sync
 
 
 class PreCrawler:
     """预爬取器"""
     
-    def __init__(self, csv_file: str = "模型提示词.csv", cache_file: str = "output/models_cache.json", 
+    def __init__(self, csv_file: str = None, cache_file: str = "output/models_cache.json", 
                  delay: float = 0.5, token: str = None):
         """
         初始化预爬取器
         
         Args:
-            csv_file: CSV文件路径
+            csv_file: CSV文件路径（None时使用全局配置）
             cache_file: 缓存文件路径
             delay: 爬取延迟时间（秒）
             token: 可选的认证token
         """
-        self.csv_file = csv_file
+        self.csv_file = csv_file or DEFAULT_CSV_FILE
         self.cache_file = cache_file
         self.delay = delay
         self.token = token
@@ -313,7 +313,7 @@ class PreCrawler:
 def main():
     """主函数"""
     parser = argparse.ArgumentParser(description="预爬取模型网页数据")
-    parser.add_argument("--csv-file", default="模型提示词.csv", help="CSV文件路径")
+    parser.add_argument("--csv-file", default=DEFAULT_CSV_FILE, help="CSV文件路径")
     parser.add_argument("--cache-file", default="output/models_cache.json", help="缓存文件路径")
     parser.add_argument("--max-models", type=int, help="最大模型数量")
     parser.add_argument("--batch-size", type=int, default=50, help="批次大小")
