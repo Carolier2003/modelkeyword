@@ -13,7 +13,7 @@ from hf_scraper import scrape_hf_model_sync
 
 # ===== 全局配置 =====
 # 只需要在这里修改CSV文件路径，其他地方会自动使用
-DEFAULT_CSV_FILE = "UGR模型.csv"
+DEFAULT_CSV_FILE = "模型提示词.csv"
 # ===================
 
 

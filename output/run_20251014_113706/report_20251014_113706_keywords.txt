@@ -1,0 +1,535 @@
+所有关键词列表
+==================================================
+
+下游用途 (2个)
+------------------------------
+图像生成引导 • 线性探针图像分类
+
+任务类型 (1个)
+------------------------------
+情感分类
+
+使用场景 (1个)
+------------------------------
+非商业许可
+
+使用工具 (1个)
+------------------------------
+pysentimiento工具包
+
+功能场景 (928个)
+------------------------------
+100-语言支持 • 100米风场 • 10分钟音频输入 • 10秒视频生成 • 16种语言 • 1M上下文 • 200种语言翻译 • 22kHz高保真音频
+256K长上下文 • 256x256图像合成 • 256种语言 • 26种语言 • 338种编程语言 • 3D点轨迹 • 3D生成模型 • 3D视觉感知
+44-kHz音频 • 52关键点检测 • 53种语言 • 720P24fps • 720P视频生成 • 8语言 • 8语言支持 • 93-languages
+94种语言 • AI作曲 • AI写作 • AI控制框架 • ASR • Android任务自动化 • Android应用任务执行 • Android应用控制
+Any-to-Any • Any2Any检索 • AutoGluon分类器 • Bedroom256 • Blender • CAD • CIFAR-10 • CIFAR-10-数据集
+COCO2017数据集 • COCO全景分割 • CelebA-HQ • CelebAMask-HQ • Cityscapes • Code-Agent • Common-Voice数据集 • DNA序列优化
+DepthFusion • DevOps-Chat模型 • DevOpsEval • DevOps生命周期问答 • DevOps领域大模型 • DocVQA微调 • Edge-AI • English
+EnglishGerman-translation • Extractive-QA • Feature-Extraction • Function-Call • GUI交互 • GUI任务 • GUI智能体 • Gemma3文本生成
+Google-Colab微调 • Graph-Machine-Learning • HTML代码生成 • HiDream-I1文生图 • I2V • Image-Text-to-Text • Image-to-3D • Image-to-Image
+ImageNet-1k-预训练 • Indonesian • JEE数学 • JSON提取 • JSON模式 • JSON输出 • Keypoint-Detection • KorQuAD
+LIBERO-Spatial • LIBERO任务套件 • LSUN • LaTeX公式识别 • Layout-model • Lean-4-形式化定理证明 • Lean-4形式化语句 • Lean-4证明
+MLP手写数字 • MP-DocVQA • MS-MARCO段落排序 • Mask-Generation • NLI俄语 • NLI模型 • NLP模型 • Next-Edit模型
+OCR推理 • OSworld基准 • Open-World-Localization • OpenCapBench • PDF解析 • PDF转Markdown • POS标注 • Prompt摄像机
+PubTables1M • Push-in-camera • PushT • PushT-环境 • RTL-Coder • RTL推理 • SA-1B数据集 • SD-XL
+SEO写作 • SQA • SQuAD • SQuAD微调 • SQuAD问答微调 • SROIE微调 • SWE-Bench-Verified • ScreenSpot-Pro
+Search-Agent • Something-Something-V2 • Spanish • Stable-Diffusion-VAE改进 • Stable-Diffusion-控制 • Swift应用开发 • TI2V • Tabular-Classification
+Tabular-Regression • Tailwind-CSS生成 • Text-Generation • Text-to-3D • Text-to-RGBD • Text-to-Video • Token-Classification • UI生成
+US-Housing-Prices-数据集 • Unsloth微调 • VQA任务 • Verilog • Verilog-AI • ViT特征提取 • WikiTable问答 • XML转换
+XSum • YAML生成 • YAML结构化 • Zero-Shot-Image-Classification • Zero-Shot-Object-Detection • Zero-shot-classification • ai-safety • anime
+audio • audio-classification • audio-text-to-text • background-removal • biology • chat • chemistry • conll03-english
+denoising • depth • depth-estimation • digits分类 • emotion-recognition • feature-extraction • fill-mask • generation
+gym-hopper • gympusht • image • image-analysis • image-text-to-text • image-to-3d • image-to-image • image-to-video
+img2vid • inpainting • librispeechasr • make-this-person-look-real • medical • mesh-generation • mikrotik • model
+normals-estimation • object-detection • overlapped-speech-detection • question-answering • regression • relative-depth • remove-background • roleplay
+sentence-similarity • speech • speech-enhancement • summarization • table-question-answering • tabular • tabular-regression • text-classification
+text-to-image • text-to-video • tokenizer • unconditional-image-generation • video-classification • video-to-video • wikisql • wikitablequestions
+zero-shot-object-detection • 一步式视频修复 • 一步生成 • 三维图像匹配定位 • 上下文压缩模型 • 上下文图像编辑 • 上下文文档 • 下游任务
+不良药物反应监测 • 中文关系抽取 • 中文写作 • 中文搜索 • 中文文本生成 • 中文语音预训练 • 中文预训练 • 中短文本翻译
+中英双语交互 • 中英双语多轮对话 • 中英双语文本生成 • 中英双语视频生成 • 中英混合发音 • 主体驱动生成 • 主题分类 • 事件捕捉
+二次创作音乐 • 二氧化碳排放量预测 • 交互式图像编辑 • 人体姿态估计 • 人像编辑一致性 • 人工智能预报系统 • 人脸年龄分类 • 代理能力
+代理能力集成 • 代码基准测试 • 代码嵌入 • 代码执行 • 代码推理 • 代码搜索 • 代码检索 • 代码生成
+代码编辑预测 • 代码能力 • 代码语言模型 • 任务抓取 • 任务适配器 • 任意分辨率修复 • 任意分辨率视频 • 位姿估计
+低延迟TTS • 低延迟响应 • 低资源语言研究 • 俄英翻译 • 俄语NLI模型 • 俄语文本蕴含 • 俄语自然语言推理 • 俄语语音识别
+俄语零样本分类 • 信息抽取 • 信息检索 • 像素级生成 • 光学字符识别 • 免OCR文档理解 • 全域行动学习 • 全景分割
+全端到端音频交互 • 公式识别 • 关键点匹配 • 兴趣点匹配 • 内容安全审计 • 内容审核模型 • 函数调用 • 函数调用增强
+分子建模 • 分钟级预测 • 创意写作 • 前端Web开发 • 前端代码生成 • 动作片段生成 • 动作选择 • 化学实体识别
+单列回归 • 单图多图支持 • 单应性估计 • 单样本图像分割 • 单样本推理 • 单步生成 • 单步视频修复 • 单目度量深度估计
+单目法向量估计 • 单目深度估计 • 单行文本识别 • 印刷体OCR • 印地语TTS • 印地语语音理解 • 印尼语NER • 印度教育AI
+参考图像编辑 • 双语GUI助手 • 双语图像理解 • 发票识别 • 口语音频分析 • 句子嵌入 • 句子文本相似度 • 句子相似度
+句子语义映射 • 可提示视觉分割 • 合同文本分析 • 合成地震速度模型 • 合成生物学 • 命名实体识别 • 哼唱检测 • 因果语言模型
+图像-文本对话 • 图像上色 • 图像交互 • 图像任意分割 • 图像修复 • 图像偏好预测 • 图像分割 • 图像分类
+图像分类微调 • 图像分类生成 • 图像分类骨干网络 • 图像到3D • 图像到图像 • 图像到文本 • 图像匹配 • 图像字幕
+图像字幕生成 • 图像定位 • 图像年龄检测 • 图像排序 • 图像推理 • 图像描述 • 图像描述生成 • 图像文本分析
+图像条件3D生成 • 图像查询 • 图像特征提取 • 图像特征提取器 • 图像特征模型 • 图像理解 • 图像生成 • 图像生成与编辑
+图像生成引导 • 图像生成视频 • 图像精炼 • 图像组合生成 • 图像编辑 • 图像解码优化 • 图像识别 • 图像超分辨率
+图像转3D • 图像转Markdown • 图像转文本 • 图像转视频 • 图像问答 • 图分类 • 图形界面任务处理 • 图文对话
+图文检索 • 图生3D • 图生图模型 • 图生视频 • 图表到文本 • 图表识别 • 图表问答 • 土壤湿度预报
+声音事件分类 • 复杂任务处理 • 复杂检索任务 • 复杂表格提取 • 复杂逻辑推理 • 复选框识别 • 多向量检索 • 多图像交互
+多图像理解 • 多图像生成 • 多图理解 • 多图编辑 • 多对多机器翻译 • 多提示生成 • 多格式视觉定位 • 多模态RAG
+多模态文档转换 • 多模态理解 • 多模态直播 • 多视图立体匹配 • 多语言 • 多语言NER • 多语言VAD • 多语言与方言支持
+多语言原生支持 • 多语言句子检索 • 多语言安全审查 • 多语言嵌入模型 • 多语言指令遵循 • 多语言支持 • 多语言文本到语音 • 多语言标点恢复
+多语言模型 • 多语言能力 • 多语言语音语义 • 多语言重新排序器 • 多语言长尾知识 • 多语言音频 • 多说话人情绪识别 • 多轮图像编辑
+多轮对话 • 多轮音频对话 • 多页文档理解 • 多页文档问答 • 大型推理模型 • 大规模指令数据 • 大规模自回归图像生成 • 学术评测
+安全审核模型 • 安全无害 • 定理证明 • 定量推理 • 实体三元组抽取 • 实体识别 • 实例分割 • 实时安全审核
+实时流式文本转语音 • 实时深度图生成 • 实时目标检测器 • 实时视频理解 • 实时视频生成 • 实时语音对话 • 实时音视频交互 • 实时音视频对话
+密码子优化 • 密集检索 • 对话场景 • 对话式AI • 对话式指向 • 小参数推理模型 • 小型表格数据集 • 小学数学
+小模型 • 小说文本生成 • 少步采样 • 居家预训练模型 • 屏幕截图交互 • 工业图像分析 • 工具使用 • 工具使用能力
+工具调用 • 工具调用优化 • 工程代码 • 巴西葡萄牙语预训练 • 带标点和大小写 • 年龄组分类 • 序列分类 • 度量深度估计
+开放目标检测 • 开源代码模型 • 开源聊天机器人 • 开源视频生成 • 强化学习微调 • 形式化推理 • 形式定理证明 • 微调
+思维推理 • 思维链 • 总降水量预报 • 情感分析 • 情感识别 • 情感语音合成 • 情感语音控制 • 意大利语支持
+房价预测 • 手写体OCR • 报告生成 • 抽取式问答 • 拒绝率降低 • 指令微调 • 指令调优 • 指令跟随
+指令遵循 • 推理 • 推理任务优化 • 推理模型 • 推理能力 • 推理轨迹生成 • 推荐系统 • 推荐系统大语言模型
+推镜式运镜 • 掩码生成 • 掩码语言建模 • 摄像机运动控制 • 摘要 • 数学推理 • 数学推理模型 • 数学竞赛问题证明
+数学能力提升 • 数学计算 • 数据提取 • 文本-视频对齐 • 文本到图像 • 文本到图像生成 • 文本到语音 • 文本到音频
+文本到音频检索 • 文本向量化 • 文本向量表示 • 文本图像理解 • 文本填充 • 文本嵌入 • 文本引导图像编辑 • 文本排序
+文本推理 • 文本提示生成音乐 • 文本摘要 • 文本理解 • 文本理解与生成 • 文本生成 • 文本生成视频 • 文本相似度评分
+文本蕴含识别 • 文本补全 • 文本转图像 • 文本转语音 • 文本转音乐 • 文本重排序 • 文本驱动图像生成 • 文本驱动视频扩展
+文档OCR • 文档VQA • 文档信息抽取 • 文档元素问答 • 文档摘要 • 文档理解 • 文档索引 • 文档表格检测
+文档视觉特征索引 • 文档视觉问答 • 文档解析 • 文档问答 • 文档问答模型 • 文生3D • 文生图 • 文生图评分
+文生视频 • 文生音乐 • 新闻摘要 • 无审查大模型 • 无条件图像生成 • 无监督目标检测 • 无边框表格检测 • 无需手动标注交互数据
+日语命名实体识别 • 日语英语双向翻译 • 日语语音识别 • 时间序列预测 • 智能代理 • 智能代理能力 • 智能体 • 智能体任务
+智能体功能 • 智能体工具 • 智能体工具对接 • 智能体工具集成 • 智能体搜索 • 智能体智能 • 智能体框架 • 智能体浏览器使用
+智能体编码 • 智能体能力 • 智能体集成 • 智能对话 • 智能设备控制 • 最小化通用控制 • 有边框表格检测 • 机器人强化学习
+机器人控制 • 机器人推箱子 • 机器人操作 • 机器人规划 • 机器翻译 • 标点预测 • 标记分类 • 检索增强生成
+概率预报 • 概率预测 • 歌词生成 • 气象预报 • 水印提取 • 汉英翻译 • 沉浸式翻译 • 法律文本预训练
+法律自然语言处理 • 法英翻译 • 法语TTS • 法语词性标注 • 流式语音生成 • 测试用例生成 • 深度估计 • 深度推理模型
+深度补全 • 混合专家视觉语言模型 • 混合检索 • 游戏操作智能体 • 激发度-支配度-效价 • 点云图 • 热带气旋路径预报 • 物体任务
+物理常识推理 • 特征主干网络 • 特征提取 • 环境声音与音乐辨识 • 生成式安全模型 • 生成模型 • 生物信息学工具 • 生物医学知识图谱构建
+生物医学视觉语言模型 • 用户-物品交互 • 用户-物品理解 • 用户偏好建模 • 用户物品交互 • 电影感运动 • 电话ASR • 目标任务
+目标检测 • 相对深度 • 相机位姿估计 • 相机内参 • 相机外参 • 相机运动分类 • 真实世界迁移 • 知识图谱SEO
+知识图谱填充 • 知识图谱推理 • 知识图谱补全 • 短视频理解 • 研究型写作 • 硬件编程AI • 神经声码器 • 科学推理
+科学问题求解 • 稀疏检索 • 空间任务 • 空间智能 • 立体声音乐生成 • 端到端GUI自动化 • 端到端三维重建 • 端到端任务自动化
+端到端目标检测 • 端到端语音指令跟随 • 策略微调 • 签名检测 • 简洁连贯摘要 • 精细化音频描述生成 • 线性探测 • 结构化数据分类
+结构化数据理解 • 结构化输出 • 结构化输出生成 • 绝对深度估计 • 统一偏好优化 • 编码能力 • 编程助手 • 网络导航
+网页浏览 • 聊天对话 • 聚类任务 • 自动形式化 • 自动标点 • 自动语音识别 • 自回归图像生成 • 自定义工具调用
+自然语言推理 • 自然语言理解 • 艺术创作 • 英文检索 • 英文语义匹配 • 英文语音识别 • 英文问答 • 英文预训练
+英法翻译 • 英语TTS • 英语语音识别 • 英语预训练 • 药物相互作用检测 • 荷兰语英语翻译 • 葡萄牙语语音识别 • 虚拟试穿
+虚拟试衣间 • 蛋白质序列建模 • 蛋白质序列转化 • 蛋白质预训练模型 • 表格事实验证 • 表格分类 • 表格回归 • 表格基础模型
+表格推理 • 表格机器学习 • 表格结构识别 • 表格解析 • 表格问答 • 表格问答模型 • 西班牙语-英语翻译 • 西班牙语NER
+西班牙语情感分析 • 视觉-语言推理 • 视觉-语言理解 • 视觉与多模态AI模型 • 视觉代理推理 • 视觉动作策略 • 视觉基础模型 • 视觉多轮对话
+视觉定位 • 视觉嵌入模型 • 视觉感知与理解 • 视觉推理 • 视觉文本交互 • 视觉文档检索 • 视觉智能体 • 视觉检索
+视觉检索模型 • 视觉模型 • 视觉空间智能 • 视觉编码器 • 视觉语言推理 • 视觉语言模型 • 视觉问答 • 视频-文本检索
+视频交互 • 视频任意分割 • 视频修复 • 视频偏好预测 • 视频分割 • 视频分类 • 视频分类头 • 视频基准测试
+视频多模态大模型 • 视频字幕生成 • 视频控制 • 视频推理 • 视频文本检索 • 视频文本理解 • 视频文本转文本 • 视频检索
+视频特征提取 • 视频理解 • 视频理解基准测试 • 视频生成 • 视频生成模型 • 视频编码器 • 视频编辑 • 视频质量提升
+视频质量评估 • 视频超分 • 视频运镜控制 • 视频重光照 • 视频问答 • 角色扮演 • 角色扮演写作 • 计算机使用代理
+计算生物学 • 记忆增强 • 设备端嵌入 • 设备端部署 • 词性标注 • 词级时间戳 • 语义分割 • 语义搜索
+语义搜索任务 • 语义检索 • 语义相似度搜索 • 语义相似度评分 • 语码混合TTS • 语种识别 • 语音令牌化器 • 语音克隆
+语音分割 • 语音到文本 • 语音合成 • 语音增强 • 语音大语言模型 • 语音情感识别 • 语音活动检测 • 语音理解
+语音直接触发 • 语音续写 • 语音编辑 • 语音翻译 • 语音聊天 • 语音触发API • 语音识别 • 语音语言识别
+语音转录 • 语音转换 • 语音转文本 • 语音转语音翻译 • 语音重建 • 语音问答 • 说话人分割 • 说话人识别
+财务文档分析 • 资源受限环境适配 • 超分辨率 • 跨具身视频学习 • 跨模态对话 • 跨模态推理 • 跨模态检索 • 跨语言任务
+跨语言检索 • 转录后处理 • 软件工程任务 • 软件工程助手 • 轻量AI模型 • 轻量型句子嵌入模型 • 轻量级NER • 轻量级摘要模型
+轻量级文本分类 • 轻量级语音模型 • 边缘AI • 边缘人工智能 • 运动学分析 • 近实时翻译 • 连续图像编辑 • 连续控制
+通用命名实体识别 • 通用逻辑推理 • 逻辑推理 • 逻辑推理增强 • 重排序模型 • 金融分析 • 金融推理 • 钢琴踏板检测
+钢琴转录 • 链接预测 • 长上下文 • 长上下文处理 • 长上下文推理 • 长上下文检索 • 长上下文理解 • 长上下文音频理解
+长文本处理 • 长文本推理 • 长文本生成 • 长时序视频理解 • 长时视频理解 • 长期记忆 • 长视频理解 • 长音频单次转录
+长音频转录 • 问答 • 问答任务 • 问答系统 • 问题回答 • 随机数据处理 • 零样本分类 • 零样本单目深度估计
+零样本图像分割 • 零样本图像分类 • 零样本文本分类 • 零样本文本条件目标检测 • 零样本泛化 • 零样本深度估计 • 零样本目标检测 • 零样本知识图谱
+零样本编辑 • 零样本视频-语言 • 零样本视频分类 • 零样本视频语言 • 零样本音频分类 • 零样本预测 • 非官方实时演示 • 非推理模式
+非结构化文档提取 • 非语言音效生成 • 非语音信息理解 • 面部解析 • 韩国语-英语语言模型 • 韩国语OCR优化 • 韩文多模态 • 韩语大模型
+韩语问答 • 音乐分析 • 音乐理解 • 音乐生成 • 音乐生成模型 • 音乐预训练 • 音符识别 • 音色克隆
+音视频流式生成 • 音频-文本转文本 • 音频内容理解 • 音频分析 • 音频分类 • 音频描述 • 音频文本转文本 • 音频查询-音频应答
+音频理解 • 音频生成 • 音频示例生成音乐 • 音频细粒度描述 • 音频翻译 • 音频语言模型 • 音频转乐谱 • 音频转录
+音频问答 • 音频问答与推理 • 音频预训练 • 预训练模型 • 额外upscale模型 • 首尾帧生成视频 • 高保真图像合成 • 高分辨率感知
+高分辨率视觉理解 • 高分辨率视频修复 • 高动态视觉效果 • 高动态视频处理 • 高层大气变量预报 • 高帧率视频理解 • 高空气象变量预报 • 高速生成
+
+功能特性 (1个)
+------------------------------
+Any-to-Any
+
+参数规格 (128个)
+------------------------------
+0.3B参数 • 0.6B-参数 • 0.6B参数 • 1.24亿参数 • 1.2B参数 • 1.3B参数 • 1.5B参数 • 1.6B参数
+1.7B参数 • 1024维嵌入 • 1060亿参数 • 109B-MoE • 10B参数 • 10亿参数 • 110B参数 • 11B参数
+120亿参数 • 128K上下文 • 128k上下文窗口 • 12B参数 • 130亿参数 • 131K上下文 • 13B参数 • 14.7B参数
+140亿参数 • 14B • 14B参数 • 15B参数 • 15参数 • 16B参数 • 17亿参数量 • 1B参数
+1万亿参数 • 1万亿总参数 • 2.21B参数 • 2.2亿参数 • 2.4B激活参数 • 2.5M参数 • 2.6B参数 • 2.7B参数
+2000标记窗口 • 203亿参数 • 209M参数 • 20亿参数 • 210亿参数 • 21B参数 • 224x224 • 22B参数
+22kHz采样率 • 2350亿参数 • 235B参数 • 236B参数 • 240亿参数 • 24B-Instruct • 24B参数 • 256分辨率
+258M参数 • 270M • 270M参数 • 270m指令微调 • 27B参数 • 288x288 • 28B参数 • 2B参数
+300B参数 • 300M参数 • 30B参数 • 30亿参数 • 32.8B参数 • 320亿激活参数 • 3210亿参数 • 321B参数
+32B参数 • 330M参数 • 34B参数 • 350M参数 • 3550B参数 • 3550亿参数 • 36B参数 • 36亿活跃参数
+3700万参数 • 38B激活参数 • 3B参数 • 3亿参数 • 3亿参数嵌入 • 40B参数 • 40亿参数 • 424B参数
+434M参数 • 44kHz采样率 • 450M参数 • 480B参数 • 4B参数 • 50亿参数 • 512倍上采样 • 512分辨率
+550M-参数 • 5B参数 • 6.5亿参数 • 600M变体 • 64帧采样 • 6710亿参数 • 671B参数 • 7.7B参数
+700M参数 • 70B参数 • 70亿参数 • 7200万参数 • 72B参数 • 74M参数 • 7B参数 • 7B推理模型
+86M参数 • 8B参数 • 91.5K参数 • 95M参数 • 9B参数 • A47B • HiDream-I1-7B参数 • ViT-B16
+bf16-精度 • marhuge • patch14-224 • small参数 • tiny模型 • 万亿参数 • 每帧16令牌 • 激活22B
+
+应用场景 (1个)
+------------------------------
+原神音乐生成
+
+应用领域 (1个)
+------------------------------
+地球物理勘探
+
+当前模型品牌名 (669个)
+------------------------------
+2DseisvelGenerator • 32B-VL-Instruct模型 • A.X-3.1 • A35B-Instruct • A3B-Base • A3B-Thinking • A3B系列 • A47B系列
+AIFS • AIFS-ENS • AIFS-Single • ALPDeepScaleR • AndroidGen • AnimateDiff-Lightning • Apriel-1.5 • Aryabhata-1.0
+Audio-Flamingo • AutoTrain • AutoTrain-US-Housing-Prices • BAAIbge-small-en-v1.5 • BCCard-VL模型 • BERT-base • BERT-large • BERTimbau-Base
+BGE • BGE-Large-En • BGE-M3 • BGE-base • BLIP • BLIP-2 • BM-Model • BRIA-AI
+BetaCeti-Beta • BigVGAN • BigVGANv2 • BioBERT-large • BiomedCLIP • BlenderLLM • Bllossom-AICA-5B • CIDASclipseg-rd64-refined
+CLAP • CLIP • CLIP-ViT-B-32 • CLIP-ViT-H-14 • CLIP-ViT-L-14 • CLIPSeg • CamMotion-Preview • Canary-Qwen-2.5B
+Chinese-Hubert • Chronos-Bolt • Chronos-Bolt-Tiny • Chronos-T5 • Chronos-T5-Small • CodeFuse-DevOps-Model-7B-Chat • CodonTransformer • CogAgent
+CogVideoX • CogVideoX-5b • CogVideoX-LoRa • CogVideoX1.5 • Cogito • ColPali • ColQwen2 • Consistency-Decoder
+ControlNet • ControlNet-v1-1 • Cosmos-Reason1 • D-FINE • DDPM • DDPMChurch256 • DETR-ResNet-101 • DETR-ResNet-50
+DINOv2 • DINOv2-giant • DINOv2-small • DISK • DPT-Hybrid • DPT-Large • DeBERTa-v3-large • DePlot
+Decision-Transformer • DeepSeek-Coder-V2 • DeepSeek-Coder-V2-Lite • DeepSeek-Prover • DeepSeek-Prover-V1 • DeepSeek-Prover-V1.5 • DeepSeek-Prover-V2 • DeepSeek-R1
+DeepSeek-R1-Zero • DeepSeek-V2 • DeepSeek-V2-Chat • DeepSeek-V2-Lite • DeepSeek-V2.5 • DeepSeek-V3 • DeepSeek-V3.1 • DeepSeek-V3.1-Terminus
+DeepSeek-V3.2-Exp-Base • DeepSeek-VL2 • DeepSeek-VL2-Small • DeepSeek-VL2-Tiny • Depth-Anything-V2 • Depth-Anything-V2-Large • DepthAnythingV2 • DevOps-Model-14B-Base
+DevOps-Model-14B-Chat • DevOps-Model-7B-Base • DevOps-Model-7B-Chat • Dia • Diffusion-Policy • DistilBARTCNN • DistilBERT • DistilBERT-base
+DistilRoBERTa-base • DobbE • DocOwl2 • Dolphin • E2-TTS • ECMWF-AI模型 • ERNIE-4.5 • ERNIE-4.5-0.3B-Base-PT
+ERNIE-4.5-21B • ERNIE-4.5-21B-A3B-Thinking • ERNIE-4.5-300B-A47B • ERNIE-4.5-300B-A47B-Base • ERNIE-4.5-VL • ERNIE4.5 • ESM-2 • ESM2t33650MUR50D
+ETH-CVGlightgluesuperpoint • EXAONE-4.0 • EdgeNeXt • ElsaV2 • EmbeddingGemma • Emu3 • Exp-Base • F5-TTS
+FLUX.1-Kontext • FLUX.1-Kontext-dev • FLUX.1-dev • FLUX.1Kreadev • Falconsaitextsummarization • Florence-2 • Florence-2-base • Frame-VAD
+French-Camembert • FusionX • GCIRS-Reasoning • GIT • GLM-4 • GLM-4-9B • GLM-4-9B-Chat • GLM-4-9B-Chat-1M
+GLM-4.1V • GLM-4.1V-9B-Base • GLM-4.5 • GLM-4.5-Air • GLM-4.5V • GLM-4.6 • GLM-4V-9B • GLM-4VQ
+GLM-Edge-4B-Chat • GLM-Edge-V-2B • GLM-Edge-V-5B • GLM-Z1-Rumination • GLiNER-multi • GME-Qwen2-VL-2B • GPT-2 • Gemma-3
+Gemma-3-270M • Gemma-3-270m • GenerativeImage2Text • Genmo • Granite-Docling-258M • Granite-TTM • Granite-TimeSeries-TTM • Graphormer
+GraphsGPT • GraspMolmo • Grok-2 • HF模型 • HelsinkiNLP • Hermes-4 • HiDream-E1 • HiDream-I1
+HiPO • Holo1.5 • HumAware-VAD • HunyuanVideo • I2V-A14B • IDM-VTON • ITDR • ITDR-LLaMA3.2-3B
+ITDR-Qwen2.5 • ImageGPT • ImageGPT-small • Intern-S1 • InternLM-XComposer2.5 • InternVL2-2B • InternVL2.5HiCoR16 • InternVL3-78B
+InternVideo2.5 • Isaac • Janus-Pro • JanusFlow • Jina-Embeddings • Jukebox-5B-lyrics • K2 • KAT-Coder
+KAT-Dev • KAT-V1-40B • KDD-CUP-2021 • Kakao多模态 • Kanana-1.5 • KaniTTS • Keras • Keye-VL
+Keye-VL-1.5 • Kimi • Kimi-Audio • Kimi-K2 • Kimi-VL • Kimi-VL-A3B • Kimi-VL-A3B-Thinking • Kimi-VL-A3B-Thinking-2506
+Kimi-VL-Thinking • Kontext-lora • Kosmos-2 • KwaiCoder • LDM3D • LFM2 • LFM2-1.2B • LFM2-350M
+LFM2-350M-ENJP-MT • LFM2-350M-Extract • LLMDet • LLMDet-Large • LLaMA-Mesh • LLaSA • LLaVA • LLaVA-NeXT-Video
+LLaVA-Video • LTX-Video • LayoutLM • LayoutLMv3 • Legal-BERT • LightGlue • Ling-1T • Liquid-AI
+LiquidAI • LiquidAI-LFM2-1.2B-Tool • Llasa-1B • LongCat • LongCat-Flash-Thinking • Lumina-DiMOO • M3-Agent • M3-Agent-Control
+MAR • MASt3RViTLarge • MERT • MERT-v1-95M • MM-Grounding-DINO • MMS-LID • MMaDA • MP-SENet-DNS
+MachineLearningLM • Magenta-RT • MagicQuill • Magistral-1.2 • Magistral-Small • MapAnything • Marigold-Normals • Marvis-AI
+Mask2Former • MaskFormer • MeloTTS • Meta-FAIR-研发 • MetricGAN-plus • MiDaS-3.0 • MiMo-Audio-7B-Base • MiMo-Audio-7B-Instruct
+Mikrotik-7 • MinerU2.5 • Ming-Lite-Omni • MiniCPM • MiniCPM-V • MiniCPM-o • MiniCPM4.1 • MiniLM
+Mistral-Small-3.2 • Mitra-Regressor • MobileNetV3 • MobileViT • Mochi-1 • Molmo • Moonlight • Motion-Lora
+MusicGen • MusicGen-stereo-small • MusicGen小型 • NAFlex • NLLB-200 • NVIDIA • Nanonets-OCR-s • NemotronNano
+NextStep-1 • Nunchaku • NusaBert • OASIS • OCRFlux • OWL-ViT • OWLv2 • OminiControl
+Omni-30B-Captioner • Omni-7B • OmniGen2 • OmniTab • OpenGVLab • OpenMed-NER • OpenReasoning-Nemotron • OpenReasoning-Nemotron-14B
+OpenVLA-OFT • Orsta-7B-i1-GGUF • PCQM4M-LSC • PCQM4M-LSCv2 • Parakeet-TDT • Patch16 • Phi-4-mini-flash • PhysicsWallahAI
+Pi0 • Pick-a-Pic • PickScorev1 • Prior-Labs • Qianfan-VL-8B • QwQ-32B • Qwen • Qwen-Image-Edit
+Qwen2-Audio • Qwen2-Audio-7B-Instruct • Qwen2-VL • Qwen2.5-14B-Instruct-1M • Qwen2.5-7B-Instruct • Qwen2.5-Omni • Qwen2.5-VL • Qwen2.5-VL-3B-Instruct
+Qwen2.5-VL-7B • Qwen3 • Qwen3-1.7B • Qwen3-1.7B-FP8 • Qwen3-14B • Qwen3-14B-MLX-6bit • Qwen3-14B-MLX-8bit • Qwen3-235B
+Qwen3-235B-A22B • Qwen3-235B-A22B-Instruct-2507 • Qwen3-235B-A22B-Instruct-2507-FP8 • Qwen3-235B-A22B-Thinking-2507 • Qwen3-30B-A3B • Qwen3-32B • Qwen3-32B-AWQ • Qwen3-32B-MLX-4bit
+Qwen3-32B-MLX-8bit • Qwen3-4B • Qwen3-4B-Base • Qwen3-4B-MLX-4bit • Qwen3-4B-Thinking-2507 • Qwen3-8B • Qwen3-Coder • Qwen3-Coder-480B
+Qwen3-Coder-480B-A35B-Instruct • Qwen3-Embedding • Qwen3-Next-80B-A3B • Qwen3-Omni • Qwen3-Omni-30B-A3B-Thinking • Qwen3Guard • Qwen3Guard-Gen • QwenLong-CPRS-7B
+RMBG-1.4 • RT-DETR • Realistic-Vision • ResNet18 • Ring-mini • RoBERTa-base-bne • RolmOCR • RuBERT
+SAM-2 • SAM-ViT • SAM-ViT-Huge • SD-XL • SDXL-Turbo • SEOcrate-4B • SRPO • SWE-Dev
+SWE-Dev-9B • Seed-OSS • SeedVR • SeedVR2 • SegFormer-b4 • SegFormerb0 • SigLIP • SigLIP-2
+Silero-VAD-CoreML • SlimSAM • SmolLM3 • So400m • SoViT-400m • Spatial-MLLM • SpeechT5 • Stable-Diffusion-2
+Stable-Video-Diffusion • StableDiffusion2-1 • Step-Audio-2 • Step-Audio-AQAA • Step3 • StepFun-Formalizer • SynthPose • T-one
+T-pro-it • T-tech • T2V-14B • T5-11B • T5-Base • T5-Large • TAPAS • TAPAS-large
+TAPEX • TATR • TC-Light • TFDecisionTrees • TRELLIS • TRELLIS-text-large • TTM • TabPFN-v2
+TabPFN-v2-clf • TabPFNMix • Table-Transformer • Tapas • Tar-1.5B • Tar-7B • TencentARCInstantMesh • TensorFlow
+Tifa-DeepSexV2 • Tifa-Deepsex • Tifa-Deepsex-14b-CoT • Tifa-DeepsexV2 • TimeSformer • TinyTimeMixers • Tongyi-DeepResearch • TrOCR
+TrOCR-base • UI-TARS • UI-TARS-1.5 • UI-TARS-72B-DPO • UI-TARS-7B-SFT • UIGENT3 • ULTRA • Ultravox
+UniVLA • Unsloth • V-JEPA-2 • VACE • VGGT • VINCIE • VITL-FPC64-256 • VJEPA-2
+VL2-Tiny • VLAC • VLAC-2B • VQBeT • Veena • Venice-Uncensored • VeriReason • ViLT
+ViT-Base-DINOv2 • ViT-Large-Patch14 • ViViT • Video-R1 • Video-R1-7B • VideoLLaMA3-7B • VideoMAE-V2 • VideoMAE-v2
+VideoMAEv2-Base • VideoMAEv2-Large • VideoScore • VideoScore-v1.1 • VisionReward-Image • VitPose-Huge • VoxCPM • Voxtral
+Voxtral-Mini • Voxtral-Mini-3B • Voxtral-Small • Wan2.1 • Wan2.1-Fun • Wan2.1-I2V-14B-480P • Wan2.1-T2V-14B • Wan2.1I2V14BFusionX
+Wan2.2 • Wan2.2-T2V-A14B • WanVideo • WebSailor • Whisper • Whisper-large-v3-turbo • Whisper-tiny.en • WikiTableQuestions
+Wolf-Rayet-2B-Prime3 • WorldPM • X-CLIP • XCodec2 • XLM-RoBERTa • XLM-RoBERTa-large • YOLOS • YOLOS-tiny
+ZoeDepth • ZoeDepth-nyu • arxiv2106.05234 • audeeringwav2vec2-large-robust-12-ft-emotion-msp-dim • autogluon-mitra • autotrain • autotrain-hmaet • autotrain-us-housing-prices
+bagel • bart-large-cnn-samsum • bart-large-mnli-yahoo-answers • beaver-7b-v1.0-cost • bert-base-cased-squad2 • bert-base-chinese • bert-base-portuguese-cased • bert-large-cased
+bert-large-uncased-whole-word-masking-squad2 • bge-reranker-v2-m3 • bge-small-zh • cdimagenet64l2 • chinese-hubert-large • colSmol-256M • continuedevinstinct • convnextv2
+convnextv2nano • ctcat256 • ddpm-cat-256 • ddpm-ema-church-256 • deberta-v3 • deberta-v3-large • detr-doc-table-detection • diffusers-cdcat256l2
+diffusers-ctimagenet64 • dino • dino-vits8 • dinov2-base • discogs-maest-30s-pw-73e-ts • distilbart-cnn • distilbart-mnli • distilbart-xsum-12-6
+ditr-e15 • dmis-lab • dreamshaper-7 • dreamshaper-8 • edgenextsmall.usiin1k • emotion-recognition-wav2vec2-IEMOCAP • face-parsing • facebookbart-base
+facebooksam-vit-base • facebooksam-vit-large • facebooksam2-hiera-large • facebookwav2vec2-base-960h • fairfaceageimagedetection • flux • fofrkontext-make-person-real • gemma-3-12b-it-qat-4bit
+gemma3 • genomics-tf-prediction • goldg • google-t5t5-3b • googleddpm-celebahq-256 • googletapas-base-finetuned-wtq • gpt-oss • gpt-oss-120b
+gpt-oss-20b • gte-large-en • gte-reranker-modernbert-base • hiera-large • hoyoMusic • indonesian-roberta-base-posp-tagger • intfloatmultilingual-e5-large-instruct • jina-embeddings-v3
+koelectra-small-v2 • layoutlm-document-qa • layoutlmv3-finetuneddocvqa • llava-hf • ltx-video • mDeBERTa-v3-base • marvis-tts • mbart-large-50
+microsofttable-transformer-structure-recognition • mitra分类器 • mobilenetv3small100 • ms-marco-MiniLM-L6-v2 • multi-qa-MiniLM • mxbai-embed • mxbai-embed-large-v1 • naverDUSt3RViTLargeBaseDecoder512dpt
+ner-english-fast • nli-deberta-v3-large • nomic-embed-text-v1.5 • nomic-embed-vision • nvidia • o365v2 • oiv6 • opus-mt-en-de
+opus-mt-en-fr • opus-mt-es-en • opus-mt-fr-en • opus-mt-nl-en • opus-mt-ru-en • opus-mt-zh-en • palmyra-mini • paraphrase-MiniLM-L6-v2
+paraphrase-multilingual-MiniLM • pcolocautotrain-600-dragino • pcolocautotrain-dragino-7-7 • pcolocautotrain-dragino-7-7-max495m • pcolocautotrain-only-rssi • pegasus • pegasus-large • pianotrans
+punctuate-all • pyannote-audio-model • pyannote-segmentation • pydevmini1 • robertuito • rubert-base-cased-nli-threeway • sam2 • samvitbase
+skops • smol-vision • stable-diffusion-xl-diffusers • stable-video-diffusion • suryalayout3 • tapas-small • tapex • tapex-base
+tiny-tapas-random-sqa • ultra3g • unsloth • vit-age-classifier • vitbasepatch16224.dino • wav2vec2-large-xlsr-53-japanese • wav2vec2-large-xlsr-53-portuguese • wav2vec2-large-xlsr-53-russian
+whisper-base.en • xlm-roberta-large-xnli • xlm-roberta-ner-japanese • xt-1-1 • 万2.1 • 关系抽取模型 • 决策Transformer • 字节大模型
+快手Keye • 文心一言 • 智谱AI • 月之暗面 • 混元 • 百度大模型 • 腾讯大模型 • 豆包
+赫尔辛基大学翻译模型 • 通义千问 • 阿里大模型 • 阿里大模型-Qwen2.5-VL-32B-Instruct • 阿里大模型系列
+
+当前模型品牌名相关 (1个)
+------------------------------
+LLMDet资源集合
+
+技术参数 (1个)
+------------------------------
+32x32分辨率
+
+技术特性 (1218个)
+------------------------------
+1000万长上下文 • 100段影像训练 • 1024x1024分辨率 • 10秒生成 • 11201120高分辨率 • 119种语言覆盖 • 12-1蒸馏 • 128K上下文
+128K上下文长度 • 128K扩展上下文窗口 • 128K长上下文 • 128k上下文 • 128专家 • 12层Transformer • 131072-tokens • 131072上下文
+131K上下文 • 131K长上下文 • 131k上下文 • 1360768分辨率 • 14帧短视频 • 16-bit格式 • 16kHz采样率 • 16kHz音频
+19类实体 • 1M上下文 • 1x1-卷积捷径 • 1步推理 • 200K上下文 • 2048维稠密嵌入 • 20ms帧 • 20万实例数据集
+24kHz音频 • 256K-长上下文 • 256K上下文 • 256K长上下文 • 256K长文本理解 • 262k上下文 • 26种语言 • 27-languages
+2Bits • 2比特量化 • 3232图像生成 • 324标记编码 • 32768上下文 • 32768序列长度 • 32K-原生上下文 • 32K上下文
+32k-token上下文 • 32kHz-EnCodec • 32k上下文 • 32x32分辨率 • 32像素块分辨率 • 32帧视频采样 • 36万亿tokens预训练 • 36层模型
+384维向量 • 3D-Resampler • 3D-VAE • 3D变分自编码器 • 4-bit格式 • 4-bit量化模型 • 4096标记词汇表 • 48层网络
+48帧推理 • 4K分辨率 • 4bit量化 • 4bit量化模型 • 4位2位无损量化 • 4位无损量化 • 4位量化 • 4比特2比特无损量化
+4比特无损量化 • 4比特量化 • 4码本生成 • 50-tokenss • 512倍上采样 • 570GB清洗语料 • 576x1024-分辨率 • 5T数据预训练
+64K上下文 • 64K输出标记 • 64k上下文 • 64帧采样 • 6B视觉编码器 • 6bit量化 • 768维嵌入 • 7B级多模态
+7x7-卷积 • 8192上下文 • 8x8补丁嵌入 • 8帧视频输入 • 92.20准确率 • 94层 • 96K长上下文 • 97-languages
+A22B-模型架构 • A35B-Instruct • A3B系列 • A47B • A47B架构 • AF-Whisper编码器 • ANLI • ANLI基准
+APO对齐 • ASR模型 • ASR模式 • AWQ量化 • AWQ量化模型 • Action-Operation-Sensitive格式 • Adam优化器 • Agent能力
+Agent记忆机制 • AnglE损失函数 • Any-to-Any • Apache-2.0许可 • Apache-2.0许可证 • Apache-License-2.0 • Audio-to-Audio • AutoModel
+AutoThink • AutoThink范式 • AutoTrain-训练 • AutoTrain回归 • AutoVideoProcessor • BART架构 • BCE-损失函数 • BERT-Base架构
+BERT-base • BEiT编码器 • BLEU-24.9 • BLEU评分 • BNE语料 • BaseDecoder512 • BiPali • BiSigLIP
+BrowseComp • CAPITEL数据集 • CC-BY-4.0翻译模型 • CCBY4.0-license • CLIP-H微调 • CLIP-tokens • CLIP主干网络 • CLIP多模态
+CLIP视觉backbone • CLIP骨干网络 • CLS标记 • CLS标记特征 • CNN-Transformer • COCO数据集 • CPU实时推理 • CRPS优化
+CSS10数据集 • CTC束搜索 • CVPR-2025 • CVPR2023 • CVPR23 • CVPR23视频模型 • CfgDistill • ChatML模板
+CityScapes微调 • Codec-Does-Matter • ColBERT • ColBERT策略 • ColBERT风格 • Common-Voice数据集 • Conformer • ControlNet原生支持
+Creative-Commons-Attribution-4.0 • CreativeML • Cross-Encoder • DALL-E-3技术 • DDIM • DDIM调度器 • DDPM • DDPM模型
+DEISMultistepScheduler • DEMAND • DETR • DETR损失函数 • DETR架构 • DINOv2 • DINOv2预训练 • DINOv2骨干网络
+DORA系统 • DPO微调 • DPT架构 • DPT框架 • DPT框架扩展 • DataComp.XL • DeepSeekMoE • DiT架构
+Diffusers • Diffusion-Transformer • Diffusion概率模型 • Dual-Masking • EMA权重平均 • Eagle-解码 • Embedding模型 • EnCodec令牌器
+EnCodec标记器 • Euclideanizing-Graph • EvoCoT • FLD-5B数据集 • FP16混合精度 • FP16版本 • FP8 • FP8-scaled
+FP8-版本 • FP8混合精度 • FP8混合精度训练 • FP8训练 • FP8量化 • FP8量化推理 • FP8量化模型 • Fairseq
+FastConformer • Five-shot-DevOps推理 • Flair • Flash-Attention • Flash-Attention-2 • FlashAttention2 • Foundation-Model • GGUF
+GGUF-Q8量化 • GGUF格式 • GGUF量化 • GGUF量化模型 • GLU激活 • GPTQInt4 • GQA注意力 • GRPO微调
+Gemma3指令微调 • GenSelect生成式选择 • Graph-Machine-Learning • Group-Relative-Policy-Optimization • HPR • HTS-AT融合 • Heterogeneous-MoE-Structure • HiCo时空压缩
+HoNY数据集 • HubertModel • Hubert模型 • Hugging-Face兼容 • Hybrid-model • I2V • IAM数据集 • ICDAR2019训练
+ICML-2024 • IDA训练 • IEMOCAP • INT4-量化 • IQ1S • IQ1量化 • IQ2IQ3量化 • IQ2XS
+IQ3S • IQ4XS • IQ量化 • Image-Segmentation • Image-Text-to-Text • Image-to-Image • ImageNet-1k • Inception-Score
+Interleaved图文训练 • IterResearch • JAX • JSUT数据集 • Joblib • K2 • KC-MMBench • Keras
+Kinetics-400 • LAION-2B • LAION-Audio-630K • LAMB-优化器 • LAMB优化器 • LLM模式 • LLM语音合成 • LLaVA-NeXT架构
+LPIPS优化 • LSTM-CRF架构 • LSUN数据集 • Langevin-动力学 • LibriTTS • LiveCodeBench • Llasa微调 • LoRA
+LoRA微调 • LoRA秩16 • LoRa适配器 • LongCoT • MAE77.527 • MAE权重初始化 • MGRPO • MGRPO算法
+MIT • MIT许可 • MLA • MLA注意力 • MLM • MLM范式 • MLX格式 • MMBench评测
+MNLI • MTEB • MTEB-en • MXFP4量化 • Mamba2混合架构 • MarbleNet • Mask-Generation • Matryoshka-Representation-Learning
+Matryoshka嵌入 • Matryoshka表示 • Matryoshka表示学习 • MegatronLM训练 • Mixture-of-Experts • MoE架构 • Mobile-Vision • MobileNetV2风格
+Modality-Isolated-Routing • Modeling-World-Preference • ModernBERT • MoonViT • Motion-LoRAs • Multilingual • Muon-optimizer • MuonClip优化器
+Muon优化器 • MusicCoCa • NBFNet • NVFP4-量化 • NanoCodec • OASIS-instruct-数据合成算法 • OCRfree-处理 • OCR增强
+ONNX • OPUS-dataset • OPUS数据集 • OS-agent-grounding • Objects365预训练 • OmniBench • OmniContext • OpenCLIP
+OpenRAIL-M • PD解耦技术 • PEFT • PKU-SafeRLHF • PMC预训练 • PMP • PNDM • PaliGemma-3B
+PaliGemma-3B扩展 • Patch嵌入 • Phantom • Pile-NER • PixMo • Prior-data-based-learning • PromptRewrite • PubMedBERT编码器
+PubMed预训练 • PubTables1M • PyTorch • Q2K • Q40格式 • Q6KL量化 • Q80 • Q80量化
+R1写作风格 • R2-0.632 • R20.502 • R2决定系数0.922 • RAG • RLHFlow • RLHF优化 • RMSProp优化器
+RMSProp模拟 • RMS归一化 • RVC • RandAugment • ReAct推理 • Registers • Replicate训练 • ResNet34
+RoBERTa解码器 • RoPE位置编码 • Robotics • Rust • SA-1B数据集 • SA-1B预训练 • SAT权重 • SDEdit技术
+SFT • SNAC神经编解码器 • SQuAD • SQuAD2-微调 • SVDQuant • SWE-Verified • SWE-bench-Multilingual • Safetensors
+Safetensors格式 • SailorFog-QA • Segformer • Sentence-Similarity • SentencePiece • SentencePiece-tokenizer • SentencePiece分词 • SentencePiece预处理
+Seq2SeqLM • Sigmoid-Loss • Space-Time-Attention • SpectroStream • SpeechBrain • Step-SRPO • StepDistill • Stockmark数据集微调
+Structured-3D-Latents • SwiGLU优化 • Swin • Swin-Large • T5-Small • T5架构 • TDT-解码器 • TMRoPE
+TMRoPE-位置编码 • TMRoPE技术 • Tabular-Regression • TensorFlow • Terminal-bench • Text-to-Audio • Think-off模式 • Think-on模式
+Thinker-Talker架构 • ThinkerTalker-架构 • ThinkerTalker架构 • ThinkerTalker设计 • Transformer • Transformer-align • Transformer-based • Transformers
+Transformers.js • Tunesformer • UE8M0-FP8 • UI定位 • UniGRPO • UnlabeledHybrid-1M • Unsloth-Dynamic-2.0 • VACE
+VAD • VQAScore • VQBeT-policy • ViT • ViT-B • ViT-B16 • ViT-H14 • ViT-Large
+ViT-base • ViT-g-384 • ViT-like-Transformer • ViT图像编码器 • ViT大型骨干 • Video-Text-to-Text • VideoMME基准 • Vision-Transformer
+Vision-Transformer编码器 • Vision2Seq • VisionTokenizer • VitPose-Base • Voicebank • Wan-VAE • Wav2Vec2 • Wav2Vec2FeatureExtractor
+Wav2Vec2特征提取器 • WenetSpeech预训练 • WenetsSpeech-L子集 • Whole-Word-Masking • WikiTableQuestions微调 • XLM-RoBERTa微调 • XLSR微调 • XNLI
+XNLI数据集 • YaRN扩展 • YaRN扩展上下文 • YaRN技术 • YaRN长上下文 • Yahoo-Answers • Yarn技术 • ZeRO-1分布式
+Zero-shot-DevOps推理 • abc-乐谱切片 • absolute-depth-estimation • adam优化 • agent-capabilities • artistic • arxiv1912.0877 • arxiv2103.15691
+arxiv2104.14294 • arxiv2106.00666 • arxiv2107.07653 • arxiv2311.16098 • audio • audio-to-audio • averagepool • bfloat16推理
+binary-quantization • bipartite-matching-loss • catmlpdpt • chain-case微调 • chr-F评分 • cnndailymail • computer-vision • conll2003
+consistency-model • cot • distilled模型 • exam-centric • f8-decoder-微调 • fcmae • feature-extraction • forcedbostokenid参数
+fp16变体 • fp8 • fp8量化蒸馏模型 • generative-model • getdetailedinstruct • grit-id数据集 • harmony响应格式 • hypothesistemplate
+i1-IQ系列 • i1-IQ量化 • imagenet-1k预训练 • in-the-wild • incremental-pretraining • indonlu数据集 • inpainting • int8量化蒸馏模型
+latent-actions • latent-扩散模型 • llamacpp-imatrix-量化 • metric-depth-estimation • miniF2F测试 • mmproj文件 • msp-podcast • mteb
+multilingual • multinli • neural-SQL-executor • nli • no-VAE • non-thinking-mode • normalize-before • olmo
+preference-model • qk层归一化 • quantized • realistic • reasoning • reinforcement-learning • resegmentation • reward-model
+schedulingddim • schedulingddpm • schedulingpndm • scikit-learn • sentence-transformers • seq2seq • sequence-tagger-model • sft
+spa-eng • speech • stable-diffusion-inpainting • stable-diffusion-xl • t5-efficient-tiny • tabular • text-classification • text-generation-inference
+thinking-mode • timm • token-classification • transformer-align • transformers实现 • transformers模型 • uncased • uncased模型
+vision • wav2vec2 • whole-word-masking • wmteuroparl • xDiT并行推理 • xlm-roberta-base微调 • xsum • zero-shot
+zero-shot-classification • 一致性RMS更新 • 一致性模型 • 一致性蒸馏 • 一致性训练 • 万-VAE • 三级严重程度分类 • 三级安全分类
+三级风险分类 • 三级风险等级分类 • 上下文学习 • 上下文学习范式 • 上下文感知语音生成 • 下一个视觉-token-预测 • 下一句预测 • 不确定性最小化查询
+两阶段TTS • 两阶段历史重采样策略优化 • 两阶段流水线 • 两阶段生成 • 中文RoBERTawwm-ext • 中期训练 • 中等轨迹 • 中英文混合
+中间预训练 • 主权AI • 乘法门控 • 二分匹配损失 • 二次开发 • 人机任务联觉 • 人类偏好对齐 • 仓库级程序分析
+代理强化学习 • 代理能力 • 代码定位 • 任务中心化潜在动作 • 任务定制化嵌入 • 任务泛化能力 • 任意宽高比图像 • 企鹅视频基准
+优化微调 • 优化微调技术 • 位置重置 • 低幻觉率 • 低幻觉音频描述 • 低延迟ASR • 低维稠密向量 • 余弦学习率调度
+修正流 • 先验数据学习 • 全局批负载均衡 • 全局最优定位自蒸馏 • 全模态 • 全模态模型 • 全自动数据合成 • 共享嵌入空间
+具身推理 • 决策森林模型 • 冷启动推理数据 • 冷启动数据 • 冷启动数据混合 • 冷启动自动思考 • 减少重复错误 • 函数调用
+分位数预测 • 分割一切视觉Transformer • 分数蒸馏 • 分步序列强化学习 • 剪枝优化模型 • 加权变分界 • 加权矩阵量化版本 • 加权量化
+动作扩散 • 动作空间建模 • 动态2.0 • 动态FPS采样 • 动态分辨率 • 动态分辨率训练 • 动态图像分辨率 • 动态推理
+动态特征分析 • 动态角色切换 • 动态计算机制 • 动态静态视觉场景推理 • 匈牙利匹配 • 单列回归 • 单样本生成 • 单样本解决方案
+单模型多模式 • 单轮对话 • 单轮音频输入模型 • 卷积码量化 • 卷积码量化算法 • 历史重采样 • 原生MXFP4量化 • 原生分辨率视觉编码器MoonViT
+原生智能体 • 原生端到端 • 原生长上下文 • 去噪分数匹配 • 去噪扩散概率模型 • 双向扩散 • 双向编码器 • 双向表征
+双模式 • 双模式推理 • 双码本音频分词器 • 双采样策略优化 • 双重掩码策略 • 反刍能力 • 反思模型 • 反思能力
+句子嵌入 • 可变形注意力 • 可引导模型 • 可微分等值面提取 • 可提示视觉分割 • 可调解码层 • 可配置推理力度 • 可配置推理强度
+右填充方式 • 合成SQL语料库 • 合成数据微调 • 合成数据集 • 合成数据预训练 • 合成标注图像 • 合成表格数据 • 向量自定义维度
+噪声数据过滤 • 噪声过滤 • 噪声鲁棒训练 • 噪声鲁棒语音 • 回归模型 • 回归版本模型 • 因果语言模型 • 固定预训练文本编码器
+图-Transformer • 图Transformer • 图像拼接训练 • 图像补丁 • 图像补丁嵌入 • 图像视频统一生成 • 图神经网络 • 块因果扩散
+基于MM-Grounding-DINO改进 • 基于Transformer • 基于UI的问答 • 基础模型 • 填充掩码 • 增量训练 • 增量预训练 • 复杂卷积优化
+复杂推理 • 复杂运动生成 • 外部工具集成 • 外部知识选择性推理 • 多token预测 • 多分辨率 • 多分辨率图像 • 多功能检索
+多向量表示 • 多头潜伏注意力 • 多尺度子带CQT判别器 • 多尺度梅尔频谱图损失 • 多控制条件 • 多智能体协同 • 多智能体协同工作 • 多标记预测
+多格式视觉定位 • 多模态 • 多模态RAG • 多模态大语言模型 • 多模态异构MoE • 多模态异构MoE预训练 • 多模态异构混合专家预训练 • 多模态感知
+多模态指令跟随 • 多模态推理 • 多模态模型 • 多模态补充文件 • 多模态评估 • 多模态语音 • 多模态预训练 • 多步决策
+多步推理 • 多矩阵分解注意力 • 多粒度嵌入 • 多级并行计算 • 多视觉输入 • 多语言支持 • 多语言支持模型 • 多语言模型
+多语言长尾知识 • 多轮上下文学习 • 多轮交互微调 • 多轮交互改写 • 大型模型 • 大型语言模型协同训练 • 大小写敏感 • 大规模上下文
+大规模视觉编码器 • 大规模视频预训练 • 大规模预训练 • 大语言模型协同训练 • 子目标分解 • 完整思维链 • 实时处理 • 实时安全监控
+密集视觉标注 • 密集预测Transformer • 对抗后训练 • 对抗扩散蒸馏 • 对比学习 • 对象查询 • 对象查询机制 • 小尺寸模型
+小样本学习 • 少样本学习 • 少样本预测 • 嵌套式嵌入 • 工具调用 • 工具调用优化 • 工具调用推理 • 差分注意力
+布局感知问答 • 布局语言模型 • 并行生成头 • 广义IoU损失 • 序列到序列模型 • 序列视频数据洞察提取 • 延迟交错处理 • 开放词汇
+开放词汇表分类 • 开源指令微调数据集 • 开源智能体 • 异构MoE • 异构MoE架构 • 异构MoE结构 • 异构MoE预训练 • 异构混合并行
+引导蒸馏 • 弱监督训练 • 强化学习 • 强化学习对齐 • 强化学习推理 • 强化学习训练 • 强化学习赋能 • 强化微调
+归一化系数 • 归一化预处理 • 形式化数学语言 • 微调模型 • 微调版 • 微调训练 • 快慢思考模式 • 快速推理
+思维推演 • 思维推演能力 • 思维推理 • 思维模式 • 思维模式与非思维模式 • 思维模式切换 • 思维深度增强 • 思维能力增强
+思维范式 • 思维链 • 思维链推理 • 思维链融合 • 思考模式 • 思考模式切换 • 思考范式 • 思考长度提升
+性能优化 • 感知语言模型 • 感知重采样器 • 慢-快视频编码 • 成对评论家 • 扩散先验 • 扩散变换器 • 扩散大型语言模型
+扩散大模型 • 扩散对抗后训练 • 扩散技术 • 扩散损失函数 • 扩散概率模型 • 扩散模型 • 扩散视频模型 • 批次大小256
+技能整合 • 抗混叠激活 • 抗混叠激活CUDA内核 • 拒绝采样 • 拒绝采样微调 • 持续预训练 • 指令微调 • 指令微调数据集
+指令微调模型 • 指令微调语言模型 • 指令跟随 • 指令跟随任务 • 指令遵循 • 指令遵循任务 • 指令遵循优化 • 指令遵循训练
+推理优化 • 推理效率提升 • 推理能力 • 推理规模扩展 • 推理轨迹优化 • 推荐指令微调 • 掩码语言建模 • 掩码语言模型
+掩码预测 • 提炼模型 • 提示词拼接技术 • 提示词改写 • 提示词视觉任务 • 支持微调 • 数值建模稳健性 • 数据自控
+文本-视觉信息融合 • 文本MoE模型 • 文本到文本 • 文本到文本框架 • 文本到文本迁移转换器 • 文本对齐表征 • 文本提示遵循 • 文档结构理解
+旋转增强 • 无G2P多语言TTS • 无位置嵌入 • 无分类器指导采样 • 无分词器TTS系统 • 无分词器模型 • 无微调头 • 无损量化
+无条件生成 • 无标注交互学习 • 无监督微调 • 无监督深度估计 • 无监督视觉模型 • 无辅助损失负载均衡 • 无辅助损失负载平衡 • 无需矢量量化
+日语维基百科数据 • 时间一致性 • 时间一致性生成 • 时间序列基础模型 • 显存优化 • 智能体功能 • 智能体强化学习 • 智能体数据生成
+智能体数据预训练 • 智能体智能 • 智能体能力 • 更高思考效率 • 朗之万动力学 • 权重衰减 • 条件生成 • 样本效率
+案例法预训练 • 梯度解耦嵌入共享 • 检索增强 • 模型压缩 • 模型融合 • 模态专项后训练 • 模态转换模块 • 模态隔离路由
+注意力-前馈网络解耦 • 注意力前馈网络解耦 • 注意力统计池化 • 流匹配头 • 流式TTS模块 • 流式合成 • 流式检测 • 流式语音识别
+流式音频生成 • 测试用例生成 • 深度图 • 深度思考能力 • 深度推理 • 混合专家 • 混合专家架构 • 混合专家模型
+混合奖励系统 • 混合思考模式 • 混合推理 • 混合推理模型 • 混合推理模式 • 混合检查点 • 混合注意力 • 混合注意力机制
+混合液态模型 • 混合长链思维 • 混合音频输入 • 渐进式有损解压缩 • 渐进式有损解压缩方案 • 滑动窗口变换 • 滑动窗口变换处理器 • 潜在扩散
+潜在扩散模型 • 灵活控制思考预算 • 物理AI • 特定模态后训练 • 特征匹配损失 • 特征骨干网络 • 生成式人工智能 • 生成式安全模型
+生成式解决方案 • 生成式解决方案选择 • 用户-物品交互 • 用户-物品理解 • 用户偏好建模 • 电影级美学 • 百万字上下文 • 监督微调
+目标检测 • 直接多步预测 • 相对位置嵌入 • 真实世界代码编辑数据集微调 • 真实无标注图像 • 知识推理融合 • 知识蒸馏 • 矩阵量化
+短卷积 • 神经SQL执行器 • 神经声码器 • 离散扩散 • 离散文本令牌和连续图像令牌训练 • 离散空间-token-化 • 稀疏注意力 • 稀疏视角重建
+稠密向量空间 • 稠密模型与混合专家模型 • 稳健函数调用 • 稳定性优化 • 稳定抓取方式 • 空间时间理解 • 端到端任务自动化 • 端到端扩散自回归架构
+端到端语音指令跟随 • 算法优化机制 • 系统提示格式化 • 线性学习率调度器 • 细粒度分布精化 • 细粒度多维度评分 • 细粒度音色控制 • 结构优化模型
+结构化3D潜变量 • 结构化响应 • 结构化模板 • 结构化输出 • 统一偏好优化 • 统一偏好优化UPO • 统一分割范式 • 统一变换器架构
+统一扩散架构 • 统一模态 • 编码器-解码器 • 编码器-解码器架构 • 编码器-解码器模型 • 翻译质量媲美大模型 • 聊天模板 • 自举式生成
+自举式训练 • 自举标注 • 自动思考 • 自动遮罩生成 • 自回归Transformer • 自回归变换器 • 自回归文本生成 • 自回归时间序列
+自回归框架 • 自回归模型 • 自回归生成 • 自回归语言模型 • 自回归采样 • 自回归预测 • 自定义工具调用 • 自我改进
+自我验证 • 自然音频流 • 自监督 • 自监督DINO方法 • 自监督图像预训练 • 自监督学习 • 自监督视觉特征 • 自监督视觉训练
+自监督视频学习 • 自监督预训练 • 自适应分层令牌压缩 • 自适应推理 • 自适应窗口注意力 • 草稿模型 • 蒙特卡洛树搜索 • 蒸馏
+蒸馏模型 • 蒸馏版 • 融合CUDA内核 • 融合损失函数 • 补丁反扁平化 • 表格推理能力 • 表格预训练 • 规范视频表示
+视觉-语言-动作 • 视觉-语言-动作模型 • 视觉-语言双向模型 • 视觉-语言预训练 • 视觉Transformer • 视觉ViT • 视觉几何 • 视觉模态理解
+视觉环境交互 • 视觉编码器 • 视觉编码解耦 • 视觉语言动作模型 • 视觉语言动作流 • 视觉语言对齐 • 视觉语言推理 • 视觉语言智能体
+视觉语言模型 • 视觉语言模型微调 • 视觉语言模型编码器 • 视觉语言理解 • 视频Transformer • 视频VAE • 视频token压缩 • 视频多模态大语言模型
+视频掩码自编码器 • 视频文本匹配 • 视频理解 • 视频生成技术 • 视频视觉变换器 • 视频驱动图像编辑 • 解码层优化 • 解耦式图像分词器
+解耦式模型 • 解耦注意力机制 • 证明搜索合成 • 语义分割 • 语音触发功能调用 • 贪婪解码 • 超长上下文 • 超长序列支持
+跨任务微调 • 跨场景视觉内容处理 • 跨平台识别 • 跨模态向量量化 • 跨模态性能 • 跨模态推理 • 跨编码器 • 跨语言抽取
+跨页表格合并 • 轨迹控制 • 轨迹质量筛选 • 轻量化 • 轻量化SAM • 轻量化模型 • 轻量化深度模型 • 轻量模型
+轻量级BERT • 轻量级MLP解码头 • 轻量级匹配 • 轻量级模型 • 轻量级特征匹配 • 轻量级视觉Transformer • 连续令牌生成 • 连续值空间
+逐帧解码器 • 递归定理证明流程 • 通用多模态嵌入 • 通用策略构建 • 逻辑推理 • 遮蔽注意力 • 采样效率 • 量化感知训练
+量化模型 • 链式微调 • 链式思维 • 链式思维微调 • 链式思维推理 • 长CoT • 长上下文 • 长上下文优化
+长上下文扩展 • 长上下文支持 • 长度外推 • 长思维变体 • 长文本推理 • 长文本理解 • 长时依赖建模 • 长视频理解
+长链式思维 • 长链思维链冷启动训练 • 长链推理 • 阶梯式学习率 • 降维64 • 随机检查点 • 零样本实体识别 • 零样本性能
+零样本迁移 • 零样本预测 • 静态量化 • 静态量化版本 • 非共享参数 • 非形式化与形式化推理整合 • 非思维模式 • 非思考模式
+非结构化文档处理 • 韩语BERT • 音频-文本对比学习 • 音频伪标记 • 音频条件控制 • 音频预训练 • 预训练时间序列模型 • 预训练模型
+预转换CoreML模型 • 领域并行训练 • 高分辨率文档压缩器 • 高分辨率转录 • 高效扩展基础设施 • 高效深度估计 • 高效混合编码器 • 高稀疏混合专家模型
+高级空间感知 • 高质数据混合
+
+授权协议 (1个)
+------------------------------
+Apache-License-2.0
+
+提供方 (1个)
+------------------------------
+NVIDIA模型
+
+数据来源 (3个)
+------------------------------
+TASS-2020语料库 • 欧盟立法语料 • 相机运动数据集
+
+数据特性 (1个)
+------------------------------
+高质量-DevOps-语料
+
+数据集 (9个)
+------------------------------
+ADE20K • COCO数据集 • ImageNet-1k • ImageNet-21k • LVD-142M • LVD-142M数据集 • imagenet-1k • samsum数据集
+米哈游音乐二创数据集
+
+标签体系 (1个)
+------------------------------
+POSNEGNEU标签
+
+模型特性 (1个)
+------------------------------
+Uncased
+
+模型组件 (1个)
+------------------------------
+Pi0Policy
+
+模型规格 (2个)
+------------------------------
+518518输入 • R101VD
+
+训练数据 (6个)
+------------------------------
+Kinetics-400全监督训练 • OpenFWI数据集 • SQuAD-v2 • SQuAD2.0 • STS-Benchmark • duie数据集
+
+训练数据集 (2个)
+------------------------------
+ImageNet-1k • VideoChatGPT-Instruct
+
+许可协议 (1个)
+------------------------------
+Apache-2.0
+
+评估指标 (5个)
+------------------------------
+EmuEdit基准 • GLUE基准测试 • Inception-分数-9.46 • ROGUE1指标 • ReasonEdit基准
+
+评估数据 (1个)
+------------------------------
+Flores-200数据集
+
+评测基准 (1个)
+------------------------------
+DevOpsEval基准
+
+评测数据集 (2个)
+------------------------------
+CEval-DevOps测试 • CMMLU-DevOps测试
+
+语言支持 (1个)
+------------------------------
+西班牙语
+
+输入规格 (1个)
+------------------------------
+512x512分辨率
+
+部署工具 (190个)
+------------------------------
+4比特量化优化 • 6bit量化 • API调用 • AWQ-4-bit • AWQ量化 • AWQ量化模型 • AWS-SageMaker • Amazon-SageMaker
+Apache-License-2.0 • Apple平台优化 • AutoAWQ量化 • AutoGluon • AutoModelForZeroShotObjectDetection • AutoProcessor • AutoTrain • AutoVideoProcessor
+CPU卸载 • Colab • Colab-TPU部署 • Colab体验 • ComfyUI • ComfyUI-GGUF • ComfyUI-深度图 • ComfyUI插件
+ComfyUI模型 • ComfyUI部署 • ComfyUI集成 • DDPMPipeline • Diffusers • Diffusion-Single-File • DiffusionPipeline • DiffusionPipeline集成
+Docker部署 • Docling流水线 • FLUX.1-Kontext-dev • FastDeploy • FastDeploy部署 • FriendliAI • FriendliAI平台 • GGUF
+GGUF文件 • GGUF格式 • GGUF格式导出 • GGUF量化 • GGUF量化模型 • GPTQ量化 • Git下载 • Google-Colab微调
+Gradio本地演示 • Gradio演示 • Gradio界面 • Haystack • HiDream-I1本地部署 • Hugging-Face容器 • Hugging-Face模型库 • HuggingFace
+HuggingFace-Spaces • HuggingFace-pipeline • HuggingFace下载 • HuggingFace推理 • HuggingFace模型 • HuggingFace模型库 • HuggingSound库 • INT4量化
+JAX • JavaScript推理 • Joblib • Joblib模型 • LM-Studio运行 • LeRobot • LeRobot平台 • MIT许可证
+MLX • MLX-4bit • MLX框架 • MLX部署 • MLX量化 • MLX量化部署 • ModelScope • ModelScope-SDK
+NeMo • Nexa-SDK • Nomic-Atlas • OCRFlux-API • ONNX • ONNX导出 • Ollama • Ollama部署
+OpenAI兼容API • OpenHands • OpenVINO • Paddle • PaddlePaddle • PaddlePaddle权重 • PaddlePaddle部署 • Paddle模型
+PyTorch • Q8量化 • Rust • SGLang • SWIFT微调 • Safetensors • Sentence-Transformers • SentenceTransformers
+SwissArmyTransformer-调用 • TaylorSeer • TeaCache • TensorFlow • TouchDesigner • Transformers • Transformers.js • Unsloth微调
+Unsloth部署 • Unsloth量化 • Unsloth量化模型 • WanVideoWrapper • WebUI在线试用 • ZeroGPU-Space • ZeroGPU空间 • autotrain
+bf16推理 • bnb-4bit • deepcompressor • diffusers库 • diffusers部署 • gguf-connector • gguf节点 • i1-IQ1S量化
+i1-IQ4XS量化 • int4量化 • joblib • joblib模型 • joblib模型下载 • llama.cpp • llama.cpp运行 • llama.cpp部署
+mlx-audio • mlx-vlm工具 • mlxlm部署 • nomic-Python客户端 • ollama部署 • pipeline调用 • q4KM • q4KM量化
+q5KM • q5KM量化 • q6K • q80 • rvc-runpod • schedulingddpm • sentence-transformers • sentence-transformers嵌入
+sglang部署 • text-generation-inference • timm库 • timm模型 • transformers.js • vLLM • vLLM定制部署 • vLLM推理加速
+vLLM部署 • vllm推理架构 • zero-shot-classification管道 • 交互式本地演示 • 企业级部署 • 单GPU部署 • 单卡4090 • 单机运行
+向量数据库集成 • 多GPU运行 • 完全离线运行 • 密集型架构 • 嵌入API • 开源模型 • 张量并行 • 微调
+指令优化版 • 本地推理 • 本地部署 • 现场表演部署 • 端侧部署 • 终端部署 • 网页端部署 • 设备端推理
+设备端部署 • 轻量级部署 • 边缘设备部署 • 边缘部署 • 量化模型 • 量化适配
+
+部署方式 (9个)
+------------------------------
+API调用 • BF16推理 • Google-Colab运行 • Jupyter笔记本 • ModelScope-在线体验 • pytorchmodelhubmixin • 即插即用LLM • 本地部署
+边缘部署
+
+预训练数据集 (1个)
+------------------------------
+ImageNet-1k
+
+统计信息
+==================================================
+总模型数: 699
+关键词总数: 4644
+去重后关键词数: 3068
+平均每模型关键词数: 6.6

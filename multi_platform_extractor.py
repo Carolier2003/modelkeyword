@@ -333,6 +333,7 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
             return []
         
         print(f"🚀 任务池启动，模型 {total} 个，平台 {platform_count} 个")
+        print(f"🔥 并发模式：{platform_count} 个平台同时工作，快速处理任务")
         
         # 创建任务队列 (ModelInfo, retry_count)
         queue = asyncio.Queue()
@@ -386,7 +387,7 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
         
         while True:
             try:
-                await asyncio.sleep(2)  # 每2秒更新一次进度
+                await asyncio.sleep(1)  # 每1秒更新一次进度
                 
                 async with progress_lock:
                     current_completed = completed_count[0]
@@ -436,6 +437,9 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
                     delay = min(consecutive_failures * 0.5, 3.0)  # 最多延迟3秒
                     print(f"⏳ {platform_name} 连续失败 {consecutive_failures} 次，延迟 {delay:.1f} 秒...")
                     await asyncio.sleep(delay)
+                
+                # 显示开始处理
+                print(f"🔄 使用 {platform_name} 处理 {model_info.project_name}...")
                 
                 # 尝试处理模型
                 result = await self.extract_keywords_single_platform(model_info, platform_id)

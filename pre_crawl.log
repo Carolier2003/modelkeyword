@@ -1,2956 +1,0 @@
-============================================================
-🚀 模型数据预爬取系统
-============================================================
-📁 CSV文件: 模型提示词.csv
-💾 缓存文件: output/models_cache.json
-⏱️ 爬取延迟: 0.5秒
-📦 批次大小: 50
-============================================================
-📁 加载现有缓存: 11 个模型
-📖 从CSV文件读取模型: 模型提示词.csv
-📖 开始读取CSV文件: 模型提示词.csv
-✅ 从CSV读取到 724 个符合条件的模型
-📊 CSV中符合条件的模型: 724 个
-📋 需要爬取的模型: 713 个
-📁 已缓存的模型: 11 个
-🚀 开始分批爬取 713 个模型 (批次大小: 50)
-💾 实时保存模式：每爬取一个模型立即保存到缓存
-
-📦 处理批次 1/15 (50 个模型)
-批次 1:   0%|          | 0/50 [00:00<?, ?it/s]批次 1:   2%|▏         | 1/50 [00:06<05:17,  6.48s/it]批次 1:   4%|▍         | 2/50 [00:13<05:15,  6.58s/it]批次 1:   6%|▌         | 3/50 [00:19<05:10,  6.61s/it]批次 1:   8%|▊         | 4/50 [00:26<05:04,  6.63s/it]批次 1:  10%|█         | 5/50 [00:33<05:00,  6.68s/it]批次 1:  12%|█▏        | 6/50 [00:40<05:00,  6.83s/it]批次 1:  14%|█▍        | 7/50 [00:46<04:50,  6.76s/it]批次 1:  16%|█▌        | 8/50 [00:53<04:41,  6.71s/it]批次 1:  18%|█▊        | 9/50 [01:00<04:33,  6.68s/it]批次 1:  20%|██        | 10/50 [01:06<04:26,  6.65s/it]批次 1:  22%|██▏       | 11/50 [01:13<04:19,  6.66s/it]批次 1:  24%|██▍       | 12/50 [01:20<04:13,  6.68s/it]批次 1:  26%|██▌       | 13/50 [01:26<04:06,  6.67s/it]批次 1:  28%|██▊       | 14/50 [01:33<04:00,  6.67s/it]批次 1:  30%|███       | 15/50 [01:40<03:53,  6.68s/it]批次 1:  32%|███▏      | 16/50 [01:46<03:46,  6.66s/it]批次 1:  34%|███▍      | 17/50 [01:54<03:46,  6.88s/it]批次 1:  36%|███▌      | 18/50 [02:00<03:39,  6.84s/it]批次 1:  38%|███▊      | 19/50 [02:07<03:29,  6.77s/it]批次 1:  40%|████      | 20/50 [02:14<03:20,  6.69s/it]批次 1:  42%|████▏     | 21/50 [02:20<03:12,  6.64s/it]批次 1:  44%|████▍     | 22/50 [02:27<03:04,  6.60s/it]批次 1:  46%|████▌     | 23/50 [02:33<02:57,  6.58s/it]批次 1:  48%|████▊     | 24/50 [02:40<02:51,  6.60s/it]批次 1:  50%|█████     | 25/50 [02:46<02:44,  6.60s/it]批次 1:  52%|█████▏    | 26/50 [02:53<02:37,  6.56s/it]批次 1:  54%|█████▍    | 27/50 [03:00<02:32,  6.64s/it]批次 1:  56%|█████▌    | 28/50 [03:06<02:24,  6.59s/it]批次 1:  58%|█████▊    | 29/50 [03:13<02:19,  6.65s/it]批次 1:  60%|██████    | 30/50 [03:19<02:11,  6.60s/it]批次 1:  62%|██████▏   | 31/50 [03:26<02:05,  6.59s/it]批次 1:  64%|██████▍   | 32/50 [03:32<01:58,  6.58s/it]批次 1:  66%|██████▌   | 33/50 [03:39<01:52,  6.62s/it]批次 1:  68%|██████▊   | 34/50 [03:46<01:47,  6.74s/it]正在使用爬虫获取模型详细信息: keras-io/TF_Decision_Trees
-🔍 找到README div，长度: 449
-✅ 成功获取模型信息: README长度=449, 标签数=7
-✅ keras-io/TF_Decision_Trees: README=449, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: gilf/french-camembert-postag-model
-🔍 找到README div，长度: 2908
-✅ 成功获取模型信息: README长度=2908, 标签数=5
-✅ gilf/french-camembert-postag-model: README=2908, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Falconsai/text_summarization
-🔍 找到README div，长度: 5595
-✅ 成功获取模型信息: README长度=5595, 标签数=7
-✅ Falconsai/text_summarization: README=5595, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: autogluon/tabpfn-mix-1.0-regressor
-🔍 找到README div，长度: 2302
-✅ 成功获取模型信息: README长度=2302, 标签数=7
-✅ autogluon/tabpfn-mix-1.0-regressor: README=2302, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: pcoloc/autotrain-dragino-7-7-max_495m-1860863627
-🔍 找到README div，长度: 511
-✅ 成功获取模型信息: README长度=511, 标签数=7
-✅ pcoloc/autotrain-dragino-7-7-max_495m-1860863627: README=511, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: TIGER-Lab/VideoScore-v1.1
-🔍 找到README div，长度: 5773
-✅ 成功获取模型信息: README长度=5773, 标签数=10
-✅ TIGER-Lab/VideoScore-v1.1: README=5773, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: openbmb/MiniCPM-Llama3-V-2_5-int4
-🔍 找到README div，长度: 1358
-✅ 成功获取模型信息: README长度=1358, 标签数=3
-✅ openbmb/MiniCPM-Llama3-V-2_5-int4: README=1358, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: naver/DUSt3R_ViTLarge_BaseDecoder_512_dpt
-🔍 找到README div，长度: 1220
-✅ 成功获取模型信息: README长度=1220, 标签数=8
-✅ naver/DUSt3R_ViTLarge_BaseDecoder_512_dpt: README=1220, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: openbmb/MiniCPM-V
-🔍 找到README div，长度: 2556
-✅ 成功获取模型信息: README长度=2556, 标签数=5
-✅ openbmb/MiniCPM-V: README=2556, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: FreedomIntelligence/BlenderLLM
-🔍 找到README div，长度: 659
-✅ 成功获取模型信息: README长度=659, 标签数=15
-✅ FreedomIntelligence/BlenderLLM: README=659, 标签=15 [已保存]
-正在使用爬虫获取模型详细信息: city96/Wan2.1-I2V-14B-480P-gguf
-🔍 找到README div，长度: 276
-✅ 成功获取模型信息: README长度=276, 标签数=7
-✅ city96/Wan2.1-I2V-14B-480P-gguf: README=276, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: CuriousMonkey7/HumAware-VAD
-🔍 找到README div，长度: 1163
-✅ 成功获取模型信息: README长度=1163, 标签数=10
-✅ CuriousMonkey7/HumAware-VAD: README=1163, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: ServiceNow-AI/Apriel-1.5-15b-Thinker
-🔍 找到README div，长度: 11037
-✅ 成功获取模型信息: README长度=11037, 标签数=7
-✅ ServiceNow-AI/Apriel-1.5-15b-Thinker: README=11037, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: BAAI/bge-reranker-v2-m3
-🔍 找到README div，长度: 13466
-✅ 成功获取模型信息: README长度=13466, 标签数=9
-✅ BAAI/bge-reranker-v2-m3: README=13466, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: BAAI/bge-base-en-v1.5
-🔍 找到README div，长度: 21282
-✅ 成功获取模型信息: README长度=21282, 标签数=0
-✅ BAAI/bge-base-en-v1.5: README=21282, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: BAAI/bge-small-en-v1.5
-🔍 找到README div，长度: 21399
-✅ 成功获取模型信息: README长度=21399, 标签数=11
-✅ BAAI/bge-small-en-v1.5: README=21399, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/Cosmos-Reason1-7B
-🔍 找到README div，长度: 16389
-✅ 成功获取模型信息: README长度=16389, 标签数=11
-✅ nvidia/Cosmos-Reason1-7B: README=16389, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/SWE-Dev-9B
-🔍 找到README div，长度: 567
-✅ 成功获取模型信息: README长度=567, 标签数=3
-✅ THUDM/SWE-Dev-9B: README=567, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: sshleifer/distilbart-xsum-12-6
-🔍 找到README div，长度: 608
-✅ 成功获取模型信息: README长度=608, 标签数=9
-✅ sshleifer/distilbart-xsum-12-6: README=608, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-4.5V
-🔍 找到README div，长度: 8209
-✅ 成功获取模型信息: README长度=8209, 标签数=8
-✅ zai-org/GLM-4.5V: README=8209, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: vidore/colSmol-256M
-🔍 找到README div，长度: 2587
-✅ 成功获取模型信息: README长度=2587, 标签数=13
-✅ vidore/colSmol-256M: README=2587, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: lmms-lab/LLaVA-NeXT-Video-7B-DPO
-🔍 找到README div，长度: 815
-✅ 成功获取模型信息: README长度=815, 标签数=4
-✅ lmms-lab/LLaVA-NeXT-Video-7B-DPO: README=815, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: reducto/RolmOCR
-🔍 找到README div，长度: 2104
-✅ 成功获取模型信息: README长度=2104, 标签数=4
-✅ reducto/RolmOCR: README=2104, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/GLM-4-32B-0414
-🔍 找到README div，长度: 14911
-✅ 成功获取模型信息: README长度=14911, 标签数=6
-✅ THUDM/GLM-4-32B-0414: README=14911, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: cross-encoder/nli-deberta-v3-large
-🔍 找到README div，长度: 2265
-✅ 成功获取模型信息: README长度=2265, 标签数=10
-✅ cross-encoder/nli-deberta-v3-large: README=2265, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/GLM-Z1-32B-0414
-🔍 找到README div，长度: 3917
-✅ 成功获取模型信息: README长度=3917, 标签数=6
-✅ THUDM/GLM-Z1-32B-0414: README=3917, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: hustvl/yolos-small
-🔍 找到README div，长度: 2308
-✅ 成功获取模型信息: README长度=2308, 标签数=9
-✅ hustvl/yolos-small: README=2308, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: diffusers/stable-diffusion-xl-1.0-inpainting-0.1
-🔍 找到README div，长度: 1972
-✅ 成功获取模型信息: README长度=1972, 标签数=9
-✅ diffusers/stable-diffusion-xl-1.0-inpainting-0.1: README=1972, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-4.5V-FP8
-🔍 找到README div，长度: 3966
-✅ 成功获取模型信息: README长度=3966, 标签数=8
-✅ zai-org/GLM-4.5V-FP8: README=3966, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: openai/diffusers-ct_imagenet64
-🔍 找到README div，长度: 3724
-✅ 成功获取模型信息: README长度=3724, 标签数=12
-✅ openai/diffusers-ct_imagenet64: README=3724, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-270m-it-qat-GGUF
-🔍 找到README div，长度: 9970
-✅ 成功获取模型信息: README长度=9970, 标签数=8
-✅ unsloth/gemma-3-270m-it-qat-GGUF: README=9970, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/cogito-v2-preview-llama-109B-MoE
-🔍 找到README div，长度: 6615
-✅ 成功获取模型信息: README长度=6615, 标签数=0
-✅ unsloth/cogito-v2-preview-llama-109B-MoE: README=6615, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/GLM-4.5-Air
-🔍 找到README div，长度: 825
-✅ 成功获取模型信息: README长度=825, 标签数=0
-✅ unsloth/GLM-4.5-Air: README=825, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Qwen3-4B-Instruct-2507-GGUF
-🔍 找到README div，长度: 5194
-✅ 成功获取模型信息: README长度=5194, 标签数=7
-✅ unsloth/Qwen3-4B-Instruct-2507-GGUF: README=5194, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-Omni-7B-AWQ
-🔍 找到README div，长度: 2537批次 1:  70%|███████   | 35/50 [03:53<01:40,  6.70s/it]批次 1:  72%|███████▏  | 36/50 [03:59<01:33,  6.66s/it]批次 1:  74%|███████▍  | 37/50 [04:06<01:27,  6.72s/it]批次 1:  76%|███████▌  | 38/50 [04:13<01:19,  6.65s/it]批次 1:  78%|███████▊  | 39/50 [04:19<01:13,  6.68s/it]批次 1:  80%|████████  | 40/50 [04:26<01:06,  6.65s/it]批次 1:  82%|████████▏ | 41/50 [04:33<00:59,  6.60s/it]批次 1:  84%|████████▍ | 42/50 [04:39<00:52,  6.57s/it]批次 1:  86%|████████▌ | 43/50 [04:46<00:45,  6.54s/it]批次 1:  88%|████████▊ | 44/50 [04:52<00:39,  6.53s/it]批次 1:  90%|█████████ | 45/50 [04:59<00:32,  6.59s/it]批次 1:  92%|█████████▏| 46/50 [05:05<00:26,  6.57s/it]批次 1:  94%|█████████▍| 47/50 [05:12<00:19,  6.54s/it]批次 1:  96%|█████████▌| 48/50 [05:18<00:13,  6.52s/it]批次 1:  98%|█████████▊| 49/50 [05:25<00:06,  6.55s/it]批次 1: 100%|██████████| 50/50 [05:31<00:00,  6.53s/it]批次 1: 100%|██████████| 50/50 [05:31<00:00,  6.64s/it]
-
-✅ 成功获取模型信息: README长度=2537, 标签数=7
-✅ Qwen/Qwen2.5-Omni-7B-AWQ: README=2537, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: amazon/chronos-bolt-tiny
-🔍 找到README div，长度: 4165
-✅ 成功获取模型信息: README长度=4165, 标签数=11
-✅ amazon/chronos-bolt-tiny: README=4165, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: facebook/dinov2-giant
-🔍 找到README div，长度: 1673
-✅ 成功获取模型信息: README长度=1673, 标签数=8
-✅ facebook/dinov2-giant: README=1673, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: lllyasviel/control_v11p_sd15_inpaint
-🔍 找到README div，长度: 4407
-✅ 成功获取模型信息: README长度=4407, 标签数=13
-✅ lllyasviel/control_v11p_sd15_inpaint: README=4407, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: speechbrain/metricgan-plus-voicebank
-🔍 找到README div，长度: 2623
-✅ 成功获取模型信息: README长度=2623, 标签数=12
-✅ speechbrain/metricgan-plus-voicebank: README=2623, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: cross-encoder/ms-marco-MiniLM-L6-v2
-🔍 找到README div，长度: 2853
-✅ 成功获取模型信息: README长度=2853, 标签数=12
-✅ cross-encoder/ms-marco-MiniLM-L6-v2: README=2853, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: unslothai/1
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=2
-✅ unslothai/1: README=0, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: impira/layoutlm-document-qa
-🔍 找到README div，长度: 1081
-✅ 成功获取模型信息: README长度=1081, 标签数=9
-✅ impira/layoutlm-document-qa: README=1081, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: facebook/detr-resnet-50
-🔍 找到README div，长度: 3323
-✅ 成功获取模型信息: README长度=3323, 标签数=8
-✅ facebook/detr-resnet-50: README=3323, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: tencent/Hunyuan3D-1
-🔍 找到README div，长度: 7479
-✅ 成功获取模型信息: README长度=7479, 标签数=11
-✅ tencent/Hunyuan3D-1: README=7479, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-1.7B-Base
-🔍 找到README div，长度: 2638
-✅ 成功获取模型信息: README长度=2638, 标签数=3
-✅ Qwen/Qwen3-1.7B-Base: README=2638, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: Gen-Verse/MMaDA-8B-Base
-🔍 找到README div，长度: 554
-✅ 成功获取模型信息: README长度=554, 标签数=5
-✅ Gen-Verse/MMaDA-8B-Base: README=554, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: facebook/VGGT-1B
-🔍 找到README div，长度: 646
-✅ 成功获取模型信息: README长度=646, 标签数=10
-✅ facebook/VGGT-1B: README=646, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-VL-A3B-Instruct
-🔍 找到README div，长度: 6194
-✅ 成功获取模型信息: README长度=6194, 标签数=9
-✅ moonshotai/Kimi-VL-A3B-Instruct: README=6194, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google/owlv2-base-patch16
-🔍 找到README div，长度: 3260
-✅ 成功获取模型信息: README长度=3260, 标签数=8
-✅ google/owlv2-base-patch16: README=3260, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/tapex-large
-🔍 找到README div，长度: 893
-✅ 成功获取模型信息: README长度=893, 标签数=10
-✅ microsoft/tapex-large: README=893, 标签=10 [已保存]
-📊 批次 1 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 2/15 (50 个模型)
-批次 2:   0%|          | 0/50 [00:00<?, ?it/s]批次 2:   2%|▏         | 1/50 [00:06<05:31,  6.77s/it]批次 2:   4%|▍         | 2/50 [00:13<05:16,  6.60s/it]批次 2:   6%|▌         | 3/50 [00:19<05:08,  6.56s/it]批次 2:   8%|▊         | 4/50 [00:26<05:00,  6.53s/it]批次 2:  10%|█         | 5/50 [00:32<04:53,  6.51s/it]批次 2:  12%|█▏        | 6/50 [00:39<04:46,  6.50s/it]批次 2:  14%|█▍        | 7/50 [00:45<04:42,  6.57s/it]批次 2:  16%|█▌        | 8/50 [00:52<04:36,  6.59s/it]批次 2:  18%|█▊        | 9/50 [00:59<04:31,  6.61s/it]批次 2:  20%|██        | 10/50 [01:05<04:24,  6.61s/it]批次 2:  22%|██▏       | 11/50 [01:12<04:18,  6.62s/it]批次 2:  24%|██▍       | 12/50 [01:19<04:11,  6.62s/it]批次 2:  26%|██▌       | 13/50 [01:25<04:04,  6.62s/it]批次 2:  28%|██▊       | 14/50 [01:32<03:57,  6.59s/it]批次 2:  30%|███       | 15/50 [01:38<03:50,  6.58s/it]批次 2:  32%|███▏      | 16/50 [01:45<03:43,  6.58s/it]批次 2:  34%|███▍      | 17/50 [01:51<03:37,  6.60s/it]批次 2:  36%|███▌      | 18/50 [01:58<03:30,  6.58s/it]批次 2:  38%|███▊      | 19/50 [02:05<03:23,  6.57s/it]批次 2:  40%|████      | 20/50 [02:11<03:16,  6.55s/it]批次 2:  42%|████▏     | 21/50 [02:18<03:09,  6.54s/it]批次 2:  44%|████▍     | 22/50 [02:24<03:03,  6.57s/it]批次 2:  46%|████▌     | 23/50 [02:31<02:56,  6.55s/it]批次 2:  48%|████▊     | 24/50 [02:37<02:50,  6.56s/it]批次 2:  50%|█████     | 25/50 [02:44<02:44,  6.58s/it]批次 2:  52%|█████▏    | 26/50 [02:50<02:37,  6.56s/it]批次 2:  54%|█████▍    | 27/50 [02:57<02:30,  6.56s/it]批次 2:  56%|█████▌    | 28/50 [03:04<02:24,  6.58s/it]批次 2:  58%|█████▊    | 29/50 [03:10<02:17,  6.56s/it]批次 2:  60%|██████    | 30/50 [03:17<02:12,  6.61s/it]批次 2:  62%|██████▏   | 31/50 [03:24<02:06,  6.65s/it]批次 2:  64%|██████▍   | 32/50 [03:30<01:59,  6.64s/it]批次 2:  66%|██████▌   | 33/50 [03:37<01:53,  6.67s/it]批次 2:  68%|██████▊   | 34/50 [03:44<01:46,  6.67s/it]正在使用爬虫获取模型详细信息: google/tapas-tiny-finetuned-sqa
-🔍 找到README div，长度: 3780
-✅ 成功获取模型信息: README长度=3780, 标签数=10
-✅ google/tapas-tiny-finetuned-sqa: README=3780, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/tapex-large-finetuned-wikisql
-🔍 找到README div，长度: 2726
-✅ 成功获取模型信息: README长度=2726, 标签数=11
-✅ microsoft/tapex-large-finetuned-wikisql: README=2726, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: openai/imagegpt-small
-🔍 找到README div，长度: 2965
-✅ 成功获取模型信息: README长度=2965, 标签数=5
-✅ openai/imagegpt-small: README=2965, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: ibm-granite/granite-timeseries-ttm-r2
-🔍 找到README div，长度: 9532
-✅ 成功获取模型信息: README长度=9532, 标签数=12
-✅ ibm-granite/granite-timeseries-ttm-r2: README=9532, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: Bllossom/llama-3.2-Korean-Bllossom-AICA-5B
-🔍 找到README div，长度: 6034
-✅ 成功获取模型信息: README长度=6034, 标签数=5
-✅ Bllossom/llama-3.2-Korean-Bllossom-AICA-5B: README=6034, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/GLM-4-32B-Base-0414
-🔍 找到README div，长度: 15465
-✅ 成功获取模型信息: README长度=15465, 标签数=0
-✅ THUDM/GLM-4-32B-Base-0414: README=15465, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/QwQ-32B-AWQ
-🔍 找到README div，长度: 3575
-✅ 成功获取模型信息: README长度=3575, 标签数=0
-✅ Qwen/QwQ-32B-AWQ: README=3575, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-14B-AWQ
-🔍 找到README div，长度: 9662
-✅ 成功获取模型信息: README长度=9662, 标签数=0
-✅ Qwen/Qwen3-14B-AWQ: README=9662, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-8B-AWQ
-🔍 找到README div，长度: 9615
-✅ 成功获取模型信息: README长度=9615, 标签数=0
-✅ Qwen/Qwen3-8B-AWQ: README=9615, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-GGUF
-🔍 找到README div，长度: 3605
-✅ 成功获取模型信息: README长度=3605, 标签数=2
-✅ Qwen/Qwen3-235B-A22B-GGUF: README=3605, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: deepset/xlm-roberta-large-squad2
-🔍 找到README div，长度: 4609
-✅ 成功获取模型信息: README长度=4609, 标签数=7
-✅ deepset/xlm-roberta-large-squad2: README=4609, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: pcoloc/autotrain-dragino-7-7-1860763606
-🔍 找到README div，长度: 507
-✅ 成功获取模型信息: README长度=507, 标签数=7
-✅ pcoloc/autotrain-dragino-7-7-1860763606: README=507, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: PKU-Alignment/beaver-7b-v1.0-cost
-🔍 找到README div，长度: 2576
-✅ 成功获取模型信息: README长度=2576, 标签数=15
-✅ PKU-Alignment/beaver-7b-v1.0-cost: README=2576, 标签=15 [已保存]
-正在使用爬虫获取模型详细信息: IIC/DocOwl2
-🔍 找到README div，长度: 1401
-✅ 成功获取模型信息: README长度=1401, 标签数=6
-✅ IIC/DocOwl2: README=1401, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/GOT-OCR2_0
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=0
-⚠️ stepfun-ai/GOT-OCR2_0: 爬取失败，跳过
-正在使用爬虫获取模型详细信息: pengzhendong/chinese-hubert-large
-🔍 找到README div，长度: 923
-✅ 成功获取模型信息: README长度=923, 标签数=3
-✅ pengzhendong/chinese-hubert-large: README=923, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: pengzhendong/chinese-hubert-base
-🔍 找到README div，长度: 920
-✅ 成功获取模型信息: README长度=920, 标签数=3
-✅ pengzhendong/chinese-hubert-base: README=920, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: IIC/QwenLong-CPRS-7B
-🔍 找到README div，长度: 3560
-✅ 成功获取模型信息: README长度=3560, 标签数=3
-✅ IIC/QwenLong-CPRS-7B: README=3560, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: m-a-p/MERT-v1-330M
-🔍 找到README div，长度: 3730
-✅ 成功获取模型信息: README长度=3730, 标签数=7
-✅ m-a-p/MERT-v1-330M: README=3730, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: AI-ModelScope/TRELLIS-image-large
-🔍 找到README div，长度: 168
-✅ 成功获取模型信息: README长度=168, 标签数=5
-✅ AI-ModelScope/TRELLIS-image-large: README=168, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Xenova/discogs-maest-30s-pw-73e-ts
-🔍 找到README div，长度: 212
-✅ 成功获取模型信息: README长度=212, 标签数=4
-✅ Xenova/discogs-maest-30s-pw-73e-ts: README=212, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: openbmb/MiniCPM-V-4_5
-🔍 找到README div，长度: 12209
-✅ 成功获取模型信息: README长度=12209, 标签数=12
-✅ openbmb/MiniCPM-V-4_5: README=12209, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: tencent/HunyuanVideo
-🔍 找到README div，长度: 9508
-✅ 成功获取模型信息: README长度=9508, 标签数=6
-✅ tencent/HunyuanVideo: README=9508, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/CogVideoX1.5-5B-I2V
-🔍 找到README div，长度: 4895
-✅ 成功获取模型信息: README长度=4895, 标签数=0
-✅ zai-org/CogVideoX1.5-5B-I2V: README=4895, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-270m
-🔍 找到README div，长度: 9898
-✅ 成功获取模型信息: README长度=9898, 标签数=9
-✅ unsloth/gemma-3-270m: README=9898, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/StepFun-Formalizer-32B
-🔍 找到README div，长度: 2571
-✅ 成功获取模型信息: README长度=2571, 标签数=6
-✅ stepfun-ai/StepFun-Formalizer-32B: README=2571, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-4-9b-chat-1m
-🔍 找到README div，长度: 4423
-✅ 成功获取模型信息: README长度=4423, 标签数=3
-✅ zai-org/glm-4-9b-chat-1m: README=4423, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/Step-Audio-2-mini
-🔍 找到README div，长度: 8718
-✅ 成功获取模型信息: README长度=8718, 标签数=8
-✅ stepfun-ai/Step-Audio-2-mini: README=8718, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-Z1-Rumination-32B-0414
-🔍 找到README div，长度: 4611
-✅ 成功获取模型信息: README长度=4611, 标签数=6
-✅ zai-org/GLM-Z1-Rumination-32B-0414: README=4611, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/cogagent-chat-hf
-🔍 找到README div，长度: 5216
-✅ 成功获取模型信息: README长度=5216, 标签数=7
-✅ zai-org/cogagent-chat-hf: README=5216, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/CogVideoX1.5-5B
-🔍 找到README div，长度: 5206
-✅ 成功获取模型信息: README长度=5206, 标签数=0
-✅ zai-org/CogVideoX1.5-5B: README=5206, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-edge-4b-chat
-🔍 找到README div，长度: 894
-✅ 成功获取模型信息: README长度=894, 标签数=2
-✅ zai-org/glm-edge-4b-chat: README=894, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-4-9b-chat-1m-hf
-🔍 找到README div，长度: 4140
-✅ 成功获取模型信息: README长度=4140, 标签数=3
-✅ zai-org/glm-4-9b-chat-1m-hf: README=4140, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gpt-oss-120b-bnb-4bit
-🔍 找到README div，长度: 3111
-✅ 成功获取模型信息: README长度=3111, 标签数=5
-✅ unsloth/gpt-oss-120b-bnb-4bit: README=3111, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/M3-Agent-Control
-🔍 找到README div，长度: 38
-✅ 成功获取模型信息: README长度=38, 标签数=4
-✅ ByteDance-Seed/M3-Agent-Control: README=38, 标签=4 [已保存]批次 2:  70%|███████   | 35/50 [03:50<01:40,  6.67s/it]批次 2:  72%|███████▏  | 36/50 [03:57<01:34,  6.72s/it]批次 2:  74%|███████▍  | 37/50 [04:04<01:28,  6.78s/it]批次 2:  76%|███████▌  | 38/50 [04:11<01:20,  6.72s/it]批次 2:  78%|███████▊  | 39/50 [04:17<01:13,  6.65s/it]批次 2:  80%|████████  | 40/50 [04:24<01:06,  6.64s/it]批次 2:  82%|████████▏ | 41/50 [04:30<00:59,  6.63s/it]批次 2:  84%|████████▍ | 42/50 [04:37<00:53,  6.66s/it]批次 2:  86%|████████▌ | 43/50 [04:44<00:46,  6.69s/it]批次 2:  88%|████████▊ | 44/50 [04:50<00:39,  6.64s/it]批次 2:  90%|█████████ | 45/50 [04:57<00:33,  6.66s/it]批次 2:  92%|█████████▏| 46/50 [05:04<00:26,  6.65s/it]批次 2:  94%|█████████▍| 47/50 [05:10<00:19,  6.62s/it]批次 2:  96%|█████████▌| 48/50 [05:17<00:13,  6.60s/it]批次 2:  98%|█████████▊| 49/50 [05:23<00:06,  6.59s/it]批次 2: 100%|██████████| 50/50 [05:29<00:00,  6.42s/it]批次 2: 100%|██████████| 50/50 [05:29<00:00,  6.60s/it]
-
-正在使用爬虫获取模型详细信息: ByteDance-Seed/M3-Agent-Memorization
-🔍 找到README div，长度: 38
-✅ 成功获取模型信息: README长度=38, 标签数=4
-✅ ByteDance-Seed/M3-Agent-Memorization: README=38, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: openai-community/gpt2
-🔍 找到README div，长度: 4405
-✅ 成功获取模型信息: README长度=4405, 标签数=11
-✅ openai-community/gpt2: README=4405, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-🔍 找到README div，长度: 2774
-✅ 成功获取模型信息: README长度=2774, 标签数=0
-✅ sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2: README=2774, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/embeddinggemma-300m-GGUF
-🔍 找到README div，长度: 5322
-✅ 成功获取模型信息: README长度=5322, 标签数=7
-✅ unsloth/embeddinggemma-300m-GGUF: README=5322, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: mixedbread-ai/mxbai-embed-large-v1
-🔍 找到README div，长度: 6980
-✅ 成功获取模型信息: README长度=6980, 标签数=0
-✅ mixedbread-ai/mxbai-embed-large-v1: README=6980, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: google-t5/t5-base
-🔍 找到README div，长度: 3142
-✅ 成功获取模型信息: README长度=3142, 标签数=0
-✅ google-t5/t5-base: README=3142, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: facebook/musicgen-small
-🔍 找到README div，长度: 5336
-✅ 成功获取模型信息: README长度=5336, 标签数=8
-✅ facebook/musicgen-small: README=5336, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: openai/whisper-medium.en
-🔍 找到README div，长度: 6465
-✅ 成功获取模型信息: README长度=6465, 标签数=11
-✅ openai/whisper-medium.en: README=6465, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
-🔍 找到README div，长度: 5641
-✅ 成功获取模型信息: README长度=5641, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-Distill-Qwen-14B: README=5641, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
-🔍 找到README div，长度: 5831
-✅ 成功获取模型信息: README长度=5831, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B: README=5831, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3
-🔍 找到README div，长度: 9874
-✅ 成功获取模型信息: README长度=9874, 标签数=3
-✅ deepseek-ai/DeepSeek-V3: README=9874, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/deepseek-vl2-tiny
-🔍 找到README div，长度: 4238
-✅ 成功获取模型信息: README长度=4238, 标签数=5
-✅ deepseek-ai/deepseek-vl2-tiny: README=4238, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-Coder-V2-Base
-🔍 找到README div，长度: 5253
-✅ 成功获取模型信息: README长度=5253, 标签数=4
-✅ deepseek-ai/DeepSeek-Coder-V2-Base: README=5253, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/deepseek-vl2
-🔍 找到README div，长度: 4237
-✅ 成功获取模型信息: README长度=4237, 标签数=5
-✅ deepseek-ai/deepseek-vl2: README=4237, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
-🔍 找到README div，长度: 5268
-✅ 成功获取模型信息: README长度=5268, 标签数=3
-✅ deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct: README=5268, 标签=3 [已保存]
-📊 批次 2 完成: 49/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 3/15 (50 个模型)
-批次 3:   0%|          | 0/50 [00:00<?, ?it/s]批次 3:   2%|▏         | 1/50 [00:06<05:23,  6.59s/it]批次 3:   4%|▍         | 2/50 [00:13<05:20,  6.67s/it]批次 3:   6%|▌         | 3/50 [00:19<05:13,  6.67s/it]批次 3:   8%|▊         | 4/50 [00:26<05:08,  6.71s/it]批次 3:  10%|█         | 5/50 [00:33<05:00,  6.67s/it]批次 3:  12%|█▏        | 6/50 [00:39<04:52,  6.66s/it]批次 3:  14%|█▍        | 7/50 [00:46<04:46,  6.66s/it]批次 3:  16%|█▌        | 8/50 [00:53<04:39,  6.66s/it]批次 3:  18%|█▊        | 9/50 [00:59<04:31,  6.62s/it]批次 3:  20%|██        | 10/50 [01:06<04:24,  6.62s/it]批次 3:  22%|██▏       | 11/50 [01:13<04:17,  6.61s/it]批次 3:  24%|██▍       | 12/50 [01:19<04:12,  6.64s/it]批次 3:  26%|██▌       | 13/50 [01:26<04:06,  6.67s/it]批次 3:  28%|██▊       | 14/50 [01:33<03:59,  6.64s/it]批次 3:  30%|███       | 15/50 [01:39<03:50,  6.60s/it]批次 3:  32%|███▏      | 16/50 [01:46<03:44,  6.61s/it]批次 3:  34%|███▍      | 17/50 [01:52<03:37,  6.60s/it]批次 3:  36%|███▌      | 18/50 [01:59<03:30,  6.59s/it]批次 3:  38%|███▊      | 19/50 [02:06<03:26,  6.66s/it]批次 3:  40%|████      | 20/50 [02:12<03:19,  6.65s/it]批次 3:  42%|████▏     | 21/50 [02:19<03:13,  6.66s/it]批次 3:  44%|████▍     | 22/50 [02:26<03:09,  6.78s/it]批次 3:  46%|████▌     | 23/50 [02:33<03:00,  6.70s/it]批次 3:  48%|████▊     | 24/50 [02:39<02:54,  6.69s/it]批次 3:  50%|█████     | 25/50 [02:46<02:47,  6.69s/it]批次 3:  52%|█████▏    | 26/50 [02:53<02:40,  6.67s/it]批次 3:  54%|█████▍    | 27/50 [02:59<02:33,  6.66s/it]批次 3:  56%|█████▌    | 28/50 [03:06<02:27,  6.70s/it]批次 3:  58%|█████▊    | 29/50 [03:12<02:19,  6.64s/it]批次 3:  60%|██████    | 30/50 [03:19<02:12,  6.62s/it]批次 3:  62%|██████▏   | 31/50 [03:26<02:07,  6.72s/it]批次 3:  64%|██████▍   | 32/50 [03:33<02:01,  6.74s/it]批次 3:  66%|██████▌   | 33/50 [03:40<01:55,  6.80s/it]正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-🔍 找到README div，长度: 5810
-✅ 成功获取模型信息: README长度=5810, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-Distill-Qwen-32B: README=5810, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-Prover-V1.5-Base
-🔍 找到README div，长度: 1815
-✅ 成功获取模型信息: README长度=1815, 标签数=0
-✅ deepseek-ai/DeepSeek-Prover-V1.5-Base: README=1815, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim
-🔍 找到README div，长度: 2986
-✅ 成功获取模型信息: README长度=2986, 标签数=12
-✅ audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim: README=2986, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: jonathandinu/face-parsing
-🔍 找到README div，长度: 3446
-✅ 成功获取模型信息: README长度=3446, 标签数=11
-✅ jonathandinu/face-parsing: README=3446, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: nlpaueb/legal-bert-base-uncased
-🔍 找到README div，长度: 6069
-✅ 成功获取模型信息: README长度=6069, 标签数=8
-✅ nlpaueb/legal-bert-base-uncased: README=6069, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance/AnimateDiff-Lightning
-🔍 找到README div，长度: 3112
-✅ 成功获取模型信息: README长度=3112, 标签数=7
-✅ ByteDance/AnimateDiff-Lightning: README=3112, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-Zero
-🔍 找到README div，长度: 5824
-✅ 成功获取模型信息: README长度=5824, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-Zero: README=5824, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-Distill-Llama-8B
-🔍 找到README div，长度: 5776
-✅ 成功获取模型信息: README长度=5776, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-Distill-Llama-8B: README=5776, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3-Base
-🔍 找到README div，长度: 9879
-✅ 成功获取模型信息: README长度=9879, 标签数=2
-✅ deepseek-ai/DeepSeek-V3-Base: README=9879, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-Coder-V2-Instruct-0724
-🔍 找到README div，长度: 9399
-✅ 成功获取模型信息: README长度=9399, 标签数=4
-✅ deepseek-ai/DeepSeek-Coder-V2-Instruct-0724: README=9399, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V2-Lite
-🔍 找到README div，长度: 6968
-✅ 成功获取模型信息: README长度=6968, 标签数=4
-✅ deepseek-ai/DeepSeek-V2-Lite: README=6968, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/Janus-Pro-7B
-🔍 找到README div，长度: 919
-✅ 成功获取模型信息: README长度=919, 标签数=0
-✅ deepseek-ai/Janus-Pro-7B: README=919, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
-🔍 找到README div，长度: 5863
-✅ 成功获取模型信息: README长度=5863, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-Distill-Qwen-7B: README=5863, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V2-Chat-0628
-🔍 找到README div，长度: 3901
-✅ 成功获取模型信息: README长度=3901, 标签数=4
-✅ deepseek-ai/DeepSeek-V2-Chat-0628: README=3901, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-4v-9b
-🔍 找到README div，长度: 4284
-✅ 成功获取模型信息: README长度=4284, 标签数=0
-✅ zai-org/glm-4v-9b: README=4284, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: ant-research/MagicQuill-models
-🔍 找到README div，长度: 528
-✅ 成功获取模型信息: README长度=528, 标签数=7
-✅ ant-research/MagicQuill-models: README=528, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: dreamerwhite/surya_layout3
-🔍 找到README div，长度: 351
-✅ 成功获取模型信息: README长度=351, 标签数=4
-✅ dreamerwhite/surya_layout3: README=351, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: IIC/gme-Qwen2-VL-2B-Instruct
-🔍 找到README div，长度: 7124
-✅ 成功获取模型信息: README长度=7124, 标签数=11
-✅ IIC/gme-Qwen2-VL-2B-Instruct: README=7124, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-K2-Base
-🔍 找到README div，长度: 7058
-✅ 成功获取模型信息: README长度=7058, 标签数=4
-✅ moonshotai/Kimi-K2-Base: README=7058, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-21B-A3B-PT
-🔍 找到README div，长度: 2581
-✅ 成功获取模型信息: README长度=2581, 标签数=7
-✅ baidu/ERNIE-4.5-21B-A3B-PT: README=2581, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-30B-A3B-MLX-8bit
-🔍 找到README div，长度: 8094
-✅ 成功获取模型信息: README长度=8094, 标签数=5
-✅ Qwen/Qwen3-30B-A3B-MLX-8bit: README=8094, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-MLX-4bit
-🔍 找到README div，长度: 8001
-✅ 成功获取模型信息: README长度=8001, 标签数=5
-✅ Qwen/Qwen3-235B-A22B-MLX-4bit: README=8001, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-424B-A47B-Paddle
-🔍 找到README div，长度: 5721
-✅ 成功获取模型信息: README长度=5721, 标签数=7
-✅ baidu/ERNIE-4.5-VL-424B-A47B-Paddle: README=5721, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-2Bits-TP2-Paddle
-🔍 找到README div，长度: 5616
-✅ 成功获取模型信息: README长度=5616, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-2Bits-TP2-Paddle: README=5616, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-28B-A3B-PT
-🔍 找到README div，长度: 2991
-✅ 成功获取模型信息: README长度=2991, 标签数=7
-✅ baidu/ERNIE-4.5-VL-28B-A3B-PT: README=2991, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-21B-A3B-Paddle
-🔍 找到README div，长度: 2256
-✅ 成功获取模型信息: README长度=2256, 标签数=7
-✅ baidu/ERNIE-4.5-21B-A3B-Paddle: README=2256, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-28B-A3B-Base-Paddle
-🔍 找到README div，长度: 4146
-✅ 成功获取模型信息: README长度=4146, 标签数=7
-✅ baidu/ERNIE-4.5-VL-28B-A3B-Base-Paddle: README=4146, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/WorldPM-72B-RLHFLow
-🔍 找到README div，长度: 3693
-✅ 成功获取模型信息: README长度=3693, 标签数=12
-✅ Qwen/WorldPM-72B-RLHFLow: README=3693, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-PT
-🔍 找到README div，长度: 7668
-✅ 成功获取模型信息: README长度=7668, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-PT: README=7668, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-28B-A3B-Base-PT
-🔍 找到README div，长度: 1723
-✅ 成功获取模型信息: README长度=1723, 标签数=7
-✅ baidu/ERNIE-4.5-VL-28B-A3B-Base-PT: README=1723, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-14B-MLX-4bit
-🔍 找到README div，长度: 7846
-✅ 成功获取模型信息: README长度=7846, 标签数=5
-✅ Qwen/Qwen3-14B-MLX-4bit: README=7846, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-32B-MLX-6bit
-🔍 找到README div，长度: 7936
-✅ 成功获取模型信息: README长度=7936, 标签数=5
-✅ Qwen/Qwen3-32B-MLX-6bit: README=7936, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/androidgen-glm-4-9b
-🔍 找到README div，长度: 532
-✅ 成功获取模型信息: README长度=532, 标签数=9
-✅ THUDM/androidgen-glm-4-9b: README=532, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-Instruct-2507-FP8
-🔍 找到README div，长度: 8346
-✅ 成功获取模型信息: README长度=8346, 标签数=6批次 3:  68%|██████▊   | 34/50 [03:46<01:48,  6.75s/it]批次 3:  70%|███████   | 35/50 [03:53<01:40,  6.70s/it]批次 3:  72%|███████▏  | 36/50 [04:00<01:33,  6.67s/it]批次 3:  74%|███████▍  | 37/50 [04:06<01:26,  6.65s/it]批次 3:  76%|███████▌  | 38/50 [04:13<01:20,  6.70s/it]批次 3:  78%|███████▊  | 39/50 [04:20<01:13,  6.67s/it]批次 3:  80%|████████  | 40/50 [04:26<01:06,  6.64s/it]批次 3:  82%|████████▏ | 41/50 [04:33<01:00,  6.67s/it]批次 3:  84%|████████▍ | 42/50 [04:39<00:53,  6.64s/it]批次 3:  86%|████████▌ | 43/50 [04:46<00:46,  6.71s/it]批次 3:  88%|████████▊ | 44/50 [04:53<00:39,  6.66s/it]批次 3:  90%|█████████ | 45/50 [04:59<00:33,  6.64s/it]批次 3:  92%|█████████▏| 46/50 [05:06<00:26,  6.66s/it]批次 3:  94%|█████████▍| 47/50 [05:13<00:19,  6.63s/it]批次 3:  96%|█████████▌| 48/50 [05:19<00:13,  6.63s/it]批次 3:  98%|█████████▊| 49/50 [05:26<00:06,  6.65s/it]批次 3: 100%|██████████| 50/50 [05:32<00:00,  6.46s/it]批次 3: 100%|██████████| 50/50 [05:32<00:00,  6.65s/it]
-
-✅ Qwen/Qwen3-235B-A22B-Instruct-2507-FP8: README=8346, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Qwen3-235B-A22B-Instruct-2507-GGUF
-🔍 找到README div，长度: 5678
-✅ 成功获取模型信息: README长度=5678, 标签数=8
-✅ unsloth/Qwen3-235B-A22B-Instruct-2507-GGUF: README=5678, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: facebook/dinov2-base
-🔍 找到README div，长度: 1831
-✅ 成功获取模型信息: README长度=1831, 标签数=6
-✅ facebook/dinov2-base: README=1831, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Intel/dpt-hybrid-midas
-🔍 找到README div，长度: 3795
-✅ 成功获取模型信息: README长度=3795, 标签数=6
-✅ Intel/dpt-hybrid-midas: README=3795, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/bigvgan_v2_44khz_128band_512x
-🔍 找到README div，长度: 3638
-✅ 成功获取模型信息: README长度=3638, 标签数=5
-✅ nvidia/bigvgan_v2_44khz_128band_512x: README=3638, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Helsinki-NLP/opus-mt-fr-en
-🔍 找到README div，长度: 621
-✅ 成功获取模型信息: README长度=621, 标签数=6
-✅ Helsinki-NLP/opus-mt-fr-en: README=621, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: google/owlv2-base-patch16-ensemble
-🔍 找到README div，长度: 2656
-✅ 成功获取模型信息: README长度=2656, 标签数=8
-✅ google/owlv2-base-patch16-ensemble: README=2656, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/GLM-4.1V-9B-Thinking
-🔍 找到README div，长度: 2024
-✅ 成功获取模型信息: README长度=2024, 标签数=7
-✅ THUDM/GLM-4.1V-9B-Thinking: README=2024, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-VL-A3B-Thinking-2506
-🔍 找到README div，长度: 8131
-✅ 成功获取模型信息: README长度=8131, 标签数=5
-✅ moonshotai/Kimi-VL-A3B-Thinking-2506: README=8131, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Alibaba-NLP/gte-large-en-v1.5
-🔍 找到README div，长度: 4810
-✅ 成功获取模型信息: README长度=4810, 标签数=13
-✅ Alibaba-NLP/gte-large-en-v1.5: README=4810, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: laion/CLIP-ViT-H-14-laion2B-s32B-b79K
-🔍 找到README div，长度: 3850
-✅ 成功获取模型信息: README长度=3850, 标签数=7
-✅ laion/CLIP-ViT-H-14-laion2B-s32B-b79K: README=3850, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: jinaai/jina-embeddings-v3
-🔍 找到README div，长度: 6984
-✅ 成功获取模型信息: README长度=6984, 标签数=12
-✅ jinaai/jina-embeddings-v3: README=6984, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: Intel/zoedepth-nyu-kitti
-🔍 找到README div，长度: 1301
-✅ 成功获取模型信息: README长度=1301, 标签数=7
-✅ Intel/zoedepth-nyu-kitti: README=1301, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: tsmatz/xlm-roberta-ner-japanese
-🔍 找到README div，长度: 1008
-✅ 成功获取模型信息: README长度=1008, 标签数=8
-✅ tsmatz/xlm-roberta-ner-japanese: README=1008, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/OpenReasoning-Nemotron-14B
-🔍 找到README div，长度: 7134
-✅ 成功获取模型信息: README长度=7134, 标签数=11
-✅ nvidia/OpenReasoning-Nemotron-14B: README=7134, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: QuantStack/FLUX.1-Kontext-dev-GGUF
-🔍 找到README div，长度: 195
-✅ 成功获取模型信息: README长度=195, 标签数=4
-✅ QuantStack/FLUX.1-Kontext-dev-GGUF: README=195, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: sshleifer/distilbart-cnn-6-6
-🔍 找到README div，长度: 610
-✅ 成功获取模型信息: README长度=610, 标签数=10
-✅ sshleifer/distilbart-cnn-6-6: README=610, 标签=10 [已保存]
-📊 批次 3 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 4/15 (50 个模型)
-批次 4:   0%|          | 0/50 [00:00<?, ?it/s]批次 4:   2%|▏         | 1/50 [00:06<05:17,  6.47s/it]批次 4:   4%|▍         | 2/50 [00:13<05:13,  6.52s/it]批次 4:   6%|▌         | 3/50 [00:19<05:06,  6.51s/it]批次 4:   8%|▊         | 4/50 [00:26<05:04,  6.62s/it]批次 4:  10%|█         | 5/50 [00:32<04:56,  6.59s/it]批次 4:  12%|█▏        | 6/50 [00:39<04:49,  6.57s/it]批次 4:  14%|█▍        | 7/50 [00:45<04:42,  6.57s/it]批次 4:  16%|█▌        | 8/50 [00:52<04:35,  6.56s/it]批次 4:  18%|█▊        | 9/50 [00:59<04:28,  6.55s/it]批次 4:  20%|██        | 10/50 [01:05<04:22,  6.57s/it]批次 4:  22%|██▏       | 11/50 [01:12<04:18,  6.63s/it]批次 4:  24%|██▍       | 12/50 [01:18<04:11,  6.62s/it]批次 4:  26%|██▌       | 13/50 [01:25<04:04,  6.61s/it]批次 4:  28%|██▊       | 14/50 [01:32<03:58,  6.64s/it]批次 4:  30%|███       | 15/50 [01:38<03:53,  6.66s/it]批次 4:  32%|███▏      | 16/50 [01:45<03:45,  6.64s/it]批次 4:  34%|███▍      | 17/50 [01:52<03:40,  6.69s/it]批次 4:  36%|███▌      | 18/50 [01:59<03:36,  6.77s/it]批次 4:  38%|███▊      | 19/50 [02:05<03:28,  6.72s/it]批次 4:  40%|████      | 20/50 [02:12<03:21,  6.72s/it]批次 4:  42%|████▏     | 21/50 [02:19<03:13,  6.69s/it]批次 4:  44%|████▍     | 22/50 [02:25<03:05,  6.63s/it]批次 4:  46%|████▌     | 23/50 [02:32<03:01,  6.70s/it]批次 4:  48%|████▊     | 24/50 [02:39<02:53,  6.65s/it]批次 4:  50%|█████     | 25/50 [02:45<02:47,  6.68s/it]批次 4:  52%|█████▏    | 26/50 [02:52<02:39,  6.66s/it]批次 4:  54%|█████▍    | 27/50 [02:59<02:32,  6.64s/it]批次 4:  56%|█████▌    | 28/50 [03:05<02:25,  6.61s/it]批次 4:  58%|█████▊    | 29/50 [03:12<02:18,  6.61s/it]批次 4:  60%|██████    | 30/50 [03:18<02:12,  6.61s/it]批次 4:  62%|██████▏   | 31/50 [03:25<02:05,  6.63s/it]批次 4:  64%|██████▍   | 32/50 [03:32<01:59,  6.63s/it]批次 4:  66%|██████▌   | 33/50 [03:38<01:52,  6.65s/it]正在使用爬虫获取模型详细信息: Gen-Verse/MMaDA-8B-MixCoT
-🔍 找到README div，长度: 611
-✅ 成功获取模型信息: README长度=611, 标签数=5
-✅ Gen-Verse/MMaDA-8B-MixCoT: README=611, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: valhalla/distilbart-mnli-12-1
-🔍 找到README div，长度: 929
-✅ 成功获取模型信息: README长度=929, 标签数=8
-✅ valhalla/distilbart-mnli-12-1: README=929, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/SeedVR-3B
-🔍 找到README div，长度: 1479
-✅ 成功获取模型信息: README长度=1479, 标签数=4
-✅ ByteDance-Seed/SeedVR-3B: README=1479, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: google/ddpm-celebahq-256
-🔍 找到README div，长度: 999
-✅ 成功获取模型信息: README长度=999, 标签数=6
-✅ google/ddpm-celebahq-256: README=999, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Diankun/Spatial-MLLM-subset-sft
-🔍 找到README div，长度: 150
-✅ 成功获取模型信息: README长度=150, 标签数=5
-✅ Diankun/Spatial-MLLM-subset-sft: README=150, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: CIDAS/clipseg-rd64-refined
-🔍 找到README div，长度: 231
-✅ 成功获取模型信息: README长度=231, 标签数=8
-✅ CIDAS/clipseg-rd64-refined: README=231, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: PhysicsWallahAI/Aryabhata-1.0
-🔍 找到README div，长度: 4053
-✅ 成功获取模型信息: README长度=4053, 标签数=16
-✅ PhysicsWallahAI/Aryabhata-1.0: README=4053, 标签=16 [已保存]
-正在使用爬虫获取模型详细信息: HiDream-ai/HiDream-E1-1
-🔍 找到README div，长度: 2065
-✅ 成功获取模型信息: README长度=2065, 标签数=11
-✅ HiDream-ai/HiDream-E1-1: README=2065, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: dbmdz/bert-large-cased-finetuned-conll03-english
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=6
-✅ dbmdz/bert-large-cased-finetuned-conll03-english: README=0, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Kwaipilot/KAT-V1-40B
-🔍 找到README div，长度: 3603
-✅ 成功获取模型信息: README长度=3603, 标签数=4
-✅ Kwaipilot/KAT-V1-40B: README=3603, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: jonatasgrosman/wav2vec2-large-xlsr-53-japanese
-🔍 找到README div，长度: 5606
-✅ 成功获取模型信息: README长度=5606, 标签数=10
-✅ jonatasgrosman/wav2vec2-large-xlsr-53-japanese: README=5606, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: QuantStack/Wan2.1_14B_VACE-GGUF
-🔍 找到README div，长度: 276
-✅ 成功获取模型信息: README长度=276, 标签数=5
-✅ QuantStack/Wan2.1_14B_VACE-GGUF: README=276, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/VeriReason-Qwen2.5-7b-RTLCoder-Verilog-GRPO-reasoning-tb-i1-GGUF
-🔍 找到README div，长度: 1394
-✅ 成功获取模型信息: README长度=1394, 标签数=8
-✅ mradermacher/VeriReason-Qwen2.5-7b-RTLCoder-Verilog-GRPO-reasoning-tb-i1-GGUF: README=1394, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/Wolf-Rayet-2B-Prime3-i1-GGUF
-🔍 找到README div，长度: 1352
-✅ 成功获取模型信息: README长度=1352, 标签数=8
-✅ mradermacher/Wolf-Rayet-2B-Prime3-i1-GGUF: README=1352, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/Orsta-7B-i1-GGUF
-🔍 找到README div，长度: 1362
-✅ 成功获取模型信息: README长度=1362, 标签数=8
-✅ mradermacher/Orsta-7B-i1-GGUF: README=1362, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/Qwen2-Audio-7B-Instruct-GGUF
-🔍 找到README div，长度: 1004
-✅ 成功获取模型信息: README长度=1004, 标签数=7
-✅ mradermacher/Qwen2-Audio-7B-Instruct-GGUF: README=1004, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: pysentimiento/robertuito-sentiment-analysis
-🔍 找到README div，长度: 3870
-✅ 成功获取模型信息: README长度=3870, 标签数=9
-✅ pysentimiento/robertuito-sentiment-analysis: README=3870, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: facebook/musicgen-medium
-🔍 找到README div，长度: 5111
-✅ 成功获取模型信息: README长度=5111, 标签数=7
-✅ facebook/musicgen-medium: README=5111, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: mistralai/Voxtral-Mini-3B-2507
-🔍 找到README div，长度: 13267
-✅ 成功获取模型信息: README长度=13267, 标签数=6
-✅ mistralai/Voxtral-Mini-3B-2507: README=13267, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/canary-qwen-2.5b
-🔍 找到README div，长度: 6160
-✅ 成功获取模型信息: README长度=6160, 标签数=17
-✅ nvidia/canary-qwen-2.5b: README=6160, 标签=17 [已保存]
-正在使用爬虫获取模型详细信息: maya-research/Veena
-🔍 找到README div，长度: 7634
-✅ 成功获取模型信息: README长度=7634, 标签数=14
-✅ maya-research/Veena: README=7634, 标签=14 [已保存]
-正在使用爬虫获取模型详细信息: vidore/colpali-v1.2
-🔍 找到README div，长度: 3114
-✅ 成功获取模型信息: README长度=3114, 标签数=3
-✅ vidore/colpali-v1.2: README=3114, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: google/ddpm-cifar10-32
-🔍 找到README div，长度: 1033
-✅ 成功获取模型信息: README长度=1033, 标签数=8
-✅ google/ddpm-cifar10-32: README=1033, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/SEOcrate-4B_grpo_new_01-i1-GGUF
-🔍 找到README div，长度: 1290
-✅ 成功获取模型信息: README长度=1290, 标签数=20
-✅ mradermacher/SEOcrate-4B_grpo_new_01-i1-GGUF: README=1290, 标签=20 [已保存]
-正在使用爬虫获取模型详细信息: facebook/timesformer-base-finetuned-k400
-🔍 找到README div，长度: 1244
-✅ 成功获取模型信息: README长度=1244, 标签数=6
-✅ facebook/timesformer-base-finetuned-k400: README=1244, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/SeedVR-7B
-🔍 找到README div，长度: 1483
-✅ 成功获取模型信息: README长度=1483, 标签数=6
-✅ ByteDance-Seed/SeedVR-7B: README=1483, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10
-🔍 找到README div，长度: 2416
-✅ 成功获取模型信息: README长度=2416, 标签数=5
-✅ moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10: README=2416, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: am-infoweb/layoutlmv3-finetuned_docvqa
-🔍 找到README div，长度: 435
-✅ 成功获取模型信息: README长度=435, 标签数=5
-✅ am-infoweb/layoutlmv3-finetuned_docvqa: README=435, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/BetaCeti-Beta-4B-Prime1-i1-GGUF
-🔍 找到README div，长度: 1364
-✅ 成功获取模型信息: README长度=1364, 标签数=9
-✅ mradermacher/BetaCeti-Beta-4B-Prime1-i1-GGUF: README=1364, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/GCIRS-Reasoning-1.5B-R1-GGUF
-🔍 找到README div，长度: 884
-✅ 成功获取模型信息: README长度=884, 标签数=10
-✅ mradermacher/GCIRS-Reasoning-1.5B-R1-GGUF: README=884, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: mgalkin/ultra_3g
-🔍 找到README div，长度: 2362
-✅ 成功获取模型信息: README长度=2362, 标签数=9
-✅ mgalkin/ultra_3g: README=2362, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: kredor/punctuate-all
-🔍 找到README div，长度: 972
-✅ 成功获取模型信息: README长度=972, 标签数=4
-✅ kredor/punctuate-all: README=972, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: nari-labs/Dia-1.6B-0626
-🔍 找到README div，长度: 4347
-✅ 成功获取模型信息: README长度=4347, 标签数=9
-✅ nari-labs/Dia-1.6B-0626: README=4347, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: mistralai/Magistral-Small-2507批次 4:  68%|██████▊   | 34/50 [03:45<01:46,  6.65s/it]批次 4:  70%|███████   | 35/50 [03:52<01:40,  6.68s/it]批次 4:  72%|███████▏  | 36/50 [03:58<01:33,  6.67s/it]批次 4:  74%|███████▍  | 37/50 [04:05<01:25,  6.61s/it]批次 4:  76%|███████▌  | 38/50 [04:12<01:19,  6.61s/it]批次 4:  78%|███████▊  | 39/50 [04:18<01:12,  6.57s/it]批次 4:  80%|████████  | 40/50 [04:25<01:05,  6.56s/it]批次 4:  82%|████████▏ | 41/50 [04:31<00:59,  6.59s/it]批次 4:  84%|████████▍ | 42/50 [04:38<00:53,  6.64s/it]批次 4:  86%|████████▌ | 43/50 [04:44<00:46,  6.60s/it]批次 4:  88%|████████▊ | 44/50 [04:51<00:39,  6.59s/it]批次 4:  90%|█████████ | 45/50 [04:58<00:33,  6.61s/it]批次 4:  92%|█████████▏| 46/50 [05:04<00:26,  6.59s/it]批次 4:  94%|█████████▍| 47/50 [05:11<00:19,  6.65s/it]批次 4:  96%|█████████▌| 48/50 [05:18<00:13,  6.62s/it]批次 4:  98%|█████████▊| 49/50 [05:24<00:06,  6.60s/it]批次 4: 100%|██████████| 50/50 [05:30<00:00,  6.45s/it]批次 4: 100%|██████████| 50/50 [05:30<00:00,  6.61s/it]
-
-🔍 找到README div，长度: 9899
-✅ 成功获取模型信息: README长度=9899, 标签数=6
-✅ mistralai/Magistral-Small-2507: README=9899, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: MohamedRashad/Voxtral-Small-24B-2507-transformers
-🔍 找到README div，长度: 8815
-✅ 成功获取模型信息: README长度=8815, 标签数=5
-✅ MohamedRashad/Voxtral-Small-24B-2507-transformers: README=8815, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: MohamedRashad/Voxtral-Mini-3B-2507-transformers
-🔍 找到README div，长度: 8821
-✅ 成功获取模型信息: README长度=8821, 标签数=5
-✅ MohamedRashad/Voxtral-Mini-3B-2507-transformers: README=8821, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-1.2B-GGUF
-🔍 找到README div，长度: 349
-✅ 成功获取模型信息: README长度=349, 标签数=8
-✅ LiquidAI/LFM2-1.2B-GGUF: README=349, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Kwai-Keye/Keye-VL-8B-Preview
-🔍 找到README div，长度: 12960
-✅ 成功获取模型信息: README长度=12960, 标签数=7
-✅ Kwai-Keye/Keye-VL-8B-Preview: README=12960, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Robertooo/autotrain-hmaet-2037366891
-🔍 找到README div，长度: 502
-✅ 成功获取模型信息: README长度=502, 标签数=7
-✅ Robertooo/autotrain-hmaet-2037366891: README=502, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: SWivid/F5-TTS
-🔍 找到README div，长度: 321
-✅ 成功获取模型信息: README长度=321, 标签数=5
-✅ SWivid/F5-TTS: README=321, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: dphn/Dolphin-Mistral-24B-Venice-Edition
-🔍 找到README div，长度: 2902
-✅ 成功获取模型信息: README长度=2902, 标签数=4
-✅ dphn/Dolphin-Mistral-24B-Venice-Edition: README=2902, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: yuvalkirstain/PickScore_v1
-🔍 找到README div，长度: 2221
-✅ 成功获取模型信息: README长度=2221, 标签数=4
-✅ yuvalkirstain/PickScore_v1: README=2221, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: laion/CLIP-ViT-L-14-DataComp.XL-s13B-b90K
-🔍 找到README div，长度: 3576
-✅ 成功获取模型信息: README长度=3576, 标签数=8
-✅ laion/CLIP-ViT-L-14-DataComp.XL-s13B-b90K: README=3576, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: ChatDOC/OCRFlux-3B
-🔍 找到README div，长度: 5924
-✅ 成功获取模型信息: README长度=5924, 标签数=3
-✅ ChatDOC/OCRFlux-3B: README=5924, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-350M
-🔍 找到README div，长度: 5168
-✅ 成功获取模型信息: README长度=5168, 标签数=8
-✅ LiquidAI/LFM2-350M: README=5168, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: ETH-CVG/lightglue_disk
-🔍 找到README div，长度: 4175
-✅ 成功获取模型信息: README长度=4175, 标签数=10
-✅ ETH-CVG/lightglue_disk: README=4175, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: sentence-transformers/multi-qa-MiniLM-L6-cos-v1
-🔍 找到README div，长度: 6557
-✅ 成功获取模型信息: README长度=6557, 标签数=11
-✅ sentence-transformers/multi-qa-MiniLM-L6-cos-v1: README=6557, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-4.5-Air-Base
-🔍 找到README div，长度: 699
-✅ 成功获取模型信息: README长度=699, 标签数=7
-✅ zai-org/GLM-4.5-Air-Base: README=699, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/Tar-1.5B
-🔍 找到README div，长度: 530
-✅ 成功获取模型信息: README长度=530, 标签数=5
-✅ ByteDance-Seed/Tar-1.5B: README=530, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/BM-Model
-🔍 找到README div，长度: 8
-✅ 成功获取模型信息: README长度=8, 标签数=6
-✅ ByteDance-Seed/BM-Model: README=8, 标签=6 [已保存]
-📊 批次 4 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 5/15 (50 个模型)
-批次 5:   0%|          | 0/50 [00:00<?, ?it/s]批次 5:   2%|▏         | 1/50 [00:06<05:24,  6.62s/it]批次 5:   4%|▍         | 2/50 [00:13<05:15,  6.57s/it]批次 5:   6%|▌         | 3/50 [00:19<05:07,  6.54s/it]批次 5:   8%|▊         | 4/50 [00:26<05:03,  6.60s/it]批次 5:  10%|█         | 5/50 [00:33<04:59,  6.65s/it]批次 5:  12%|█▏        | 6/50 [00:41<05:12,  7.11s/it]批次 5:  14%|█▍        | 7/50 [00:47<05:00,  6.99s/it]批次 5:  16%|█▌        | 8/50 [00:54<04:48,  6.86s/it]批次 5:  18%|█▊        | 9/50 [01:01<04:40,  6.83s/it]批次 5:  20%|██        | 10/50 [01:07<04:30,  6.75s/it]批次 5:  22%|██▏       | 11/50 [01:14<04:21,  6.72s/it]批次 5:  24%|██▍       | 12/50 [01:21<04:14,  6.70s/it]批次 5:  26%|██▌       | 13/50 [01:27<04:06,  6.66s/it]批次 5:  28%|██▊       | 14/50 [01:34<03:58,  6.62s/it]批次 5:  30%|███       | 15/50 [01:40<03:52,  6.65s/it]批次 5:  32%|███▏      | 16/50 [01:47<03:44,  6.61s/it]批次 5:  34%|███▍      | 17/50 [01:53<03:37,  6.59s/it]批次 5:  36%|███▌      | 18/50 [02:00<03:31,  6.60s/it]批次 5:  38%|███▊      | 19/50 [02:07<03:23,  6.56s/it]批次 5:  40%|████      | 20/50 [02:13<03:17,  6.57s/it]批次 5:  42%|████▏     | 21/50 [02:21<03:21,  6.97s/it]批次 5:  44%|████▍     | 22/50 [02:28<03:12,  6.86s/it]批次 5:  46%|████▌     | 23/50 [02:34<03:02,  6.75s/it]批次 5:  48%|████▊     | 24/50 [02:41<02:53,  6.67s/it]批次 5:  50%|█████     | 25/50 [02:48<02:48,  6.76s/it]批次 5:  52%|█████▏    | 26/50 [02:54<02:40,  6.67s/it]批次 5:  54%|█████▍    | 27/50 [03:01<02:32,  6.65s/it]批次 5:  56%|█████▌    | 28/50 [03:07<02:25,  6.62s/it]批次 5:  58%|█████▊    | 29/50 [03:14<02:18,  6.58s/it]批次 5:  60%|██████    | 30/50 [03:20<02:10,  6.55s/it]批次 5:  62%|██████▏   | 31/50 [03:27<02:04,  6.53s/it]批次 5:  64%|██████▍   | 32/50 [03:33<01:57,  6.51s/it]批次 5:  66%|██████▌   | 33/50 [03:40<01:50,  6.50s/it]正在使用爬虫获取模型详细信息: ByteDance-Seed/Tar-7B
-🔍 找到README div，长度: 530
-✅ 成功获取模型信息: README长度=530, 标签数=5
-✅ ByteDance-Seed/Tar-7B: README=530, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-4.5-FP8
-🔍 找到README div，长度: 6797
-✅ 成功获取模型信息: README长度=6797, 标签数=9
-✅ zai-org/GLM-4.5-FP8: README=6797, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: ValueFX9507/Tifa-DeepsexV2-7b-MGRPO-GGUF-Q8
-🔍 找到README div，长度: 3791
-✅ 成功获取模型信息: README长度=3791, 标签数=10
-✅ ValueFX9507/Tifa-DeepsexV2-7b-MGRPO-GGUF-Q8: README=3791, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: edbeeching/decision-transformer-gym-hopper-medium
-🔍 找到README div，长度: 460
-✅ 成功获取模型信息: README长度=460, 标签数=8
-✅ edbeeching/decision-transformer-gym-hopper-medium: README=460, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Genereux-akotenou/genomics-tf-prediction
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=4
-✅ Genereux-akotenou/genomics-tf-prediction: README=0, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: stanfordmimi/synthpose-vitpose-huge-hf
-🔍 找到README div，长度: 8179
-✅ 成功获取模型信息: README长度=8179, 标签数=7
-✅ stanfordmimi/synthpose-vitpose-huge-hf: README=8179, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: city96/Wan2.1-T2V-14B-gguf
-🔍 找到README div，长度: 262
-✅ 成功获取模型信息: README长度=262, 标签数=3
-✅ city96/Wan2.1-T2V-14B-gguf: README=262, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: jadechoghari/mar
-🔍 找到README div，长度: 1833
-✅ 成功获取模型信息: README长度=1833, 标签数=5
-✅ jadechoghari/mar: README=1833, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: OpenGVLab/InternVideo2_5_Chat_8B
-🔍 找到README div，长度: 7788
-✅ 成功获取模型信息: README长度=7788, 标签数=9
-✅ OpenGVLab/InternVideo2_5_Chat_8B: README=7788, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: stanfordmimi/synthpose-vitpose-base-hf
-🔍 找到README div，长度: 8172
-✅ 成功获取模型信息: README长度=8172, 标签数=7
-✅ stanfordmimi/synthpose-vitpose-base-hf: README=8172, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: PekingU/rtdetr_r101vd_coco_o365
-🔍 找到README div，长度: 3813
-✅ 成功获取模型信息: README长度=3813, 标签数=10
-✅ PekingU/rtdetr_r101vd_coco_o365: README=3813, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: joeddav/bart-large-mnli-yahoo-answers
-🔍 找到README div，长度: 2336
-✅ 成功获取模型信息: README长度=2336, 标签数=11
-✅ joeddav/bart-large-mnli-yahoo-answers: README=2336, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: DAMO-NLP-SG/VideoLLaMA3-7B
-🔍 找到README div，长度: 3257
-✅ 成功获取模型信息: README长度=3257, 标签数=10
-✅ DAMO-NLP-SG/VideoLLaMA3-7B: README=3257, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-VL-32B-Instruct
-🔍 找到README div，长度: 12623
-✅ 成功获取模型信息: README长度=12623, 标签数=8
-✅ Qwen/Qwen2.5-VL-32B-Instruct: README=12623, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: lerobot/pi0
-🔍 找到README div，长度: 375
-✅ 成功获取模型信息: README长度=375, 标签数=6
-✅ lerobot/pi0: README=375, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Helsinki-NLP/opus-mt-nl-en
-🔍 找到README div，长度: 270
-✅ 成功获取模型信息: README长度=270, 标签数=6
-✅ Helsinki-NLP/opus-mt-nl-en: README=270, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: clefourrier/graphormer-base-pcqm4mv1
-🔍 找到README div，长度: 1153
-✅ 成功获取模型信息: README长度=1153, 标签数=7
-✅ clefourrier/graphormer-base-pcqm4mv1: README=1153, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: timm/vit_base_patch14_dinov2.lvd142m
-🔍 找到README div，长度: 3392
-✅ 成功获取模型信息: README长度=3392, 标签数=7
-✅ timm/vit_base_patch14_dinov2.lvd142m: README=3392, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/tapex-base-finetuned-wikisql
-🔍 找到README div，长度: 2163
-✅ 成功获取模型信息: README长度=2163, 标签数=10
-✅ microsoft/tapex-base-finetuned-wikisql: README=2163, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: amazon/chronos-bolt-small
-🔍 找到README div，长度: 4177
-✅ 成功获取模型信息: README长度=4177, 标签数=11
-✅ amazon/chronos-bolt-small: README=4177, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: facebook/mms-lid-256
-🔍 找到README div，长度: 5676
-✅ 成功获取模型信息: README长度=5676, 标签数=9
-✅ facebook/mms-lid-256: README=5676, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: BAAI/bge-m3
-🔍 找到README div，长度: 8517
-✅ 成功获取模型信息: README长度=8517, 标签数=8
-✅ BAAI/bge-m3: README=8517, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-7B-Instruct
-🔍 找到README div，长度: 3616
-✅ 成功获取模型信息: README长度=3616, 标签数=10
-✅ Qwen/Qwen2.5-7B-Instruct: README=3616, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: nomic-ai/nomic-embed-text-v1.5
-🔍 找到README div，长度: 34840
-✅ 成功获取模型信息: README长度=34840, 标签数=10
-✅ nomic-ai/nomic-embed-text-v1.5: README=34840, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: facebook/mbart-large-50-many-to-many-mmt
-🔍 找到README div，长度: 3993
-✅ 成功获取模型信息: README长度=3993, 标签数=9
-✅ facebook/mbart-large-50-many-to-many-mmt: README=3993, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: monologg/koelectra-small-v2-distilled-korquad-384
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=5
-✅ monologg/koelectra-small-v2-distilled-korquad-384: README=0, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: lmms-lab/LLaVA-Video-7B-Qwen2
-🔍 找到README div，长度: 4032
-✅ 成功获取模型信息: README长度=4032, 标签数=10
-✅ lmms-lab/LLaVA-Video-7B-Qwen2: README=4032, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-VL-3B-Instruct
-🔍 找到README div，长度: 12948
-✅ 成功获取模型信息: README长度=12948, 标签数=8
-✅ Qwen/Qwen2.5-VL-3B-Instruct: README=12948, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: ValueFX9507/Tifa-DeepsexV2-7b-MGRPO-GGUF-Q4
-🔍 找到README div，长度: 3967
-✅ 成功获取模型信息: README长度=3967, 标签数=10
-✅ ValueFX9507/Tifa-DeepsexV2-7b-MGRPO-GGUF-Q4: README=3967, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: autogluon/tabpfn-mix-1.0-classifier
-🔍 找到README div，长度: 2231
-✅ 成功获取模型信息: README长度=2231, 标签数=7
-✅ autogluon/tabpfn-mix-1.0-classifier: README=2231, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Prior-Labs/TabPFN-v2-reg
-🔍 找到README div，长度: 1689
-✅ 成功获取模型信息: README长度=1689, 标签数=4
-✅ Prior-Labs/TabPFN-v2-reg: README=1689, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: pcoloc/autotrain-mikrotik-7-7-1860563597
-🔍 找到README div，长度: 505
-✅ 成功获取模型信息: README长度=505, 标签数=7
-✅ pcoloc/autotrain-mikrotik-7-7-1860563597: README=505, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: naver/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric
-🔍 找到README div，长度: 1155
-✅ 成功获取模型信息: README长度=1155, 标签数=7
-✅ naver/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric: README=1155, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-27b-it-GGUF
-🔍 找到README div，长度: 6723批次 5:  68%|██████▊   | 34/50 [03:46<01:44,  6.50s/it]批次 5:  70%|███████   | 35/50 [03:53<01:37,  6.49s/it]批次 5:  72%|███████▏  | 36/50 [03:59<01:30,  6.48s/it]批次 5:  74%|███████▍  | 37/50 [04:06<01:24,  6.52s/it]批次 5:  76%|███████▌  | 38/50 [04:12<01:18,  6.56s/it]批次 5:  78%|███████▊  | 39/50 [04:19<01:11,  6.54s/it]批次 5:  80%|████████  | 40/50 [04:25<01:05,  6.52s/it]批次 5:  82%|████████▏ | 41/50 [04:32<00:58,  6.51s/it]批次 5:  84%|████████▍ | 42/50 [04:38<00:51,  6.49s/it]批次 5:  86%|████████▌ | 43/50 [04:45<00:45,  6.48s/it]批次 5:  88%|████████▊ | 44/50 [04:51<00:38,  6.50s/it]批次 5:  90%|█████████ | 45/50 [04:58<00:32,  6.50s/it]批次 5:  92%|█████████▏| 46/50 [05:04<00:25,  6.48s/it]批次 5:  94%|█████████▍| 47/50 [05:11<00:19,  6.55s/it]批次 5:  96%|█████████▌| 48/50 [05:17<00:13,  6.57s/it]批次 5:  98%|█████████▊| 49/50 [05:24<00:06,  6.58s/it]批次 5: 100%|██████████| 50/50 [05:30<00:00,  6.42s/it]批次 5: 100%|██████████| 50/50 [05:30<00:00,  6.61s/it]
-
-✅ 成功获取模型信息: README长度=6723, 标签数=9
-✅ unsloth/gemma-3-27b-it-GGUF: README=6723, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: clefourrier/graphormer-base-pcqm4mv2
-🔍 找到README div，长度: 1117
-✅ 成功获取模型信息: README长度=1117, 标签数=6
-✅ clefourrier/graphormer-base-pcqm4mv2: README=1117, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: tiennvcs/layoutlmv2-base-uncased-finetuned-docvqa
-🔍 找到README div，长度: 609
-✅ 成功获取模型信息: README长度=609, 标签数=5
-✅ tiennvcs/layoutlmv2-base-uncased-finetuned-docvqa: README=609, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2-VL-2B-Instruct
-🔍 找到README div，长度: 15708
-✅ 成功获取模型信息: README长度=15708, 标签数=8
-✅ Qwen/Qwen2-VL-2B-Instruct: README=15708, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: BAAI/bge-large-en-v1.5
-🔍 找到README div，长度: 21260
-✅ 成功获取模型信息: README长度=21260, 标签数=13
-✅ BAAI/bge-large-en-v1.5: README=21260, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: internlm/internlm-xcomposer2d5-7b
-🔍 找到README div，长度: 16661
-✅ 成功获取模型信息: README长度=16661, 标签数=6
-✅ internlm/internlm-xcomposer2d5-7b: README=16661, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-4-9b-chat-hf
-🔍 找到README div，长度: 5251
-✅ 成功获取模型信息: README长度=5251, 标签数=3
-✅ zai-org/glm-4-9b-chat-hf: README=5251, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-Z1-9B-0414
-🔍 找到README div，长度: 6585
-✅ 成功获取模型信息: README长度=6585, 标签数=7
-✅ zai-org/GLM-Z1-9B-0414: README=6585, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/NextStep-1-Large-Pretrain
-🔍 找到README div，长度: 2869
-✅ 成功获取模型信息: README长度=2869, 标签数=6
-✅ stepfun-ai/NextStep-1-Large-Pretrain: README=2869, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-270m-it-unsloth-bnb-4bit
-🔍 找到README div，长度: 7108
-✅ 成功获取模型信息: README长度=7108, 标签数=9
-✅ unsloth/gemma-3-270m-it-unsloth-bnb-4bit: README=7108, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/SWE-Dev-32B
-🔍 找到README div，长度: 563
-✅ 成功获取模型信息: README长度=563, 标签数=5
-✅ zai-org/SWE-Dev-32B: README=563, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: openai/diffusers-cd_cat256_l2
-🔍 找到README div，长度: 3453
-✅ 成功获取模型信息: README长度=3453, 标签数=9
-✅ openai/diffusers-cd_cat256_l2: README=3453, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gpt-oss-20b-GGUF
-🔍 找到README div，长度: 3234
-✅ 成功获取模型信息: README长度=3234, 标签数=6
-✅ unsloth/gpt-oss-20b-GGUF: README=3234, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/Seed-OSS-36B-Base
-🔍 找到README div，长度: 10734
-✅ 成功获取模型信息: README长度=10734, 标签数=5
-✅ ByteDance-Seed/Seed-OSS-36B-Base: README=10734, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: distilbert/distilbert-base-uncased
-🔍 找到README div，长度: 5155
-✅ 成功获取模型信息: README长度=5155, 标签数=12
-✅ distilbert/distilbert-base-uncased: README=5155, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: Salesforce/blip-image-captioning-base
-🔍 找到README div，长度: 4387
-✅ 成功获取模型信息: README长度=4387, 标签数=7
-✅ Salesforce/blip-image-captioning-base: README=4387, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/CogVideoX1.5-5B-SAT
-🔍 找到README div，长度: 1393
-✅ 成功获取模型信息: README长度=1393, 标签数=3
-✅ zai-org/CogVideoX1.5-5B-SAT: README=1393, 标签=3 [已保存]
-📊 批次 5 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 6/15 (50 个模型)
-批次 6:   0%|          | 0/50 [00:00<?, ?it/s]批次 6:   2%|▏         | 1/50 [00:06<05:21,  6.56s/it]批次 6:   4%|▍         | 2/50 [00:13<05:31,  6.90s/it]批次 6:   6%|▌         | 3/50 [00:20<05:22,  6.86s/it]批次 6:   8%|▊         | 4/50 [00:27<05:09,  6.74s/it]批次 6:  10%|█         | 5/50 [00:33<05:01,  6.70s/it]批次 6:  12%|█▏        | 6/50 [00:40<04:52,  6.64s/it]批次 6:  14%|█▍        | 7/50 [00:46<04:43,  6.60s/it]批次 6:  16%|█▌        | 8/50 [00:53<04:36,  6.59s/it]批次 6:  18%|█▊        | 9/50 [00:59<04:30,  6.60s/it]批次 6:  20%|██        | 10/50 [01:06<04:22,  6.57s/it]批次 6:  22%|██▏       | 11/50 [01:13<04:17,  6.59s/it]批次 6:  24%|██▍       | 12/50 [01:19<04:09,  6.57s/it]批次 6:  26%|██▌       | 13/50 [01:26<04:02,  6.55s/it]批次 6:  28%|██▊       | 14/50 [01:32<03:55,  6.53s/it]批次 6:  30%|███       | 15/50 [01:39<03:49,  6.56s/it]批次 6:  32%|███▏      | 16/50 [01:45<03:42,  6.53s/it]批次 6:  34%|███▍      | 17/50 [01:52<03:37,  6.59s/it]批次 6:  36%|███▌      | 18/50 [01:59<03:31,  6.60s/it]批次 6:  38%|███▊      | 19/50 [02:05<03:23,  6.56s/it]批次 6:  40%|████      | 20/50 [02:12<03:17,  6.57s/it]批次 6:  42%|████▏     | 21/50 [02:18<03:09,  6.55s/it]批次 6:  44%|████▍     | 22/50 [02:25<03:02,  6.53s/it]批次 6:  46%|████▌     | 23/50 [02:31<02:56,  6.54s/it]批次 6:  48%|████▊     | 24/50 [02:38<02:49,  6.52s/it]批次 6:  50%|█████     | 25/50 [02:44<02:42,  6.50s/it]批次 6:  52%|█████▏    | 26/50 [02:51<02:35,  6.50s/it]批次 6:  54%|█████▍    | 27/50 [02:57<02:29,  6.50s/it]批次 6:  56%|█████▌    | 28/50 [03:04<02:23,  6.52s/it]批次 6:  58%|█████▊    | 29/50 [03:10<02:17,  6.55s/it]批次 6:  60%|██████    | 30/50 [03:17<02:10,  6.52s/it]批次 6:  62%|██████▏   | 31/50 [03:23<02:03,  6.51s/it]批次 6:  64%|██████▍   | 32/50 [03:30<01:56,  6.49s/it]批次 6:  66%|██████▌   | 33/50 [03:36<01:50,  6.49s/it]批次 6:  68%|██████▊   | 34/50 [03:43<01:43,  6.47s/it]正在使用爬虫获取模型详细信息: inclusionAI/Ling-1T
-🔍 找到README div，长度: 6691
-✅ 成功获取模型信息: README长度=6691, 标签数=5
-✅ inclusionAI/Ling-1T: README=6691, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-32B
-🔍 找到README div，长度: 9691
-✅ 成功获取模型信息: README长度=9691, 标签数=6
-✅ Qwen/Qwen3-32B: README=9691, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-1.7B-FP8
-🔍 找到README div，长度: 8569
-✅ 成功获取模型信息: README长度=8569, 标签数=5
-✅ Qwen/Qwen3-1.7B-FP8: README=8569, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: facebook/wav2vec2-base-960h
-🔍 找到README div，长度: 2392
-✅ 成功获取模型信息: README长度=2392, 标签数=10
-✅ facebook/wav2vec2-base-960h: README=2392, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: stabilityai/stable-video-diffusion-img2vid-xt-1-1
-🔍 找到README div，长度: 5153
-✅ 成功获取模型信息: README长度=5153, 标签数=6
-✅ stabilityai/stable-video-diffusion-img2vid-xt-1-1: README=5153, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: pyannote/segmentation
-🔍 找到README div，长度: 3644
-✅ 成功获取模型信息: README长度=3644, 标签数=14
-✅ pyannote/segmentation: README=3644, 标签=14 [已保存]
-正在使用爬虫获取模型详细信息: facebook/mask2former-swin-large-cityscapes-semantic
-🔍 找到README div，长度: 1728
-✅ 成功获取模型信息: README长度=1728, 标签数=11
-✅ facebook/mask2former-swin-large-cityscapes-semantic: README=1728, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-Omni-7B-GPTQ-Int4
-🔍 找到README div，长度: 2579
-✅ 成功获取模型信息: README长度=2579, 标签数=7
-✅ Qwen/Qwen2.5-Omni-7B-GPTQ-Int4: README=2579, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Wan-AI/Wan2.1-FLF2V-14B-720P-diffusers
-🔍 找到README div，长度: 6930
-✅ 成功获取模型信息: README长度=6930, 标签数=6
-✅ Wan-AI/Wan2.1-FLF2V-14B-720P-diffusers: README=6930, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: notmahi/dobb-e
-🔍 找到README div，长度: 450
-✅ 成功获取模型信息: README长度=450, 标签数=9
-✅ notmahi/dobb-e: README=450, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-VL-A3B-Thinking
-🔍 找到README div，长度: 5097
-✅ 成功获取模型信息: README长度=5097, 标签数=7
-✅ moonshotai/Kimi-VL-A3B-Thinking: README=5097, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: facebook/maskformer-swin-large-coco
-🔍 找到README div，长度: 1502
-✅ 成功获取模型信息: README长度=1502, 标签数=9
-✅ facebook/maskformer-swin-large-coco: README=1502, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google/owlv2-large-patch14-ensemble
-🔍 找到README div，长度: 4469
-✅ 成功获取模型信息: README长度=4469, 标签数=8
-✅ google/owlv2-large-patch14-ensemble: README=4469, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: google/deplot
-🔍 找到README div，长度: 2427
-✅ 成功获取模型信息: README长度=2427, 标签数=8
-✅ google/deplot: README=2427, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: google/tapas-small-finetuned-wtq
-🔍 找到README div，长度: 3177
-✅ 成功获取模型信息: README长度=3177, 标签数=9
-✅ google/tapas-small-finetuned-wtq: README=3177, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google/tapas-large-finetuned-wtq
-🔍 找到README div，长度: 3179
-✅ 成功获取模型信息: README长度=3179, 标签数=10
-✅ google/tapas-large-finetuned-wtq: README=3179, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: Wan-AI/Wan2.1-VACE-14B
-🔍 找到README div，长度: 21349
-✅ 成功获取模型信息: README长度=21349, 标签数=12
-✅ Wan-AI/Wan2.1-VACE-14B: README=21349, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: facebook/dinov2-small
-🔍 找到README div，长度: 1675
-✅ 成功获取模型信息: README长度=1675, 标签数=7
-✅ facebook/dinov2-small: README=1675, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: w11wo/indonesian-roberta-base-posp-tagger
-🔍 找到README div，长度: 1010
-✅ 成功获取模型信息: README长度=1010, 标签数=8
-✅ w11wo/indonesian-roberta-base-posp-tagger: README=1010, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: timm/mobilenetv3_small_100.lamb_in1k
-🔍 找到README div，长度: 3777
-✅ 成功获取模型信息: README长度=3777, 标签数=9
-✅ timm/mobilenetv3_small_100.lamb_in1k: README=3777, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: timm/resnet18.a1_in1k
-🔍 找到README div，长度: 11334
-✅ 成功获取模型信息: README长度=11334, 标签数=7
-✅ timm/resnet18.a1_in1k: README=11334, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: amazon/chronos-bolt-base
-🔍 找到README div，长度: 4190
-✅ 成功获取模型信息: README长度=4190, 标签数=12
-✅ amazon/chronos-bolt-base: README=4190, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: openbmb/MiniCPM-o-2_6
-🔍 找到README div，长度: 27326
-✅ 成功获取模型信息: README长度=27326, 标签数=20
-✅ openbmb/MiniCPM-o-2_6: README=27326, 标签=20 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3-0324
-🔍 找到README div，长度: 6670
-✅ 成功获取模型信息: README长度=6670, 标签数=4
-✅ deepseek-ai/DeepSeek-V3-0324: README=6670, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: google/vivit-b-16x2-kinetics400
-🔍 找到README div，长度: 542
-✅ 成功获取模型信息: README长度=542, 标签数=8
-✅ google/vivit-b-16x2-kinetics400: README=542, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: speechbrain/emotion-recognition-wav2vec2-IEMOCAP
-🔍 找到README div，长度: 2347
-✅ 成功获取模型信息: README长度=2347, 标签数=10
-✅ speechbrain/emotion-recognition-wav2vec2-IEMOCAP: README=2347, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: google/tapas-base-finetuned-wtq
-🔍 找到README div，长度: 3188
-✅ 成功获取模型信息: README长度=3188, 标签数=8
-✅ google/tapas-base-finetuned-wtq: README=3188, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Xenova/slimsam-77-uniform
-🔍 找到README div，长度: 1723
-✅ 成功获取模型信息: README长度=1723, 标签数=3
-✅ Xenova/slimsam-77-uniform: README=1723, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: google-bert/bert-base-uncased
-🔍 找到README div，长度: 5831
-✅ 成功获取模型信息: README长度=5831, 标签数=13
-✅ google-bert/bert-base-uncased: README=5831, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: dima806/fairface_age_image_detection
-🔍 找到README div，长度: 827
-✅ 成功获取模型信息: README长度=827, 标签数=6
-✅ dima806/fairface_age_image_detection: README=827, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: amazon/chronos-t5-base
-🔍 找到README div，长度: 2964
-✅ 成功获取模型信息: README长度=2964, 标签数=12
-✅ amazon/chronos-t5-base: README=2964, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: briaai/RMBG-1.4
-🔍 找到README div，长度: 4829
-✅ 成功获取模型信息: README长度=4829, 标签数=14
-✅ briaai/RMBG-1.4: README=4829, 标签=14 [已保存]
-正在使用爬虫获取模型详细信息: Salesforce/blip-image-captioning-large
-🔍 找到README div，长度: 4136
-✅ 成功获取模型信息: README长度=4136, 标签数=8
-✅ Salesforce/blip-image-captioning-large: README=4136, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: amazon/chronos-t5-tiny
-🔍 找到README div，长度: 2950
-✅ 成功获取模型信息: README长度=2950, 标签数=11
-✅ amazon/chronos-t5-tiny: README=2950, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: facebook/sam-vit-large批次 6:  70%|███████   | 35/50 [03:49<01:37,  6.47s/it]批次 6:  72%|███████▏  | 36/50 [03:56<01:30,  6.48s/it]批次 6:  74%|███████▍  | 37/50 [04:02<01:24,  6.49s/it]批次 6:  76%|███████▌  | 38/50 [04:09<01:17,  6.49s/it]批次 6:  78%|███████▊  | 39/50 [04:15<01:11,  6.49s/it]批次 6:  80%|████████  | 40/50 [04:22<01:05,  6.50s/it]批次 6:  82%|████████▏ | 41/50 [04:28<00:58,  6.50s/it]批次 6:  84%|████████▍ | 42/50 [04:34<00:51,  6.48s/it]批次 6:  86%|████████▌ | 43/50 [04:41<00:45,  6.47s/it]批次 6:  88%|████████▊ | 44/50 [04:47<00:38,  6.46s/it]批次 6:  90%|█████████ | 45/50 [04:54<00:32,  6.46s/it]批次 6:  92%|█████████▏| 46/50 [05:00<00:25,  6.46s/it]批次 6:  94%|█████████▍| 47/50 [05:07<00:19,  6.47s/it]批次 6:  96%|█████████▌| 48/50 [05:13<00:12,  6.47s/it]批次 6:  98%|█████████▊| 49/50 [05:20<00:06,  6.48s/it]批次 6: 100%|██████████| 50/50 [05:26<00:00,  6.40s/it]批次 6: 100%|██████████| 50/50 [05:26<00:00,  6.53s/it]
-
-🔍 找到README div，长度: 3104
-✅ 成功获取模型信息: README长度=3104, 标签数=7
-✅ facebook/sam-vit-large: README=3104, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: LLM-Research/Molmo-7B-D-0924
-🔍 找到README div，长度: 4876
-✅ 成功获取模型信息: README长度=4876, 标签数=9
-✅ LLM-Research/Molmo-7B-D-0924: README=4876, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: openbmb/MiniCPM4.1-8B
-🔍 找到README div，长度: 16857
-✅ 成功获取模型信息: README长度=16857, 标签数=8
-✅ openbmb/MiniCPM4.1-8B: README=16857, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: facebook/detr-resnet-101
-🔍 找到README div，长度: 3419
-✅ 成功获取模型信息: README长度=3419, 标签数=9
-✅ facebook/detr-resnet-101: README=3419, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
-🔍 找到README div，长度: 7197
-✅ 成功获取模型信息: README长度=7197, 标签数=9
-✅ microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224: README=7197, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: Helsinki-NLP/opus-mt-en-fr
-🔍 找到README div，长度: 584
-✅ 成功获取模型信息: README长度=584, 标签数=6
-✅ Helsinki-NLP/opus-mt-en-fr: README=584, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: myshell-ai/MeloTTS-Spanish
-🔍 找到README div，长度: 1168
-✅ 成功获取模型信息: README长度=1168, 标签数=5
-✅ myshell-ai/MeloTTS-Spanish: README=1168, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: ValueFX9507/Tifa-Deepsex-14b-CoT-Q8
-🔍 找到README div，长度: 5271
-✅ 成功获取模型信息: README长度=5271, 标签数=11
-✅ ValueFX9507/Tifa-Deepsex-14b-CoT-Q8: README=5271, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: Helsinki-NLP/opus-mt-zh-en
-🔍 找到README div，长度: 1446
-✅ 成功获取模型信息: README长度=1446, 标签数=8
-✅ Helsinki-NLP/opus-mt-zh-en: README=1446, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: stabilityai/stable-video-diffusion-img2vid
-🔍 找到README div，长度: 2719
-✅ 成功获取模型信息: README长度=2719, 标签数=6
-✅ stabilityai/stable-video-diffusion-img2vid: README=2719, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Salesforce/blip2-opt-2.7b-coco
-🔍 找到README div，长度: 1187
-✅ 成功获取模型信息: README长度=1187, 标签数=12
-✅ Salesforce/blip2-opt-2.7b-coco: README=1187, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: stabilityai/stable-diffusion-2-1
-🔍 找到README div，长度: 5004
-✅ 成功获取模型信息: README长度=5004, 标签数=8
-✅ stabilityai/stable-diffusion-2-1: README=5004, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/trocr-base-handwritten
-🔍 找到README div，长度: 1545
-✅ 成功获取模型信息: README长度=1545, 标签数=8
-✅ microsoft/trocr-base-handwritten: README=1545, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: stabilityai/stable-diffusion-2-inpainting
-🔍 找到README div，长度: 5037
-✅ 成功获取模型信息: README长度=5037, 标签数=7
-✅ stabilityai/stable-diffusion-2-inpainting: README=5037, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-350M-ENJP-MT
-🔍 找到README div，长度: 12165
-✅ 成功获取模型信息: README长度=12165, 标签数=10
-✅ LiquidAI/LFM2-350M-ENJP-MT: README=12165, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-Omni-7B
-🔍 找到README div，长度: 13318
-✅ 成功获取模型信息: README长度=13318, 标签数=0
-✅ Qwen/Qwen2.5-Omni-7B: README=13318, 标签=0 [已保存]
-📊 批次 6 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 7/15 (50 个模型)
-批次 7:   0%|          | 0/50 [00:00<?, ?it/s]批次 7:   2%|▏         | 1/50 [00:06<05:19,  6.52s/it]批次 7:   4%|▍         | 2/50 [00:13<05:11,  6.50s/it]批次 7:   6%|▌         | 3/50 [00:19<05:05,  6.49s/it]批次 7:   8%|▊         | 4/50 [00:26<05:00,  6.53s/it]批次 7:  10%|█         | 5/50 [00:32<04:55,  6.57s/it]批次 7:  12%|█▏        | 6/50 [00:39<04:49,  6.58s/it]批次 7:  14%|█▍        | 7/50 [00:45<04:41,  6.54s/it]批次 7:  16%|█▌        | 8/50 [00:52<04:34,  6.53s/it]批次 7:  18%|█▊        | 9/50 [00:58<04:26,  6.51s/it]批次 7:  20%|██        | 10/50 [01:05<04:19,  6.49s/it]批次 7:  22%|██▏       | 11/50 [01:11<04:13,  6.50s/it]批次 7:  24%|██▍       | 12/50 [01:18<04:06,  6.50s/it]批次 7:  26%|██▌       | 13/50 [01:24<04:00,  6.49s/it]批次 7:  28%|██▊       | 14/50 [01:31<03:53,  6.48s/it]批次 7:  30%|███       | 15/50 [01:37<03:47,  6.49s/it]批次 7:  32%|███▏      | 16/50 [01:44<03:40,  6.49s/it]批次 7:  34%|███▍      | 17/50 [01:50<03:33,  6.48s/it]批次 7:  36%|███▌      | 18/50 [01:57<03:27,  6.48s/it]批次 7:  38%|███▊      | 19/50 [02:03<03:20,  6.47s/it]批次 7:  40%|████      | 20/50 [02:10<03:14,  6.47s/it]批次 7:  42%|████▏     | 21/50 [02:16<03:09,  6.52s/it]批次 7:  44%|████▍     | 22/50 [02:23<03:02,  6.52s/it]批次 7:  46%|████▌     | 23/50 [02:29<02:55,  6.51s/it]批次 7:  48%|████▊     | 24/50 [02:36<02:48,  6.49s/it]批次 7:  50%|█████     | 25/50 [02:42<02:42,  6.51s/it]批次 7:  52%|█████▏    | 26/50 [02:49<02:36,  6.51s/it]批次 7:  54%|█████▍    | 27/50 [02:55<02:29,  6.50s/it]批次 7:  56%|█████▌    | 28/50 [03:02<02:22,  6.49s/it]批次 7:  58%|█████▊    | 29/50 [03:08<02:15,  6.48s/it]批次 7:  60%|██████    | 30/50 [03:14<02:09,  6.47s/it]批次 7:  62%|██████▏   | 31/50 [03:21<02:03,  6.50s/it]批次 7:  64%|██████▍   | 32/50 [03:28<01:56,  6.49s/it]批次 7:  66%|██████▌   | 33/50 [03:34<01:50,  6.49s/it]正在使用爬虫获取模型详细信息: Wan-AI/Wan2.2-I2V-A14B
-🔍 找到README div，长度: 7146
-✅ 成功获取模型信息: README长度=7146, 标签数=9
-✅ Wan-AI/Wan2.2-I2V-A14B: README=7146, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/Step-Audio-AQAA
-🔍 找到README div，长度: 1633
-✅ 成功获取模型信息: README长度=1633, 标签数=4
-✅ stepfun-ai/Step-Audio-AQAA: README=1633, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: openai/whisper-base.en
-🔍 找到README div，长度: 6371
-✅ 成功获取模型信息: README长度=6371, 标签数=12
-✅ openai/whisper-base.en: README=6371, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: Wan-AI/Wan2.1-I2V-14B-720P
-🔍 找到README div，长度: 6854
-✅ 成功获取模型信息: README长度=6854, 标签数=10
-✅ Wan-AI/Wan2.1-I2V-14B-720P: README=6854, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/Frame_VAD_Multilingual_MarbleNet_v2.0
-🔍 找到README div，长度: 6752
-✅ 成功获取模型信息: README长度=6752, 标签数=14
-✅ nvidia/Frame_VAD_Multilingual_MarbleNet_v2.0: README=6752, 标签=14 [已保存]
-正在使用爬虫获取模型详细信息: Kwaipilot/SRPO-Qwen-32B
-🔍 找到README div，长度: 5541
-✅ 成功获取模型信息: README长度=5541, 标签数=5
-✅ Kwaipilot/SRPO-Qwen-32B: README=5541, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: mlx-community/gemma-3-12b-it-qat-4bit
-🔍 找到README div，长度: 349
-✅ 成功获取模型信息: README长度=349, 标签数=11
-✅ mlx-community/gemma-3-12b-it-qat-4bit: README=349, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: PlanTL-GOB-ES/roberta-base-bne-capitel-ner
-🔍 找到README div，长度: 3852
-✅ 成功获取模型信息: README长度=3852, 标签数=0
-✅ PlanTL-GOB-ES/roberta-base-bne-capitel-ner: README=3852, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-4-9b
-🔍 找到README div，长度: 2532
-✅ 成功获取模型信息: README长度=2532, 标签数=3
-✅ zai-org/glm-4-9b: README=2532, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-edge-v-5b
-🔍 找到README div，长度: 1260
-✅ 成功获取模型信息: README长度=1260, 标签数=2
-✅ zai-org/glm-edge-v-5b: README=1260, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: openai/diffusers-ct_cat256
-🔍 找到README div，长度: 3392
-✅ 成功获取模型信息: README长度=3392, 标签数=11
-✅ openai/diffusers-ct_cat256: README=3392, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-edge-v-2b
-🔍 找到README div，长度: 1260
-✅ 成功获取模型信息: README长度=1260, 标签数=2
-✅ zai-org/glm-edge-v-2b: README=1260, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-270m-it-torchao-fp8
-🔍 找到README div，长度: 9837
-✅ 成功获取模型信息: README长度=9837, 标签数=7
-✅ unsloth/gemma-3-270m-it-torchao-fp8: README=9837, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-270m-it-qat
-🔍 找到README div，长度: 7307
-✅ 成功获取模型信息: README长度=7307, 标签数=9
-✅ unsloth/gemma-3-270m-it-qat: README=7307, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/Seed-OSS-36B-Base-woSyn
-🔍 找到README div，长度: 7259
-✅ 成功获取模型信息: README长度=7259, 标签数=5
-✅ ByteDance-Seed/Seed-OSS-36B-Base-woSyn: README=7259, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-4-9B-0414
-🔍 找到README div，长度: 15269
-✅ 成功获取模型信息: README长度=15269, 标签数=6
-✅ zai-org/GLM-4-9B-0414: README=15269, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/NextStep-1-Large
-🔍 找到README div，长度: 2803
-✅ 成功获取模型信息: README长度=2803, 标签数=5
-✅ stepfun-ai/NextStep-1-Large: README=2803, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Qwen3-4B-Thinking-2507-GGUF
-🔍 找到README div，长度: 6279
-✅ 成功获取模型信息: README长度=6279, 标签数=8
-✅ unsloth/Qwen3-4B-Thinking-2507-GGUF: README=6279, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: jonatasgrosman/wav2vec2-large-xlsr-53-portuguese
-🔍 找到README div，长度: 3290
-✅ 成功获取模型信息: README长度=3290, 标签数=13
-✅ jonatasgrosman/wav2vec2-large-xlsr-53-portuguese: README=3290, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/grok-2
-🔍 找到README div，长度: 1892
-✅ 成功获取模型信息: README长度=1892, 标签数=7
-✅ unsloth/grok-2: README=1892, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: lerobot/vqbet_pusht
-🔍 找到README div，长度: 1265
-✅ 成功获取模型信息: README长度=1265, 标签数=10
-✅ lerobot/vqbet_pusht: README=1265, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: lerobot/diffusion_pusht
-🔍 找到README div，长度: 1355
-✅ 成功获取模型信息: README长度=1355, 标签数=11
-✅ lerobot/diffusion_pusht: README=1355, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: lzkhhh/ITDR-LLaMA3.2-3B
-🔍 找到README div，长度: 419
-✅ 成功获取模型信息: README长度=419, 标签数=4
-✅ lzkhhh/ITDR-LLaMA3.2-3B: README=419, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: lzkhhh/ITDR-GLM-4-9B
-🔍 找到README div，长度: 419
-✅ 成功获取模型信息: README长度=419, 标签数=4
-✅ lzkhhh/ITDR-GLM-4-9B: README=419, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Kwai-Keye/Keye-VL-1_5-8B
-🔍 找到README div，长度: 12628
-✅ 成功获取模型信息: README长度=12628, 标签数=8
-✅ Kwai-Keye/Keye-VL-1_5-8B: README=12628, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/NVIDIA-Nemotron-Nano-9B-v2-GGUF
-🔍 找到README div，长度: 25417
-✅ 成功获取模型信息: README长度=25417, 标签数=9
-✅ unsloth/NVIDIA-Nemotron-Nano-9B-v2-GGUF: README=25417, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
-🔍 找到README div，长度: 3451
-✅ 成功获取模型信息: README长度=3451, 标签数=14
-✅ MoritzLaurer/mDeBERTa-v3-base-mnli-xnli: README=3451, 标签=14 [已保存]
-正在使用爬虫获取模型详细信息: facebook/nllb-200-distilled-600M
-🔍 找到README div，长度: 1583
-✅ 成功获取模型信息: README长度=1583, 标签数=7
-✅ facebook/nllb-200-distilled-600M: README=1583, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: ustc-community/dfine-xlarge-coco
-🔍 找到README div，长度: 1729
-✅ 成功获取模型信息: README长度=1729, 标签数=10
-✅ ustc-community/dfine-xlarge-coco: README=1729, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: genmo/mochi-1-preview
-🔍 找到README div，长度: 4666
-✅ 成功获取模型信息: README长度=4666, 标签数=8
-✅ genmo/mochi-1-preview: README=4666, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Lykon/dreamshaper-7
-🔍 找到README div，长度: 1377
-✅ 成功获取模型信息: README长度=1377, 标签数=13
-✅ Lykon/dreamshaper-7: README=1377, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: google-bert/bert-large-uncased-whole-word-masking-finetuned-squad
-🔍 找到README div，长度: 2986
-✅ 成功获取模型信息: README长度=2986, 标签数=11
-✅ google-bert/bert-large-uncased-whole-word-masking-finetuned-squad: README=2986, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: Helsinki-NLP/opus-mt-en-de
-🔍 找到README div，长度: 1575
-✅ 成功获取模型信息: README长度=1575, 标签数=7
-✅ Helsinki-NLP/opus-mt-en-de: README=1575, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: myshell-ai/MeloTTS-French
-🔍 找到README div，长度: 1121
-✅ 成功获取模型信息: README长度=1121, 标签数=5
-✅ myshell-ai/MeloTTS-French: README=1121, 标签=5 [已保存]批次 7:  68%|██████▊   | 34/50 [03:40<01:43,  6.48s/it]批次 7:  70%|███████   | 35/50 [03:47<01:37,  6.48s/it]批次 7:  72%|███████▏  | 36/50 [03:53<01:30,  6.48s/it]批次 7:  74%|███████▍  | 37/50 [04:00<01:24,  6.48s/it]批次 7:  76%|███████▌  | 38/50 [04:06<01:17,  6.50s/it]批次 7:  78%|███████▊  | 39/50 [04:13<01:11,  6.50s/it]批次 7:  80%|████████  | 40/50 [04:20<01:05,  6.51s/it]批次 7:  82%|████████▏ | 41/50 [04:26<00:58,  6.49s/it]批次 7:  84%|████████▍ | 42/50 [04:33<00:52,  6.52s/it]批次 7:  86%|████████▌ | 43/50 [04:39<00:45,  6.56s/it]批次 7:  88%|████████▊ | 44/50 [04:46<00:39,  6.57s/it]批次 7:  90%|█████████ | 45/50 [04:52<00:32,  6.59s/it]批次 7:  92%|█████████▏| 46/50 [04:59<00:26,  6.61s/it]批次 7:  94%|█████████▍| 47/50 [05:06<00:19,  6.63s/it]批次 7:  96%|█████████▌| 48/50 [05:12<00:13,  6.61s/it]批次 7:  98%|█████████▊| 49/50 [05:19<00:06,  6.58s/it]批次 7: 100%|██████████| 50/50 [05:25<00:00,  6.46s/it]批次 7: 100%|██████████| 50/50 [05:25<00:00,  6.51s/it]
-
-正在使用爬虫获取模型详细信息: ValueFX9507/Tifa-Deepsex-14b-CoT-GGUF-Q4
-🔍 找到README div，长度: 5271
-✅ 成功获取模型信息: README长度=5271, 标签数=11
-✅ ValueFX9507/Tifa-Deepsex-14b-CoT-GGUF-Q4: README=5271, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-21B-A3B-Thinking
-🔍 找到README div，长度: 3764
-✅ 成功获取模型信息: README长度=3764, 标签数=7
-✅ baidu/ERNIE-4.5-21B-A3B-Thinking: README=3764, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: NousResearch/Hermes-4-14B
-🔍 找到README div，长度: 4358
-✅ 成功获取模型信息: README长度=4358, 标签数=21
-✅ NousResearch/Hermes-4-14B: README=4358, 标签=21 [已保存]
-正在使用爬虫获取模型详细信息: lzkhhh/ITDR-Qwen2.5-7B
-🔍 找到README div，长度: 409
-✅ 成功获取模型信息: README长度=409, 标签数=4
-✅ lzkhhh/ITDR-Qwen2.5-7B: README=409, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-0.3B-PT
-🔍 找到README div，长度: 2512
-✅ 成功获取模型信息: README长度=2512, 标签数=7
-✅ baidu/ERNIE-4.5-0.3B-PT: README=2512, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-21B-A3B-Base-PT
-🔍 找到README div，长度: 2613
-✅ 成功获取模型信息: README长度=2613, 标签数=7
-✅ baidu/ERNIE-4.5-21B-A3B-Base-PT: README=2613, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-0.3B-Paddle
-🔍 找到README div，长度: 2118
-✅ 成功获取模型信息: README长度=2118, 标签数=7
-✅ baidu/ERNIE-4.5-0.3B-Paddle: README=2118, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-4B-MLX-4bit
-🔍 找到README div，长度: 7947
-✅ 成功获取模型信息: README长度=7947, 标签数=5
-✅ Qwen/Qwen3-4B-MLX-4bit: README=7947, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-8B-MLX-8bit
-🔍 找到README div，长度: 7863
-✅ 成功获取模型信息: README长度=7863, 标签数=5
-✅ Qwen/Qwen3-8B-MLX-8bit: README=7863, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-14B-MLX-6bit
-🔍 找到README div，长度: 7918
-✅ 成功获取模型信息: README长度=7918, 标签数=5
-✅ Qwen/Qwen3-14B-MLX-6bit: README=7918, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-0.3B-Base-Paddle
-🔍 找到README div，长度: 2965
-✅ 成功获取模型信息: README长度=2965, 标签数=7
-✅ baidu/ERNIE-4.5-0.3B-Base-Paddle: README=2965, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-424B-A47B-Base-Paddle
-🔍 找到README div，长度: 4135
-✅ 成功获取模型信息: README长度=4135, 标签数=7
-✅ baidu/ERNIE-4.5-VL-424B-A47B-Base-Paddle: README=4135, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-W4A8C8-TP4-Paddle
-🔍 找到README div，长度: 8267
-✅ 成功获取模型信息: README长度=8267, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-W4A8C8-TP4-Paddle: README=8267, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-2Bits-TP4-Paddle
-🔍 找到README div，长度: 5629
-✅ 成功获取模型信息: README长度=5629, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-2Bits-TP4-Paddle: README=5629, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/androidgen-llama-3-70b
-🔍 找到README div，长度: 552
-✅ 成功获取模型信息: README长度=552, 标签数=9
-✅ THUDM/androidgen-llama-3-70b: README=552, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-Instruct-2507
-🔍 找到README div，长度: 9020
-✅ 成功获取模型信息: README长度=9020, 标签数=5
-✅ Qwen/Qwen3-235B-A22B-Instruct-2507: README=9020, 标签=5 [已保存]
-📊 批次 7 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 8/15 (50 个模型)
-批次 8:   0%|          | 0/50 [00:00<?, ?it/s]批次 8:   2%|▏         | 1/50 [00:06<05:22,  6.59s/it]批次 8:   4%|▍         | 2/50 [00:13<05:20,  6.68s/it]批次 8:   6%|▌         | 3/50 [00:19<05:11,  6.63s/it]批次 8:   8%|▊         | 4/50 [00:26<05:04,  6.61s/it]批次 8:  10%|█         | 5/50 [00:33<04:59,  6.65s/it]批次 8:  12%|█▏        | 6/50 [00:39<04:53,  6.68s/it]批次 8:  14%|█▍        | 7/50 [00:46<04:47,  6.69s/it]批次 8:  16%|█▌        | 8/50 [00:53<04:40,  6.67s/it]批次 8:  18%|█▊        | 9/50 [00:59<04:33,  6.66s/it]批次 8:  20%|██        | 10/50 [01:06<04:24,  6.62s/it]批次 8:  22%|██▏       | 11/50 [01:12<04:17,  6.60s/it]批次 8:  24%|██▍       | 12/50 [01:19<04:14,  6.69s/it]批次 8:  26%|██▌       | 13/50 [01:26<04:06,  6.66s/it]批次 8:  28%|██▊       | 14/50 [01:33<04:00,  6.69s/it]批次 8:  30%|███       | 15/50 [01:40<03:55,  6.73s/it]批次 8:  32%|███▏      | 16/50 [01:46<03:47,  6.70s/it]批次 8:  34%|███▍      | 17/50 [01:53<03:38,  6.63s/it]批次 8:  36%|███▌      | 18/50 [01:59<03:32,  6.65s/it]批次 8:  38%|███▊      | 19/50 [02:06<03:24,  6.61s/it]批次 8:  40%|████      | 20/50 [02:13<03:19,  6.64s/it]批次 8:  42%|████▏     | 21/50 [02:19<03:12,  6.63s/it]批次 8:  44%|████▍     | 22/50 [02:26<03:07,  6.69s/it]批次 8:  46%|████▌     | 23/50 [02:33<03:00,  6.68s/it]批次 8:  48%|████▊     | 24/50 [02:39<02:53,  6.68s/it]批次 8:  50%|█████     | 25/50 [02:46<02:46,  6.65s/it]批次 8:  52%|█████▏    | 26/50 [02:52<02:38,  6.59s/it]批次 8:  54%|█████▍    | 27/50 [02:59<02:31,  6.57s/it]批次 8:  56%|█████▌    | 28/50 [03:06<02:24,  6.58s/it]批次 8:  58%|█████▊    | 29/50 [03:12<02:18,  6.58s/it]批次 8:  60%|██████    | 30/50 [03:19<02:11,  6.58s/it]批次 8:  62%|██████▏   | 31/50 [03:25<02:05,  6.59s/it]批次 8:  64%|██████▍   | 32/50 [03:32<01:58,  6.61s/it]批次 8:  66%|██████▌   | 33/50 [03:39<01:52,  6.63s/it]正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-0.3B-Base-PT
-🔍 找到README div，长度: 2259
-✅ 成功获取模型信息: README长度=2259, 标签数=7
-✅ baidu/ERNIE-4.5-0.3B-Base-PT: README=2259, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-32B-MLX-8bit
-🔍 找到README div，长度: 7933
-✅ 成功获取模型信息: README长度=7933, 标签数=5
-✅ Qwen/Qwen3-32B-MLX-8bit: README=7933, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-MLX-6bit
-🔍 找到README div，长度: 7994
-✅ 成功获取模型信息: README长度=7994, 标签数=5
-✅ Qwen/Qwen3-235B-A22B-MLX-6bit: README=7994, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-30B-A3B-MLX-6bit
-🔍 找到README div，长度: 7961
-✅ 成功获取模型信息: README长度=7961, 标签数=5
-✅ Qwen/Qwen3-30B-A3B-MLX-6bit: README=7961, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-424B-A47B-Base-PT
-🔍 找到README div，长度: 1589
-✅ 成功获取模型信息: README长度=1589, 标签数=7
-✅ baidu/ERNIE-4.5-VL-424B-A47B-Base-PT: README=1589, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-Base-Paddle
-🔍 找到README div，长度: 5826
-✅ 成功获取模型信息: README长度=5826, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-Base-Paddle: README=5826, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/GLM-4.1V-9B-Base
-🔍 找到README div，长度: 907
-✅ 成功获取模型信息: README长度=907, 标签数=7
-✅ THUDM/GLM-4.1V-9B-Base: README=907, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-Audio-7B
-🔍 找到README div，长度: 949
-✅ 成功获取模型信息: README长度=949, 标签数=7
-✅ moonshotai/Kimi-Audio-7B: README=949, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-14B-MLX-8bit
-🔍 找到README div，长度: 7947
-✅ 成功获取模型信息: README长度=7947, 标签数=5
-✅ Qwen/Qwen3-14B-MLX-8bit: README=7947, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-8B-MLX-6bit
-🔍 找到README div，长度: 7902
-✅ 成功获取模型信息: README长度=7902, 标签数=5
-✅ Qwen/Qwen3-8B-MLX-6bit: README=7902, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-Base-PT
-🔍 找到README div，长度: 5374
-✅ 成功获取模型信息: README长度=5374, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-Base-PT: README=5374, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-28B-A3B-Paddle
-🔍 找到README div，长度: 5532
-✅ 成功获取模型信息: README长度=5532, 标签数=7
-✅ baidu/ERNIE-4.5-VL-28B-A3B-Paddle: README=5532, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: mistralai/Mistral-Small-3.2-24B-Instruct-2506
-🔍 找到README div，长度: 21126
-✅ 成功获取模型信息: README长度=21126, 标签数=5
-✅ mistralai/Mistral-Small-3.2-24B-Instruct-2506: README=21126, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: HuggingFaceTB/SmolLM3-3B
-🔍 找到README div，长度: 9169
-✅ 成功获取模型信息: README长度=9169, 标签数=4
-✅ HuggingFaceTB/SmolLM3-3B: README=9169, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-VL-424B-A47B-PT
-🔍 找到README div，长度: 1751
-✅ 成功获取模型信息: README长度=1751, 标签数=7
-✅ baidu/ERNIE-4.5-VL-424B-A47B-PT: README=1751, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/OpenReasoning-Nemotron-32B
-🔍 找到README div，长度: 7080
-✅ 成功获取模型信息: README长度=7080, 标签数=8
-✅ nvidia/OpenReasoning-Nemotron-32B: README=7080, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Helsinki-NLP/opus-mt-es-en
-🔍 找到README div，长度: 1705
-✅ 成功获取模型信息: README长度=1705, 标签数=7
-✅ Helsinki-NLP/opus-mt-es-en: README=1705, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: ibm-granite/granite-timeseries-ttm-r1
-🔍 找到README div，长度: 4964
-✅ 成功获取模型信息: README长度=4964, 标签数=12
-✅ ibm-granite/granite-timeseries-ttm-r1: README=4964, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: cointegrated/rubert-base-cased-nli-threeway
-🔍 找到README div，长度: 3295
-✅ 成功获取模型信息: README长度=3295, 标签数=12
-✅ cointegrated/rubert-base-cased-nli-threeway: README=3295, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: jonatasgrosman/wav2vec2-large-xlsr-53-russian
-🔍 找到README div，长度: 3827
-✅ 成功获取模型信息: README长度=3827, 标签数=13
-✅ jonatasgrosman/wav2vec2-large-xlsr-53-russian: README=3827, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: Helsinki-NLP/opus-mt-ru-en
-🔍 找到README div，长度: 1466
-✅ 成功获取模型信息: README长度=1466, 标签数=6
-✅ Helsinki-NLP/opus-mt-ru-en: README=1466, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: t-tech/T-pro-it-2.0-eagle
-🔍 找到README div，长度: 21155
-✅ 成功获取模型信息: README长度=21155, 标签数=5
-✅ t-tech/T-pro-it-2.0-eagle: README=21155, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: laion/CLIP-ViT-B-32-laion2B-s34B-b79K
-🔍 找到README div，长度: 3124
-✅ 成功获取模型信息: README长度=3124, 标签数=7
-✅ laion/CLIP-ViT-B-32-laion2B-s34B-b79K: README=3124, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/bigvgan_v2_22khz_80band_256x
-🔍 找到README div，长度: 3719
-✅ 成功获取模型信息: README长度=3719, 标签数=5
-✅ nvidia/bigvgan_v2_22khz_80band_256x: README=3719, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: timm/mobilenetv3_large_100.ra_in1k
-🔍 找到README div，长度: 4086
-✅ 成功获取模型信息: README长度=4086, 标签数=7
-✅ timm/mobilenetv3_large_100.ra_in1k: README=4086, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: t-tech/T-one
-🔍 找到README div，长度: 3748
-✅ 成功获取模型信息: README长度=3748, 标签数=15
-✅ t-tech/T-one: README=3748, 标签=15 [已保存]
-正在使用爬虫获取模型详细信息: m-a-p/MERT-v1-95M
-🔍 找到README div，长度: 3876
-✅ 成功获取模型信息: README长度=3876, 标签数=6
-✅ m-a-p/MERT-v1-95M: README=3876, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: openai/clip-vit-base-patch16
-🔍 找到README div，长度: 3064
-✅ 成功获取模型信息: README长度=3064, 标签数=5
-✅ openai/clip-vit-base-patch16: README=3064, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: google/siglip-so400m-patch14-384
-🔍 找到README div，长度: 2349
-✅ 成功获取模型信息: README长度=2349, 标签数=5
-✅ google/siglip-so400m-patch14-384: README=2349, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/xclip-base-patch32
-🔍 找到README div，长度: 639
-✅ 成功获取模型信息: README长度=639, 标签数=9
-✅ microsoft/xclip-base-patch32: README=639, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: deepset/bert-large-uncased-whole-word-masking-squad2
-🔍 找到README div，长度: 2190
-✅ 成功获取模型信息: README长度=2190, 标签数=8
-✅ deepset/bert-large-uncased-whole-word-masking-squad2: README=2190, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: fofr/kontext-make-person-real
-🔍 找到README div，长度: 316
-✅ 成功获取模型信息: README长度=316, 标签数=7
-✅ fofr/kontext-make-person-real: README=316, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Lykon/dreamshaper-8-inpainting
-🔍 找到README div，长度: 1697
-✅ 成功获取模型信息: README长度=1697, 标签数=13
-✅ Lykon/dreamshaper-8-inpainting: README=1697, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/kosmos-2-patch14-224
-🔍 找到README div，长度: 14106
-✅ 成功获取模型信息: README长度=14106, 标签数=7批次 8:  68%|██████▊   | 34/50 [03:45<01:46,  6.63s/it]批次 8:  70%|███████   | 35/50 [03:52<01:38,  6.60s/it]批次 8:  72%|███████▏  | 36/50 [03:58<01:31,  6.56s/it]批次 8:  74%|███████▍  | 37/50 [04:05<01:26,  6.67s/it]批次 8:  76%|███████▌  | 38/50 [04:12<01:19,  6.62s/it]批次 8:  78%|███████▊  | 39/50 [04:18<01:12,  6.61s/it]批次 8:  80%|████████  | 40/50 [04:25<01:06,  6.62s/it]批次 8:  82%|████████▏ | 41/50 [04:32<00:59,  6.62s/it]批次 8:  84%|████████▍ | 42/50 [04:38<00:52,  6.60s/it]批次 8:  86%|████████▌ | 43/50 [04:45<00:46,  6.59s/it]批次 8:  88%|████████▊ | 44/50 [04:51<00:39,  6.62s/it]批次 8:  90%|█████████ | 45/50 [04:58<00:32,  6.60s/it]批次 8:  92%|█████████▏| 46/50 [05:04<00:26,  6.57s/it]批次 8:  94%|█████████▍| 47/50 [05:11<00:19,  6.56s/it]批次 8:  96%|█████████▌| 48/50 [05:17<00:13,  6.56s/it]批次 8:  98%|█████████▊| 49/50 [05:24<00:06,  6.55s/it]批次 8: 100%|██████████| 50/50 [05:30<00:00,  6.42s/it]批次 8: 100%|██████████| 50/50 [05:30<00:00,  6.61s/it]
-
-✅ microsoft/kosmos-2-patch14-224: README=14106, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: vidore/colqwen2-v0.1
-🔍 找到README div，长度: 2985
-✅ 成功获取模型信息: README长度=2985, 标签数=3
-✅ vidore/colqwen2-v0.1: README=2985, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: TencentARC/InstantMesh
-🔍 找到README div，长度: 462
-✅ 成功获取模型信息: README长度=462, 标签数=5
-✅ TencentARC/InstantMesh: README=462, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: llava-hf/LLaVA-NeXT-Video-7B-hf
-🔍 找到README div，长度: 6706
-✅ 成功获取模型信息: README长度=6706, 标签数=7
-✅ llava-hf/LLaVA-NeXT-Video-7B-hf: README=6706, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: facebook/vjepa2-vitg-fpc64-256
-🔍 找到README div，长度: 2336
-✅ 成功获取模型信息: README长度=2336, 标签数=5
-✅ facebook/vjepa2-vitg-fpc64-256: README=2336, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: ecmwf/aifs-single-1.0
-🔍 找到README div，长度: 6546
-✅ 成功获取模型信息: README长度=6546, 标签数=6
-✅ ecmwf/aifs-single-1.0: README=6546, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: hustvl/yolos-tiny
-🔍 找到README div，长度: 2753
-✅ 成功获取模型信息: README长度=2753, 标签数=8
-✅ hustvl/yolos-tiny: README=2753, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: distilbert/distilbert-base-uncased-distilled-squad
-🔍 找到README div，长度: 4699
-✅ 成功获取模型信息: README长度=4699, 标签数=11
-✅ distilbert/distilbert-base-uncased-distilled-squad: README=4699, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: pcoloc/autotrain-600-dragino-1839063122
-🔍 找到README div，长度: 509
-✅ 成功获取模型信息: README长度=509, 标签数=7
-✅ pcoloc/autotrain-600-dragino-1839063122: README=509, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: akasharidas/ddpm-cifar10-32-dot.in.name
-🔍 找到README div，长度: 995
-✅ 成功获取模型信息: README长度=995, 标签数=9
-✅ akasharidas/ddpm-cifar10-32-dot.in.name: README=995, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: TahaDouaji/detr-doc-table-detection
-🔍 找到README div，长度: 2361
-✅ 成功获取模型信息: README长度=2361, 标签数=8
-✅ TahaDouaji/detr-doc-table-detection: README=2361, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v
-🔍 找到README div，长度: 890
-✅ 成功获取模型信息: README长度=890, 标签数=9
-✅ lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v: README=890, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/trocr-large-printed
-🔍 找到README div，长度: 1626
-✅ 成功获取模型信息: README长度=1626, 标签数=6
-✅ microsoft/trocr-large-printed: README=1626, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: laion/clap-htsat-fused
-🔍 找到README div，长度: 2896
-✅ 成功获取模型信息: README长度=2896, 标签数=6
-✅ laion/clap-htsat-fused: README=2896, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: QuantStack/Wan2.1_T2V_14B_FusionX_VACE-GGUF
-🔍 找到README div，长度: 487
-✅ 成功获取模型信息: README长度=487, 标签数=7
-✅ QuantStack/Wan2.1_T2V_14B_FusionX_VACE-GGUF: README=487, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: facebook/sam-vit-base
-🔍 找到README div，长度: 3139
-✅ 成功获取模型信息: README长度=3139, 标签数=6
-✅ facebook/sam-vit-base: README=3139, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: LGAI-EXAONE/EXAONE-4.0-1.2B
-🔍 找到README div，长度: 9139
-✅ 成功获取模型信息: README长度=9139, 标签数=11
-✅ LGAI-EXAONE/EXAONE-4.0-1.2B: README=9139, 标签=11 [已保存]
-📊 批次 8 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 9/15 (50 个模型)
-批次 9:   0%|          | 0/50 [00:00<?, ?it/s]批次 9:   2%|▏         | 1/50 [00:06<05:24,  6.63s/it]批次 9:   4%|▍         | 2/50 [00:13<05:15,  6.57s/it]批次 9:   6%|▌         | 3/50 [00:19<05:09,  6.59s/it]批次 9:   8%|▊         | 4/50 [00:26<05:05,  6.65s/it]批次 9:  10%|█         | 5/50 [00:33<04:59,  6.65s/it]批次 9:  12%|█▏        | 6/50 [00:39<04:50,  6.61s/it]批次 9:  14%|█▍        | 7/50 [00:46<04:45,  6.63s/it]批次 9:  16%|█▌        | 8/50 [00:53<04:39,  6.65s/it]批次 9:  18%|█▊        | 9/50 [00:59<04:32,  6.64s/it]批次 9:  20%|██        | 10/50 [01:06<04:24,  6.62s/it]批次 9:  22%|██▏       | 11/50 [01:12<04:17,  6.61s/it]批次 9:  24%|██▍       | 12/50 [01:19<04:11,  6.62s/it]批次 9:  26%|██▌       | 13/50 [01:26<04:04,  6.60s/it]批次 9:  28%|██▊       | 14/50 [01:32<03:58,  6.63s/it]批次 9:  30%|███       | 15/50 [01:39<03:52,  6.65s/it]批次 9:  32%|███▏      | 16/50 [01:45<03:45,  6.62s/it]批次 9:  34%|███▍      | 17/50 [01:52<03:39,  6.64s/it]批次 9:  36%|███▌      | 18/50 [01:59<03:32,  6.64s/it]批次 9:  38%|███▊      | 19/50 [02:05<03:24,  6.59s/it]批次 9:  40%|████      | 20/50 [02:12<03:17,  6.59s/it]批次 9:  42%|████▏     | 21/50 [02:19<03:11,  6.61s/it]批次 9:  44%|████▍     | 22/50 [02:25<03:04,  6.59s/it]批次 9:  46%|████▌     | 23/50 [02:32<02:59,  6.65s/it]批次 9:  48%|████▊     | 24/50 [02:38<02:52,  6.63s/it]批次 9:  50%|█████     | 25/50 [02:45<02:46,  6.67s/it]批次 9:  52%|█████▏    | 26/50 [02:52<02:40,  6.67s/it]批次 9:  54%|█████▍    | 27/50 [02:59<02:33,  6.65s/it]批次 9:  56%|█████▌    | 28/50 [03:05<02:26,  6.67s/it]批次 9:  58%|█████▊    | 29/50 [03:12<02:19,  6.64s/it]批次 9:  60%|██████    | 30/50 [03:18<02:12,  6.63s/it]批次 9:  62%|██████▏   | 31/50 [03:25<02:05,  6.63s/it]批次 9:  64%|██████▍   | 32/50 [03:32<01:59,  6.62s/it]批次 9:  66%|██████▌   | 33/50 [03:38<01:52,  6.63s/it]正在使用爬虫获取模型详细信息: depth-anything/Depth-Anything-V2-Base
-🔍 找到README div，长度: 1320
-✅ 成功获取模型信息: README长度=1320, 标签数=6
-✅ depth-anything/Depth-Anything-V2-Base: README=1320, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: facebook/vjepa2-vitg-fpc64-384
-🔍 找到README div，长度: 2786
-✅ 成功获取模型信息: README长度=2786, 标签数=5
-✅ facebook/vjepa2-vitg-fpc64-384: README=2786, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/Qwen2-Audio-7B-Instruct-i1-GGUF
-🔍 找到README div，长度: 1378
-✅ 成功获取模型信息: README长度=1378, 标签数=7
-✅ mradermacher/Qwen2-Audio-7B-Instruct-i1-GGUF: README=1378, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/VeriReason-Qwen2.5-7b-SFT-Reasoning-i1-GGUF
-🔍 找到README div，长度: 1375
-✅ 成功获取模型信息: README长度=1375, 标签数=8
-✅ mradermacher/VeriReason-Qwen2.5-7b-SFT-Reasoning-i1-GGUF: README=1375, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: autogluon/mitra-regressor
-🔍 找到README div，长度: 1663
-✅ 成功获取模型信息: README长度=1663, 标签数=4
-✅ autogluon/mitra-regressor: README=1663, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-700M-GGUF
-🔍 找到README div，长度: 349
-✅ 成功获取模型信息: README长度=349, 标签数=8
-✅ LiquidAI/LFM2-700M-GGUF: README=349, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: google-t5/t5-3b
-🔍 找到README div，长度: 2608
-✅ 成功获取模型信息: README长度=2608, 标签数=9
-✅ google-t5/t5-3b: README=2608, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-700M
-🔍 找到README div，长度: 5158
-✅ 成功获取模型信息: README长度=5158, 标签数=8
-✅ LiquidAI/LFM2-700M: README=5158, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: qwbu/univla-7b
-🔍 找到README div，长度: 663
-✅ 成功获取模型信息: README长度=663, 标签数=5
-✅ qwbu/univla-7b: README=663, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-Thinking-2507
-🔍 找到README div，长度: 10112
-✅ 成功获取模型信息: README长度=10112, 标签数=5
-✅ Qwen/Qwen3-235B-A22B-Thinking-2507: README=10112, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-Thinking-2507-FP8
-🔍 找到README div，长度: 10635
-✅ 成功获取模型信息: README长度=10635, 标签数=6
-✅ Qwen/Qwen3-235B-A22B-Thinking-2507-FP8: README=10635, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/table-transformer-structure-recognition
-🔍 找到README div，长度: 476
-✅ 成功获取模型信息: README长度=476, 标签数=6
-✅ microsoft/table-transformer-structure-recognition: README=476, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Alibaba-NLP/WebSailor-3B
-🔍 找到README div，长度: 669
-✅ 成功获取模型信息: README长度=669, 标签数=3
-✅ Alibaba-NLP/WebSailor-3B: README=669, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/Phi-4-mini-flash-reasoning
-🔍 找到README div，长度: 7315
-✅ 成功获取模型信息: README长度=7315, 标签数=8
-✅ microsoft/Phi-4-mini-flash-reasoning: README=7315, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: HKUSTAudio/xcodec2
-🔍 找到README div，长度: 1581
-✅ 成功获取模型信息: README长度=1581, 标签数=6
-✅ HKUSTAudio/xcodec2: README=1581, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Prior-Labs/TabPFN-v2-clf
-🔍 找到README div，长度: 1159
-✅ 成功获取模型信息: README长度=1159, 标签数=4
-✅ Prior-Labs/TabPFN-v2-clf: README=1159, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: bartowski/LLaMA-Mesh-GGUF
-🔍 找到README div，长度: 5168
-✅ 成功获取模型信息: README长度=5168, 标签数=4
-✅ bartowski/LLaMA-Mesh-GGUF: README=5168, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/Qwen2-Audio-7B-i1-GGUF
-🔍 找到README div，长度: 1357
-✅ 成功获取模型信息: README长度=1357, 标签数=7
-✅ mradermacher/Qwen2-Audio-7B-i1-GGUF: README=1357, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/SeedVR2-7B
-🔍 找到README div，长度: 1432
-✅ 成功获取模型信息: README长度=1432, 标签数=5
-✅ ByteDance-Seed/SeedVR2-7B: README=1432, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: fixie-ai/ultravox-v0_6-llama-3_3-70b
-🔍 找到README div，长度: 2827
-✅ 成功获取模型信息: README长度=2827, 标签数=6
-✅ fixie-ai/ultravox-v0_6-llama-3_3-70b: README=2827, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/SeedVR2-3B
-🔍 找到README div，长度: 1503
-✅ 成功获取模型信息: README长度=1503, 标签数=4
-✅ ByteDance-Seed/SeedVR2-3B: README=1503, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V
-🔍 找到README div，长度: 762
-✅ 成功获取模型信息: README长度=762, 标签数=7
-✅ lovis93/Motion-Lora-Camera-Push-In-Wan-14B-720p-I2V: README=762, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Lightricks/LTX-Video
-🔍 找到README div，长度: 9734
-✅ 成功获取模型信息: README长度=9734, 标签数=8
-✅ Lightricks/LTX-Video: README=9734, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: pcoloc/autotrain-mikrotik-7-7-1860563588
-🔍 找到README div，长度: 511
-✅ 成功获取模型信息: README长度=511, 标签数=7
-✅ pcoloc/autotrain-mikrotik-7-7-1860563588: README=511, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Kimi-K2-Instruct-GGUF
-🔍 找到README div，长度: 6325
-✅ 成功获取模型信息: README长度=6325, 标签数=5
-✅ unsloth/Kimi-K2-Instruct-GGUF: README=6325, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Qwen3-235B-A22B-Thinking-2507-GGUF
-🔍 找到README div，长度: 7205
-✅ 成功获取模型信息: README长度=7205, 标签数=7
-✅ unsloth/Qwen3-235B-A22B-Thinking-2507-GGUF: README=7205, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: google-t5/t5-11b
-🔍 找到README div，长度: 2961
-✅ 成功获取模型信息: README长度=2961, 标签数=9
-✅ google-t5/t5-11b: README=2961, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: TeslaYang123/TC-Light
-🔍 找到README div，长度: 3515
-✅ 成功获取模型信息: README长度=3515, 标签数=4
-✅ TeslaYang123/TC-Light: README=3515, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: adrientoupet/SeedVR2_comfyUI
-🔍 找到README div，长度: 724
-✅ 成功获取模型信息: README长度=724, 标签数=7
-✅ adrientoupet/SeedVR2_comfyUI: README=724, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: google-t5/t5-large
-🔍 找到README div，长度: 3123
-✅ 成功获取模型信息: README长度=3123, 标签数=11
-✅ google-t5/t5-large: README=3123, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: skt/A.X-3.1
-🔍 找到README div，长度: 7827
-✅ 成功获取模型信息: README长度=7827, 标签数=6
-✅ skt/A.X-3.1: README=7827, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: OmniGen2/OmniGen2
-🔍 找到README div，长度: 4923
-✅ 成功获取模型信息: README长度=4923, 标签数=8
-✅ OmniGen2/OmniGen2: README=4923, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: prs-eth/marigold-normals-v1-1
-🔍 找到README div，长度: 1612
-✅ 成功获取模型信息: README长度=1612, 标签数=13
-✅ prs-eth/marigold-normals-v1-1: README=1612, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: intfloat/multilingual-e5-large-instruct
-🔍 找到README div，长度: 5011
-✅ 成功获取模型信息: README长度=5011, 标签数=10
-✅ intfloat/multilingual-e5-large-instruct: README=5011, 标签=10 [已保存]批次 9:  68%|██████▊   | 34/50 [03:45<01:46,  6.64s/it]批次 9:  70%|███████   | 35/50 [03:52<01:39,  6.63s/it]批次 9:  72%|███████▏  | 36/50 [03:58<01:33,  6.67s/it]批次 9:  74%|███████▍  | 37/50 [04:05<01:26,  6.65s/it]批次 9:  76%|███████▌  | 38/50 [04:11<01:19,  6.62s/it]批次 9:  78%|███████▊  | 39/50 [04:18<01:13,  6.72s/it]批次 9:  80%|████████  | 40/50 [04:25<01:06,  6.67s/it]批次 9:  82%|████████▏ | 41/50 [04:32<00:59,  6.64s/it]批次 9:  84%|████████▍ | 42/50 [04:38<00:53,  6.66s/it]批次 9:  86%|████████▌ | 43/50 [04:45<00:46,  6.62s/it]批次 9:  88%|████████▊ | 44/50 [04:51<00:39,  6.63s/it]批次 9:  90%|█████████ | 45/50 [04:58<00:33,  6.71s/it]批次 9:  92%|█████████▏| 46/50 [05:05<00:26,  6.69s/it]批次 9:  94%|█████████▍| 47/50 [05:11<00:19,  6.65s/it]批次 9:  96%|█████████▌| 48/50 [05:18<00:13,  6.69s/it]批次 9:  98%|█████████▊| 49/50 [05:25<00:06,  6.66s/it]批次 9: 100%|██████████| 50/50 [05:31<00:00,  6.51s/it]批次 9: 100%|██████████| 50/50 [05:31<00:00,  6.63s/it]
-
-正在使用爬虫获取模型详细信息: zai-org/GLM-4.5-Air-FP8
-🔍 找到README div，长度: 3905
-✅ 成功获取模型信息: README长度=3905, 标签数=10
-✅ zai-org/GLM-4.5-Air-FP8: README=3905, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: Kwaipilot/OASIS-code-1.3B
-🔍 找到README div，长度: 4771
-✅ 成功获取模型信息: README长度=4771, 标签数=7
-✅ Kwaipilot/OASIS-code-1.3B: README=4771, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: deepset/bert-base-cased-squad2
-🔍 找到README div，长度: 2086
-✅ 成功获取模型信息: README长度=2086, 标签数=8
-✅ deepset/bert-base-cased-squad2: README=2086, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: joeddav/xlm-roberta-large-xnli
-🔍 找到README div，长度: 2703
-✅ 成功获取模型信息: README长度=2703, 标签数=13
-✅ joeddav/xlm-roberta-large-xnli: README=2703, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: OpenGVLab/InternVL3-78B
-🔍 找到README div，长度: 23527
-✅ 成功获取模型信息: README长度=23527, 标签数=10
-✅ OpenGVLab/InternVL3-78B: README=23527, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: OpenGVLab/VideoMAEv2-Base
-🔍 找到README div，长度: 1643
-✅ 成功获取模型信息: README长度=1643, 标签数=8
-✅ OpenGVLab/VideoMAEv2-Base: README=1643, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: lysandre/tiny-tapas-random-sqa
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=2
-✅ lysandre/tiny-tapas-random-sqa: README=0, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-Audio-7B-Instruct
-🔍 找到README div，长度: 4739
-✅ 成功获取模型信息: README长度=4739, 标签数=7
-✅ moonshotai/Kimi-Audio-7B-Instruct: README=4739, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: JacobLinCool/MP-SENet-DNS
-🔍 找到README div，长度: 96
-✅ 成功获取模型信息: README长度=96, 标签数=13
-✅ JacobLinCool/MP-SENet-DNS: README=96, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: openai/imagegpt-large
-🔍 找到README div，长度: 2984
-✅ 成功获取模型信息: README长度=2984, 标签数=5
-✅ openai/imagegpt-large: README=2984, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: cross-encoder/stsb-distilroberta-base
-🔍 找到README div，长度: 759
-✅ 成功获取模型信息: README长度=759, 标签数=11
-✅ cross-encoder/stsb-distilroberta-base: README=759, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-Embedding-4B-GGUF
-🔍 找到README div，长度: 5204
-✅ 成功获取模型信息: README长度=5204, 标签数=4
-✅ Qwen/Qwen3-Embedding-4B-GGUF: README=5204, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Wan-AI/Wan2.1-T2V-14B-Diffusers
-🔍 找到README div，长度: 7457
-✅ 成功获取模型信息: README长度=7457, 标签数=9
-✅ Wan-AI/Wan2.1-T2V-14B-Diffusers: README=7457, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google/ddpm-cat-256
-🔍 找到README div，长度: 968
-✅ 成功获取模型信息: README长度=968, 标签数=9
-✅ google/ddpm-cat-256: README=968, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google/ddpm-church-256
-🔍 找到README div，长度: 975
-✅ 成功获取模型信息: README长度=975, 标签数=8
-✅ google/ddpm-church-256: README=975, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/tapex-large-finetuned-wtq
-🔍 找到README div，长度: 1972
-✅ 成功获取模型信息: README长度=1972, 标签数=11
-✅ microsoft/tapex-large-finetuned-wtq: README=1972, 标签=11 [已保存]
-📊 批次 9 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 10/15 (50 个模型)
-批次 10:   0%|          | 0/50 [00:00<?, ?it/s]批次 10:   2%|▏         | 1/50 [00:06<05:23,  6.60s/it]批次 10:   4%|▍         | 2/50 [00:13<05:12,  6.51s/it]批次 10:   6%|▌         | 3/50 [00:19<05:06,  6.51s/it]批次 10:   8%|▊         | 4/50 [00:26<05:00,  6.54s/it]批次 10:  10%|█         | 5/50 [00:32<04:55,  6.57s/it]批次 10:  12%|█▏        | 6/50 [00:39<04:47,  6.54s/it]批次 10:  14%|█▍        | 7/50 [00:45<04:42,  6.57s/it]批次 10:  16%|█▌        | 8/50 [00:52<04:35,  6.55s/it]批次 10:  18%|█▊        | 9/50 [00:58<04:27,  6.53s/it]批次 10:  20%|██        | 10/50 [01:05<04:21,  6.54s/it]批次 10:  22%|██▏       | 11/50 [01:11<04:14,  6.52s/it]批次 10:  24%|██▍       | 12/50 [01:18<04:07,  6.50s/it]批次 10:  26%|██▌       | 13/50 [01:24<04:00,  6.49s/it]批次 10:  28%|██▊       | 14/50 [01:31<03:53,  6.49s/it]批次 10:  30%|███       | 15/50 [01:37<03:47,  6.50s/it]批次 10:  32%|███▏      | 16/50 [01:44<03:41,  6.51s/it]批次 10:  34%|███▍      | 17/50 [01:50<03:35,  6.54s/it]批次 10:  36%|███▌      | 18/50 [01:57<03:28,  6.53s/it]批次 10:  38%|███▊      | 19/50 [02:03<03:21,  6.51s/it]批次 10:  40%|████      | 20/50 [02:10<03:14,  6.50s/it]批次 10:  42%|████▏     | 21/50 [02:16<03:08,  6.50s/it]批次 10:  44%|████▍     | 22/50 [02:23<03:01,  6.49s/it]批次 10:  46%|████▌     | 23/50 [02:29<02:54,  6.48s/it]批次 10:  48%|████▊     | 24/50 [02:36<02:48,  6.48s/it]批次 10:  50%|█████     | 25/50 [02:42<02:41,  6.47s/it]批次 10:  52%|█████▏    | 26/50 [02:49<02:35,  6.48s/it]批次 10:  54%|█████▍    | 27/50 [02:55<02:29,  6.51s/it]批次 10:  56%|█████▌    | 28/50 [03:02<02:23,  6.51s/it]批次 10:  58%|█████▊    | 29/50 [03:08<02:16,  6.52s/it]批次 10:  60%|██████    | 30/50 [03:15<02:10,  6.51s/it]批次 10:  62%|██████▏   | 31/50 [03:21<02:03,  6.51s/it]批次 10:  64%|██████▍   | 32/50 [03:28<01:56,  6.48s/it]批次 10:  66%|██████▌   | 33/50 [03:34<01:50,  6.48s/it]正在使用爬虫获取模型详细信息: microsoft/tapex-base
-🔍 找到README div，长度: 1666
-✅ 成功获取模型信息: README长度=1666, 标签数=10
-✅ microsoft/tapex-base: README=1666, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: google/siglip2-so400m-patch16-naflex
-🔍 找到README div，长度: 2124
-✅ 成功获取模型信息: README长度=2124, 标签数=6
-✅ google/siglip2-so400m-patch16-naflex: README=2124, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: google/ddpm-ema-celebahq-256
-🔍 找到README div，长度: 1010
-✅ 成功获取模型信息: README长度=1010, 标签数=8
-✅ google/ddpm-ema-celebahq-256: README=1010, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/segformer-b4-finetuned-cityscapes-1024-1024
-🔍 找到README div，长度: 1825
-✅ 成功获取模型信息: README长度=1825, 标签数=9
-✅ nvidia/segformer-b4-finetuned-cityscapes-1024-1024: README=1825, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/bigvgan_v2_24khz_100band_256x
-🔍 找到README div，长度: 3548
-✅ 成功获取模型信息: README长度=3548, 标签数=7
-✅ nvidia/bigvgan_v2_24khz_100band_256x: README=3548, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: openai/diffusers-cd_imagenet64_l2
-🔍 找到README div，长度: 3621
-✅ 成功获取模型信息: README长度=3621, 标签数=10
-✅ openai/diffusers-cd_imagenet64_l2: README=3621, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: neuralmind/bert-base-portuguese-cased
-🔍 找到README div，长度: 2867
-✅ 成功获取模型信息: README长度=2867, 标签数=8
-✅ neuralmind/bert-base-portuguese-cased: README=2867, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-K2-Instruct
-🔍 找到README div，长度: 10584
-✅ 成功获取模型信息: README长度=10584, 标签数=5
-✅ moonshotai/Kimi-K2-Instruct: README=10584, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-30B-A3B-MLX-4bit
-🔍 找到README div，长度: 7982
-✅ 成功获取模型信息: README长度=7982, 标签数=5
-✅ Qwen/Qwen3-30B-A3B-MLX-4bit: README=7982, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B-MLX-8bit
-🔍 找到README div，长度: 8003
-✅ 成功获取模型信息: README长度=8003, 标签数=5
-✅ Qwen/Qwen3-235B-A22B-MLX-8bit: README=8003, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-FP8-Paddle
-🔍 找到README div，长度: 5771
-✅ 成功获取模型信息: README长度=5771, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-FP8-Paddle: README=5771, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-32B-MLX-4bit
-🔍 找到README div，长度: 7929
-✅ 成功获取模型信息: README长度=7929, 标签数=5
-✅ Qwen/Qwen3-32B-MLX-4bit: README=7929, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-300B-A47B-2Bits-Paddle
-🔍 找到README div，长度: 5641
-✅ 成功获取模型信息: README长度=5641, 标签数=7
-✅ baidu/ERNIE-4.5-300B-A47B-2Bits-Paddle: README=5641, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: baidu/ERNIE-4.5-21B-A3B-Base-Paddle
-🔍 找到README div，长度: 5636
-✅ 成功获取模型信息: README长度=5636, 标签数=7
-✅ baidu/ERNIE-4.5-21B-A3B-Base-Paddle: README=5636, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: nanonets/Nanonets-OCR-s
-🔍 找到README div，长度: 4838
-✅ 成功获取模型信息: README长度=4838, 标签数=6
-✅ nanonets/Nanonets-OCR-s: README=4838, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: jinaai/jina-embeddings-v4
-🔍 找到README div，长度: 7734
-✅ 成功获取模型信息: README长度=7734, 标签数=15
-✅ jinaai/jina-embeddings-v4: README=7734, 标签=15 [已保存]
-正在使用爬虫获取模型详细信息: LGAI-EXAONE/EXAONE-4.0-32B
-🔍 找到README div，长度: 9117
-✅ 成功获取模型信息: README长度=9117, 标签数=10
-✅ LGAI-EXAONE/EXAONE-4.0-32B: README=9117, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: vidore/colpali-v1.3
-🔍 找到README div，长度: 3158
-✅ 成功获取模型信息: README长度=3158, 标签数=10
-✅ vidore/colpali-v1.3: README=3158, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: sentence-transformers/paraphrase-MiniLM-L6-v2
-🔍 找到README div，长度: 2712
-✅ 成功获取模型信息: README长度=2712, 标签数=10
-✅ sentence-transformers/paraphrase-MiniLM-L6-v2: README=2712, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/table-transformer-structure-recognition-v1.1-all
-🔍 找到README div，长度: 406
-✅ 成功获取模型信息: README长度=406, 标签数=9
-✅ microsoft/table-transformer-structure-recognition-v1.1-all: README=406, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/OpenReasoning-Nemotron-7B
-🔍 找到README div，长度: 7221
-✅ 成功获取模型信息: README长度=7221, 标签数=8
-✅ nvidia/OpenReasoning-Nemotron-7B: README=7221, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/audio-flamingo-3
-🔍 找到README div，长度: 3201
-✅ 成功获取模型信息: README长度=3201, 标签数=11
-✅ nvidia/audio-flamingo-3: README=3201, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: sshleifer/distilbart-cnn-12-6
-🔍 找到README div，长度: 608
-✅ 成功获取模型信息: README长度=608, 标签数=10
-✅ sshleifer/distilbart-cnn-12-6: README=608, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: facebook/sam2-hiera-large
-🔍 找到README div，长度: 1653
-✅ 成功获取模型信息: README长度=1653, 标签数=5
-✅ facebook/sam2-hiera-large: README=1653, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: timm/convnextv2_nano.fcmae_ft_in22k_in1k
-🔍 找到README div，长度: 6953
-✅ 成功获取模型信息: README长度=6953, 标签数=7
-✅ timm/convnextv2_nano.fcmae_ft_in22k_in1k: README=6953, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: merve/smol-vision
-🔍 找到README div，长度: 1215
-✅ 成功获取模型信息: README长度=1215, 标签数=4
-✅ merve/smol-vision: README=1215, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/segformer-b0-finetuned-ade-512-512
-🔍 找到README div，长度: 1902
-✅ 成功获取模型信息: README长度=1902, 标签数=8
-✅ nvidia/segformer-b0-finetuned-ade-512-512: README=1902, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: flair/ner-english-fast
-🔍 找到README div，长度: 2576
-✅ 成功获取模型信息: README长度=2576, 标签数=7
-✅ flair/ner-english-fast: README=2576, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: facebook/bart-base
-🔍 找到README div，长度: 1741
-✅ 成功获取模型信息: README长度=1741, 标签数=9
-✅ facebook/bart-base: README=1741, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF
-🔍 找到README div，长度: 3847
-✅ 成功获取模型信息: README长度=3847, 标签数=9
-✅ unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF: README=3847, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: distilbert/distilbert-base-cased-distilled-squad
-🔍 找到README div，长度: 4594
-✅ 成功获取模型信息: README长度=4594, 标签数=11
-✅ distilbert/distilbert-base-cased-distilled-squad: README=4594, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/git-base
-🔍 找到README div，长度: 1183
-✅ 成功获取模型信息: README长度=1183, 标签数=9
-✅ microsoft/git-base: README=1183, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: facebook/sam2.1-hiera-large
-🔍 找到README div，长度: 1658
-✅ 成功获取模型信息: README长度=1658, 标签数=4
-✅ facebook/sam2.1-hiera-large: README=1658, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: openai/whisper-large-v3-turbo批次 10:  68%|██████▊   | 34/50 [03:41<01:43,  6.49s/it]批次 10:  70%|███████   | 35/50 [03:47<01:37,  6.49s/it]批次 10:  72%|███████▏  | 36/50 [03:54<01:30,  6.47s/it]批次 10:  74%|███████▍  | 37/50 [04:00<01:24,  6.48s/it]批次 10:  76%|███████▌  | 38/50 [04:07<01:18,  6.50s/it]批次 10:  78%|███████▊  | 39/50 [04:13<01:11,  6.49s/it]批次 10:  80%|████████  | 40/50 [04:20<01:04,  6.47s/it]批次 10:  82%|████████▏ | 41/50 [04:26<00:58,  6.47s/it]批次 10:  84%|████████▍ | 42/50 [04:33<00:51,  6.47s/it]批次 10:  86%|████████▌ | 43/50 [04:39<00:45,  6.46s/it]批次 10:  88%|████████▊ | 44/50 [04:46<00:39,  6.51s/it]批次 10:  90%|█████████ | 45/50 [04:52<00:32,  6.49s/it]批次 10:  92%|█████████▏| 46/50 [04:59<00:25,  6.48s/it]批次 10:  94%|█████████▍| 47/50 [05:05<00:19,  6.49s/it]批次 10:  96%|█████████▌| 48/50 [05:12<00:12,  6.49s/it]批次 10:  98%|█████████▊| 49/50 [05:18<00:06,  6.53s/it]批次 10: 100%|██████████| 50/50 [05:24<00:00,  6.35s/it]批次 10: 100%|██████████| 50/50 [05:24<00:00,  6.49s/it]
-
-🔍 找到README div，长度: 10371
-✅ 成功获取模型信息: README长度=10371, 标签数=7
-✅ openai/whisper-large-v3-turbo: README=10371, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: QuantStack/Wan2.1_I2V_14B_FusionX-GGUF
-🔍 找到README div，长度: 483
-✅ 成功获取模型信息: README长度=483, 标签数=5
-✅ QuantStack/Wan2.1_I2V_14B_FusionX-GGUF: README=483, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: nateraw/vit-age-classifier
-🔍 找到README div，长度: 816
-✅ 成功获取模型信息: README长度=816, 标签数=6
-✅ nateraw/vit-age-classifier: README=816, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: autogluon/mitra-classifier
-🔍 找到README div，长度: 2229
-✅ 成功获取模型信息: README长度=2229, 标签数=4
-✅ autogluon/mitra-classifier: README=2229, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Disya/UIGEN-T3-14B-Preview-Q4_K_M-GGUF
-🔍 找到README div，长度: 1083
-✅ 成功获取模型信息: README长度=1083, 标签数=9
-✅ Disya/UIGEN-T3-14B-Preview-Q4_K_M-GGUF: README=1083, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-1.2B
-🔍 找到README div，长度: 5076
-✅ 成功获取模型信息: README长度=5076, 标签数=8
-✅ LiquidAI/LFM2-1.2B: README=5076, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Intel/dpt-large
-🔍 找到README div，长度: 3818
-✅ 成功获取模型信息: README长度=3818, 标签数=9
-✅ Intel/dpt-large: README=3818, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: vidore/colqwen2-v1.0
-🔍 找到README div，长度: 3045
-✅ 成功获取模型信息: README长度=3045, 标签数=9
-✅ vidore/colqwen2-v1.0: README=3045, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google/owlvit-large-patch14
-🔍 找到README div，长度: 2970
-✅ 成功获取模型信息: README长度=2970, 标签数=7
-✅ google/owlvit-large-patch14: README=2970, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: vidore/colpali
-🔍 找到README div，长度: 4300
-✅ 成功获取模型信息: README长度=4300, 标签数=13
-✅ vidore/colpali: README=4300, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: facebook/vjepa2-vitl-fpc64-256
-🔍 找到README div，长度: 2328
-✅ 成功获取模型信息: README长度=2328, 标签数=5
-✅ facebook/vjepa2-vitl-fpc64-256: README=2328, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: julien-c/skops-digits
-🔍 找到README div，长度: 4852
-✅ 成功获取模型信息: README长度=4852, 标签数=5
-✅ julien-c/skops-digits: README=4852, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: calcuis/bagel-gguf
-🔍 找到README div，长度: 834
-✅ 成功获取模型信息: README长度=834, 标签数=5
-✅ calcuis/bagel-gguf: README=834, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: ecmwf/aifs-ens-1.0
-🔍 找到README div，长度: 2772
-✅ 成功获取模型信息: README长度=2772, 标签数=6
-✅ ecmwf/aifs-ens-1.0: README=2772, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: philschmid/bart-large-cnn-samsum
-🔍 找到README div，长度: 1489
-✅ 成功获取模型信息: README长度=1489, 标签数=9
-✅ philschmid/bart-large-cnn-samsum: README=1489, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: ETH-CVG/lightglue_superpoint
-🔍 找到README div，长度: 3758
-✅ 成功获取模型信息: README长度=3758, 标签数=6
-✅ ETH-CVG/lightglue_superpoint: README=3758, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli
-🔍 找到README div，长度: 3627
-✅ 成功获取模型信息: README长度=3627, 标签数=9
-✅ MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli: README=3627, 标签=9 [已保存]
-📊 批次 10 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 11/15 (50 个模型)
-批次 11:   0%|          | 0/50 [00:00<?, ?it/s]批次 11:   2%|▏         | 1/50 [00:06<05:21,  6.55s/it]批次 11:   4%|▍         | 2/50 [00:13<05:14,  6.55s/it]批次 11:   6%|▌         | 3/50 [00:19<05:10,  6.60s/it]批次 11:   8%|▊         | 4/50 [00:26<05:02,  6.57s/it]批次 11:  10%|█         | 5/50 [00:32<04:54,  6.56s/it]批次 11:  12%|█▏        | 6/50 [00:39<04:46,  6.52s/it]批次 11:  14%|█▍        | 7/50 [00:45<04:40,  6.53s/it]批次 11:  16%|█▌        | 8/50 [00:52<04:33,  6.51s/it]批次 11:  18%|█▊        | 9/50 [00:58<04:26,  6.51s/it]批次 11:  20%|██        | 10/50 [01:05<04:21,  6.53s/it]批次 11:  22%|██▏       | 11/50 [01:11<04:14,  6.53s/it]批次 11:  24%|██▍       | 12/50 [01:18<04:08,  6.53s/it]批次 11:  26%|██▌       | 13/50 [01:24<04:01,  6.53s/it]批次 11:  28%|██▊       | 14/50 [01:31<03:54,  6.53s/it]批次 11:  30%|███       | 15/50 [01:38<03:48,  6.53s/it]批次 11:  32%|███▏      | 16/50 [01:44<03:43,  6.57s/it]批次 11:  34%|███▍      | 17/50 [01:51<03:37,  6.59s/it]批次 11:  36%|███▌      | 18/50 [01:57<03:31,  6.61s/it]批次 11:  38%|███▊      | 19/50 [02:04<03:25,  6.62s/it]批次 11:  40%|████      | 20/50 [02:11<03:19,  6.66s/it]批次 11:  42%|████▏     | 21/50 [02:17<03:11,  6.61s/it]批次 11:  44%|████▍     | 22/50 [02:24<03:04,  6.60s/it]批次 11:  46%|████▌     | 23/50 [02:31<02:58,  6.59s/it]批次 11:  48%|████▊     | 24/50 [02:37<02:51,  6.61s/it]批次 11:  50%|█████     | 25/50 [02:44<02:45,  6.63s/it]批次 11:  52%|█████▏    | 26/50 [02:50<02:38,  6.62s/it]批次 11:  54%|█████▍    | 27/50 [02:57<02:35,  6.74s/it]批次 11:  56%|█████▌    | 28/50 [03:04<02:28,  6.77s/it]批次 11:  58%|█████▊    | 29/50 [03:11<02:20,  6.70s/it]批次 11:  60%|██████    | 30/50 [03:17<02:13,  6.68s/it]批次 11:  62%|██████▏   | 31/50 [03:24<02:06,  6.67s/it]批次 11:  64%|██████▍   | 32/50 [03:31<01:59,  6.63s/it]批次 11:  66%|██████▌   | 33/50 [03:37<01:52,  6.62s/it]正在使用爬虫获取模型详细信息: amazon/chronos-t5-small
-🔍 找到README div，长度: 2995
-✅ 成功获取模型信息: README长度=2995, 标签数=11
-✅ amazon/chronos-t5-small: README=2995, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: mistralai/Voxtral-Small-24B-2507
-🔍 找到README div，长度: 15505
-✅ 成功获取模型信息: README长度=15505, 标签数=7
-✅ mistralai/Voxtral-Small-24B-2507: README=15505, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: dmis-lab/biobert-large-cased-v1.1-squad
-🔍 找到README div，长度: 2271
-✅ 成功获取模型信息: README长度=2271, 标签数=8
-✅ dmis-lab/biobert-large-cased-v1.1-squad: README=2271, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: facebook/dinov2-large
-🔍 找到README div，长度: 1832
-✅ 成功获取模型信息: README长度=1832, 标签数=7
-✅ facebook/dinov2-large: README=1832, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: openbmb/MiniCPM-V-2
-🔍 找到README div，长度: 5228
-✅ 成功获取模型信息: README长度=5228, 标签数=8
-✅ openbmb/MiniCPM-V-2: README=5228, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: depth-anything/Depth-Anything-V2-Large
-🔍 找到README div，长度: 1326
-✅ 成功获取模型信息: README长度=1326, 标签数=6
-✅ depth-anything/Depth-Anything-V2-Large: README=1326, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: facebook/sam-vit-huge
-🔍 找到README div，长度: 3162
-✅ 成功获取模型信息: README长度=3162, 标签数=6
-✅ facebook/sam-vit-huge: README=3162, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: NexaAIDev/Qwen2-Audio-7B-GGUF
-🔍 找到README div，长度: 872
-✅ 成功获取模型信息: README长度=872, 标签数=7
-✅ NexaAIDev/Qwen2-Audio-7B-GGUF: README=872, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Salesforce/blip-vqa-capfilt-large
-🔍 找到README div，长度: 3436
-✅ 成功获取模型信息: README长度=3436, 标签数=5
-✅ Salesforce/blip-vqa-capfilt-large: README=3436, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/ALP_DeepScaleR_1.5B_C16K-GGUF
-🔍 找到README div，长度: 871
-✅ 成功获取模型信息: README长度=871, 标签数=10
-✅ mradermacher/ALP_DeepScaleR_1.5B_C16K-GGUF: README=871, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: kankur0007/2DseisvelGenerator
-🔍 找到README div，长度: 4104
-✅ 成功获取模型信息: README长度=4104, 标签数=8
-✅ kankur0007/2DseisvelGenerator: README=4104, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: mradermacher/GCIRS-Reasoning-1.5B-R1-i1-GGUF
-🔍 找到README div，长度: 1359
-✅ 成功获取模型信息: README长度=1359, 标签数=10
-✅ mradermacher/GCIRS-Reasoning-1.5B-R1-i1-GGUF: README=1359, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: FluidInference/silero-vad-coreml
-🔍 找到README div，长度: 785
-✅ 成功获取模型信息: README长度=785, 标签数=13
-✅ FluidInference/silero-vad-coreml: README=785, 标签=13 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Qwen3-Coder-480B-A35B-Instruct-1M-GGUF
-🔍 找到README div，长度: 3882
-✅ 成功获取模型信息: README长度=3882, 标签数=8
-✅ unsloth/Qwen3-Coder-480B-A35B-Instruct-1M-GGUF: README=3882, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: chancharikm/qwen2.5-vl-7b-cam-motion-preview
-🔍 找到README div，长度: 7375
-✅ 成功获取模型信息: README长度=7375, 标签数=7
-✅ chancharikm/qwen2.5-vl-7b-cam-motion-preview: README=7375, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: inclusionAI/Ming-Lite-Omni-1.5
-🔍 找到README div，长度: 9461
-✅ 成功获取模型信息: README长度=9461, 标签数=9
-✅ inclusionAI/Ming-Lite-Omni-1.5: README=9461, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: kakaocorp/kanana-1.5-v-3b-instruct
-🔍 找到README div，长度: 5665
-✅ 成功获取模型信息: README长度=5665, 标签数=7
-✅ kakaocorp/kanana-1.5-v-3b-instruct: README=5665, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: BCCard/Qwen2.5-VL-32B-Instruct-FP8-Dynamic
-🔍 找到README div，长度: 1180
-✅ 成功获取模型信息: README长度=1180, 标签数=7
-✅ BCCard/Qwen2.5-VL-32B-Instruct-FP8-Dynamic: README=1180, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-4.5
-🔍 找到README div，长度: 3837
-✅ 成功获取模型信息: README长度=3837, 标签数=7
-✅ zai-org/GLM-4.5: README=3837, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/VINCIE-3B
-🔍 找到README div，长度: 873
-✅ 成功获取模型信息: README长度=873, 标签数=5
-✅ ByteDance-Seed/VINCIE-3B: README=873, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: lzkhhh/ITDR-Qwen2.5-7B-Instruct
-🔍 找到README div，长度: 418
-✅ 成功获取模型信息: README长度=418, 标签数=4
-✅ lzkhhh/ITDR-Qwen2.5-7B-Instruct: README=418, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: llava-hf/llava-1.5-7b-hf
-🔍 找到README div，长度: 3745
-✅ 成功获取模型信息: README长度=3745, 标签数=7
-✅ llava-hf/llava-1.5-7b-hf: README=3745, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/ERNIE-4.5-21B-A3B-Thinking-GGUF
-🔍 找到README div，长度: 3780
-✅ 成功获取模型信息: README长度=3780, 标签数=7
-✅ unsloth/ERNIE-4.5-21B-A3B-Thinking-GGUF: README=3780, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: bralynn/pydevmini1
-🔍 找到README div，长度: 347
-✅ 成功获取模型信息: README长度=347, 标签数=4
-✅ bralynn/pydevmini1: README=347, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Alpha-VLLM/Lumina-DiMOO
-🔍 找到README div，长度: 1299
-✅ 成功获取模型信息: README长度=1299, 标签数=7
-✅ Alpha-VLLM/Lumina-DiMOO: README=1299, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-Next-80B-A3B-Thinking
-🔍 找到README div，长度: 10273
-✅ 成功获取模型信息: README长度=10273, 标签数=6
-✅ Qwen/Qwen3-Next-80B-A3B-Thinking: README=10273, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: iSEE-Laboratory/llmdet_large
-🔍 找到README div，长度: 2401
-✅ 成功获取模型信息: README长度=2401, 标签数=7
-✅ iSEE-Laboratory/llmdet_large: README=2401, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: calcuis/hunyuanimage-gguf
-🔍 找到README div，长度: 629
-✅ 成功获取模型信息: README长度=629, 标签数=4
-✅ calcuis/hunyuanimage-gguf: README=629, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: google/pegasus-large
-🔍 找到README div，长度: 1962
-✅ 成功获取模型信息: README长度=1962, 标签数=7
-✅ google/pegasus-large: README=1962, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: inclusionAI/Ring-mini-2.0
-🔍 找到README div，长度: 3231
-✅ 成功获取模型信息: README长度=3231, 标签数=4
-✅ inclusionAI/Ring-mini-2.0: README=3231, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/speecht5_tts
-🔍 找到README div，长度: 4791
-✅ 成功获取模型信息: README长度=4791, 标签数=7
-✅ microsoft/speecht5_tts: README=4791, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: apple/mobilevit-small
-🔍 找到README div，长度: 2436
-✅ 成功获取模型信息: README长度=2436, 标签数=0
-✅ apple/mobilevit-small: README=2436, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: stabilityai/stable-diffusion-xl-refiner-1.0
-🔍 找到README div，长度: 2528
-✅ 成功获取模型信息: README长度=2528, 标签数=8
-✅ stabilityai/stable-diffusion-xl-refiner-1.0: README=2528, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/TRELLIS-text-large
-🔍 找到README div，长度: 249
-✅ 成功获取模型信息: README长度=249, 标签数=5
-✅ microsoft/TRELLIS-text-large: README=249, 标签=5 [已保存]批次 11:  68%|██████▊   | 34/50 [03:44<01:45,  6.59s/it]批次 11:  70%|███████   | 35/50 [03:50<01:38,  6.60s/it]批次 11:  72%|███████▏  | 36/50 [03:57<01:32,  6.58s/it]批次 11:  74%|███████▍  | 37/50 [04:03<01:25,  6.57s/it]批次 11:  76%|███████▌  | 38/50 [04:10<01:19,  6.59s/it]批次 11:  78%|███████▊  | 39/50 [04:17<01:12,  6.61s/it]批次 11:  80%|████████  | 40/50 [04:23<01:05,  6.60s/it]批次 11:  82%|████████▏ | 41/50 [04:30<01:00,  6.67s/it]批次 11:  84%|████████▍ | 42/50 [04:37<00:53,  6.65s/it]批次 11:  86%|████████▌ | 43/50 [04:43<00:46,  6.63s/it]批次 11:  88%|████████▊ | 44/50 [04:50<00:39,  6.62s/it]批次 11:  90%|█████████ | 45/50 [04:56<00:32,  6.59s/it]批次 11:  92%|█████████▏| 46/50 [05:03<00:26,  6.58s/it]批次 11:  94%|█████████▍| 47/50 [05:10<00:19,  6.59s/it]批次 11:  96%|█████████▌| 48/50 [05:16<00:13,  6.60s/it]批次 11:  98%|█████████▊| 49/50 [05:23<00:06,  6.65s/it]批次 11: 100%|██████████| 50/50 [05:29<00:00,  6.47s/it]批次 11: 100%|██████████| 50/50 [05:29<00:00,  6.59s/it]
-
-正在使用爬虫获取模型详细信息: openai/diffusers-cd_bedroom256_lpips
-🔍 找到README div，长度: 3388
-✅ 成功获取模型信息: README长度=3388, 标签数=9
-✅ openai/diffusers-cd_bedroom256_lpips: README=3388, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: timm/vit_base_patch16_224.dino
-🔍 找到README div，长度: 3096
-✅ 成功获取模型信息: README长度=3096, 标签数=8
-✅ timm/vit_base_patch16_224.dino: README=3096, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: MachineLearningLM/MachineLearningLM-7B-v1
-🔍 找到README div，长度: 4414
-✅ 成功获取模型信息: README长度=4414, 标签数=7
-✅ MachineLearningLM/MachineLearningLM-7B-v1: README=4414, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Hcompany/Holo1.5-7B
-🔍 找到README div，长度: 3532
-✅ 成功获取模型信息: README长度=3532, 标签数=9
-✅ Hcompany/Holo1.5-7B: README=3532, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: ibm-granite/granite-docling-258M
-🔍 找到README div，长度: 10933
-✅ 成功获取模型信息: README长度=10933, 标签数=23
-✅ ibm-granite/granite-docling-258M: README=10933, 标签=23 [已保存]
-正在使用爬虫获取模型详细信息: Kwaipilot/KAT-Dev
-🔍 找到README div，长度: 2506
-✅ 成功获取模型信息: README长度=2506, 标签数=4
-✅ Kwaipilot/KAT-Dev: README=2506, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Magistral-Small-2509-unsloth-bnb-4bit
-🔍 找到README div，长度: 33484
-✅ 成功获取模型信息: README长度=33484, 标签数=8
-✅ unsloth/Magistral-Small-2509-unsloth-bnb-4bit: README=33484, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: facebook/vjepa2-vitl-fpc16-256-ssv2
-🔍 找到README div，长度: 2631
-✅ 成功获取模型信息: README长度=2631, 标签数=6
-✅ facebook/vjepa2-vitl-fpc16-256-ssv2: README=2631, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Writer/palmyra-mini
-🔍 找到README div，长度: 5053
-✅ 成功获取模型信息: README长度=5053, 标签数=7
-✅ Writer/palmyra-mini: README=5053, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Marvis-AI/marvis-tts-250m-v0.1-transformers
-🔍 找到README div，长度: 2965
-✅ 成功获取模型信息: README长度=2965, 标签数=7
-✅ Marvis-AI/marvis-tts-250m-v0.1-transformers: README=2965, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: allenai/GraspMolmo
-🔍 找到README div，长度: 2063
-✅ 成功获取模型信息: README长度=2063, 标签数=11
-✅ allenai/GraspMolmo: README=2063, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gpt-oss-20b-BF16
-🔍 找到README div，长度: 2740
-✅ 成功获取模型信息: README长度=2740, 标签数=6
-✅ unsloth/gpt-oss-20b-BF16: README=2740, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Wan-AI/Wan2.2-TI2V-5B-Diffusers
-🔍 找到README div，长度: 8682
-✅ 成功获取模型信息: README长度=8682, 标签数=9
-✅ Wan-AI/Wan2.2-TI2V-5B-Diffusers: README=8682, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google-bert/bert-base-cased
-🔍 找到README div，长度: 5242
-✅ 成功获取模型信息: README长度=5242, 标签数=12
-✅ google-bert/bert-base-cased: README=5242, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: internlm/Intern-S1-FP8
-🔍 找到README div，长度: 11504
-✅ 成功获取模型信息: README长度=11504, 标签数=5
-✅ internlm/Intern-S1-FP8: README=11504, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: nunchaku-tech/nunchaku-flux.1-krea-dev
-🔍 找到README div，长度: 1370
-✅ 成功获取模型信息: README长度=1370, 标签数=14
-✅ nunchaku-tech/nunchaku-flux.1-krea-dev: README=1370, 标签=14 [已保存]
-📊 批次 11 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 12/15 (50 个模型)
-批次 12:   0%|          | 0/50 [00:00<?, ?it/s]批次 12:   2%|▏         | 1/50 [00:06<05:28,  6.70s/it]批次 12:   4%|▍         | 2/50 [00:13<05:16,  6.59s/it]批次 12:   6%|▌         | 3/50 [00:19<05:12,  6.65s/it]批次 12:   8%|▊         | 4/50 [00:26<05:04,  6.62s/it]批次 12:  10%|█         | 5/50 [00:33<04:57,  6.62s/it]批次 12:  12%|█▏        | 6/50 [00:39<04:51,  6.62s/it]批次 12:  14%|█▍        | 7/50 [00:46<04:43,  6.59s/it]批次 12:  16%|█▌        | 8/50 [00:52<04:36,  6.58s/it]批次 12:  18%|█▊        | 9/50 [00:59<04:29,  6.58s/it]批次 12:  20%|██        | 10/50 [01:05<04:23,  6.58s/it]批次 12:  22%|██▏       | 11/50 [01:12<04:17,  6.59s/it]批次 12:  24%|██▍       | 12/50 [01:19<04:13,  6.66s/it]批次 12:  26%|██▌       | 13/50 [01:26<04:05,  6.64s/it]批次 12:  28%|██▊       | 14/50 [01:32<03:58,  6.62s/it]批次 12:  30%|███       | 15/50 [01:39<03:52,  6.65s/it]批次 12:  32%|███▏      | 16/50 [01:46<03:47,  6.68s/it]批次 12:  34%|███▍      | 17/50 [01:52<03:39,  6.67s/it]批次 12:  36%|███▌      | 18/50 [01:59<03:35,  6.72s/it]批次 12:  38%|███▊      | 19/50 [02:06<03:27,  6.71s/it]批次 12:  40%|████      | 20/50 [02:12<03:20,  6.67s/it]批次 12:  42%|████▏     | 21/50 [02:19<03:13,  6.66s/it]批次 12:  44%|████▍     | 22/50 [02:26<03:07,  6.70s/it]批次 12:  46%|████▌     | 23/50 [02:32<03:00,  6.68s/it]批次 12:  48%|████▊     | 24/50 [02:39<02:54,  6.70s/it]批次 12:  50%|█████     | 25/50 [02:46<02:46,  6.67s/it]批次 12:  52%|█████▏    | 26/50 [02:52<02:39,  6.65s/it]批次 12:  54%|█████▍    | 27/50 [02:59<02:33,  6.69s/it]批次 12:  56%|█████▌    | 28/50 [03:06<02:26,  6.67s/it]批次 12:  58%|█████▊    | 29/50 [03:12<02:19,  6.65s/it]批次 12:  60%|██████    | 30/50 [03:19<02:14,  6.72s/it]批次 12:  62%|██████▏   | 31/50 [03:26<02:07,  6.70s/it]批次 12:  64%|██████▍   | 32/50 [03:33<02:00,  6.69s/it]批次 12:  66%|██████▌   | 33/50 [03:39<01:54,  6.71s/it]批次 12:  68%|██████▊   | 34/50 [03:46<01:46,  6.64s/it]正在使用爬虫获取模型详细信息: stepfun-ai/step3-fp8
-🔍 找到README div，长度: 2725
-✅ 成功获取模型信息: README长度=2725, 标签数=7
-✅ stepfun-ai/step3-fp8: README=2725, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/step3
-🔍 找到README div，长度: 2824
-✅ 成功获取模型信息: README长度=2824, 标签数=0
-✅ stepfun-ai/step3: README=2824, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: openai/gpt-oss-20b
-🔍 找到README div，长度: 3105
-✅ 成功获取模型信息: README长度=3105, 标签数=6
-✅ openai/gpt-oss-20b: README=3105, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: openai-mirror/gpt-oss-120b
-🔍 找到README div，长度: 2685
-✅ 成功获取模型信息: README长度=2685, 标签数=5
-✅ openai-mirror/gpt-oss-120b: README=2685, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: timm/vit_large_patch14_reg4_dinov2.lvd142m
-🔍 找到README div，长度: 3806
-✅ 成功获取模型信息: README长度=3806, 标签数=7
-✅ timm/vit_large_patch14_reg4_dinov2.lvd142m: README=3806, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: cahya/NusaBert-ner-v1.3
-🔍 找到README div，长度: 1382
-✅ 成功获取模型信息: README长度=1382, 标签数=8
-✅ cahya/NusaBert-ner-v1.3: README=1382, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Comfy-Org/HiDream-I1_ComfyUI
-🔍 找到README div，长度: 84
-✅ 成功获取模型信息: README长度=84, 标签数=1
-✅ Comfy-Org/HiDream-I1_ComfyUI: README=84, 标签=1 [已保存]
-正在使用爬虫获取模型详细信息: OpenGVLab/VideoMAEv2-Large
-🔍 找到README div，长度: 1686
-✅ 成功获取模型信息: README长度=1686, 标签数=8
-✅ OpenGVLab/VideoMAEv2-Large: README=1686, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: OpenGVLab/InternVL_2_5_HiCo_R16
-🔍 找到README div，长度: 7802
-✅ 成功获取模型信息: README长度=7802, 标签数=10
-✅ OpenGVLab/InternVL_2_5_HiCo_R16: README=7802, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: nari-labs/Dia-1.6B
-🔍 找到README div，长度: 2520
-✅ 成功获取模型信息: README长度=2520, 标签数=10
-✅ nari-labs/Dia-1.6B: README=2520, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/UI-TARS-1.5-7B
-🔍 找到README div，长度: 2339
-✅ 成功获取模型信息: README长度=2339, 标签数=8
-✅ ByteDance-Seed/UI-TARS-1.5-7B: README=2339, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Alibaba-NLP/Tongyi-DeepResearch-30B-A3B
-🔍 找到README div，长度: 898
-✅ 成功获取模型信息: README长度=898, 标签数=5
-✅ Alibaba-NLP/Tongyi-DeepResearch-30B-A3B: README=898, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: openbmb/VoxCPM-0.5B
-🔍 找到README div，长度: 6481
-✅ 成功获取模型信息: README长度=6481, 标签数=9
-✅ openbmb/VoxCPM-0.5B: README=6481, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: continuedev/instinct
-🔍 找到README div，长度: 552
-✅ 成功获取模型信息: README长度=552, 标签数=5
-✅ continuedev/instinct: README=552, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: SG161222/Realistic_Vision_V5.1_noVAE
-🔍 找到README div，长度: 1303
-✅ 成功获取模型信息: README长度=1303, 标签数=5
-✅ SG161222/Realistic_Vision_V5.1_noVAE: README=1303, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/embeddinggemma-300m-qat-q8_0-unquantized
-🔍 找到README div，长度: 5267
-✅ 成功获取模型信息: README长度=5267, 标签数=6
-✅ unsloth/embeddinggemma-300m-qat-q8_0-unquantized: README=5267, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: iSEE-Laboratory/llmdet_base
-🔍 找到README div，长度: 2386
-✅ 成功获取模型信息: README长度=2386, 标签数=7
-✅ iSEE-Laboratory/llmdet_base: README=2386, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: neulab/omnitab-large-finetuned-wtq
-🔍 找到README div，长度: 1464
-✅ 成功获取模型信息: README长度=1464, 标签数=8
-✅ neulab/omnitab-large-finetuned-wtq: README=1464, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/Magistral-Small-2509-bnb-4bit
-🔍 找到README div，长度: 33486
-✅ 成功获取模型信息: README长度=33486, 标签数=8
-✅ unsloth/Magistral-Small-2509-bnb-4bit: README=33486, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: stabilityai/sdxl-turbo
-🔍 找到README div，长度: 2727
-✅ 成功获取模型信息: README长度=2727, 标签数=9
-✅ stabilityai/sdxl-turbo: README=2727, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: google/ddpm-ema-church-256
-🔍 找到README div，长度: 982
-✅ 成功获取模型信息: README长度=982, 标签数=8
-✅ google/ddpm-ema-church-256: README=982, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-14B-Instruct-1M
-🔍 找到README div，长度: 5586
-✅ 成功获取模型信息: README长度=5586, 标签数=0
-✅ Qwen/Qwen2.5-14B-Instruct-1M: README=5586, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-VL-32B-Instruct-AWQ
-🔍 找到README div，长度: 12115
-✅ 成功获取模型信息: README长度=12115, 标签数=0
-✅ Qwen/Qwen2.5-VL-32B-Instruct-AWQ: README=12115, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-12b-it-GGUF
-🔍 找到README div，长度: 6389
-✅ 成功获取模型信息: README长度=6389, 标签数=9
-✅ unsloth/gemma-3-12b-it-GGUF: README=6389, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: openai/jukebox-5b-lyrics
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=2
-✅ openai/jukebox-5b-lyrics: README=0, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-32B-GGUF
-🔍 找到README div，长度: 3022
-✅ 成功获取模型信息: README长度=3022, 标签数=0
-✅ Qwen/Qwen3-32B-GGUF: README=3022, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: nomic-ai/nomic-embed-vision-v1.5
-🔍 找到README div，长度: 2874
-✅ 成功获取模型信息: README长度=2874, 标签数=7
-✅ nomic-ai/nomic-embed-vision-v1.5: README=2874, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/UI-TARS-72B-DPO
-🔍 找到README div，长度: 4140
-✅ 成功获取模型信息: README长度=4140, 标签数=7
-✅ ByteDance-Seed/UI-TARS-72B-DPO: README=4140, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: HKUSTAudio/Llasa-1B-Multilingual
-🔍 找到README div，长度: 7139
-✅ 成功获取模型信息: README长度=7139, 标签数=8
-✅ HKUSTAudio/Llasa-1B-Multilingual: README=7139, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Video-R1/Video-R1-7B
-🔍 找到README div，长度: 3420
-✅ 成功获取模型信息: README长度=3420, 标签数=7
-✅ Video-R1/Video-R1-7B: README=3420, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: PKU-Alignment/beaver-7b-v1.0-reward
-🔍 找到README div，长度: 2590
-✅ 成功获取模型信息: README长度=2590, 标签数=15
-✅ PKU-Alignment/beaver-7b-v1.0-reward: README=2590, 标签=15 [已保存]
-正在使用爬虫获取模型详细信息: cavargas10/TRELLIS
-🔍 找到README div，长度: 244
-✅ 成功获取模型信息: README长度=244, 标签数=5
-✅ cavargas10/TRELLIS: README=244, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Alibaba-NLP/gte-reranker-modernbert-base
-🔍 找到README div，长度: 7762
-✅ 成功获取模型信息: README长度=7762, 标签数=11
-✅ Alibaba-NLP/gte-reranker-modernbert-base: README=7762, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: nvidia/parakeet-tdt-0.6b-v2
-🔍 找到README div，长度: 6117
-✅ 成功获取模型信息: README长度=6117, 标签数=17
-✅ nvidia/parakeet-tdt-0.6b-v2: README=6117, 标签=17 [已保存]
-正在使用爬虫获取模型详细信息: OpenGVLab/InternVL2-2B
-🔍 找到README div，长度: 25961批次 12:  70%|███████   | 35/50 [03:52<01:39,  6.62s/it]批次 12:  72%|███████▏  | 36/50 [03:59<01:33,  6.66s/it]批次 12:  74%|███████▍  | 37/50 [04:06<01:26,  6.64s/it]批次 12:  76%|███████▌  | 38/50 [04:12<01:19,  6.65s/it]批次 12:  78%|███████▊  | 39/50 [04:19<01:13,  6.64s/it]批次 12:  80%|████████  | 40/50 [04:26<01:06,  6.65s/it]批次 12:  82%|████████▏ | 41/50 [04:32<00:59,  6.66s/it]批次 12:  84%|████████▍ | 42/50 [04:39<00:53,  6.68s/it]批次 12:  86%|████████▌ | 43/50 [04:46<00:46,  6.65s/it]批次 12:  88%|████████▊ | 44/50 [04:52<00:39,  6.64s/it]批次 12:  90%|█████████ | 45/50 [04:59<00:33,  6.65s/it]批次 12:  92%|█████████▏| 46/50 [05:06<00:26,  6.66s/it]批次 12:  94%|█████████▍| 47/50 [05:12<00:19,  6.63s/it]批次 12:  96%|█████████▌| 48/50 [05:19<00:13,  6.63s/it]批次 12:  98%|█████████▊| 49/50 [05:25<00:06,  6.58s/it]批次 12: 100%|██████████| 50/50 [05:31<00:00,  6.40s/it]批次 12: 100%|██████████| 50/50 [05:31<00:00,  6.63s/it]
-
-✅ 成功获取模型信息: README长度=25961, 标签数=10
-✅ OpenGVLab/InternVL2-2B: README=25961, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/UI-TARS-7B-DPO
-🔍 找到README div，长度: 4184
-✅ 成功获取模型信息: README长度=4184, 标签数=8
-✅ ByteDance-Seed/UI-TARS-7B-DPO: README=4184, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: conjuncts/ditr-e15
-🔍 找到README div，长度: 1010
-✅ 成功获取模型信息: README长度=1010, 标签数=0
-✅ conjuncts/ditr-e15: README=1010, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: LLM-Research/mxbai-embed-large-v1-gguf
-🔍 找到README div，长度: 3212
-✅ 成功获取模型信息: README长度=3212, 标签数=9
-✅ LLM-Research/mxbai-embed-large-v1-gguf: README=3212, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: Hcompany/Holo1.5-3B
-🔍 找到README div，长度: 3541
-✅ 成功获取模型信息: README长度=3541, 标签数=9
-✅ Hcompany/Holo1.5-3B: README=3541, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: baidu/Qianfan-VL-8B
-🔍 找到README div，长度: 8928
-✅ 成功获取模型信息: README长度=8928, 标签数=8
-✅ baidu/Qianfan-VL-8B: README=8928, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3.1-Terminus
-🔍 找到README div，长度: 1269
-✅ 成功获取模型信息: README长度=1269, 标签数=3
-✅ deepseek-ai/DeepSeek-V3.1-Terminus: README=1269, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-Omni-30B-A3B-Captioner
-🔍 找到README div，长度: 6889
-✅ 成功获取模型信息: README长度=6889, 标签数=8
-✅ Qwen/Qwen3-Omni-30B-A3B-Captioner: README=6889, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: DaizeDong/GraphsGPT-4W
-🔍 找到README div，长度: 108
-✅ 成功获取模型信息: README长度=108, 标签数=10
-✅ DaizeDong/GraphsGPT-4W: README=108, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-VL-235B-A22B-Instruct
-🔍 找到README div，长度: 4777
-✅ 成功获取模型信息: README长度=4777, 标签数=5
-✅ Qwen/Qwen3-VL-235B-A22B-Instruct: README=4777, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Genius-Society/hoyoMusic
-🔍 找到README div，长度: 724
-✅ 成功获取模型信息: README长度=724, 标签数=0
-✅ Genius-Society/hoyoMusic: README=724, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: codefuse-ai/CodeFuse-DevOps-Model-7B-Base
-🔍 找到README div，长度: 2297
-✅ 成功获取模型信息: README长度=2297, 标签数=3
-✅ codefuse-ai/CodeFuse-DevOps-Model-7B-Base: README=2297, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3Guard-Gen-4B
-🔍 找到README div，长度: 6023
-✅ 成功获取模型信息: README长度=6023, 标签数=4
-✅ Qwen/Qwen3Guard-Gen-4B: README=6023, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3Guard-Gen-8B
-🔍 找到README div，长度: 5990
-✅ 成功获取模型信息: README长度=5990, 标签数=4
-✅ Qwen/Qwen3Guard-Gen-8B: README=5990, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: BAAI/Emu3-VisionTokenizer
-🔍 找到README div，长度: 1935
-✅ 成功获取模型信息: README长度=1935, 标签数=4
-✅ BAAI/Emu3-VisionTokenizer: README=1935, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: XiaomiMiMo/MiMo-Audio-7B-Instruct
-🔍 找到README div，长度: 2878
-✅ 成功获取模型信息: README长度=2878, 标签数=9
-✅ XiaomiMiMo/MiMo-Audio-7B-Instruct: README=2878, 标签=9 [已保存]
-📊 批次 12 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 13/15 (50 个模型)
-批次 13:   0%|          | 0/50 [00:00<?, ?it/s]批次 13:   2%|▏         | 1/50 [00:06<05:20,  6.55s/it]批次 13:   4%|▍         | 2/50 [00:13<05:13,  6.54s/it]批次 13:   6%|▌         | 3/50 [00:19<05:08,  6.56s/it]批次 13:   8%|▊         | 4/50 [00:26<05:04,  6.61s/it]批次 13:  10%|█         | 5/50 [00:32<04:57,  6.61s/it]批次 13:  12%|█▏        | 6/50 [00:39<04:49,  6.58s/it]批次 13:  14%|█▍        | 7/50 [00:46<04:43,  6.59s/it]批次 13:  16%|█▌        | 8/50 [00:52<04:36,  6.58s/it]批次 13:  18%|█▊        | 9/50 [00:59<04:29,  6.57s/it]批次 13:  20%|██        | 10/50 [01:05<04:22,  6.57s/it]批次 13:  22%|██▏       | 11/50 [01:12<04:17,  6.59s/it]批次 13:  24%|██▍       | 12/50 [01:18<04:10,  6.58s/it]批次 13:  26%|██▌       | 13/50 [01:25<04:02,  6.55s/it]批次 13:  28%|██▊       | 14/50 [01:31<03:55,  6.55s/it]批次 13:  30%|███       | 15/50 [01:38<03:49,  6.55s/it]批次 13:  32%|███▏      | 16/50 [01:45<03:42,  6.55s/it]批次 13:  34%|███▍      | 17/50 [01:51<03:37,  6.58s/it]批次 13:  36%|███▌      | 18/50 [01:58<03:30,  6.59s/it]批次 13:  38%|███▊      | 19/50 [02:05<03:24,  6.61s/it]批次 13:  40%|████      | 20/50 [02:11<03:17,  6.59s/it]批次 13:  42%|████▏     | 21/50 [02:18<03:10,  6.58s/it]批次 13:  44%|████▍     | 22/50 [02:24<03:03,  6.55s/it]批次 13:  46%|████▌     | 23/50 [02:31<02:56,  6.55s/it]批次 13:  48%|████▊     | 24/50 [02:37<02:49,  6.52s/it]批次 13:  50%|█████     | 25/50 [02:44<02:42,  6.49s/it]批次 13:  52%|█████▏    | 26/50 [02:50<02:35,  6.47s/it]批次 13:  54%|█████▍    | 27/50 [02:56<02:28,  6.47s/it]批次 13:  56%|█████▌    | 28/50 [03:03<02:22,  6.49s/it]批次 13:  58%|█████▊    | 29/50 [03:10<02:17,  6.55s/it]批次 13:  60%|██████    | 30/50 [03:16<02:12,  6.60s/it]批次 13:  62%|██████▏   | 31/50 [03:23<02:05,  6.58s/it]批次 13:  64%|██████▍   | 32/50 [03:29<01:58,  6.58s/it]批次 13:  66%|██████▌   | 33/50 [03:36<01:52,  6.62s/it]批次 13:  68%|██████▊   | 34/50 [03:43<01:44,  6.56s/it]正在使用爬虫获取模型详细信息: opendatalab/MinerU2.5-2509-1.2B
-🔍 找到README div，长度: 5307
-✅ 成功获取模型信息: README长度=5307, 标签数=8
-✅ opendatalab/MinerU2.5-2509-1.2B: README=5307, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: openmmlab-community/mm_grounding_dino_large_o365v2_oiv6_goldg
-🔍 找到README div，长度: 3337
-✅ 成功获取模型信息: README长度=3337, 标签数=7
-✅ openmmlab-community/mm_grounding_dino_large_o365v2_oiv6_goldg: README=3337, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
-🔍 找到README div，长度: 5045
-✅ 成功获取模型信息: README长度=5045, 标签数=11
-✅ MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7: README=5045, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: PerceptronAI/Isaac-0.1
-🔍 找到README div，长度: 1357
-✅ 成功获取模型信息: README长度=1357, 标签数=6
-✅ PerceptronAI/Isaac-0.1: README=1357, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-Omni-30B-A3B-Instruct
-🔍 找到README div，长度: 27937
-✅ 成功获取模型信息: README长度=27937, 标签数=8
-✅ Qwen/Qwen3-Omni-30B-A3B-Instruct: README=27937, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: stepfun-ai/NextStep-1-Large-Edit
-🔍 找到README div，长度: 2965
-✅ 成功获取模型信息: README长度=2965, 标签数=6
-✅ stepfun-ai/NextStep-1-Large-Edit: README=2965, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/gemma-3-270m-it-GGUF
-🔍 找到README div，长度: 9955
-✅ 成功获取模型信息: README长度=9955, 标签数=8
-✅ unsloth/gemma-3-270m-it-GGUF: README=9955, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3.1-Base
-🔍 找到README div，长度: 5139
-✅ 成功获取模型信息: README长度=5139, 标签数=4
-✅ deepseek-ai/DeepSeek-V3.1-Base: README=5139, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Kijai/WanVideo_comfy
-🔍 找到README div，长度: 2029
-✅ 成功获取模型信息: README长度=2029, 标签数=5
-✅ Kijai/WanVideo_comfy: README=2029, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-0528
-🔍 找到README div，长度: 9113
-✅ 成功获取模型信息: README长度=9113, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-0528: README=9113, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3Guard-Gen-0.6B
-🔍 找到README div，长度: 6033
-✅ 成功获取模型信息: README长度=6033, 标签数=4
-✅ Qwen/Qwen3Guard-Gen-0.6B: README=6033, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Kwaipilot/HiPO-8B
-🔍 找到README div，长度: 2042
-✅ 成功获取模型信息: README长度=2042, 标签数=5
-✅ Kwaipilot/HiPO-8B: README=2042, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-2.6B
-🔍 找到README div，长度: 5885
-✅ 成功获取模型信息: README长度=5885, 标签数=8
-✅ LiquidAI/LFM2-2.6B: README=5885, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen-Image-Edit-2509
-🔍 找到README div，长度: 3352
-✅ 成功获取模型信息: README长度=3352, 标签数=10
-✅ Qwen/Qwen-Image-Edit-2509: README=3352, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-1.2B-Tool
-🔍 找到README div，长度: 2259
-✅ 成功获取模型信息: README长度=2259, 标签数=8
-✅ LiquidAI/LFM2-1.2B-Tool: README=2259, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: timm/samvit_base_patch16.sa1b
-🔍 找到README div，长度: 3151
-✅ 成功获取模型信息: README长度=3151, 标签数=8
-✅ timm/samvit_base_patch16.sa1b: README=3151, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Intel/zoedepth-nyu
-🔍 找到README div，长度: 1217
-✅ 成功获取模型信息: README长度=1217, 标签数=6
-✅ Intel/zoedepth-nyu: README=1217, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: MusePublic/489_ckpt_FLUX_1
-🔍 找到README div，长度: 1602
-✅ 成功获取模型信息: README长度=1602, 标签数=10
-✅ MusePublic/489_ckpt_FLUX_1: README=1602, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3Guard-Stream-4B
-🔍 找到README div，长度: 5146
-✅ 成功获取模型信息: README长度=5146, 标签数=3
-✅ Qwen/Qwen3Guard-Stream-4B: README=5146, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-30B-A3B-Base
-🔍 找到README div，长度: 1112
-✅ 成功获取模型信息: README长度=1112, 标签数=4
-✅ Qwen/Qwen3-30B-A3B-Base: README=1112, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-1.7B
-🔍 找到README div，长度: 12710
-✅ 成功获取模型信息: README长度=12710, 标签数=4
-✅ Qwen/Qwen3-1.7B: README=12710, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-4B
-🔍 找到README div，长度: 15314
-✅ 成功获取模型信息: README长度=15314, 标签数=4
-✅ Qwen/Qwen3-4B: README=15314, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-4B-Base
-🔍 找到README div，长度: 2634
-✅ 成功获取模型信息: README长度=2634, 标签数=3
-✅ Qwen/Qwen3-4B-Base: README=2634, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-30B-A3B
-🔍 找到README div，长度: 9936
-✅ 成功获取模型信息: README长度=9936, 标签数=6
-✅ Qwen/Qwen3-30B-A3B: README=9936, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: depth-anything/Depth-Anything-V2-Large-hf
-🔍 找到README div，长度: 2558
-✅ 成功获取模型信息: README长度=2558, 标签数=7
-✅ depth-anything/Depth-Anything-V2-Large-hf: README=2558, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: fixie-ai/ultravox-v0_5-llama-3_2-1b
-🔍 找到README div，长度: 1752
-✅ 成功获取模型信息: README长度=1752, 标签数=6
-✅ fixie-ai/ultravox-v0_5-llama-3_2-1b: README=1752, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: nikravan/glm-4vq
-🔍 找到README div，长度: 2246
-✅ 成功获取模型信息: README长度=2246, 标签数=4
-✅ nikravan/glm-4vq: README=2246, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: rubentito/layoutlmv3-base-mpdocvqa
-🔍 找到README div，长度: 2829
-✅ 成功获取模型信息: README长度=2829, 标签数=9
-✅ rubentito/layoutlmv3-base-mpdocvqa: README=2829, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-30B-A3B-GGUF
-🔍 找到README div，长度: 3141
-✅ 成功获取模型信息: README长度=3141, 标签数=0
-✅ Qwen/Qwen3-30B-A3B-GGUF: README=3141, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3.1
-🔍 找到README div，长度: 5190
-✅ 成功获取模型信息: README长度=5190, 标签数=4
-✅ deepseek-ai/DeepSeek-V3.1: README=5190, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-🔍 找到README div，长度: 6815
-✅ 成功获取模型信息: README长度=6815, 标签数=4
-✅ deepseek-ai/DeepSeek-R1-0528-Qwen3-8B: README=6815, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/TRELLIS-text-base
-🔍 找到README div，长度: 250
-✅ 成功获取模型信息: README长度=250, 标签数=6
-✅ microsoft/TRELLIS-text-base: README=250, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-VL-7B-Instruct
-🔍 找到README div，长度: 13166
-✅ 成功获取模型信息: README长度=13166, 标签数=9
-✅ Qwen/Qwen2.5-VL-7B-Instruct: README=13166, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Moonlight-16B-A3B-Instruct
-🔍 找到README div，长度: 4022
-✅ 成功获取模型信息: README长度=4022, 标签数=4
-✅ moonshotai/Moonlight-16B-A3B-Instruct: README=4022, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: sail-rvc/ElsaV2
-🔍 找到README div，长度: 179批次 13:  70%|███████   | 35/50 [03:49<01:38,  6.53s/it]批次 13:  72%|███████▏  | 36/50 [03:56<01:31,  6.57s/it]批次 13:  74%|███████▍  | 37/50 [04:02<01:25,  6.55s/it]批次 13:  76%|███████▌  | 38/50 [04:09<01:18,  6.56s/it]批次 13:  78%|███████▊  | 39/50 [04:15<01:12,  6.55s/it]批次 13:  80%|████████  | 40/50 [04:22<01:05,  6.56s/it]批次 13:  82%|████████▏ | 41/50 [04:28<00:58,  6.55s/it]批次 13:  84%|████████▍ | 42/50 [04:35<00:52,  6.55s/it]批次 13:  86%|████████▌ | 43/50 [04:42<00:46,  6.59s/it]批次 13:  88%|████████▊ | 44/50 [04:48<00:39,  6.61s/it]批次 13:  90%|█████████ | 45/50 [04:55<00:32,  6.57s/it]批次 13:  92%|█████████▏| 46/50 [05:01<00:26,  6.60s/it]批次 13:  94%|█████████▍| 47/50 [05:08<00:19,  6.56s/it]批次 13:  96%|█████████▌| 48/50 [05:14<00:13,  6.53s/it]批次 13:  98%|█████████▊| 49/50 [05:21<00:06,  6.51s/it]批次 13: 100%|██████████| 50/50 [05:27<00:00,  6.35s/it]批次 13: 100%|██████████| 50/50 [05:27<00:00,  6.55s/it]
-
-✅ 成功获取模型信息: README长度=179, 标签数=4
-✅ sail-rvc/ElsaV2: README=179, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-32B-AWQ
-🔍 找到README div，长度: 9758
-✅ 成功获取模型信息: README长度=9758, 标签数=0
-✅ Qwen/Qwen3-32B-AWQ: README=9758, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: IIC/nlp_bert_relation-extraction_chinese-base
-🔍 找到README div，长度: 1103
-✅ 成功获取模型信息: README长度=1103, 标签数=7
-✅ IIC/nlp_bert_relation-extraction_chinese-base: README=1103, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: AI-ModelScope/gliner_multi
-🔍 找到README div，长度: 3650
-✅ 成功获取模型信息: README长度=3650, 标签数=7
-✅ AI-ModelScope/gliner_multi: README=3650, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: AI-ModelScope/IDM-VTON
-🔍 找到README div，长度: 609
-✅ 成功获取模型信息: README长度=609, 标签数=9
-✅ AI-ModelScope/IDM-VTON: README=609, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/glm-4-9b-chat
-🔍 找到README div，长度: 5501
-✅ 成功获取模型信息: README长度=5501, 标签数=0
-✅ zai-org/glm-4-9b-chat: README=5501, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: google/magenta-realtime
-🔍 找到README div，长度: 3627
-✅ 成功获取模型信息: README长度=3627, 标签数=5
-✅ google/magenta-realtime: README=3627, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: AI-ModelScope/OminiControl
-🔍 找到README div，长度: 94
-✅ 成功获取模型信息: README长度=94, 标签数=3
-✅ AI-ModelScope/OminiControl: README=94, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: google-bert/bert-base-chinese
-🔍 找到README div，长度: 765
-✅ 成功获取模型信息: README长度=765, 标签数=8
-✅ google-bert/bert-base-chinese: README=765, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen2.5-Omni-3B
-🔍 找到README div，长度: 13283
-✅ 成功获取模型信息: README长度=13283, 标签数=0
-✅ Qwen/Qwen2.5-Omni-3B: README=13283, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: timm/edgenext_small.usi_in1k
-🔍 找到README div，长度: 4199
-✅ 成功获取模型信息: README长度=4199, 标签数=8
-✅ timm/edgenext_small.usi_in1k: README=4199, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: codefuse-ai/CodeFuse-DevOps-Model-7B-Chat
-🔍 找到README div，长度: 3055
-✅ 成功获取模型信息: README长度=3055, 标签数=3
-✅ codefuse-ai/CodeFuse-DevOps-Model-7B-Chat: README=3055, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-1.2B-RAG
-🔍 找到README div，长度: 1214
-✅ 成功获取模型信息: README长度=1214, 标签数=8
-✅ LiquidAI/LFM2-1.2B-RAG: README=1214, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: adibvafa/CodonTransformer
-🔍 找到README div，长度: 3351
-✅ 成功获取模型信息: README长度=3351, 标签数=9
-✅ adibvafa/CodonTransformer: README=3351, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-1.2B-Extract
-🔍 找到README div，长度: 1923
-✅ 成功获取模型信息: README长度=1923, 标签数=8
-✅ LiquidAI/LFM2-1.2B-Extract: README=1923, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: LiquidAI/LFM2-350M-Math
-🔍 找到README div，长度: 1114
-✅ 成功获取模型信息: README长度=1114, 标签数=8
-✅ LiquidAI/LFM2-350M-Math: README=1114, 标签=8 [已保存]
-📊 批次 13 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 14/15 (50 个模型)
-批次 14:   0%|          | 0/50 [00:00<?, ?it/s]批次 14:   2%|▏         | 1/50 [00:06<05:16,  6.45s/it]批次 14:   4%|▍         | 2/50 [00:13<05:12,  6.52s/it]批次 14:   6%|▌         | 3/50 [00:19<05:08,  6.56s/it]批次 14:   8%|▊         | 4/50 [00:26<05:02,  6.57s/it]批次 14:  10%|█         | 5/50 [00:32<04:57,  6.61s/it]批次 14:  12%|█▏        | 6/50 [00:39<04:50,  6.60s/it]批次 14:  14%|█▍        | 7/50 [00:46<04:43,  6.60s/it]批次 14:  16%|█▌        | 8/50 [00:52<04:37,  6.60s/it]批次 14:  18%|█▊        | 9/50 [00:59<04:30,  6.59s/it]批次 14:  20%|██        | 10/50 [01:05<04:23,  6.59s/it]批次 14:  22%|██▏       | 11/50 [01:12<04:15,  6.56s/it]批次 14:  24%|██▍       | 12/50 [01:18<04:09,  6.58s/it]批次 14:  26%|██▌       | 13/50 [01:25<04:03,  6.58s/it]批次 14:  28%|██▊       | 14/50 [01:32<03:57,  6.58s/it]批次 14:  30%|███       | 15/50 [01:38<03:50,  6.57s/it]批次 14:  32%|███▏      | 16/50 [01:45<03:43,  6.57s/it]批次 14:  34%|███▍      | 17/50 [01:51<03:36,  6.57s/it]批次 14:  36%|███▌      | 18/50 [01:58<03:30,  6.57s/it]批次 14:  38%|███▊      | 19/50 [02:05<03:24,  6.59s/it]批次 14:  40%|████      | 20/50 [02:11<03:17,  6.57s/it]批次 14:  42%|████▏     | 21/50 [02:18<03:12,  6.62s/it]批次 14:  44%|████▍     | 22/50 [02:24<03:04,  6.61s/it]批次 14:  46%|████▌     | 23/50 [02:31<02:58,  6.60s/it]批次 14:  48%|████▊     | 24/50 [02:38<02:51,  6.60s/it]批次 14:  50%|█████     | 25/50 [02:44<02:44,  6.59s/it]批次 14:  52%|█████▏    | 26/50 [02:51<02:37,  6.57s/it]批次 14:  54%|█████▍    | 27/50 [02:57<02:31,  6.58s/it]批次 14:  56%|█████▌    | 28/50 [03:04<02:24,  6.58s/it]批次 14:  58%|█████▊    | 29/50 [03:10<02:17,  6.57s/it]批次 14:  60%|██████    | 30/50 [03:17<02:11,  6.59s/it]批次 14:  62%|██████▏   | 31/50 [03:24<02:06,  6.64s/it]批次 14:  64%|██████▍   | 32/50 [03:30<01:59,  6.63s/it]批次 14:  66%|██████▌   | 33/50 [03:37<01:52,  6.63s/it]正在使用爬虫获取模型详细信息: LiquidAI/LFM2-350M-Extract
-🔍 找到README div，长度: 1968
-✅ 成功获取模型信息: README长度=1968, 标签数=8
-✅ LiquidAI/LFM2-350M-Extract: README=1968, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: facebook/map-anything
-🔍 找到README div，长度: 739
-✅ 成功获取模型信息: README长度=739, 标签数=15
-✅ facebook/map-anything: README=739, 标签=15 [已保存]
-正在使用爬虫获取模型详细信息: OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-434M
-🔍 找到README div，长度: 5647
-✅ 成功获取模型信息: README长度=5647, 标签数=14
-✅ OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-434M: README=5647, 标签=14 [已保存]
-正在使用爬虫获取模型详细信息: facebook/dino-vits8
-🔍 找到README div，长度: 1983
-✅ 成功获取模型信息: README长度=1983, 标签数=9
-✅ facebook/dino-vits8: README=1983, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: microsoft/Florence-2-base
-🔍 找到README div，长度: 7055
-✅ 成功获取模型信息: README长度=7055, 标签数=8
-✅ microsoft/Florence-2-base: README=7055, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/embeddinggemma-300m-qat-q4_0-unquantized
-🔍 找到README div，长度: 5229
-✅ 成功获取模型信息: README长度=5229, 标签数=6
-✅ unsloth/embeddinggemma-300m-qat-q4_0-unquantized: README=5229, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: facebook/esm2_t33_650M_UR50D
-🔍 找到README div，长度: 408
-✅ 成功获取模型信息: README长度=408, 标签数=5
-✅ facebook/esm2_t33_650M_UR50D: README=408, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: facebook/vjepa2-vitg-fpc64-384-ssv2
-🔍 找到README div，长度: 2714
-✅ 成功获取模型信息: README长度=2714, 标签数=6
-✅ facebook/vjepa2-vitg-fpc64-384-ssv2: README=2714, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: XiaomiMiMo/MiMo-Audio-7B-Base
-🔍 找到README div，长度: 2912
-✅ 成功获取模型信息: README长度=2912, 标签数=9
-✅ XiaomiMiMo/MiMo-Audio-7B-Base: README=2912, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-Omni-30B-A3B-Thinking
-🔍 找到README div，长度: 28090
-✅ 成功获取模型信息: README长度=28090, 标签数=8
-✅ Qwen/Qwen3-Omni-30B-A3B-Thinking: README=28090, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: unsloth/DeepSeek-V3.1-Base-BF16
-🔍 找到README div，长度: 5058
-✅ 成功获取模型信息: README长度=5058, 标签数=8
-✅ unsloth/DeepSeek-V3.1-Base-BF16: README=5058, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: vicgalle/xlm-roberta-large-xnli-anli
-🔍 找到README div，长度: 747
-✅ 成功获取模型信息: README长度=747, 标签数=10
-✅ vicgalle/xlm-roberta-large-xnli-anli: README=747, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3.2-Exp
-🔍 找到README div，长度: 2145
-✅ 成功获取模型信息: README长度=2145, 标签数=2
-✅ deepseek-ai/DeepSeek-V3.2-Exp: README=2145, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-V3.2-Exp-Base
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=3
-✅ deepseek-ai/DeepSeek-V3.2-Exp-Base: README=0, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: zai-org/GLM-4.6
-🔍 找到README div，长度: 855
-✅ 成功获取模型信息: README长度=855, 标签数=8
-✅ zai-org/GLM-4.6: README=855, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: jwan2021/autotrain-us-housing-prices-1771761514
-🔍 找到README div，长度: 521
-✅ 成功获取模型信息: README长度=521, 标签数=7
-✅ jwan2021/autotrain-us-housing-prices-1771761514: README=521, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Intel/ldm3d-4c
-🔍 找到README div，长度: 2509
-✅ 成功获取模型信息: README长度=2509, 标签数=11
-✅ Intel/ldm3d-4c: README=2509, 标签=11 [已保存]
-正在使用爬虫获取模型详细信息: jwan2021/autotrain-us-housing-prices-1771761513
-🔍 找到README div，长度: 525
-✅ 成功获取模型信息: README长度=525, 标签数=7
-✅ jwan2021/autotrain-us-housing-prices-1771761513: README=525, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/UI-TARS-72B-SFT
-🔍 找到README div，长度: 4136
-✅ 成功获取模型信息: README长度=4136, 标签数=7
-✅ ByteDance-Seed/UI-TARS-72B-SFT: README=4136, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: alibaba-pai/Wan2.1-Fun-14B-Control
-🔍 找到README div，长度: 5058
-✅ 成功获取模型信息: README长度=5058, 标签数=10
-✅ alibaba-pai/Wan2.1-Fun-14B-Control: README=5058, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/cogagent-9b-20241220
-🔍 找到README div，长度: 3638
-✅ 成功获取模型信息: README长度=3638, 标签数=0
-✅ THUDM/cogagent-9b-20241220: README=3638, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/UI-TARS-7B-SFT
-🔍 找到README div，长度: 4148
-✅ 成功获取模型信息: README长度=4148, 标签数=7
-✅ ByteDance-Seed/UI-TARS-7B-SFT: README=4148, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: tencent/HunyuanVideo-PromptRewrite
-🔍 找到README div，长度: 3898
-✅ 成功获取模型信息: README长度=3898, 标签数=0
-✅ tencent/HunyuanVideo-PromptRewrite: README=3898, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/VisionReward-Image-bf16
-🔍 找到README div，长度: 573
-✅ 成功获取模型信息: README长度=573, 标签数=0
-✅ THUDM/VisionReward-Image-bf16: README=573, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: ecmwf/aifs-single-0.2.1
-🔍 找到README div，长度: 4050
-✅ 成功获取模型信息: README长度=4050, 标签数=5
-✅ ecmwf/aifs-single-0.2.1: README=4050, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: pcoloc/autotrain-only-rssi-1813762559
-🔍 找到README div，长度: 509
-✅ 成功获取模型信息: README长度=509, 标签数=7
-✅ pcoloc/autotrain-only-rssi-1813762559: README=509, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: meituan-longcat/LongCat-Flash-Thinking
-🔍 找到README div，长度: 6380
-✅ 成功获取模型信息: README长度=6380, 标签数=7
-✅ meituan-longcat/LongCat-Flash-Thinking: README=6380, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Genius-Society/piano_trans
-🔍 找到README div，长度: 486
-✅ 成功获取模型信息: README长度=486, 标签数=0
-✅ Genius-Society/piano_trans: README=486, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: black-forest-labs/FLUX.1-Kontext-dev
-🔍 找到README div，长度: 4583
-✅ 成功获取模型信息: README长度=4583, 标签数=12
-✅ black-forest-labs/FLUX.1-Kontext-dev: README=4583, 标签=12 [已保存]
-正在使用爬虫获取模型详细信息: BAAI/bge-small-zh-v1.5
-🔍 找到README div，长度: 12771
-✅ 成功获取模型信息: README长度=12771, 标签数=8
-✅ BAAI/bge-small-zh-v1.5: README=12771, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: InternRobotics/VLAC
-🔍 找到README div，长度: 3675
-✅ 成功获取模型信息: README长度=3675, 标签数=7
-✅ InternRobotics/VLAC: README=3675, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: facebook/musicgen-stereo-small
-🔍 找到README div，长度: 6297
-✅ 成功获取模型信息: README长度=6297, 标签数=10
-✅ facebook/musicgen-stereo-small: README=6297, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: nineninesix/kani-tts-450m-0.1-pt
-🔍 找到README div，长度: 2368
-✅ 成功获取模型信息: README长度=2368, 标签数=6
-✅ nineninesix/kani-tts-450m-0.1-pt: README=2368, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-Prover-V2-7B
-🔍 找到README div，长度: 3244
-✅ 成功获取模型信息: README长度=3244, 标签数=2批次 14:  68%|██████▊   | 34/50 [03:44<01:45,  6.62s/it]批次 14:  70%|███████   | 35/50 [03:50<01:39,  6.64s/it]批次 14:  72%|███████▏  | 36/50 [03:57<01:32,  6.61s/it]批次 14:  74%|███████▍  | 37/50 [04:04<01:26,  6.66s/it]批次 14:  76%|███████▌  | 38/50 [04:10<01:19,  6.63s/it]批次 14:  78%|███████▊  | 39/50 [04:17<01:13,  6.64s/it]批次 14:  80%|████████  | 40/50 [04:24<01:06,  6.66s/it]批次 14:  82%|████████▏ | 41/50 [04:30<00:59,  6.65s/it]批次 14:  84%|████████▍ | 42/50 [04:37<00:53,  6.65s/it]批次 14:  86%|████████▌ | 43/50 [04:43<00:46,  6.62s/it]批次 14:  88%|████████▊ | 44/50 [04:50<00:39,  6.62s/it]批次 14:  90%|█████████ | 45/50 [04:57<00:33,  6.63s/it]批次 14:  92%|█████████▏| 46/50 [05:03<00:26,  6.63s/it]批次 14:  94%|█████████▍| 47/50 [05:10<00:19,  6.63s/it]批次 14:  96%|█████████▌| 48/50 [05:16<00:13,  6.61s/it]批次 14:  98%|█████████▊| 49/50 [05:23<00:06,  6.65s/it]批次 14: 100%|██████████| 50/50 [05:29<00:00,  6.48s/it]批次 14: 100%|██████████| 50/50 [05:29<00:00,  6.60s/it]
-
-✅ deepseek-ai/DeepSeek-Prover-V2-7B: README=3244, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: THUDM/glm-4-9b-hf
-🔍 找到README div，长度: 3280
-✅ 成功获取模型信息: README长度=3280, 标签数=0
-✅ THUDM/glm-4-9b-hf: README=3280, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Moonlight-16B-A3B
-🔍 找到README div，长度: 4150
-✅ 成功获取模型信息: README长度=4150, 标签数=0
-✅ moonshotai/Moonlight-16B-A3B: README=4150, 标签=0 [已保存]
-正在使用爬虫获取模型详细信息: moojink/openvla-7b-oft-finetuned-libero-spatial
-🔍 找到README div，长度: 2417
-✅ 成功获取模型信息: README长度=2417, 标签数=4
-✅ moojink/openvla-7b-oft-finetuned-libero-spatial: README=2417, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: NimVideo/cogvideox1.5-5b-prompt-camera-motion
-🔍 找到README div，长度: 1486
-✅ 成功获取模型信息: README长度=1486, 标签数=8
-✅ NimVideo/cogvideox1.5-5b-prompt-camera-motion: README=1486, 标签=8 [已保存]
-正在使用爬虫获取模型详细信息: openai/consistency-decoder
-🔍 找到README div，长度: 578
-✅ 成功获取模型信息: README长度=578, 标签数=7
-✅ openai/consistency-decoder: README=578, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-14B-FP8
-🔍 找到README div，长度: 15956
-✅ 成功获取模型信息: README长度=15956, 标签数=6
-✅ Qwen/Qwen3-14B-FP8: README=15956, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: openai/imagegpt-medium
-🔍 找到README div，长度: 2958
-✅ 成功获取模型信息: README长度=2958, 标签数=5
-✅ openai/imagegpt-medium: README=2958, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-235B-A22B
-🔍 找到README div，长度: 9907
-✅ 成功获取模型信息: README长度=9907, 标签数=6
-✅ Qwen/Qwen3-235B-A22B: README=9907, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-0.6B
-🔍 找到README div，长度: 8329
-✅ 成功获取模型信息: README长度=8329, 标签数=4
-✅ Qwen/Qwen3-0.6B: README=8329, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: depth-anything/Depth-Anything-V2-Small-hf
-🔍 找到README div，长度: 2558
-✅ 成功获取模型信息: README长度=2558, 标签数=7
-✅ depth-anything/Depth-Anything-V2-Small-hf: README=2558, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: depth-anything/Depth-Anything-V2-Base-hf
-🔍 找到README div，长度: 2562
-✅ 成功获取模型信息: README长度=2562, 标签数=7
-✅ depth-anything/Depth-Anything-V2-Base-hf: README=2562, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: timm/vit_base_patch16_clip_224.openai
-🔍 找到README div，长度: 1958
-✅ 成功获取模型信息: README长度=1958, 标签数=9
-✅ timm/vit_base_patch16_clip_224.openai: README=1958, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: openai/jukebox-1b-lyrics
-❌ 未找到README div
-✅ 成功获取模型信息: README长度=0, 标签数=2
-✅ openai/jukebox-1b-lyrics: README=0, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-14B-Base
-🔍 找到README div，长度: 2638
-✅ 成功获取模型信息: README长度=2638, 标签数=5
-✅ Qwen/Qwen3-14B-Base: README=2638, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-0.6B-FP8
-🔍 找到README div，长度: 8604
-✅ 成功获取模型信息: README长度=8604, 标签数=5
-✅ Qwen/Qwen3-0.6B-FP8: README=8604, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-8B
-🔍 找到README div，长度: 15148
-✅ 成功获取模型信息: README长度=15148, 标签数=5
-✅ Qwen/Qwen3-8B: README=15148, 标签=5 [已保存]
-📊 批次 14 完成: 50/50 成功
-⏸️ 批次间休息 2 秒...
-
-📦 处理批次 15/15 (13 个模型)
-批次 15:   0%|          | 0/13 [00:00<?, ?it/s]批次 15:   8%|▊         | 1/13 [00:06<01:18,  6.52s/it]批次 15:  15%|█▌        | 2/13 [00:13<01:12,  6.57s/it]批次 15:  23%|██▎       | 3/13 [00:19<01:06,  6.62s/it]批次 15:  31%|███       | 4/13 [00:26<00:59,  6.66s/it]批次 15:  38%|███▊      | 5/13 [00:33<00:53,  6.63s/it]批次 15:  46%|████▌     | 6/13 [00:39<00:46,  6.64s/it]批次 15:  54%|█████▍    | 7/13 [00:46<00:39,  6.61s/it]批次 15:  62%|██████▏   | 8/13 [00:53<00:33,  6.64s/it]批次 15:  69%|██████▉   | 9/13 [00:59<00:26,  6.62s/it]批次 15:  77%|███████▋  | 10/13 [01:06<00:19,  6.63s/it]批次 15:  85%|████████▍ | 11/13 [01:12<00:13,  6.61s/it]批次 15:  92%|█████████▏| 12/13 [01:19<00:06,  6.61s/it]批次 15: 100%|██████████| 13/13 [01:25<00:00,  6.46s/it]批次 15: 100%|██████████| 13/13 [01:25<00:00,  6.58s/it]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-8B-Base
-🔍 找到README div，长度: 2635
-✅ 成功获取模型信息: README长度=2635, 标签数=3
-✅ Qwen/Qwen3-8B-Base: README=2635, 标签=3 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-14B
-🔍 找到README div，长度: 9850
-✅ 成功获取模型信息: README长度=9850, 标签数=6
-✅ Qwen/Qwen3-14B: README=9850, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: Qwen/Qwen3-4B-FP8
-🔍 找到README div，长度: 9874
-✅ 成功获取模型信息: README长度=9874, 标签数=6
-✅ Qwen/Qwen3-4B-FP8: README=9874, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: MIT/ast-finetuned-audioset-14-14-0.443
-🔍 找到README div，长度: 338
-✅ 成功获取模型信息: README长度=338, 标签数=10
-✅ MIT/ast-finetuned-audioset-14-14-0.443: README=338, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: fixie-ai/ultravox-v0_5-llama-3_1-8b
-🔍 找到README div，长度: 1870
-✅ 成功获取模型信息: README长度=1870, 标签数=6
-✅ fixie-ai/ultravox-v0_5-llama-3_1-8b: README=1870, 标签=6 [已保存]
-正在使用爬虫获取模型详细信息: sail-rvc/HomerSimpson2333333
-🔍 找到README div，长度: 194
-✅ 成功获取模型信息: README长度=194, 标签数=4
-✅ sail-rvc/HomerSimpson2333333: README=194, 标签=4 [已保存]
-正在使用爬虫获取模型详细信息: impira/layoutlm-invoices
-🔍 找到README div，长度: 312
-✅ 成功获取模型信息: README长度=312, 标签数=9
-✅ impira/layoutlm-invoices: README=312, 标签=9 [已保存]
-正在使用爬虫获取模型详细信息: deepseek-ai/DeepSeek-Prover-V2-671B
-🔍 找到README div，长度: 3211
-✅ 成功获取模型信息: README长度=3211, 标签数=2
-✅ deepseek-ai/DeepSeek-Prover-V2-671B: README=3211, 标签=2 [已保存]
-正在使用爬虫获取模型详细信息: moonshotai/Kimi-Dev-72B
-🔍 找到README div，长度: 1697
-✅ 成功获取模型信息: README长度=1697, 标签数=7
-✅ moonshotai/Kimi-Dev-72B: README=1697, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Kwaipilot/KwaiCoder-23B-A4B-v1
-🔍 找到README div，长度: 1809
-✅ 成功获取模型信息: README长度=1809, 标签数=5
-✅ Kwaipilot/KwaiCoder-23B-A4B-v1: README=1809, 标签=5 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/UI-TARS-2B-SFT
-🔍 找到README div，长度: 4106
-✅ 成功获取模型信息: README长度=4106, 标签数=7
-✅ ByteDance-Seed/UI-TARS-2B-SFT: README=4106, 标签=7 [已保存]
-正在使用爬虫获取模型详细信息: Salesforce/moirai-moe-1.0-R-base
-🔍 找到README div，长度: 303
-✅ 成功获取模型信息: README长度=303, 标签数=10
-✅ Salesforce/moirai-moe-1.0-R-base: README=303, 标签=10 [已保存]
-正在使用爬虫获取模型详细信息: ByteDance-Seed/academic-ds-9B
-🔍 找到README div，长度: 95
-✅ 成功获取模型信息: README长度=95, 标签数=5
-✅ ByteDance-Seed/academic-ds-9B: README=95, 标签=5 [已保存]
-📊 批次 15 完成: 13/13 成功
-
-🎉 爬取完成: 712/713 个模型成功
-💾 缓存已保存: 723 个模型 -> output/models_cache.json
-
-============================================================
-📊 爬取统计
-============================================================
-⏱️ 总耗时: 4726.48秒
-📊 处理模型: 724 个
-🆕 新爬取: 712 个
-📁 缓存总数: 1435 个
-⚡ 平均速度: 0.15 个/秒
-============================================================
