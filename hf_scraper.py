@@ -51,7 +51,155 @@ async def scrape_hf_model(url: str, token: Optional[str] = None) -> Dict[str, st
                 await page.wait_for_timeout(3000)
             
             # 等待页面完全加载
-            await page.wait_for_timeout(8000)
+            await page.wait_for_timeout(5000)
+            
+            # 检查是否跳转到了/model-inference页面，如果是则点击"模型介绍"按钮返回主页面
+            current_url = page.url
+            if '/model-inference' in current_url:
+                print(f"⚠️  检测到跳转到/model-inference页面: {current_url}")
+                print("   正在点击'模型介绍'按钮返回主页面...")
+                
+                try:
+                    # 等待页面完全加载，"模型介绍"按钮出现
+                    await page.wait_for_timeout(3000)
+                    
+                    # 使用Playwright的locator API查找并点击"模型介绍"按钮
+                    intro_button_clicked = False
+                    
+                    try:
+                        # 方法1: 使用get_by_text查找包含"模型介绍"文本的元素
+                        try:
+                            intro_button = page.get_by_text("模型介绍", exact=False)
+                            if await intro_button.count() > 0:
+                                # 找到父div并点击
+                                await intro_button.first.click(timeout=5000)
+                                intro_button_clicked = True
+                                print("   ✅ 成功点击'模型介绍'按钮（方法1：get_by_text）")
+                        except Exception as e1:
+                            # 方法2: 使用JavaScript查找并点击
+                            try:
+                                clicked = await page.evaluate("""
+                                    () => {
+                                        // 查找包含"模型介绍"文本的span元素
+                                        const spans = Array.from(document.querySelectorAll('span'));
+                                        const introSpan = spans.find(span => {
+                                            const text = span.textContent || span.innerText || '';
+                                            return text.trim() === '模型介绍' || text.includes('模型介绍');
+                                        });
+                                        
+                                        if (introSpan) {
+                                            // 找到可点击的父元素（通常是包含flex class的div）
+                                            let clickable = introSpan.closest('div');
+                                            // 向上查找，直到找到包含flex的div
+                                            while (clickable && !clickable.classList.contains('flex')) {
+                                                clickable = clickable.parentElement;
+                                            }
+                                            
+                                            if (clickable) {
+                                                clickable.click();
+                                                return true;
+                                            }
+                                        }
+                                        
+                                        // 通过class查找包含flex gap-2的div
+                                        const flexDivs = Array.from(document.querySelectorAll('div.flex.gap-2.items-center'));
+                                        for (const div of flexDivs) {
+                                            const span = div.querySelector('span');
+                                            if (span && (span.textContent || span.innerText || '').includes('模型介绍')) {
+                                                div.click();
+                                                return true;
+                                            }
+                                        }
+                                        
+                                        // 通过SVG的xlink:href查找
+                                        const allUses = Array.from(document.querySelectorAll('use'));
+                                        const svgUse = allUses.find(use => {
+                                            const href = use.getAttribute('xlink:href') || use.getAttribute('href');
+                                            return href === '#gt-plane-models';
+                                        });
+                                        if (svgUse) {
+                                            const svg = svgUse.closest('svg');
+                                            if (svg) {
+                                                const parentDiv = svg.closest('div');
+                                                if (parentDiv) {
+                                                    parentDiv.click();
+                                                    return true;
+                                                }
+                                            }
+                                        }
+                                        
+                                        return false;
+                                    }
+                                """)
+                                
+                                if clicked:
+                                    intro_button_clicked = True
+                                    print("   ✅ 成功点击'模型介绍'按钮（方法2：JavaScript）")
+                                else:
+                                    print("   ⚠️  未找到'模型介绍'按钮")
+                            except Exception as e2:
+                                print(f"   ⚠️  JavaScript方法失败: {e2}")
+                    except Exception as e:
+                        print(f"   ❌ 点击'模型介绍'按钮失败: {e}")
+                    
+                    if intro_button_clicked:
+                        # 等待页面跳转回主页面
+                        await page.wait_for_timeout(2000)
+                        
+                        # 等待URL变化（去掉/model-inference）
+                        try:
+                            await page.wait_for_function(
+                                "() => !window.location.href.includes('/model-inference')",
+                                timeout=10000
+                            )
+                            print("   ✅ 已跳转回主页面（等待URL变化）")
+                        except Exception:
+                            # 如果等待超时，检查当前URL
+                            current_url_after = page.url
+                            if '/model-inference' not in current_url_after:
+                                print("   ✅ 已跳转回主页面（URL检查）")
+                            else:
+                                print(f"   ⚠️  仍在/model-inference页面: {current_url_after}")
+                        
+                        # 等待页面完全加载
+                        await page.wait_for_timeout(5000)
+                    else:
+                        print("   ⚠️  未能点击'模型介绍'按钮，尝试直接访问主页面URL...")
+                        # 如果点击失败，尝试直接访问主页面URL
+                        base_url = url.rstrip('/')
+                        if '/model-inference' in base_url:
+                            base_url = base_url.split('/model-inference')[0]
+                        try:
+                            await page.goto(base_url, wait_until="domcontentloaded", timeout=30000)
+                            await page.wait_for_timeout(5000)
+                            
+                            # 检查是否又跳转回了/model-inference
+                            current_url_check = page.url
+                            if '/model-inference' in current_url_check:
+                                print(f"   ⚠️  直接访问后仍跳转到/model-inference，再次尝试点击按钮...")
+                                # 再次尝试点击按钮
+                                try:
+                                    intro_button = page.get_by_text("模型介绍", exact=False)
+                                    if await intro_button.count() > 0:
+                                        await intro_button.first.click(timeout=5000)
+                                        await page.wait_for_timeout(3000)
+                                        print("   ✅ 再次点击'模型介绍'按钮成功")
+                                except Exception:
+                                    pass
+                            else:
+                                print(f"   ✅ 直接访问主页面成功: {base_url}")
+                        except Exception as e:
+                            print(f"   ⚠️  直接访问主页面失败: {e}")
+                except Exception as e:
+                    print(f"   ⚠️  处理/model-inference页面时出错: {e}")
+            
+            # 再次等待页面完全加载（确保README内容已渲染）
+            await page.wait_for_timeout(5000)
+            
+            # 确保当前不在/model-inference页面
+            final_url = page.url
+            if '/model-inference' in final_url:
+                print(f"   ⚠️  最终仍在/model-inference页面，README可能无法获取")
             
             # 尝试直接获取README内容
             try:
@@ -63,9 +211,11 @@ async def scrape_hf_model(url: str, token: Optional[str] = None) -> Dict[str, st
                             'div[class*="markdown-card"]',
                             'div.dp-editor-md-preview-container',
                             'div.gitCode-MdRender-container',
-                            'div[class*=\"readme\"]',
-                            'div[class*=\"markdown\"]',
-                            '.repo-file-markdown-content'
+                            'div[class*="readme"]',
+                            'div[class*="markdown"]',
+                            '.repo-file-markdown-content',
+                            'article',
+                            'main div[class*="content"]'
                         ];
                         
                         for (const selector of selectors) {
@@ -77,6 +227,20 @@ async def scrape_hf_model(url: str, token: Optional[str] = None) -> Dict[str, st
                                 }
                             }
                         }
+                        
+                        // 如果上述选择器都失败，尝试查找所有包含大量文本的div
+                        const allDivs = Array.from(document.querySelectorAll('div'));
+                        for (const div of allDivs) {
+                            const text = div.innerText || div.textContent || '';
+                            // 如果div包含大量文本（可能是README），且不是导航栏等
+                            if (text.length > 200 && 
+                                !div.classList.contains('header') && 
+                                !div.classList.contains('nav') &&
+                                !div.classList.contains('footer')) {
+                                return text;
+                            }
+                        }
+                        
                         return '';
                     }
                 """)

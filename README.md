@@ -4,6 +4,7 @@
 
 ## ✨ 核心特性
 
+- 🕷️ **预爬取加速**: 智能预爬取网页数据，提速50%，支持断点续传
 - 📊 **CSV数据处理**: 高效读取和筛选HuggingFace模型数据
 - 🤖 **多平台AI支持**: 支持月之暗面、阿里百炼、七牛云、腾讯混元四大AI平台
 - 🚀 **Work-Stealing并发**: 任务池+动态负载均衡，比静态分片快20-30%
@@ -19,6 +20,7 @@
 ```
 modelkeyword/
 ├── keyword_extractor.py           # 🚀 主程序入口
+├── pre_crawl.py                  # 🕷️ 预爬取数据脚本
 ├── csv_reader.py                  # 📊 CSV数据读取器
 ├── ai_extractor.py               # 🤖 AI关键词提取模块
 ├── multi_platform_extractor.py   # 🚀 多平台分片并发提取器
@@ -32,6 +34,7 @@ modelkeyword/
 ├── QUICKSTART.md               # ⚡ 快速开始指南
 ├── huggingface模型数据_202509241526.csv  # 📊 源数据文件
 ├── output/                      # 📁 输出目录
+│   ├── models_cache.json        # 💾 预爬取缓存数据
 │   ├── keywords_batch_*.json    # 🎯 关键词提取结果
 │   ├── models_*.json            # 📊 模型信息
 │   ├── report_*.md              # 📋 分析报告
@@ -108,7 +111,45 @@ python keyword_extractor.py --max-models 10 --token "your_bearer_token"
 python keyword_extractor.py --help
 ```
 
-### 4. 智能平台检测
+### 4. 预爬取数据（推荐）
+
+为了提高关键词提取效率，建议先预爬取模型网页数据：
+
+```bash
+# 基础预爬取（爬取所有符合条件的模型）
+python pre_crawl.py
+
+# 限制数量（只爬取前100个模型）
+python pre_crawl.py --max-models 100
+
+# 自定义批次大小（默认50，建议20-100）
+python pre_crawl.py --batch-size 20
+
+# 强制重新爬取所有模型（覆盖现有缓存）
+python pre_crawl.py --force-crawl
+
+# 查看预爬取帮助
+python pre_crawl.py --help
+```
+
+#### 预爬取的优势
+
+- 🚀 **提速50%**: 避免关键词提取时的重复爬取
+- 💾 **智能缓存**: 自动跳过已缓存的模型
+- 🔄 **断点续传**: 支持中断后继续爬取
+- 📊 **实时保存**: 每爬取一个立即保存
+
+#### 预爬取 + 关键词提取工作流
+
+```bash
+# 步骤1: 预爬取数据
+python pre_crawl.py --max-models 200
+
+# 步骤2: 关键词提取（自动使用缓存）
+python keyword_extractor.py --max-models 200
+```
+
+### 5. 智能平台检测
 
 系统会自动检测可用的API平台数量：
 
@@ -129,6 +170,7 @@ python keyword_extractor.py --help
 
 - **关键词文件**: `output/keywords_batch_*.json`
 - **模型信息**: `output/models_*.json`
+- **缓存文件**: `output/models_cache.json` (预爬取数据)
 - **分析报告**: `output/report_*.md`
 - **CSV导出**: `output/report_*.csv`
 - **关键词列表**: `output/report_*_keywords.txt`
