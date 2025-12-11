@@ -40,167 +40,112 @@ class BaseKeywordExtractor(ABC):
     
     def build_prompt(self, model_info: ModelInfo) -> str:
         """
-        根据需求文档构建Prompt
-        
-        Args:
-            model_info: 模型信息
-            
-        Returns:
-            构建好的prompt
+        为【可体验模型】生成引流到「推理 API 页面」的高亮词
         """
-        prompt = f"""你是AI项目运营专家，你需要在模型页面中提取引流关键词以便投放到博客网站当中。
+        # —— 0. 先把模型名做"别名种子"——
+        proj = model_info.project_name        # 例：MoonshotAI/Kimi-K2-Thinking
+        owner, _, name = proj.partition('/')  # 例：owner=MoonshotAI, name=Kimi-K2-Thinking
+        
+        # 把常见分隔符换成统一连字符，再拆词
+        raw_words = re.split(r'[-_\s/]', name)
+        
+        # 生成潜在别名：Kimi、Kimi-K2、Kimi-K2-Thinking、K2-Thinking、K2、Thinking …
+        alias_seeds = list({name, raw_words[0],
+                            '-'.join(raw_words[:2]) if len(raw_words) >= 2 else '',
+                            '-'.join(raw_words[:3]) if len(raw_words) >= 3 else '',
+                            raw_words[-1] if len(raw_words) > 1 else ''} - {''})
 
-项目: {model_info.project_name}
-URL: {model_info.url}
+        # —— 1. 拼装 Prompt ——
+        prompt = f"""你是 AI 模型广场运营专家，目标是把用户搜索词导流到「模型体验页 / 推理 API 页」。
 
-README内容（前800字符）：
-{(model_info.readme[:800] + "...") if model_info.readme and len(model_info.readme) > 800 else (model_info.readme if model_info.readme else "暂无README内容")}
+项目名称：{proj}
+模型 Owner：{owner}
+README 前 800 字：
+{(model_info.readme[:800] + "…") if model_info.readme else "暂无"}
 
-标签: {', '.join(model_info.tags) if model_info.tags else "暂无标签"}
+标签：{', '.join(model_info.tags) if model_info.tags else "暂无"}
 
-## 核心原则：高亮词是"用户搜索AI模型时会用的词"
+## 高亮词核心原则
 
-**引流逻辑**：
-用户在CSDN搜索"SD-XL" → 看到博客 → 点击博客中的"SD-XL"高亮词 → 跳转到GitCode查看SD-XL模型
+1. 必须围绕「当前模型」本身，禁止提竞品模型名。
 
-**⚠️ 最重要规则：只提取当前模型自身的关键词，严禁提取其他模型的名称**
+2. 必须覆盖「用户想体验 / 调用 API」的搜索意图。
 
-**正确示例**：
-- ✅ 当前模型：DeepSeek-R1-Distill-Qwen → 提取：DeepSeek-R1、链式思维、自我验证
-- ❌ README提到"超越OpenAI-o1" → 不要提取"OpenAI-o1"（这是其他模型）
-- ❌ README提到"基于Qwen2.5" → 不要提取"Qwen2.5"（这是基础模型，不是当前模型）
-- ❌ README提到"对标GPT-4" → 不要提取"GPT-4"（这是对比对象，不是当前模型）
+3. 必须包含 4 类词：模型别名 | API 相关 | 试用/体验 | 功能/场景。
 
-**因此高亮词必须是当前模型自身的**：
-- ✅ 当前模型的名称（从项目名称提取，如DeepSeek-R1、JanusFlow、GLM-4）
-- ✅ 当前模型的功能/用途（文生图、编程助手、AI写作）
-- ✅ 当前模型的部署方式（Ollama部署、本地部署、ComfyUI）
-- ✅ 当前模型的技术特性（多模态、量化模型、MoE架构、链式思维）
+## 5 个维度（请严格按维度返回）
 
-**严禁提取**：
-- ❌ **其他模型名称**（OpenAI-o1、GPT-4、Claude、Qwen2.5、Llama等）→ README中作为对比/基础的模型
-- ❌ 硬件相关（消费级显卡、A100、GPU）→ 用户搜这个是买显卡，不是找模型
-- ❌ 通用形容词（高效、高清、强大、优秀）→ 太泛泛，没有指向性
-- ❌ 技术细节（128K词表、8192上下文长度）→ 太专业，普通用户不搜
+① 模型别名（品牌+简化）
+   可出现的形式：{', '.join(alias_seeds[:6])} 以及它们的合理变体（如大小写、去连字符）
+   国产映射规则（若命中）：
+   - ERNIE 系列  → 文心一言 / 百度大模型
+   - Qwen 系列   → 通义千问 / 阿里大模型
+   - Hunyuan     → 混元 / 腾讯大模型
+   - GLM-4       → 智谱 AI
+   - MoonshotAI  → Kimi / 月之暗面
+   - ByteDance   → 豆包 / 字节大模型
 
-## 提取规则（严格遵守）
-1. 基于原文内容，提取5-8个**用户会搜索的AI模型相关词**
-2. **模型名称简化**：
-   - ✅ JanusFlow、GLM-4、DeepSeek-V2、SD-XL（简洁品牌名）
-   - ❌ JanusFlow-1.3B、GLM-4-32B-0414（带版本号太长）
-3. **功能场景词**：
-   - ✅ 文生图、AI写作、编程助手、智能对话（用户搜索意图明确）
-   - ❌ 高效处理、高清生成（太泛泛）
-4. **连接符使用规范**：
-   - ✅ SD-XL、BERT-base、DeepSeek-V2（英文-英文可以用连字符）
-   - ✅ 文生图、编程助手、AI写作（纯中文，不需要连字符）
-   - ✅ PyTorch、Transformer、HuggingFace（纯英文，不需要连字符）
-   - ❌ 文生图-TextToImage、编程助手-CodeAssistant（中文-英文禁止用连字符）
-5. **参数规格**：
-   - ✅ 7B参数、32B参数（主流规格，用户会搜）
-   - ❌ 304M参数、1.68倍加速（太细节或性能指标）
-6. **严禁提取（特别重要）**：
-   - ❌ **其他模型名称**（OpenAI-o1、GPT-4、Claude、Gemini、Qwen2.5、Llama3、Mistral等）
-     → README中作为对比、基础、参考的其他模型，绝对不能提取
-   - ❌ 硬件词汇（消费级显卡、A100、GPU、显存）
-   - ❌ 通用形容词（高效、高清、强大、优秀、先进）
-   - ❌ 纯数字（50.0、1860863627）
-   - ❌ 性能指标（1.68倍加速、250倍加速）
-   - ❌ 过长描述（Colab免费GPU支持、A100H100推理）
-   - ❌ 技术细节（128K词表、8192输入长度）
-   - ❌ 抽象概念（定理证明、零样本预测）
-   - ❌ 语言类型（英文摘要、中文、多语言）
-   - ❌ **中文-英文格式**（文生图-TextToImage、编程助手-CodeAssistant）
+② API / 接口 / 调用（6~10 个）
+   必须包含：API、接口、调用、API 调用、API 接口、如何调用、怎么调用、Python 调用、API Key、在线调用、HTTP 接口、推理接口
 
-## 5个维度（用户搜索AI模型时会用的词）
-1. **当前模型品牌名**: 只提取当前模型的名称（从项目名称提取）
-   - ✅ 示例：JanusFlow、GLM-4、DeepSeek-R1、SD-XL、MiniCPM
-   - ❌ 禁止：OpenAI-o1、GPT-4、Claude（README中提到的其他模型）
-   
-   **⚠️ 国产大模型品牌名映射规则（必须遵守）**：
-   - ERNIE → 提取"文心一言"或"百度大模型"
-   - Qwen → 提取"通义千问"或"阿里大模型"
-   - Hunyuan → 提取"混元"或"腾讯大模型"
-   - GLM-4 → 提取"智谱AI"
-   - ByteDance-Seed → 提取"豆包"或"字节大模型"
-   - MoonshotAI → 提取"Kimi"或"月之暗面"
+③ 试用 / 体验 / Playground（4~6 个）
+   必须包含：试用、在线体验、在线试用、模型体验、Playground、推理、推理 API、免费体验、零代码体验
 
-2. **功能场景**: 文生图、文生视频、AI写作、编程助手、智能对话、图像修复
-3. **部署工具**: Ollama部署、本地部署、ComfyUI、量化模型、API调用
-4. **技术特性**: 多模态、MoE架构、Transformer、自回归模型、链式思维
-5. **参数规格**: 7B参数、32B参数、671B参数（仅主流规格）
+④ 功能 / 场景（基于 README 提取 2~4 个）
+   例：文生图、代码生成、多模态、智能问答、AI 写作、数学推理、角色扮演、图像修复……
 
-## 格式规范（真实写作习惯）
-- ✅ **英文-英文**：SD-XL、BERT-base、DeepSeek-V2（可以用连字符）
-- ✅ **纯中文**：编程助手、AI写作、文生图
-- ✅ **纯英文**：Transformer、PyTorch、HuggingFace
-- ❌ **中文-英文**：文生图-TextToImage、编程助手-CodeAssistant（禁止用连字符连接中英文）
+⑤ 参数/规格（可选 0~2 个）
+   只保留主流：7B 参数、32B 参数、671B 参数、GPT-4 级、MoE 架构、量化版
 
-## 输出示例（用户在CSDN搜索时会用的词）
+## 格式规范
 
-**示例1 - 普通模型**：
+- 英文-英文可用连字符：Kimi-K2、LLaMA-7B
+- 纯中文不加连字符：文生图、编程助手
+- 禁止中英混连：文生图-TextToImage ❌
+- 关键词内禁止出现括号、斜杠、空格；用连字符或去空格
+
+## 严禁提取
+
+- 竞品模型名（GPT-4、Claude、Qwen2.5* 等，除非当前模型就是 Qwen）
+- 硬件词汇（A100、GPU、显存）
+- 纯形容词（高效、强大、高清）
+- 技术细节（128K 词表、8192 上下文）
+- 性能指标（1.68 倍加速）
+
+## 输出要求
+
+- 总共 8~12 个关键词
+- 每个必须含 keyword / dimension / reason 三字段
+- 维度名请直接写：①模型别名 ②API相关 ③试用体验 ④功能场景 ⑤参数规格
+
+## 返回示例（JSON）
+
 {{
   "keywords": [
-    {{
-      "keyword": "DeepSeek-R1",
-      "dimension": "当前模型品牌名", 
-      "reason": "从项目名称提取的当前模型名称"
-    }},
-    {{
-      "keyword": "链式思维",
-      "dimension": "技术特性",
-      "reason": "当前模型的核心技术特性"
-    }},
-    {{
-      "keyword": "编程助手",
-      "dimension": "功能场景",
-      "reason": "当前模型的应用场景"
-    }}
+    {{"keyword": "Kimi",      "dimension": "①模型别名", "reason": "当前模型品牌简称"}},
+    {{"keyword": "Kimi-K2",   "dimension": "①模型别名", "reason": "官方命名习惯"}},
+    {{"keyword": "月之暗面",   "dimension": "①模型别名", "reason": "国产模型映射"}},
+    {{"keyword": "API",       "dimension": "②API相关", "reason": "核心搜索词"}},
+    {{"keyword": "Python调用", "dimension": "②API相关", "reason": "开发者常用搜索"}},
+    {{"keyword": "在线体验",   "dimension": "③试用体验", "reason": "引流到体验页"}},
+    {{"keyword": "推理API",   "dimension": "③试用体验", "reason": "直接描述产品形态"}},
+    {{"keyword": "AI写作",    "dimension": "④功能场景", "reason": "README 明确功能"}},
+    {{"keyword": "32B参数",   "dimension": "⑤参数规格", "reason": "主流规格"}}
   ]
 }}
 
-**示例2 - 国产大模型（遵循映射规则）**：
-{{
-  "keywords": [
-    {{
-      "keyword": "通义千问",
-      "dimension": "当前模型品牌名", 
-      "reason": "项目名称中有Qwen，映射为通义千问"
-    }},
-    {{
-      "keyword": "阿里大模型",
-      "dimension": "当前模型品牌名", 
-      "reason": "Qwen属于阿里大模型系列"
-    }},
-    {{
-      "keyword": "7B参数",
-      "dimension": "参数规格",
-      "reason": "当前模型的参数规格"
-    }}
-  ]
-}}
+"""
 
-⚠️ **错误示例（绝对禁止）**：
-- ❌ 提取"OpenAI-o1"（这是README中作为对比的其他模型）
-- ❌ 提取"Qwen2.5"（如果当前模型不是Qwen2.5，不要提取）
-- ❌ 提取"GPT-4"（这是README中作为参考的其他模型）
-- ❌ 提取"Qwen"（应该映射为"通义千问"或"阿里大模型"）
-
-要求：5-8个关键词，每个包含keyword、dimension、reason字段。"""
-
-        # 添加排除队列（如果有的话）
-        exclusion_text = ""
+        # —— 2. 追加黑名单（沿用老逻辑）——
         if self.excluded_keywords:
-            exclusion_text = f"""
-
+            prompt += f"""
 ## 🚫 强制排除关键词（高频词）
-以下关键词已被大量使用，**严禁再次提取**：
+
+以下关键词已被大量使用，严禁再次提取：
+
 {', '.join(self.excluded_keywords[:50])}
 
-你必须提取该模型**独特的、有区分度的**关键词，避开上述所有高频词。
 """
-            prompt += exclusion_text
-
         return prompt
     
     def _parse_keywords_response(self, response: str) -> List[Dict[str, str]]:
