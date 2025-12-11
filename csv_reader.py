@@ -13,7 +13,7 @@ from hf_scraper import scrape_hf_model_sync
 
 # ===== 全局配置 =====
 # 只需要在这里修改CSV文件路径，其他地方会自动使用
-DEFAULT_CSV_FILE = "高亮词需求1113-v2.csv"
+DEFAULT_CSV_FILE = "onlineModels.csv"
 # ===================
 
 
