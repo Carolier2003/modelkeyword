@@ -5,6 +5,7 @@ CSV模型读取器
 用于从CSV文件读取模型信息并转换为ModelInfo对象
 """
 
+import os
 import csv
 from urllib.parse import urlparse, urlunparse
 from typing import List, Dict
@@ -147,18 +148,62 @@ class CSVModelReader:
         
         return model_info
     
-    def crawl_models(self, max_models: int = None, fetch_details: bool = False) -> List[ModelInfo]:
+    def crawl_models(self, max_models: int = None, fetch_details: bool = False, cache_file: str = None) -> List[ModelInfo]:
         """
-        从CSV文件爬取模型信息
+        从CSV文件爬取模型信息（优先使用缓存）
 
         Args:
             max_models: 最大模型数量（None表示全部）
             fetch_details: 是否获取详细信息（README和标签）
+            cache_file: 缓存文件路径（如果提供，会优先从缓存加载）
 
         Returns:
             ModelInfo对象列表
         """
         print(f"📖 开始从CSV文件获取模型信息 (最大数量: {max_models or '全部'})")
+
+        # 如果提供了缓存文件，优先从缓存加载
+        if cache_file and os.path.exists(cache_file):
+            try:
+                from models import load_from_json
+                cached_data = load_from_json(cache_file)
+                if cached_data:
+                    print(f"📁 发现缓存文件，优先使用缓存数据")
+                    # 从CSV读取基础数据，用于匹配
+                    csv_models = self.read_csv_data(max_models)
+                    if csv_models:
+                        # 创建URL到缓存数据的映射
+                        cache_dict = {data.get('url'): data for data in cached_data}
+                        
+                        # 匹配CSV中的模型和缓存中的模型
+                        models = []
+                        cached_count = 0
+                        crawled_count = 0
+                        
+                        for csv_model in csv_models:
+                            model_info = self.convert_csv_to_model_info(csv_model)
+                            # 如果缓存中有这个模型且有详细信息，使用缓存数据
+                            if model_info.url in cache_dict:
+                                cached_model = ModelInfo.from_dict(cache_dict[model_info.url])
+                                # 如果缓存中有README和标签，使用缓存数据
+                                if cached_model.readme or cached_model.tags:
+                                    models.append(cached_model)
+                                    cached_count += 1
+                                    continue
+                            
+                            # 如果缓存中没有或没有详细信息，需要爬取
+                            if fetch_details:
+                                model_info = self.get_model_detail_from_scraper(model_info)
+                                crawled_count += 1
+                            models.append(model_info)
+                        
+                        if models:
+                            print(f"✅ 混合加载完成: 缓存 {cached_count} 个，新爬取 {crawled_count} 个，总计 {len(models)} 个模型")
+                            return models
+            except Exception as e:
+                print(f"⚠️  从缓存加载失败，将重新爬取: {e}")
+                import traceback
+                traceback.print_exc()
 
         # 从CSV读取基础数据
         csv_models = self.read_csv_data(max_models)

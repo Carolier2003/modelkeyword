@@ -20,10 +20,37 @@ load_dotenv()
 class MultiPlatformExtractor(BaseKeywordExtractor):
     """多平台关键词提取器"""
     
-    def __init__(self):
-        """初始化多个AI客户端"""
+    def __init__(self, workers_per_platform: int = None):
+        """
+        初始化多个AI客户端
+        
+        Args:
+            workers_per_platform: 每个平台的并发 worker 数量（None 时从环境变量读取或自动计算）
+        """
         super().__init__()  # 调用基类初始化
         self.platforms = self._init_platforms()
+        
+        # 如果未指定，尝试从环境变量读取，否则自动计算
+        if workers_per_platform is None:
+            env_workers = os.getenv("WORKERS_PER_PLATFORM")
+            if env_workers:
+                try:
+                    self.workers_per_platform = int(env_workers)
+                except ValueError:
+                    print(f"⚠️ 环境变量 WORKERS_PER_PLATFORM={env_workers} 无效，使用默认值")
+                    self.workers_per_platform = self._calculate_default_workers()
+            else:
+                self.workers_per_platform = self._calculate_default_workers()
+        else:
+            self.workers_per_platform = workers_per_platform
+        
+        print(f"📊 并发配置：每个平台 {self.workers_per_platform} 个 worker")
+    
+    def _calculate_default_workers(self) -> int:
+        """根据平台数量自动计算默认 worker 数量"""
+        platform_count = len([p for p in self.platforms.values() if p.get("enabled", True)])
+        # 单个平台时默认 5 个 worker，多个平台时每个平台 1 个
+        return 5 if platform_count == 1 else 1
         
     def _init_platforms(self) -> Dict[str, Dict]:
         """初始化支持的平台配置"""
@@ -332,8 +359,11 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
             print("❌ 没有可用的平台")
             return []
         
+        # 计算总 worker 数量
+        total_workers = platform_count * self.workers_per_platform
+        
         print(f"🚀 任务池启动，模型 {total} 个，平台 {platform_count} 个")
-        print(f"🔥 并发模式：{platform_count} 个平台同时工作，快速处理任务")
+        print(f"🔥 并发模式：每个平台 {self.workers_per_platform} 个 worker，共 {total_workers} 个并发 worker")
         
         # 创建任务队列 (ModelInfo, retry_count)
         queue = asyncio.Queue()
@@ -348,13 +378,14 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
         progress_lock = asyncio.Lock()
         completed_count = [0]  # 使用列表以便在不同协程间共享
         
-        # 创建worker任务
+        # 创建worker任务：为每个平台创建多个 worker
         workers = []
         for platform_id in available_platforms:
-            worker = asyncio.create_task(
-                self._worker(platform_id, queue, results, lock, platform_count, progress_lock, completed_count, total)
-            )
-            workers.append(worker)
+            for worker_idx in range(self.workers_per_platform):
+                worker = asyncio.create_task(
+                    self._worker(platform_id, queue, results, lock, platform_count, progress_lock, completed_count, total)
+                )
+                workers.append(worker)
         
         # 启动进度监控任务
         progress_task = asyncio.create_task(
@@ -532,8 +563,14 @@ class MultiPlatformExtractor(BaseKeywordExtractor):
 class MultiPlatformExtractorSync:
     """多平台关键词提取器（同步版本）"""
     
-    def __init__(self):
-        self.async_extractor = MultiPlatformExtractor()
+    def __init__(self, workers_per_platform: int = None):
+        """
+        初始化同步版本提取器
+        
+        Args:
+            workers_per_platform: 每个平台的并发 worker 数量（None 时自动计算）
+        """
+        self.async_extractor = MultiPlatformExtractor(workers_per_platform=workers_per_platform)
     
     def extract_keywords(self, model_info: ModelInfo) -> Optional[KeywordResult]:
         """同步版本的关键词提取"""

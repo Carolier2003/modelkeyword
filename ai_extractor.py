@@ -18,13 +18,41 @@ class KeywordExtractor(BaseKeywordExtractor):
     """关键词提取器"""
     
     def __init__(self):
-        """初始化AI客户端"""
+        """初始化AI客户端 - 优先使用硅基流动，否则使用其他可用平台"""
         super().__init__()  # 调用基类初始化
-        self.client = OpenAI(
-            api_key=os.getenv("MOONSHOT_API_KEY"), 
-            base_url=os.getenv("MOONSHOT_BASE_URL", "https://api.moonshot.cn/v1"),
-        )
-        self.model = "kimi-k2-0905-preview"
+        
+        # 按优先级选择平台
+        if os.getenv("SILICONFLOW_API_KEY"):
+            # 优先使用硅基流动
+            self.client = OpenAI(
+                api_key=os.getenv("SILICONFLOW_API_KEY"),
+                base_url=os.getenv("SILICONFLOW_BASE_URL", "https://api.siliconflow.cn/v1"),
+            )
+            self.model = os.getenv("SILICONFLOW_MODEL", "Qwen/Qwen3-Next-80B-A3B-Instruct")
+            print("✅ 使用硅基流动作为AI提供商")
+        elif os.getenv("MOONSHOT_API_KEY"):
+            # 其次使用月之暗面
+            self.client = OpenAI(
+                api_key=os.getenv("MOONSHOT_API_KEY"), 
+                base_url=os.getenv("MOONSHOT_BASE_URL", "https://api.moonshot.cn/v1"),
+            )
+            self.model = "kimi-k2-0905-preview"
+            print("✅ 使用月之暗面作为AI提供商")
+        elif os.getenv("DASHSCOPE_API_KEY"):
+            # 使用阿里百炼
+            self.client = OpenAI(
+                api_key=os.getenv("DASHSCOPE_API_KEY"),
+                base_url=os.getenv("DASHSCOPE_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1"),
+            )
+            self.model = os.getenv("DASHSCOPE_MODEL", "qwen-plus")
+            print("✅ 使用阿里百炼作为AI提供商")
+        else:
+            raise ValueError(
+                "❌ 未找到可用的API Key！请至少配置以下之一：\n"
+                "   - SILICONFLOW_API_KEY (推荐)\n"
+                "   - MOONSHOT_API_KEY\n"
+                "   - DASHSCOPE_API_KEY"
+            )
         
         # 移除全局关键词去重，改为在报告生成时去重
     

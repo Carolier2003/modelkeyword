@@ -17,10 +17,16 @@ from multi_platform_extractor import MultiPlatformExtractorSync
 def detect_available_platforms() -> int:
     """检测可用的API平台数量"""
     platforms = {
+        "SILICONFLOW_API_KEY": "硅基流动",
         "MOONSHOT_API_KEY": "月之暗面",
         "DASHSCOPE_API_KEY": "阿里百炼", 
         "QINIU_API_KEY": "七牛云",
-        "HUNYUAN_API_KEY": "腾讯混元"
+        "HUNYUAN_API_KEY": "腾讯混元",
+        "ZHIPU_API_KEY": "智谱AI",
+        "VOLCENGINE_API_KEY": "火山引擎",
+        "QIANFAN_API_KEY": "百度千帆",
+        "SPARK_API_KEY": "讯飞星火",
+        "OPENAI_API_KEY": "OpenAI"
     }
     
     available_count = 0
@@ -150,22 +156,32 @@ class ModelKeywordExtractor:
             print("发现缓存文件，正在加载...")
             try:
                 cached_data = load_from_json(cache_file)
-                if cached_data and len(cached_data) >= max_models:
-                    models = [ModelInfo.from_dict(data) for data in cached_data[:max_models]]
-                    print(f"✅ 从缓存加载了 {len(models)} 个模型信息")
+                if cached_data:
+                    cached_count = len(cached_data)
+                    print(f"📁 缓存文件中有 {cached_count} 个模型")
                     
-                    # 保存到输出文件
-                    model_dicts = [model.to_dict() for model in models]
-                    save_to_json(model_dicts, output_file)
-                    
-                    return models
+                    # 如果缓存数量足够，直接使用缓存
+                    if cached_count >= max_models:
+                        models = [ModelInfo.from_dict(data) for data in cached_data[:max_models]]
+                        print(f"✅ 从缓存加载了 {len(models)} 个模型信息（完全使用缓存）")
+                        
+                        # 保存到输出文件
+                        model_dicts = [model.to_dict() for model in models]
+                        save_to_json(model_dicts, output_file)
+                        
+                        return models
+                    else:
+                        print(f"⚠️  缓存中只有 {cached_count} 个模型，需要 {max_models} 个，将使用缓存并补充爬取")
+                        # 继续执行，让 crawl_models 使用缓存
             except Exception as e:
                 print(f"⚠️  加载缓存失败: {e}")
+                import traceback
+                traceback.print_exc()
         
-        # 从CSV文件获取模型信息
+        # 从CSV文件获取模型信息（传递缓存文件路径，优先使用缓存）
         print("开始从CSV文件读取模型信息...")
         try:
-            models = self.csv_reader.crawl_models(max_models, fetch_details=True)
+            models = self.csv_reader.crawl_models(max_models, fetch_details=True, cache_file=cache_file)
         except Exception as e:
             print(f"❌ CSV读取失败: {e}")
             return []
@@ -584,13 +600,17 @@ def main():
     
     # 自动检测可用的API平台数量
     available_platforms = detect_available_platforms()
-    use_multi_platform = available_platforms > 1
+    # 只要有可用平台就使用多平台提取器（支持单个平台的多并发）
+    use_multi_platform = available_platforms > 0
     
     print(f"🔍 检测到 {available_platforms} 个可用的API平台")
     if use_multi_platform:
-        print("🚀 自动启用多平台并发模式")
+        if available_platforms == 1:
+            print("🚀 使用单平台多并发模式（每个平台 5 个并发 worker）")
+        else:
+            print("🚀 自动启用多平台并发模式")
     else:
-        print("📡 使用单平台模式")
+        print("❌ 未检测到可用的API平台，请配置至少一个API Key")
     
     # 创建提取器
     extractor = ModelKeywordExtractor(
